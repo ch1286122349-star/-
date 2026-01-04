@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>墨西哥中文网 · 华语资讯与生活指南</title>
+  <title>墨西哥中文网 · 联系表单</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --ink: #0b1f33;
-      --muted: #5b6b82;
-      --primary: #0f62ff;
-      --accent: #ff7b3d;
-      --teal: #19a59f;
-      --bg: #f4f6fb;
+      --ink: #24140f;
+      --muted: #5f4b45;
+      --primary: #ff6a3d;
+      --accent: #ffb400;
+      --teal: #2bbfa8;
+      --bg: #fef4ec;
       --card: #ffffff;
       --radius: 18px;
-      --shadow: 0 20px 60px rgba(11, 31, 51, 0.18);
+      --shadow: 0 22px 64px rgba(36, 20, 15, 0.22);
     }
 
     * { box-sizing: border-box; }
@@ -25,30 +25,27 @@
     body {
       margin: 0;
       font-family: 'Noto Sans SC', 'Space Grotesk', system-ui, -apple-system, sans-serif;
-      background: radial-gradient(circle at 20% 20%, rgba(15, 98, 255, 0.08), transparent 30%),
-                  radial-gradient(circle at 80% 10%, rgba(25, 165, 159, 0.08), transparent 30%),
-                  radial-gradient(circle at 80% 70%, rgba(255, 123, 61, 0.07), transparent 35%),
-                  var(--bg);
+      background:
+        radial-gradient(circle at 16% 22%, rgba(255, 106, 61, 0.25), transparent 34%),
+        radial-gradient(circle at 82% 18%, rgba(255, 180, 0, 0.18), transparent 34%),
+        radial-gradient(circle at 78% 78%, rgba(43, 191, 168, 0.16), transparent 36%),
+        linear-gradient(180deg, #fff8f1 0%, var(--bg) 100%);
       color: var(--ink);
       min-height: 100vh;
-      overflow-x: hidden;
     }
 
-    a { color: inherit; text-decoration: none; }
-
     .page {
-      max-width: 1180px;
+      width: 100%;
+      max-width: 820px;
       margin: 0 auto;
-      padding: 32px 22px 70px;
-      position: relative;
+      padding: 42px 22px 64px;
     }
 
     header {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      gap: 18px;
-      margin-bottom: 36px;
+      gap: 12px;
+      margin-bottom: 24px;
     }
 
     .brand {
@@ -63,7 +60,7 @@
       width: 46px;
       height: 46px;
       border-radius: 14px;
-      background: linear-gradient(135deg, #0f62ff, #19a59f);
+      background: linear-gradient(135deg, #ff6a3d, #2bbfa8);
       display: grid;
       place-items: center;
       color: #fff;
@@ -71,107 +68,68 @@
       font-size: 14px;
     }
 
-    nav {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      font-size: 15px;
-      color: var(--muted);
-      flex-wrap: wrap;
-    }
-
-    nav a:hover { color: var(--ink); }
-
-    .pill {
-      padding: 10px 16px;
-      border-radius: 999px;
-      background: linear-gradient(135deg, #0f62ff, #19a59f);
-      color: #fff;
-      font-weight: 600;
-      box-shadow: 0 12px 28px rgba(15, 98, 255, 0.28);
-    }
-
-    .hero {
-      position: relative;
-      overflow: hidden;
-      border-radius: 26px;
-      padding: 46px;
-      background: linear-gradient(115deg, #0b1f33, #0f62ff 58%, #19a59f);
-      color: #f7fbff;
-      box-shadow: 0 30px 70px rgba(11, 31, 51, 0.3);
-      isolation: isolate;
-    }
-
-    .hero::after, .hero::before {
-      content: "";
-      position: absolute;
-      filter: blur(10px);
-      opacity: 0.25;
-      mix-blend-mode: screen;
-    }
-
-    .hero::before {
-      width: 360px;
-      height: 360px;
-      background: radial-gradient(circle, #19a59f, transparent 60%);
-      top: -140px; right: -90px;
-      animation: float 14s ease-in-out infinite alternate;
-    }
-
-    .hero::after {
-      width: 320px;
-      height: 320px;
-      background: radial-gradient(circle, #ff7b3d, transparent 55%);
-      bottom: -120px; left: -80px;
-      animation: float 16s ease-in-out infinite alternate-reverse;
-    }
-
-    @keyframes float {
-      from { transform: translate3d(0,0,0); }
-      to { transform: translate3d(14px,-10px,0) scale(1.04); }
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 1;
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 32px;
-      align-items: center;
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 14px;
-      border-radius: 12px;
-      background: rgba(255, 255, 255, 0.12);
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      font-size: 12px;
-      backdrop-filter: blur(6px);
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(11, 31, 51, 0.06);
     }
 
     h1 {
-      margin: 12px 0 10px;
-      font-size: clamp(32px, 4vw, 50px);
-      line-height: 1.08;
+      margin: 0 0 8px;
+      font-size: clamp(26px, 3.6vw, 34px);
       letter-spacing: -0.01em;
     }
 
-    .lead {
-      margin: 0 0 18px;
-      color: rgba(247, 251, 255, 0.85);
-      font-size: 17px;
+    p { margin: 0; }
+
+    .muted {
+      color: var(--muted);
       line-height: 1.65;
+      font-size: 14px;
     }
 
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
+    form {
+      margin-top: 16px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 12px;
     }
+
+    .field {
+      display: grid;
+      gap: 6px;
+    }
+
+    label {
+      font-weight: 600;
+      color: var(--ink);
+      font-size: 14px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(11, 31, 51, 0.12);
+      font-size: 14px;
+      background: rgba(255, 255, 255, 0.96);
+      outline: none;
+      transition: border-color 120ms ease, box-shadow 120ms ease;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      border-color: rgba(255, 106, 61, 0.55);
+      box-shadow: 0 0 0 4px rgba(255, 106, 61, 0.18);
+    }
+
+    textarea { min-height: 110px; resize: vertical; }
 
     .btn {
       border: none;
@@ -181,260 +139,22 @@
       font-size: 15px;
       font-weight: 600;
       transition: transform 140ms ease, box-shadow 140ms ease;
+      align-self: flex-start;
     }
 
     .btn.primary {
-      background: linear-gradient(135deg, #ff7b3d, #f4a261);
-      color: #0b1f33;
-      box-shadow: 0 16px 32px rgba(255, 123, 61, 0.35);
-    }
-
-    .btn.secondary {
-      background: rgba(255, 255, 255, 0.14);
-      color: #f7fbff;
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      backdrop-filter: blur(6px);
+      background: linear-gradient(135deg, #ff6a3d, #ffb400);
+      color: #24140f;
+      box-shadow: 0 18px 36px rgba(255, 106, 61, 0.44);
     }
 
     .btn:hover { transform: translateY(-1px); }
 
-    .hero-card {
-      background: rgba(255, 255, 255, 0.08);
-      border-radius: 18px;
-      padding: 18px;
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      display: grid;
-      gap: 12px;
-      backdrop-filter: blur(6px);
-    }
+    .note { font-size: 13px; }
 
-    .hero-card h3 {
-      margin: 0;
-      font-size: 16px;
-      letter-spacing: 0.02em;
-    }
-
-    .timeline {
-      display: grid;
-      gap: 12px;
-    }
-
-    .step {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      gap: 10px 12px;
-      align-items: center;
-    }
-
-    .step .dot {
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      border: 2px solid #fff;
-      background: rgba(255, 255, 255, 0.4);
-    }
-
-    .stats {
-      display: flex;
-      gap: 18px;
-      flex-wrap: wrap;
-    }
-
-    .stat {
-      padding: 10px 12px;
-      border-radius: 12px;
-      background: rgba(255, 255, 255, 0.12);
-      font-weight: 700;
-      font-size: 15px;
-      color: #fff;
-    }
-
-    section { margin-top: 64px; }
-
-    .section-head {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      gap: 16px;
-      margin-bottom: 18px;
-      flex-wrap: wrap;
-    }
-
-    .section-head h2 {
-      margin: 0;
-      font-size: 26px;
-      letter-spacing: -0.01em;
-    }
-
-    .section-head p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 15px;
-    }
-
-    .grid {
-      display: grid;
-      gap: 16px;
-    }
-
-    .services { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
-
-    .card {
-      background: var(--card);
-      border-radius: var(--radius);
-      padding: 18px;
-      box-shadow: var(--shadow);
-      border: 1px solid rgba(11, 31, 51, 0.06);
-      transition: transform 140ms ease, box-shadow 140ms ease, border-color 140ms ease;
-    }
-
-    .card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 24px 56px rgba(11, 31, 51, 0.2);
-      border-color: rgba(15, 98, 255, 0.3);
-    }
-
-    .card h3 { margin: 10px 0 8px; font-size: 18px; }
-    .card p { margin: 0; color: var(--muted); line-height: 1.55; font-size: 14px; }
-
-    .icon {
-      width: 42px;
-      height: 42px;
-      border-radius: 12px;
-      display: grid;
-      place-items: center;
-      background: linear-gradient(135deg, rgba(15, 98, 255, 0.15), rgba(25, 165, 159, 0.18));
-      color: #0b1f33;
-      font-weight: 700;
-    }
-
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 12px;
-    }
-
-    .tag {
-      padding: 6px 10px;
-      border-radius: 999px;
-      background: rgba(15, 98, 255, 0.12);
-      color: #0f3c9f;
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-    }
-
-    .two-col {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-    }
-
-    .list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: grid;
-      gap: 10px;
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    .list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 8px;
-      line-height: 1.5;
-    }
-
-    .list li .dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--primary);
-      margin-top: 7px;
-      flex-shrink: 0;
-    }
-
-    .flow {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 14px;
-    }
-
-    .flow .step-card {
-      border-left: 3px solid var(--primary);
-      padding-left: 12px;
-    }
-
-    .muted {
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    .news {
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    }
-
-    .news .meta {
-      margin-top: 10px;
-      font-size: 13px;
-      color: var(--muted);
-      display: flex;
-      gap: 8px;
-    }
-
-    .cta {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 18px;
-      align-items: center;
-    }
-
-    form {
-      display: grid;
-      gap: 10px;
-    }
-
-    input, textarea, select {
-      width: 100%;
-      padding: 12px;
-      border-radius: 12px;
-      border: 1px solid rgba(11, 31, 51, 0.12);
-      font-size: 14px;
-      background: rgba(255, 255, 255, 0.92);
-      outline: none;
-      transition: border-color 120ms ease, box-shadow 120ms ease;
-    }
-
-    input:focus, textarea:focus, select:focus {
-      border-color: rgba(15, 98, 255, 0.5);
-      box-shadow: 0 0 0 4px rgba(15, 98, 255, 0.12);
-    }
-
-    textarea { min-height: 110px; resize: vertical; }
-
-    footer {
-      margin-top: 60px;
-      padding: 20px 0 12px;
-      color: var(--muted);
-      font-size: 14px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 12px;
-      border-top: 1px solid rgba(11, 31, 51, 0.08);
-      flex-wrap: wrap;
-    }
-
-    @media (max-width: 860px) {
-      header { flex-direction: column; align-items: flex-start; }
-      nav { width: 100%; }
-      .hero-content { grid-template-columns: 1fr; }
-      .two-col, .cta { grid-template-columns: 1fr; }
-      .hero { padding: 32px; }
+    @media (max-width: 640px) {
+      .card { padding: 20px; }
+      header { margin-bottom: 18px; }
     }
   </style>
 </head>
@@ -445,248 +165,57 @@
         <div class="logo">MX</div>
         <div>
           <div>墨西哥中文网</div>
-          <small style="color: var(--muted); font-weight: 500;">华语资讯 · 生活 · 商务</small>
+          <small class="muted" style="font-weight: 600;">订阅 / 合作表单</small>
         </div>
       </div>
-      <nav>
-        <a href="#news">焦点</a>
-        <a href="#guides">指南</a>
-        <a href="#events">活动</a>
-        <a href="#services">服务</a>
-        <a class="pill" href="#contact">订阅 / 联系</a>
-      </nav>
     </header>
 
-    <section class="hero">
-      <div class="hero-content">
-        <div>
-          <span class="eyebrow">Mexico · Chinese Community</span>
-          <h1>在墨西哥，找到靠谱的华语资讯、生活指南与社群入口。</h1>
-          <p class="lead">每日精选本地新闻、政策提醒、生活攻略、活动日历与商业资源，让初来乍到与深耕多年的你，都能更安心。</p>
-          <div class="hero-actions">
-            <a href="#guides" class="btn primary">查看城市指南</a>
-            <a href="#contact" class="btn secondary">订阅 / 合作</a>
+    <main class="card" id="contact">
+      <h1>留下联系方式</h1>
+      <p class="muted">填写表单后，我们会通过邮箱回复最新的生活指南、活动或合作信息。</p>
+      <form action="#" method="post">
+        <div class="form-grid">
+          <div class="field">
+            <label for="name">姓名 / 昵称 *</label>
+            <input id="name" name="name" type="text" required placeholder="请输入姓名或昵称">
           </div>
-          <div class="stats">
-            <div class="stat">7x24 华语更新</div>
-            <div class="stat">覆盖 8+ 核心城市</div>
-            <div class="stat">社区 30k+ 读者</div>
+          <div class="field">
+            <label for="email">邮箱 *</label>
+            <input id="email" name="email" type="email" required placeholder="例如：you@example.com">
           </div>
         </div>
-        <div class="hero-card">
-          <h3>在墨生活速览</h3>
-          <div class="timeline">
-            <div class="step"><span class="dot"></span><div>落地准备：机场入境、换汇与交通选择</div></div>
-            <div class="step"><span class="dot"></span><div>证件办理：居留续签、税号 / 银行卡办理</div></div>
-            <div class="step"><span class="dot"></span><div>生活配套：医疗、保险、租房与安全分区</div></div>
-            <div class="step"><span class="dot"></span><div>社群与商务：招聘、华人商家、文化活动</div></div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="services">
-      <div class="section-head">
-        <h2>核心栏目</h2>
-        <p>资讯 · 指南 · 服务 · 社群</p>
-      </div>
-      <div class="grid services">
-        <div class="card">
-          <div class="icon">快讯</div>
-          <h3>本地资讯快报</h3>
-          <p>政策、交通、节日与安全提醒，精选要点不漏看。</p>
-          <div class="tags">
-            <span class="tag">新闻</span><span class="tag">政策</span>
+        <div class="form-grid">
+          <div class="field">
+            <label for="city">所在城市</label>
+            <input id="city" name="city" type="text" placeholder="例如：CDMX / Guadalajara">
+          </div>
+          <div class="field">
+            <label for="type">需求</label>
+            <select id="type" name="type" required>
+              <option value="">选择需求</option>
+              <option>订阅周报</option>
+              <option>商务合作</option>
+              <option>活动 / 招聘发布</option>
+              <option>投稿分享</option>
+            </select>
           </div>
         </div>
-        <div class="card">
-          <div class="icon">指南</div>
-          <h3>生活与避坑指南</h3>
-          <p>居留续签、开卡税号、租房选区、手机卡、支付方式一篇掌握。</p>
-          <div class="tags">
-            <span class="tag">落地</span><span class="tag">生活</span>
-          </div>
-        </div>
-        <div class="card">
-          <div class="icon">安全</div>
-          <h3>安全与医疗</h3>
-          <p>紧急联系、保险选择、医院资源、常见场景的安全清单。</p>
-          <div class="tags">
-            <span class="tag">医疗</span><span class="tag">保险</span>
-          </div>
-        </div>
-        <div class="card">
-          <div class="icon">商业</div>
-          <h3>商业与招聘</h3>
-          <p>华人商家名录、招聘信息、双语岗位与跨境合作机会。</p>
-          <div class="tags">
-            <span class="tag">招聘</span><span class="tag">合作</span>
-          </div>
-        </div>
-        <div class="card">
-          <div class="icon">活动</div>
-          <h3>文化与社群活动</h3>
-          <p>节日庆典、周末市集、线下聚会、兴趣小组与公益活动。</p>
-          <div class="tags">
-            <span class="tag">线下</span><span class="tag">社群</span>
-          </div>
-        </div>
-        <div class="card">
-          <div class="icon">服务</div>
-          <h3>本地服务资源</h3>
-          <p>法律移民顾问、翻译、公证、物流、房产中介、家政与维修。</p>
-          <div class="tags">
-            <span class="tag">服务</span><span class="tag">工具</span>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="guides">
-      <div class="section-head">
-        <h2>城市指南</h2>
-        <p>从落地到安家，每座城市的中文攻略</p>
-      </div>
-      <div class="two-col">
-        <div class="card">
-          <h3>墨西哥城 CDMX</h3>
-          <ul class="list">
-            <li><span class="dot"></span><span>地铁 / 公交 / Uber 价格与安全分区</span></li>
-            <li><span class="dot"></span><span>居留续签、税号与银行开户预约流程</span></li>
-            <li><span class="dot"></span><span>热门居住区：Condesa、Roma、Polanco</span></li>
-            <li><span class="dot"></span><span>周末灵感：博物馆、周末市集、文化夜场</span></li>
-          </ul>
+        <div class="field">
+          <label for="details">想了解的主题 / 合作内容</label>
+          <textarea id="details" name="details" placeholder="简要说明你的需求或想关注的内容"></textarea>
         </div>
-        <div class="card">
-          <h3>瓜达拉哈拉 / 坎昆等城市</h3>
-          <ul class="list">
-            <li><span class="dot"></span><span>GDL 家庭与学生指南：双语学校、医疗资源</span></li>
-            <li><span class="dot"></span><span>坎昆旅行：机场入境、租车保险、潜水浮潜</span></li>
-            <li><span class="dot"></span><span>蒙特雷与工业区：通勤、工厂合作与招聘</span></li>
-            <li><span class="dot"></span><span>本地中文商家：餐饮、旅行社、物流仓储</span></li>
-          </ul>
-        </div>
-      </div>
-    </section>
 
-    <section id="events">
-      <div class="section-head">
-        <h2>活动与日历</h2>
-        <p>节日庆典 · 周末市集 · 社群聚会</p>
-      </div>
-      <div class="flow">
-        <div class="card step-card">
-          <h3>城市文化周</h3>
-          <p class="muted">皮影戏、茶席体验、川味快闪，免费入场需预约。</p>
+        <div class="field">
+          <label for="contact">备用联系方式（可选）</label>
+          <input id="contact" name="contact" type="text" placeholder="微信号 / WhatsApp">
         </div>
-        <div class="card step-card">
-          <h3>创业与职场交流</h3>
-          <p class="muted">税务、签证、创业实操分享，附中西双语翻译。</p>
-        </div>
-        <div class="card step-card">
-          <h3>户外与公益</h3>
-          <p class="muted">海边日出瑜伽、海龟保护志愿、徒步与周末团建。</p>
-        </div>
-        <div class="card step-card">
-          <h3>线下社群</h3>
-          <p class="muted">城市微信群、兴趣小组、书友会与亲子活动。</p>
-        </div>
-      </div>
-    </section>
 
-    <section id="advantages">
-      <div class="section-head">
-        <h2>为什么看这里</h2>
-        <p>真实在地信息 · 中文整理 · 快速响应</p>
-      </div>
-      <div class="two-col">
-        <div class="card">
-          <h3>实时 + 可落地</h3>
-          <ul class="list">
-            <li><span class="dot"></span><span>每日跟进官方渠道与本地媒体，中文摘要不刷屏</span></li>
-            <li><span class="dot"></span><span>签证、税务、银行业务附实际操作路径与预约入口</span></li>
-            <li><span class="dot"></span><span>安全提示与避坑清单按城区分类，定期更新</span></li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>覆盖主要城市与社群</h3>
-          <ul class="list">
-            <li><span class="dot"></span><span>CDMX、GDL、MTY、坎昆等核心城市专栏</span></li>
-            <li><span class="dot"></span><span>线下活动与微信群 / WhatsApp 群入口收录</span></li>
-            <li><span class="dot"></span><span>华人商家、服务与招聘资源库持续扩充</span></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="news">
-      <div class="section-head">
-        <h2>最新焦点</h2>
-        <p>政策、生活、社区故事</p>
-      </div>
-      <div class="grid news">
-        <article class="card">
-          <span class="tag" style="background: rgba(255,123,61,0.15); color:#b14a1e;">交通</span>
-          <h3>墨城地铁周末延时至凌晨 1 点</h3>
-          <p class="muted">配合节庆人流，A 线与 3 号线加密班次，安保同步加强。</p>
-          <div class="meta"><span>2 小时前</span><span>CDMX 官方</span></div>
-        </article>
-        <article class="card">
-          <span class="tag">政策</span>
-          <h3>居留续签线上预约重新开放</h3>
-          <p class="muted">优先三个月内到期申请，预约确认需 48 小时内完成。</p>
-          <div class="meta"><span>昨日</span><span>INM 移民局</span></div>
-        </article>
-        <article class="card">
-          <span class="tag" style="background: rgba(25,165,159,0.15); color:#0f6c5e;">文化</span>
-          <h3>瓜达拉哈拉中国文化周开幕</h3>
-          <p class="muted">皮影戏、茶席体验、川菜快闪齐聚历史中心广场，周末免费入场。</p>
-          <div class="meta"><span>本周六</span><span>Guadalajara Centro</span></div>
-        </article>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="section-head">
-        <h2>订阅 / 合作 / 投稿</h2>
-        <p>留下联系方式，获取每周精选或商务合作回复</p>
-      </div>
-      <div class="card cta">
-        <div>
-          <div class="muted">订阅即可收到「墨西哥生活入门包」PDF：交通、支付、手机卡、紧急联系人速查表。商务合作 / 投稿也欢迎留言。</div>
-          <div class="tags" style="margin-top:12px;">
-            <span class="tag">订阅</span>
-            <span class="tag">合作</span>
-            <span class="tag">投稿</span>
-          </div>
-        </div>
-        <form>
-          <input type="text" name="name" placeholder="姓名 / 昵称" required>
-          <input type="email" name="email" placeholder="邮箱" required>
-          <input type="text" name="city" placeholder="所在城市">
-          <select name="type">
-            <option>选择需求</option>
-            <option>订阅周报</option>
-            <option>商务合作</option>
-            <option>活动 / 招聘发布</option>
-            <option>投稿分享</option>
-          </select>
-          <textarea name="details" placeholder="想了解的主题 / 合作内容"></textarea>
-          <button type="submit" class="btn primary" style="justify-self: flex-start;">发送</button>
-        </form>
-      </div>
-    </section>
-
-    <footer>
-      <div>© 2025 墨西哥中文网 · 华语资讯与生活指南</div>
-      <div style="display:flex; gap:10px; align-items:center;">
-        <a href="#news">焦点</a>
-        <span style="color:#c5ced8;">•</span>
-        <a href="#services">栏目</a>
-        <span style="color:#c5ced8;">•</span>
-        <a href="#contact">订阅</a>
-      </div>
-    </footer>
+        <button type="submit" class="btn primary">发送</button>
+        <div class="note muted">提交后我们会在 1-2 个工作日内邮件回复。</div>
+      </form>
+    </main>
   </div>
 </body>
 </html>
