@@ -1,0 +1,202 @@
+[
+  {
+    "category": "零售/超市",
+    "items": [
+      {
+        "name": "沃尔玛",
+        "place_id": "ChIJy8TG2b6uKIQRbfy7TdThqhk",
+        "address": "Av. Ignacio L Vallarta 5455, Camichines Vallarta, 45030 Zapopan, Jal., 墨西哥",
+        "rating": 4.3,
+        "user_ratings_total": 16759,
+        "lat": 20.6795826,
+        "lng": -103.4324106,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "超市 Zapopan｜Zapopan"
+        ],
+        "first_seen": "2026-01-10T21:33:04.411Z",
+        "last_seen": "2026-01-10T21:33:04.411Z"
+      },
+      {
+        "name": "家家乐华人超市",
+        "place_id": "ChIJRTuR7ACxKIQR_tWoCl8-XR4",
+        "address": "Héroes de la Independencia 1, Zona Centro, 44100 Guadalajara, Jal., 墨西哥",
+        "rating": 3,
+        "user_ratings_total": 91,
+        "lat": 20.6714722,
+        "lng": -103.3445046,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "超市 Guadalajara｜Guadalajara"
+        ],
+        "first_seen": "2026-01-10T21:33:03.653Z",
+        "last_seen": "2026-01-10T21:33:03.653Z"
+      },
+      {
+        "name": "Shun Fa Super Oriental - 順發超市",
+        "place_id": "ChIJx1RBEqixKIQRzGuW2nTbOAY",
+        "address": "Héroes de la Independencia 83, Centro, 44290 Guadalajara, Jal., 墨西哥",
+        "rating": 2.4,
+        "user_ratings_total": 5,
+        "lat": 20.6718549,
+        "lng": -103.3454063,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "超市 Guadalajara｜Guadalajara",
+          "亚洲超市 Guadalajara｜Guadalajara",
+          "亚洲超市 Zapopan｜Zapopan"
+        ],
+        "first_seen": "2026-01-10T21:33:03.653Z",
+        "last_seen": "2026-01-10T21:33:12.468Z"
+      }
+    ]
+  },
+  {
+    "category": "餐饮",
+    "items": [
+      {
+        "name": "Momotabi 手工拉面餐厅",
+        "place_id": "ChIJSzAptU-vKIQRd_ivpFV391o",
+        "address": "Libertad 1916, Col Americana, Americana, 44150 Guadalajara, Jal., 墨西哥",
+        "rating": 4.4,
+        "user_ratings_total": 1662,
+        "lat": 20.673284,
+        "lng": -103.366414,
+        "tags": [
+          "餐饮"
+        ],
+        "sources": [
+          "麻辣烫 Guadalajara｜Guadalajara",
+          "面馆 Guadalajara｜Guadalajara",
+          "拉面 Guadalajara｜Guadalajara",
+          "拉面 Zapopan｜Zapopan",
+          "拉面 Tlaquepaque｜Tlaquepaque"
+        ],
+        "first_seen": "2026-01-10T21:31:12.169Z",
+        "last_seen": "2026-01-10T21:31:45.383Z"
+      },
+      {
+        "name": "鬼子料理",
+        "place_id": "ChIJwzNg8KuzKIQRxGf5aeV1RTo",
+        "address": "C. Ocampo 150-B, Colonial Tlaquepaque, 45570 San Pedro Tlaquepaque, Jal., 墨西哥",
+        "rating": 4.4,
+        "user_ratings_total": 205,
+        "lat": 20.6273472,
+        "lng": -103.3076008,
+        "tags": [
+          "餐饮"
+        ],
+        "sources": [
+          "拉面 Tlaquepaque｜Tlaquepaque"
+        ],
+        "first_seen": "2026-01-10T21:31:45.383Z",
+        "last_seen": "2026-01-10T21:31:45.383Z"
+      },
+      {
+        "name": "El Dragón Rojo （华龙中餐厅 Hua Long）",
+        "place_id": "ChIJ9-uCIdixKIQRQcoHtFtKYhc",
+        "address": "C. Miguel Blanco 871, Zona Centro, 44100 Guadalajara, Jal., 墨西哥",
+        "rating": 4.4,
+        "user_ratings_total": 124,
+        "lat": 20.6716934,
+        "lng": -103.3475273,
+        "tags": [
+          "餐饮"
+        ],
+        "sources": [
+          "中餐 Guadalajara｜Guadalajara",
+          "中餐 Zapopan｜Zapopan",
+          "中餐馆 Guadalajara｜Guadalajara",
+          "中餐馆 Zapopan｜Zapopan",
+          "饺子 Guadalajara｜Guadalajara"
+        ],
+        "first_seen": "2026-01-10T21:30:20.405Z",
+        "last_seen": "2026-01-10T21:31:46.989Z"
+      },
+      {
+        "name": "YUDU HOTPOT 渝都火锅",
+        "place_id": "ChIJt-jZ4kuxKIQRYPWb_RnVopE",
+        "address": "C. Donato Guerra 26, Zona Centro, 44100 Guadalajara, Jal., 墨西哥",
+        "rating": 4.5,
+        "user_ratings_total": 115,
+        "lat": 20.6761053,
+        "lng": -103.350611,
+        "tags": [
+          "餐饮"
+        ],
+        "sources": [
+          "中餐 Guadalajara｜Guadalajara",
+          "火锅 Guadalajara｜Guadalajara",
+          "火锅 Zapopan｜Zapopan",
+          "麻辣烫 Guadalajara｜Guadalajara",
+          "麻辣烫 Zapopan｜Zapopan"
+        ],
+        "first_seen": "2026-01-10T21:30:20.405Z",
+        "last_seen": "2026-01-10T21:31:15.636Z"
+      },
+      {
+        "name": "老梅仔私房菜",
+        "place_id": "ChIJ0-j4EACzKIQRaATR650nxeQ",
+        "address": "Calz. Revolución 170, Analco, 44450 Guadalajara, Jal., 墨西哥",
+        "rating": 4.6,
+        "user_ratings_total": 67,
+        "lat": 20.6694684,
+        "lng": -103.3420443,
+        "tags": [
+          "餐饮"
+        ],
+        "sources": [
+          "中餐 Guadalajara｜Guadalajara",
+          "中餐 Zapopan｜Zapopan",
+          "中餐馆 Guadalajara｜Guadalajara",
+          "中餐馆 Zapopan｜Zapopan"
+        ],
+        "first_seen": "2026-01-10T21:30:20.405Z",
+        "last_seen": "2026-01-10T21:30:34.737Z"
+      },
+      {
+        "name": "小湘粤",
+        "place_id": "ChIJv18GCbWxKIQR96HjM1CvYGw",
+        "address": "Héroes de la Independencia 83, Centro, 44290 Guadalajara, Jal., 墨西哥",
+        "rating": 4.4,
+        "user_ratings_total": 66,
+        "lat": 20.6718139,
+        "lng": -103.3454264,
+        "tags": [
+          "餐饮"
+        ],
+        "sources": [
+          "中餐馆 Guadalajara｜Guadalajara"
+        ],
+        "first_seen": "2026-01-10T21:30:31.305Z",
+        "last_seen": "2026-01-10T21:30:31.305Z"
+      },
+      {
+        "name": "Kumian Ramen 中華料理",
+        "place_id": "ChIJFX6fFgCxKIQR92cQTiT0ukQ",
+        "address": "Av. Fidel Velazquez 913, Santa Elena Alcalde, 44220 Guadalajara, Jal., 墨西哥",
+        "rating": 4.9,
+        "user_ratings_total": 47,
+        "lat": 20.7118144,
+        "lng": -103.3442281,
+        "tags": [
+          "餐饮"
+        ],
+        "sources": [
+          "中餐 Guadalajara｜Guadalajara",
+          "中餐 Zapopan｜Zapopan",
+          "中餐馆 Guadalajara｜Guadalajara",
+          "中餐馆 Zapopan｜Zapopan"
+        ],
+        "first_seen": "2026-01-10T21:30:20.404Z",
+        "last_seen": "2026-01-10T21:30:32.098Z"
+      }
+    ]
+  }
+]

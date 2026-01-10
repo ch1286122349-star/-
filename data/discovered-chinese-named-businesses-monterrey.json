@@ -1,0 +1,264 @@
+[
+  {
+    "category": "地产/中介",
+    "items": [
+      {
+        "name": "墨西哥租房小区",
+        "place_id": "ChIJ77kY1X-TYoYRxmGZSFKkV6k",
+        "address": "Av. Concordia S/N, Anahuác San Patricio - Sector San Antonio, 66058 Cdad. Gral. Escobedo, N.L., 墨西哥",
+        "rating": 4.7,
+        "user_ratings_total": 26,
+        "lat": 25.7871945,
+        "lng": -100.2947447,
+        "tags": [
+          "地产/中介"
+        ],
+        "sources": [
+          "租房｜蒙特雷"
+        ],
+        "first_seen": "2026-01-10T21:24:53.323Z",
+        "last_seen": "2026-01-10T21:24:53.323Z"
+      }
+    ]
+  },
+  {
+    "category": "手机/电子/IT",
+    "items": [
+      {
+        "name": "Bock博客纸箱，模具维修",
+        "place_id": "ChIJ8TdIeQCZYoYRRFEumK5D-qo",
+        "address": "Centro América 31, Industrial Unidad Nacional Dos, 66367 Cdad. Santa Catarina, N.L., 墨西哥",
+        "rating": "",
+        "user_ratings_total": "",
+        "lat": 25.6859912,
+        "lng": -100.4770972,
+        "tags": [
+          "手机/电子/IT"
+        ],
+        "sources": [
+          "维修｜蒙特雷"
+        ],
+        "first_seen": "2026-01-10T21:25:00.694Z",
+        "last_seen": "2026-01-10T21:25:00.694Z"
+      }
+    ]
+  },
+  {
+    "category": "教育/培训",
+    "items": [
+      {
+        "name": "沛羽學校",
+        "place_id": "ChIJ12CioXzrYoYRDhcXjiMUWow",
+        "address": "Comanche, Azteca, 67150 Guadalupe, N.L., 墨西哥",
+        "rating": "",
+        "user_ratings_total": "",
+        "lat": 25.6822663,
+        "lng": -100.2391968,
+        "tags": [
+          "教育/培训"
+        ],
+        "sources": [
+          "教育｜蒙特雷"
+        ],
+        "first_seen": "2026-01-10T21:24:45.183Z",
+        "last_seen": "2026-01-10T21:24:45.183Z"
+      },
+      {
+        "name": "ヌエボレオン代",
+        "place_id": "ChIJXTuT8eSVYoYR8KM5dEnqlm8",
+        "address": "Av. Francisco I. Madero, Mitras Sur, 64020 Monterrey, N.L., 墨西哥",
+        "rating": "",
+        "user_ratings_total": "",
+        "lat": 25.687035,
+        "lng": -100.3423637,
+        "tags": [
+          "教育/培训"
+        ],
+        "sources": [
+          "教育｜蒙特雷"
+        ],
+        "first_seen": "2026-01-10T21:24:45.183Z",
+        "last_seen": "2026-01-10T21:24:45.183Z"
+      }
+    ]
+  },
+  {
+    "category": "甜品/茶饮",
+    "items": [
+      {
+        "name": "Mo Mo Cha 奶爸王子",
+        "place_id": "ChIJqypZ1bKVYoYRsBYm3V9aV4k",
+        "address": "Av. Alfonso Reyes, Plaza California 318-interior 102, Contry San Juanito, 64859 Monterrey, N.L., 墨西哥",
+        "rating": 4.5,
+        "user_ratings_total": 101,
+        "lat": 25.6426721,
+        "lng": -100.2769046,
+        "tags": [
+          "甜品/茶饮"
+        ],
+        "sources": [
+          "奶茶｜蒙特雷"
+        ],
+        "first_seen": "2026-01-10T21:24:11.983Z",
+        "last_seen": "2026-01-10T21:24:11.983Z"
+      },
+      {
+        "name": "HICHA 槑茶",
+        "place_id": "ChIJZ8SFI0yVYoYRLui2vrnVxOQ",
+        "address": "plaza bella Anáhuac, Av. Sendero Divisorio 1001, Privadas de Anáhuac, Cerrada de Anáhuac Residencial, 66059 Monterrey, N.L., 墨西哥",
+        "rating": 4,
+        "user_ratings_total": 1,
+        "lat": 25.7711618,
+        "lng": -100.2736388,
+        "tags": [
+          "甜品/茶饮"
+        ],
+        "sources": [
+          "奶茶｜蒙特雷",
+          "茶饮｜蒙特雷"
+        ],
+        "first_seen": "2026-01-10T21:24:11.983Z",
+        "last_seen": "2026-01-10T21:24:14.905Z"
+      }
+    ]
+  },
+  {
+    "category": "综合",
+    "items": [
+      {
+        "name": "汇鑫",
+        "place_id": "ChIJ9ZQKlI-VYoYRf7mrAOjIN0Y",
+        "address": "Av. Cuauhtémoc 1010, Centro, 64000 Monterrey, N.L., 墨西哥",
+        "rating": 4,
+        "user_ratings_total": 322,
+        "lat": 25.6848857,
+        "lng": -100.317294,
+        "tags": [
+          "综合"
+        ],
+        "sources": [
+          "华人｜蒙特雷"
+        ],
+        "first_seen": "2026-01-10T21:25:04.565Z",
+        "last_seen": "2026-01-10T21:25:04.565Z"
+      }
+    ]
+  },
+  {
+    "category": "零售/超市",
+    "items": [
+      {
+        "name": "小太阳超市",
+        "place_id": "ChIJnd2DWZWXYoYREOgITQYRFwc",
+        "address": "Ave.Milimex 105a, Milimex, 66600 Cdad. Apodaca, N.L., 墨西哥",
+        "rating": 3.2,
+        "user_ratings_total": 19,
+        "lat": 25.7530194,
+        "lng": -100.1969661,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "超市｜蒙特雷",
+          "亚洲超市｜蒙特雷",
+          "百货｜蒙特雷",
+          "食品店｜蒙特雷"
+        ],
+        "first_seen": "2026-01-10T21:24:17.635Z",
+        "last_seen": "2026-01-10T21:24:20.842Z"
+      },
+      {
+        "name": "中国超市Panda（小熊猫）",
+        "place_id": "ChIJCdTGis6TYoYRFE-eClDg7UE",
+        "address": "Av. Raúl Salinas Lozano 591, Fraccionamiento Cortijo los Ayala, 66072 Cdad. Gral. Escobedo, N.L., 墨西哥",
+        "rating": 4.3,
+        "user_ratings_total": 3,
+        "lat": 25.7933454,
+        "lng": -100.3302521,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "亚洲超市｜蒙特雷"
+        ],
+        "first_seen": "2026-01-10T21:24:18.384Z",
+        "last_seen": "2026-01-10T21:24:18.384Z"
+      },
+      {
+        "name": "火锅店",
+        "place_id": "ChIJu1_WNwDtYoYRg0yqQirgRTI",
+        "address": "Valle de Aragón 1036, Valle de Los Nogales, 66610 Cdad. Apodaca, N.L., 墨西哥",
+        "rating": "",
+        "user_ratings_total": "",
+        "lat": 25.7918856,
+        "lng": -100.2309508,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "食品店｜蒙特雷"
+        ],
+        "first_seen": "2026-01-10T21:24:20.842Z",
+        "last_seen": "2026-01-10T21:24:20.842Z"
+      }
+    ]
+  },
+  {
+    "category": "餐饮",
+    "items": [
+      {
+        "name": "Lanzhou Ramen Mty 兰州拉面",
+        "place_id": "ChIJv2oNNgCVYoYRnGsEIMubRB8",
+        "address": "Avenida Universidad 1250-3 piso local C307, Villarreal, 66427 San Nicolás de los Garza, N.L., 墨西哥",
+        "rating": 4.7,
+        "user_ratings_total": 33,
+        "lat": 25.764054,
+        "lng": -100.29312,
+        "tags": [
+          "餐饮",
+          "甜品/茶饮"
+        ],
+        "sources": [
+          "拉面｜蒙特雷",
+          "奶茶｜蒙特雷"
+        ],
+        "first_seen": "2026-01-10T21:24:06.397Z",
+        "last_seen": "2026-01-10T21:24:11.983Z"
+      },
+      {
+        "name": "Zhōngcān 中餐",
+        "place_id": "ChIJ50t6vWnbYoYRVriFZgdNfo0",
+        "address": "Josefa Ortiz de Domínguez 203, Sin Nombre de Col 1, 67480 Cadereyta Jiménez, N.L., 墨西哥",
+        "rating": 4.4,
+        "user_ratings_total": 28,
+        "lat": 25.589933,
+        "lng": -99.99828790000001,
+        "tags": [
+          "餐饮"
+        ],
+        "sources": [
+          "中餐｜蒙特雷"
+        ],
+        "first_seen": "2026-01-10T21:23:54.259Z",
+        "last_seen": "2026-01-10T21:23:54.259Z"
+      },
+      {
+        "name": "东方汇 Oriental food",
+        "place_id": "ChIJx6t5KACTYoYRtwYr3nKlJTY",
+        "address": "Av. Las Torres 201, Sin Nombre de Col 16, 66056 Cdad. Gral. Escobedo, N.L., 墨西哥",
+        "rating": 4.8,
+        "user_ratings_total": 24,
+        "lat": 25.7894405,
+        "lng": -100.3208534,
+        "tags": [
+          "餐饮"
+        ],
+        "sources": [
+          "中餐｜蒙特雷"
+        ],
+        "first_seen": "2026-01-10T21:23:54.259Z",
+        "last_seen": "2026-01-10T21:23:54.259Z"
+      }
+    ]
+  }
+]

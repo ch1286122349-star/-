@@ -1,0 +1,1120 @@
+[
+  {
+    "category": "医疗/中医",
+    "items": [
+      {
+        "name": "ZhangXiMTC艾灸健康养生馆",
+        "place_id": "ChIJkxxY8uz50YURg7bcVumuv6U",
+        "address": "Rousseau 14, Chapultepec Morales, Anzures, Miguel Hidalgo, 11590 Ciudad de México, CDMX, 墨西哥",
+        "rating": 4.9,
+        "user_ratings_total": 314,
+        "lat": 19.4321578,
+        "lng": -99.18095009999999,
+        "tags": [
+          "医疗/中医"
+        ],
+        "sources": [
+          "中医 墨西哥城",
+          "针灸 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:18:29.468Z",
+        "last_seen": "2026-01-10T18:18:30.361Z"
+      },
+      {
+        "name": "西班牙医院",
+        "place_id": "ChIJ-RSQ1AUC0oUR8V5O0pqI54k",
+        "address": "墨西哥 Cd. de México, Ciudad de México, Granada, Av. Ejército Nacional Mexicano, 11520",
+        "rating": 5,
+        "user_ratings_total": 1,
+        "lat": 19.439228,
+        "lng": -99.19574139999999,
+        "tags": [
+          "医疗/中医"
+        ],
+        "sources": [
+          "诊所 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:18:31.220Z",
+        "last_seen": "2026-01-10T18:18:31.220Z"
+      }
+    ]
+  },
+  {
+    "category": "按摩/养生",
+    "items": [
+      {
+        "name": "TERAPIA ORIENTAL龙腾健康养生馆",
+        "place_id": "ChIJtemVUtP40YURqXD6HtaOUPE",
+        "address": "Av. Morelos 70, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, 墨西哥",
+        "rating": 4.4,
+        "user_ratings_total": 115,
+        "lat": 19.4326042,
+        "lng": -99.1517526,
+        "tags": [
+          "按摩/养生"
+        ],
+        "sources": [
+          "按摩 墨西哥城",
+          "足疗 墨西哥城",
+          "养生 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:18:26.509Z",
+        "last_seen": "2026-01-10T18:18:28.625Z"
+      },
+      {
+        "name": "健新筋骨整复中心 Centro Medicina Tradicional",
+        "place_id": "ChIJd46HNkgD0oURrj2KHlRqa0k",
+        "address": "Presa Oviachic 147, Col. Irrigación, Miguel Hidalgo, 11500 Ciudad de México, CDMX, 墨西哥",
+        "rating": 5,
+        "user_ratings_total": 5,
+        "lat": 19.4437047,
+        "lng": -99.207048,
+        "tags": [
+          "按摩/养生"
+        ],
+        "sources": [
+          "推拿 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:18:27.905Z",
+        "last_seen": "2026-01-10T18:18:27.905Z"
+      }
+    ]
+  },
+  {
+    "category": "教育/培训",
+    "items": [
+      {
+        "name": "墨西哥城孔子学院",
+        "place_id": "ChIJAxIqtqT_0YURgB3JKg0jCk8",
+        "address": "Av. Cuauhtémoc 1221, Sta Cruz Atoyac, Benito Juárez, 03310 Ciudad de México, CDMX, 墨西哥",
+        "rating": 4.3,
+        "user_ratings_total": 51,
+        "lat": 19.3735787,
+        "lng": -99.1607491,
+        "tags": [
+          "教育/培训",
+          "综合"
+        ],
+        "sources": [
+          "中文学校 墨西哥城",
+          "中文课 墨西哥城",
+          "教育 墨西哥城",
+          "中文 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:18:35.758Z",
+        "last_seen": "2026-01-10T18:18:54.271Z"
+      },
+      {
+        "name": "Hua Yan Mandarin Center 华言中文文化学校（开设华侨班）",
+        "place_id": "ChIJfYUu8oX_0YURdWKSxIQFx1g",
+        "address": "Av. Patriotismo 767, San Juan, Benito Juárez, 03730 Ciudad de México, CDMX, 墨西哥",
+        "rating": 5,
+        "user_ratings_total": 1,
+        "lat": 19.3776135,
+        "lng": -99.1858601,
+        "tags": [
+          "教育/培训"
+        ],
+        "sources": [
+          "中文课 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:18:36.501Z",
+        "last_seen": "2026-01-10T18:18:36.501Z"
+      }
+    ]
+  },
+  {
+    "category": "汽车/维修",
+    "items": [
+      {
+        "name": "星驰汽车服务 stellar auto service",
+        "place_id": "ChIJd3eiMwD50YURnaL_xQNqIWQ",
+        "address": "Lago Chalco 230a, Anáhuac I Secc., Anáhuac I Secc, Miguel Hidalgo, 11320 Ciudad de México, CDMX, 墨西哥",
+        "rating": 5,
+        "user_ratings_total": 3,
+        "lat": 19.4420046,
+        "lng": -99.17659309999999,
+        "tags": [
+          "汽车/维修"
+        ],
+        "sources": [
+          "修车 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:18:47.763Z",
+        "last_seen": "2026-01-10T18:18:47.763Z"
+      }
+    ]
+  },
+  {
+    "category": "物流/清关",
+    "items": [
+      {
+        "name": "蒙特雷国际机场",
+        "place_id": "ChIJjVJ_rM7oYoYR-y3ibo9gNg8",
+        "address": "Carr. Miguel Alemán Km 24, 66600 Cdad. Apodaca, N.L., 墨西哥",
+        "rating": 4.4,
+        "user_ratings_total": 39408,
+        "lat": 25.7788305,
+        "lng": -100.1094654,
+        "tags": [
+          "物流/清关"
+        ],
+        "sources": [
+          "货运 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:18:40.336Z",
+        "last_seen": "2026-01-10T18:18:40.336Z"
+      }
+    ]
+  },
+  {
+    "category": "甜品/茶饮",
+    "items": [
+      {
+        "name": "SUNCHILL 艾茶山丘",
+        "place_id": "ChIJ26V1fRv50YUR7KYkPpEOjgA",
+        "address": "Río Nazas 45-Local 5, Cuauhtémoc, 06500 CDMX, 墨西哥",
+        "rating": 4.5,
+        "user_ratings_total": 638,
+        "lat": 19.4325165,
+        "lng": -99.1670715,
+        "tags": [
+          "甜品/茶饮"
+        ],
+        "sources": [
+          "奶茶 墨西哥城",
+          "茶饮 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:17:50.257Z",
+        "last_seen": "2026-01-10T18:17:53.755Z"
+      },
+      {
+        "name": "Hi Tea【嘆茶】CENTRO",
+        "place_id": "ChIJ2dGv7ZL50YURaAoD_QDe16g",
+        "address": "Fray Pedro de Gante 3, Centro Histórico de la Cdad. de México, Centro, Cuauhtémoc, 06000 Ciudad de México, CDMX, 墨西哥",
+        "rating": 4.5,
+        "user_ratings_total": 192,
+        "lat": 19.4333993,
+        "lng": -99.1395905,
+        "tags": [
+          "甜品/茶饮"
+        ],
+        "sources": [
+          "茶饮 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:17:53.755Z",
+        "last_seen": "2026-01-10T18:17:53.755Z"
+      },
+      {
+        "name": "Hi Tea【嘆茶】POLANCO",
+        "place_id": "ChIJJUDqYSYD0oURoUyZP2Vd5yQ",
+        "address": "Av Moliere 353-Local D, Polanco, Polanco III Secc, Miguel Hidalgo, 11550 Ciudad de México, CDMX, 墨西哥",
+        "rating": 4.5,
+        "user_ratings_total": 134,
+        "lat": 19.4377402,
+        "lng": -99.2008494,
+        "tags": [
+          "甜品/茶饮"
+        ],
+        "sources": [
+          "茶饮 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:17:53.755Z",
+        "last_seen": "2026-01-10T18:17:53.755Z"
+      },
+      {
+        "name": "世纪饼屋",
+        "place_id": "ChIJryrvpu7_0YUR-0vYxMGYqLs",
+        "address": "Albino García 325, Viaducto Piedad, Iztacalco, 08200 Ciudad de México, CDMX, 墨西哥",
+        "rating": 4.6,
+        "user_ratings_total": 53,
+        "lat": 19.4001423,
+        "lng": -99.13298739999999,
+        "tags": [
+          "甜品/茶饮",
+          "零售/超市"
+        ],
+        "sources": [
+          "烘焙 墨西哥城",
+          "超市 墨西哥城",
+          "食品店 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:17:57.237Z",
+        "last_seen": "2026-01-10T18:18:08.650Z"
+      },
+      {
+        "name": "HICHA 槑茶",
+        "place_id": "ChIJuWI_WW3_0YURInLLPPsi65A",
+        "address": "Eje Central Lázaro Cárdenas 23, Doctores, Cuauhtémoc, 06720 Ciudad de México, CDMX, 墨西哥",
+        "rating": 4.6,
+        "user_ratings_total": 52,
+        "lat": 19.4256501,
+        "lng": -99.14261420000001,
+        "tags": [
+          "甜品/茶饮"
+        ],
+        "sources": [
+          "茶饮 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:17:53.755Z",
+        "last_seen": "2026-01-10T18:17:53.755Z"
+      },
+      {
+        "name": "HICHA 槑茶",
+        "place_id": "ChIJ--A7km_50YURdK9xZ7CSX_E",
+        "address": "Laguna de Mayran 250, Los Manzanos, Miguel Hidalgo, 11320 Ciudad de México, CDMX, 墨西哥",
+        "rating": 3,
+        "user_ratings_total": 2,
+        "lat": 19.4417368,
+        "lng": -99.1831501,
+        "tags": [
+          "甜品/茶饮"
+        ],
+        "sources": [
+          "茶饮 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:17:53.755Z",
+        "last_seen": "2026-01-10T18:17:53.755Z"
+      },
+      {
+        "name": "Mo yougrt -一面之缘",
+        "place_id": "ChIJ4aNAs-X50YURdX232ecySlI",
+        "address": "Bahía de San Hipólito 43, Anáhuac I Secc, Miguel Hidalgo, 11320 Ciudad de México, CDMX, 墨西哥",
+        "rating": 5,
+        "user_ratings_total": 1,
+        "lat": 19.4400035,
+        "lng": -99.1767779,
+        "tags": [
+          "甜品/茶饮"
+        ],
+        "sources": [
+          "茶饮 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:17:53.755Z",
+        "last_seen": "2026-01-10T18:17:53.755Z"
+      }
+    ]
+  },
+  {
+    "category": "综合",
+    "items": [
+      {
+        "name": "查普尔特佩克城堡",
+        "place_id": "ChIJI4_tR83-0YURMouBJIUA4KY",
+        "address": "Av. Heroico Colegio Militar 172, Bosque de Chapultepec I Secc, Miguel Hidalgo, 11580 Ciudad de México, CDMX, 墨西哥",
+        "rating": 4.8,
+        "user_ratings_total": 85657,
+        "lat": 19.4204397,
+        "lng": -99.181935,
+        "tags": [
+          "综合"
+        ],
+        "sources": [
+          "中文 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:18:54.271Z",
+        "last_seen": "2026-01-10T18:18:54.271Z"
+      },
+      {
+        "name": "墨西哥城唐人街",
+        "place_id": "ChIJ2St819T-0YURcIRP0tMfQGU",
+        "address": "墨西哥聯邦區墨西哥城 Centro, 墨西哥城唐人街邮政编码: 06050",
+        "rating": "",
+        "user_ratings_total": "",
+        "lat": 19.4320229,
+        "lng": -99.142675,
+        "tags": [
+          "综合"
+        ],
+        "sources": [
+          "中国 墨西哥城",
+          "唐人街 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:18:55.052Z",
+        "last_seen": "2026-01-10T18:18:55.836Z"
+      }
+    ]
+  },
+  {
+    "category": "美容/美发/美甲",
+    "items": [
+      {
+        "name": "Fenghua Nail Studio 风华美甲沙龙",
+        "place_id": "ChIJqX6eHQAD0oURZYRGCcnhxE0",
+        "address": "Av. Río San Joaquín 384-local 4, Amp Granada, Miguel Hidalgo, 11529 Ciudad de México, CDMX, 墨西哥",
+        "rating": 5,
+        "user_ratings_total": 11,
+        "lat": 19.4432481,
+        "lng": -99.1968114,
+        "tags": [
+          "美容/美发/美甲"
+        ],
+        "sources": [
+          "美甲 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:18:14.345Z",
+        "last_seen": "2026-01-10T18:18:14.345Z"
+      },
+      {
+        "name": "浪子髮廊",
+        "place_id": "ChIJ41tPz2H_0YURHTu-yarS5QE",
+        "address": "La Coruña 806, Viaducto Piedad, Iztacalco, 08200 Ciudad de México, CDMX, 墨西哥",
+        "rating": 5,
+        "user_ratings_total": 2,
+        "lat": 19.4010112,
+        "lng": -99.1343169,
+        "tags": [
+          "美容/美发/美甲"
+        ],
+        "sources": [
+          "理发 墨西哥城",
+          "发廊 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:18:18.806Z",
+        "last_seen": "2026-01-10T18:18:22.275Z"
+      },
+      {
+        "name": "按摩的地方",
+        "place_id": "ChIJ_UJ-QQD_0YURoggg3QQVLds",
+        "address": "C. Varsovia 45, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, 墨西哥",
+        "rating": "",
+        "user_ratings_total": "",
+        "lat": 19.4237746,
+        "lng": -99.1678398,
+        "tags": [
+          "美容/美发/美甲"
+        ],
+        "sources": [
+          "美发 墨西哥城",
+          "发廊 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:18:18.058Z",
+        "last_seen": "2026-01-10T18:18:24.936Z"
+      }
+    ]
+  },
+  {
+    "category": "零售/超市",
+    "items": [
+      {
+        "name": "新天超市",
+        "place_id": "ChIJYTWp19T40YURh90pKhoTYMI",
+        "address": "Calle Artículo 123 & Humboldt, Colonia Centro, Centro, 06040 Ciudad de México, CDMX, 墨西哥",
+        "rating": 4.2,
+        "user_ratings_total": 297,
+        "lat": 19.4331853,
+        "lng": -99.14833379999999,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "超市 墨西哥城",
+          "亚洲超市 墨西哥城",
+          "便利店 墨西哥城",
+          "食品店 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:17:59.541Z",
+        "last_seen": "2026-01-10T18:18:08.650Z"
+      },
+      {
+        "name": "韩国超市",
+        "place_id": "ChIJOW1bu0n_0YURetdK-JHehIk",
+        "address": "06600, Hamburgo 238, Cuauhtémoc, Juárez, CDMX, 墨西哥",
+        "rating": 4.1,
+        "user_ratings_total": 237,
+        "lat": 19.4236666,
+        "lng": -99.1697787,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "便利店 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:18:04.152Z",
+        "last_seen": "2026-01-10T18:18:04.152Z"
+      },
+      {
+        "name": "东方超市 EAST supermarket",
+        "place_id": "ChIJO5kVqnUD0oUR9kzBMs2UQeI",
+        "address": "Av Moliere 339, Polanco, Polanco III Secc, Miguel Hidalgo, 11540 Ciudad de México, CDMX, 墨西哥",
+        "rating": 4.1,
+        "user_ratings_total": 65,
+        "lat": 19.4374278,
+        "lng": -99.2008467,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "超市 墨西哥城",
+          "食品店 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:17:59.541Z",
+        "last_seen": "2026-01-10T18:18:08.650Z"
+      },
+      {
+        "name": "起货贸易公司",
+        "place_id": "ChIJpbRfF0r50YUR3gFsG4vuK1c",
+        "address": "Lago Texcoco 185, Mariano Escobedo, Miguel Hidalgo, 11310 Ciudad de México, CDMX, 墨西哥",
+        "rating": 4,
+        "user_ratings_total": 43,
+        "lat": 19.4433694,
+        "lng": -99.17926849999999,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "便利店 墨西哥城",
+          "食品店 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:18:04.152Z",
+        "last_seen": "2026-01-10T18:18:11.417Z"
+      },
+      {
+        "name": "百佳唐货超市",
+        "place_id": "ChIJb--zdSG_YoYRCiluu4GGkEg",
+        "address": "Juan Ignacio Ramón 255, Centro, 64000 Monterrey, N.L., 墨西哥",
+        "rating": 4.1,
+        "user_ratings_total": 32,
+        "lat": 25.6713512,
+        "lng": -100.313518,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "亚洲超市 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:18:03.358Z",
+        "last_seen": "2026-01-10T18:18:03.358Z"
+      },
+      {
+        "name": "联华超市 Lianhua Supermercado",
+        "place_id": "ChIJLZ2liHz_0YUREtFEHgFLQAk",
+        "address": "Londres 132, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, 墨西哥",
+        "rating": 3.9,
+        "user_ratings_total": 28,
+        "lat": 19.4249585,
+        "lng": -99.1644984,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "超市 墨西哥城",
+          "食品店 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:17:59.541Z",
+        "last_seen": "2026-01-10T18:18:08.650Z"
+      },
+      {
+        "name": "Super Asia (亚洲商场)",
+        "place_id": "ChIJ7Qww5eT50YURGuoY2yG2Q0I",
+        "address": "Calz. Gral. Mariano Escobedo 220, Los Manzanos, Miguel Hidalgo, 11320 Ciudad de México, CDMX, 墨西哥",
+        "rating": 4.3,
+        "user_ratings_total": 23,
+        "lat": 19.4416888,
+        "lng": -99.1827986,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "超市 墨西哥城",
+          "亚洲超市 墨西哥城",
+          "食品店 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:17:59.541Z",
+        "last_seen": "2026-01-10T18:18:08.650Z"
+      },
+      {
+        "name": "墨城华之味生鲜食品超市",
+        "place_id": "ChIJtdVJVKL_0YURgcRzmsi0MB4",
+        "address": "Dr. Andrade 60a, Doctores, Cuauhtémoc, 06720 Ciudad de México, CDMX, 墨西哥",
+        "rating": 4.7,
+        "user_ratings_total": 19,
+        "lat": 19.42155,
+        "lng": -99.1452149,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "超市 墨西哥城",
+          "亚洲超市 墨西哥城",
+          "便利店 墨西哥城",
+          "食品店 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:17:59.541Z",
+        "last_seen": "2026-01-10T18:18:08.650Z"
+      },
+      {
+        "name": "亚洲商场",
+        "place_id": "ChIJlwwuiAn50YUReWR6-vFOCzA",
+        "address": "Laguna de Mayran 250, Anáhuac I Secc, Miguel Hidalgo, 11320 Ciudad de México, CDMX, 墨西哥",
+        "rating": 3.8,
+        "user_ratings_total": 19,
+        "lat": 19.441675,
+        "lng": -99.1826914,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "超市 墨西哥城",
+          "亚洲超市 墨西哥城",
+          "食品店 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:17:59.541Z",
+        "last_seen": "2026-01-10T18:18:08.650Z"
+      },
+      {
+        "name": "XI YANG YANG MINISUPER / 喜洋洋超市",
+        "place_id": "ChIJKY8h_DoD0oURdvmLCPhIvI0",
+        "address": "Lago Neuchatel 10-Local 3, Granada, Miguel Hidalgo, 11529 Ciudad de México, CDMX, 墨西哥",
+        "rating": 4.7,
+        "user_ratings_total": 12,
+        "lat": 19.4422858,
+        "lng": -99.20148909999999,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "超市 墨西哥城",
+          "亚洲超市 墨西哥城",
+          "便利店 墨西哥城",
+          "食品店 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:17:59.541Z",
+        "last_seen": "2026-01-10T18:18:08.650Z"
+      },
+      {
+        "name": "远东食品 Yuandong Food",
+        "place_id": "ChIJ6wJpSqv50YUR9wwlJUb_g00",
+        "address": "Calz. Gral. Mariano Escobedo 424, Chapultepec Morales, Anzures, Miguel Hidalgo, 11590 Ciudad de México, CDMX, 墨西哥",
+        "rating": 4.6,
+        "user_ratings_total": 10,
+        "lat": 19.4347326,
+        "lng": -99.1821114,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "超市 墨西哥城",
+          "便利店 墨西哥城",
+          "食品店 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:17:59.541Z",
+        "last_seen": "2026-01-10T18:18:08.650Z"
+      },
+      {
+        "name": "XI YANG YANG MINISUPER Santa Fe /喜洋洋中国超市",
+        "place_id": "ChIJXa6rQicB0oURhLncbK452AE",
+        "address": "Av. Santa Fe 482, Lomas de Santa Fe, Contadero, Cuajimalpa de Morelos, 05348 Ciudad de México, CDMX, 墨西哥",
+        "rating": 4.3,
+        "user_ratings_total": 8,
+        "lat": 19.3588574,
+        "lng": -99.27077539999999,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "便利店 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:18:04.152Z",
+        "last_seen": "2026-01-10T18:18:04.152Z"
+      },
+      {
+        "name": "Buenos vecinos/ 好邻居 Mini Súper y Restaurante Chino",
+        "place_id": "ChIJdRbcEIUD0oURAaOYD0VEhEY",
+        "address": "Polanco, Polanco II Secc, Miguel Hidalgo, 11520 Mexico City, 墨西哥",
+        "rating": 4.4,
+        "user_ratings_total": 7,
+        "lat": 19.4382594,
+        "lng": -99.2034654,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "超市 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:18:02.547Z",
+        "last_seen": "2026-01-10T18:18:02.547Z"
+      },
+      {
+        "name": "墨西哥壹加壹超市",
+        "place_id": "ChIJJz3SnIr50YUR3pCHE_8zKb8",
+        "address": "C. Allende 80, Centro, Cuauhtémoc, 06010 Ciudad de México, CDMX, 墨西哥",
+        "rating": 5,
+        "user_ratings_total": 5,
+        "lat": 19.4420259,
+        "lng": -99.1372377,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "超市 墨西哥城",
+          "便利店 墨西哥城",
+          "食品店 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:17:59.541Z",
+        "last_seen": "2026-01-10T18:18:08.650Z"
+      },
+      {
+        "name": "市场",
+        "place_id": "ChIJzahiDdn90YURZA97hImY_uw",
+        "address": "Central de Abasto, 伊斯塔帕拉帕09040 Mexico City, 墨西哥",
+        "rating": 4,
+        "user_ratings_total": 5,
+        "lat": 19.3726136,
+        "lng": -99.0973286,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "超市 墨西哥城",
+          "便利店 墨西哥城",
+          "食品店 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:18:02.548Z",
+        "last_seen": "2026-01-10T18:18:11.417Z"
+      },
+      {
+        "name": "莫牛中国 超市330",
+        "place_id": "ChIJMWRGqab_0YURfPD2JDAcv_0",
+        "address": "C. José María Correa 331, Viaducto Piedad, Iztacalco, 08200 Ciudad de México, CDMX, 墨西哥",
+        "rating": 3.5,
+        "user_ratings_total": 4,
+        "lat": 19.3996234,
+        "lng": -99.1333602,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "超市 墨西哥城",
+          "便利店 墨西哥城",
+          "食品店 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:17:59.541Z",
+        "last_seen": "2026-01-10T18:18:08.650Z"
+      },
+      {
+        "name": "香港超市",
+        "place_id": "ChIJM1s6NkkD0oUR5OaU0AuhOuA",
+        "address": "Presa Angostura 86, Col. Irrigación, Miguel Hidalgo, 11500 Ciudad de México, CDMX, 墨西哥",
+        "rating": 3.8,
+        "user_ratings_total": 4,
+        "lat": 19.4417789,
+        "lng": -99.20786269999999,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "超市 墨西哥城",
+          "食品店 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:17:59.541Z",
+        "last_seen": "2026-01-10T18:18:08.650Z"
+      },
+      {
+        "name": "韩国馆",
+        "place_id": "ChIJG4pvD3P_0YUR0zkdOeCu6QU",
+        "address": "Hamburgo 240-228, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, 墨西哥",
+        "rating": 5,
+        "user_ratings_total": 2,
+        "lat": 19.4237759,
+        "lng": -99.1697489,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "便利店 墨西哥城",
+          "食品店 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:18:04.152Z",
+        "last_seen": "2026-01-10T18:18:11.417Z"
+      },
+      {
+        "name": "卤菜便利店",
+        "place_id": "ChIJ0_YH4cr-0YUR9XryR9iAP7k",
+        "address": "Soledad 55-Loc.5, Centro Histórico de la Cdad. de México, Centro, Cuauhtémoc, 06060 Ciudad de México, CDMX, 墨西哥",
+        "rating": 4,
+        "user_ratings_total": 2,
+        "lat": 19.432096,
+        "lng": -99.12607419999999,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "便利店 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:18:06.911Z",
+        "last_seen": "2026-01-10T18:18:06.911Z"
+      },
+      {
+        "name": "国贸城",
+        "place_id": "ChIJXQnOYgD_0YURxyrIRYlHZeY",
+        "address": "Cjon. Flamencos 9, Cuauhtémoc, 06090 Centro CDMX, 墨西哥",
+        "rating": 5,
+        "user_ratings_total": 1,
+        "lat": 19.4245677,
+        "lng": -99.1336614,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "便利店 墨西哥城",
+          "食品店 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:18:04.152Z",
+        "last_seen": "2026-01-10T18:18:08.650Z"
+      },
+      {
+        "name": "铺头",
+        "place_id": "ChIJe3VSBMX50YURNR8jLZWQe7g",
+        "address": "República de Argentina 75, Centro, Cuauhtémoc, 06020 Centro CDMX, 墨西哥",
+        "rating": 5,
+        "user_ratings_total": 1,
+        "lat": 19.4402867,
+        "lng": -99.1310776,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "便利店 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:18:04.152Z",
+        "last_seen": "2026-01-10T18:18:04.152Z"
+      },
+      {
+        "name": "幸运超市",
+        "place_id": "ChIJcd35UgD_0YURgKBeWyGibgI",
+        "address": "Isabel La Católica 132-134 Centro, Cuauhtémoc, 06080 Ciudad de México, CDMX, 墨西哥",
+        "rating": 4,
+        "user_ratings_total": 1,
+        "lat": 19.425036,
+        "lng": -99.1375954,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "便利店 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:18:06.911Z",
+        "last_seen": "2026-01-10T18:18:06.911Z"
+      },
+      {
+        "name": "开元亚超 Food Asiático Kaiyuan",
+        "place_id": "ChIJ32D2i8f50YURIE1rEUPK0uk",
+        "address": "Calle Bahia de Sta. Barbara 4, Verónica Anzúres, Miguel Hidalgo, 11320 Ciudad de México, CDMX, 墨西哥",
+        "rating": 1,
+        "user_ratings_total": 1,
+        "lat": 19.4384017,
+        "lng": -99.1776615,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "便利店 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:18:06.911Z",
+        "last_seen": "2026-01-10T18:18:06.911Z"
+      },
+      {
+        "name": "中国超市",
+        "place_id": "ChIJA_RsGgAD0oURV4sx0Cn6_yA",
+        "address": "Av Moliere 340A, Polanco, Polanco II Secc, Miguel Hidalgo, 11530 Ciudad de México, CDMX, 墨西哥",
+        "rating": "",
+        "user_ratings_total": "",
+        "lat": 19.4373704,
+        "lng": -99.201534,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "超市 墨西哥城",
+          "便利店 墨西哥城",
+          "食品店 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:17:59.541Z",
+        "last_seen": "2026-01-10T18:18:11.417Z"
+      },
+      {
+        "name": "超市",
+        "place_id": "ChIJQ0wPZ7n_0YURsf1GquU9AcU",
+        "address": "C. de Chiapas 113, Roma Nte., Cuauhtémoc, 06700 Ciudad de México, CDMX, 墨西哥",
+        "rating": "",
+        "user_ratings_total": "",
+        "lat": 19.4128432,
+        "lng": -99.1607968,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "超市 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:18:02.548Z",
+        "last_seen": "2026-01-10T18:18:02.548Z"
+      },
+      {
+        "name": "菜市场",
+        "place_id": "ChIJa3lHXAD50YURhaOKcXv8jzQ",
+        "address": "墨西哥 Cd. de México, Ciudad de México, Centro, Centro Histórico de la Cdad. de México, República de Venezuela, 邮政编码: 06020",
+        "rating": "",
+        "user_ratings_total": "",
+        "lat": 19.4371929,
+        "lng": -99.12755899999999,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "超市 墨西哥城",
+          "便利店 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:18:02.548Z",
+        "last_seen": "2026-01-10T18:18:06.911Z"
+      },
+      {
+        "name": "Mini Supermercado China Longxing 隆興超市",
+        "place_id": "ChIJy0QHNyT_0YURMbvMgLYPxHw",
+        "address": "República de Uruguay 26, Centro Histórico de la Cdad. de México, Centro, Cuauhtémoc, 06010 Ciudad de México, CDMX, 墨西哥",
+        "rating": "",
+        "user_ratings_total": "",
+        "lat": 19.4310014,
+        "lng": -99.1395072,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "便利店 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:18:06.911Z",
+        "last_seen": "2026-01-10T18:18:06.911Z"
+      },
+      {
+        "name": "便利店",
+        "place_id": "ChIJXekVpBL90YUR7EO7ErFXr84",
+        "address": "Av. 4 11, Ignacio Zaragoza, Venustiano Carranza, 15000 Ciudad de México, CDMX, 墨西哥",
+        "rating": "",
+        "user_ratings_total": "",
+        "lat": 19.4194362,
+        "lng": -99.0984428,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "便利店 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:18:06.911Z",
+        "last_seen": "2026-01-10T18:18:06.911Z"
+      },
+      {
+        "name": "中国零食店",
+        "place_id": "ChIJn8gOZAD_0YURzhhIB8CltPc",
+        "address": "Soledad 55-Loc.5, Centro Histórico de la Cdad. de México, Centro, Cuauhtémoc, 06060 Ciudad de México, CDMX, 墨西哥",
+        "rating": "",
+        "user_ratings_total": "",
+        "lat": 19.432096,
+        "lng": -99.12607419999999,
+        "tags": [
+          "零售/超市"
+        ],
+        "sources": [
+          "便利店 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:18:06.911Z",
+        "last_seen": "2026-01-10T18:18:06.911Z"
+      }
+    ]
+  },
+  {
+    "category": "餐饮",
+    "items": [
+      {
+        "name": "Chido - 魑童 - Álvaro Obregón",
+        "place_id": "ChIJXRAXHjv_0YURV1UYSCiEHkw",
+        "address": "Eje 3 Pte 125, Roma Nte., Cuauhtémoc, 06700 Ciudad de México, CDMX, 墨西哥",
+        "rating": 4.4,
+        "user_ratings_total": 857,
+        "lat": 19.4158962,
+        "lng": -99.1656988,
+        "tags": [
+          "餐饮"
+        ],
+        "sources": [
+          "拉面 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:17:43.972Z",
+        "last_seen": "2026-01-10T18:17:43.972Z"
+      },
+      {
+        "name": "Lanzhou Ramen 兰州拉面",
+        "place_id": "ChIJXUNFRtr_0YURa89FiD_hfRs",
+        "address": "Frontera 39, Roma Nte., Cuauhtémoc, 06700 Ciudad de México, CDMX, 墨西哥",
+        "rating": 4.6,
+        "user_ratings_total": 636,
+        "lat": 19.423072,
+        "lng": -99.1569973,
+        "tags": [
+          "餐饮"
+        ],
+        "sources": [
+          "拉面 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:17:43.972Z",
+        "last_seen": "2026-01-10T18:17:43.972Z"
+      },
+      {
+        "name": "yihotpot 燚火锅",
+        "place_id": "ChIJAYpbEgC_YoYRvM1wwclGNEI",
+        "address": "墨西哥 Nuevo León, San Pedro Garza García, Zona San Agustín, Av. Real San Agustin, 邮政编码: 66260",
+        "rating": 4.8,
+        "user_ratings_total": 237,
+        "lat": 25.6482377,
+        "lng": -100.3389912,
+        "tags": [
+          "餐饮"
+        ],
+        "sources": [
+          "火锅 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:17:40.046Z",
+        "last_seen": "2026-01-10T18:17:40.046Z"
+      },
+      {
+        "name": "Manke Tea 滿客製茶",
+        "place_id": "ChIJL-SQ_pL_0YURq7j89nFxyb0",
+        "address": "Londres 25-local 2, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, 墨西哥",
+        "rating": 4.1,
+        "user_ratings_total": 201,
+        "lat": 19.4282653,
+        "lng": -99.1585509,
+        "tags": [
+          "餐饮",
+          "甜品/茶饮"
+        ],
+        "sources": [
+          "串串 墨西哥城",
+          "奶茶 墨西哥城",
+          "茶饮 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:17:41.426Z",
+        "last_seen": "2026-01-10T18:17:53.755Z"
+      },
+      {
+        "name": "Dalongyi HotPot Mexico 大龙燚火锅墨西哥",
+        "place_id": "ChIJs48TOqr50YURqsm5PJsBQfo",
+        "address": "Euler 7, Polanco, Polanco V Secc, Miguel Hidalgo, 11560 Ciudad de México, CDMX, 墨西哥",
+        "rating": 4.3,
+        "user_ratings_total": 151,
+        "lat": 19.4319125,
+        "lng": -99.18165499999999,
+        "tags": [
+          "餐饮"
+        ],
+        "sources": [
+          "火锅 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:17:40.040Z",
+        "last_seen": "2026-01-10T18:17:40.045Z"
+      },
+      {
+        "name": "马路边串串香 Ma Lu Bian Chuan Chuan Xiang",
+        "place_id": "ChIJKVKyS0b_0YUR4xrX_Qu__jU",
+        "address": "Hamburgo 140 Hamburgo 140Juárez, Cuauhtémoc, 06600 Juárez, 06600 Ciudad de México, CDMX, 墨西哥",
+        "rating": 4.3,
+        "user_ratings_total": 113,
+        "lat": 19.4256816,
+        "lng": -99.16566300000001,
+        "tags": [
+          "餐饮"
+        ],
+        "sources": [
+          "串串 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:17:41.426Z",
+        "last_seen": "2026-01-10T18:17:41.426Z"
+      },
+      {
+        "name": "WENZHOU RAMEN 温州面馆",
+        "place_id": "ChIJw_j2xqr50YURlEcnINjhmO0",
+        "address": "Laguna de Mayran 250, Anáhuac I Secc, Miguel Hidalgo, 11320 Ciudad de México, CDMX, 墨西哥",
+        "rating": 4.2,
+        "user_ratings_total": 79,
+        "lat": 19.4417063,
+        "lng": -99.1829338,
+        "tags": [
+          "餐饮"
+        ],
+        "sources": [
+          "面馆 墨西哥城",
+          "拉面 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:17:43.075Z",
+        "last_seen": "2026-01-10T18:17:43.972Z"
+      },
+      {
+        "name": "Gyoza Bar Mexico 台灣餃子吧",
+        "place_id": "ChIJZ2EBpo750YURlvPMEF5AXGA",
+        "address": "Av. Pdte. Masaryk 18, Rincón del Bosque, Col Bosques de Chapultepec, Miguel Hidalgo, 11580 Ciudad de México, CDMX, 墨西哥",
+        "rating": 4.8,
+        "user_ratings_total": 52,
+        "lat": 19.4312013,
+        "lng": -99.1819149,
+        "tags": [
+          "餐饮"
+        ],
+        "sources": [
+          "饺子 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:17:47.733Z",
+        "last_seen": "2026-01-10T18:17:47.733Z"
+      },
+      {
+        "name": "Abuelita Wang Hotpot 王婆炝虾火锅",
+        "place_id": "ChIJAcBkqY3_0YURNQRtu0tM1TQ",
+        "address": "Río Nilo 54, Cuauhtémoc, 06500 Ciudad de México, CDMX, 墨西哥",
+        "rating": 4.8,
+        "user_ratings_total": 24,
+        "lat": 19.4281592,
+        "lng": -99.1714505,
+        "tags": [
+          "餐饮"
+        ],
+        "sources": [
+          "火锅 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:17:40.046Z",
+        "last_seen": "2026-01-10T18:17:40.046Z"
+      },
+      {
+        "name": "Ramen Chido - 魑童 –",
+        "place_id": "ChIJk1o4QAD_0YURwxXCjVl-Bgw",
+        "address": "Culiacan 124, código 2, Hipódromo, Cuauhtémoc, 06100 Ciudad de México, CDMX, 墨西哥",
+        "rating": 4.1,
+        "user_ratings_total": 24,
+        "lat": 19.4028582,
+        "lng": -99.16975049999999,
+        "tags": [
+          "餐饮"
+        ],
+        "sources": [
+          "拉面 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:17:46.807Z",
+        "last_seen": "2026-01-10T18:17:46.807Z"
+      },
+      {
+        "name": "闽菜馆",
+        "place_id": "ChIJf5C_75L50YURncL1Lbbmr_U",
+        "address": "Balderas 33, Colonia Centro, Centro, Cuauhtémoc, 06000 Ciudad de México, CDMX, 墨西哥",
+        "rating": 4.1,
+        "user_ratings_total": 17,
+        "lat": 19.4347097,
+        "lng": -99.14754699999999,
+        "tags": [
+          "餐饮"
+        ],
+        "sources": [
+          "小吃 墨西哥城"
+        ],
+        "first_seen": "2026-01-10T18:17:48.560Z",
+        "last_seen": "2026-01-10T18:17:48.560Z"
+      }
+    ]
+  }
+]

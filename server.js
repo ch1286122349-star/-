@@ -273,6 +273,7 @@ const fetchPlaceDetails = async (placeId) => {
     'rating',
     'user_ratings_total',
     'price_level',
+    'geometry',
     'formatted_address',
     'formatted_phone_number',
     'opening_hours',
@@ -414,58 +415,176 @@ const buildCompaniesHtml = () => {
     return cityIndex.get(a) - cityIndex.get(b);
   });
 
-  const navHtml = orderedCities.map((city, index) => {
-    const cityEntry = cityMap.get(city);
-    const slug = slugifyAscii(city);
-    const id = slug ? `city-${slug}` : `city-${index + 1}`;
-    return `<a class=\"pill\" href=\"#${id}\">${escapeHtml(city)} <em>${cityEntry.count}</em></a>`;
+  const totalCount = companies.length;
+  const navHtml = [
+    `<button class=\"pill is-active\" type=\"button\" data-city=\"all\">全部 <em>${totalCount}</em></button>`,
+    ...orderedCities.map((city, index) => {
+      const cityEntry = cityMap.get(city);
+      const slug = slugifyAscii(city);
+      const id = slug ? `city-${slug}` : `city-${index + 1}`;
+      return `<button class=\"pill\" type=\"button\" data-city=\"${escapeHtml(city)}\" data-city-target=\"${id}\">${escapeHtml(city)} <em>${cityEntry.count}</em></button>`;
+    })
+  ].join('');
+
+  const foodIndustry = '餐饮与服务';
+  const foodCategoryPriority = ['中餐', '火锅', '面馆', '烧烤', '饮品', '超市'];
+  const hotpotRe = /火锅|hot\s*pot|hotpot|麻辣烫|串串香/i;
+  const noodleRe = /面馆|拉面|ramen|noodle|noodles|牛肉面|兰州|刀削面|米线/i;
+  const bbqRe = /烧烤|串串|烤肉|bbq|barbecue|烤鱼/i;
+
+  const classifyFoodCategory = (company) => {
+    const existing = String(company.category || '').trim();
+    if (existing) return existing;
+    const text = `${company.name || ''} ${company.summary || ''}`.toLowerCase();
+    if (hotpotRe.test(text)) return '火锅';
+    if (noodleRe.test(text)) return '面馆';
+    if (bbqRe.test(text)) return '烧烤';
+    return '中餐';
+  };
+
+  const renderCompanyCards = (items) => items.map((company) => {
+    const safeName = escapeHtml(company.name);
+    const safeSummary = escapeHtml(company.summary);
+    const contactValue = String(company.contact || '').trim();
+    const safeContact = escapeHtml(contactValue);
+    const hasContact = contactValue && !/未提供|暂无/i.test(contactValue);
+    const safeSlug = encodeURIComponent(String(company.slug || ''));
+    const safeCover = sanitizeCover(company.cover);
+    const coverStyle = safeCover
+      ? ` style=\"background-image: linear-gradient(140deg, rgba(15, 23, 42, 0.12), rgba(15, 23, 42, 0.35)), url('${safeCover}')\"`
+      : '';
+    const coverClass = safeCover ? ' company-cover' : '';
+    const lat = Number(company.lat);
+    const lng = Number(company.lng);
+    const coordsAttr = Number.isFinite(lat) && Number.isFinite(lng)
+      ? ` data-lat=\"${lat}\" data-lng=\"${lng}\"`
+      : '';
+    const industry = String(company.industry || '').trim();
+    const industryAttr = industry ? ` data-industry=\"${escapeHtml(industry)}\"` : '';
+    const resolvedCategory = industry === foodIndustry ? classifyFoodCategory(company) : '';
+    const categoryAttr = resolvedCategory ? ` data-category=\"${escapeHtml(resolvedCategory)}\"` : '';
+    return (
+      `<a class=\"company-card company-link${coverClass}\" href=\"/company/${safeSlug}\"${coverStyle}${coordsAttr}${industryAttr}${categoryAttr}>` +
+      `<h4>${safeName}</h4>` +
+      `<p class=\"company-desc\">${safeSummary}</p>` +
+      `<div class=\"company-distance\" data-distance hidden></div>` +
+      (hasContact ? `<div class=\"company-contact\"><span>微信/WhatsApp：${safeContact}</span></div>` : '') +
+      `</a>`
+    );
   }).join('');
+
+  const categoryPriority = new Map(foodCategoryPriority.map((name, index) => [name, index]));
+
+  const buildCityToolsHtml = (cityEntry, industryEntries) => {
+    const foodItems = cityEntry.industries.get(foodIndustry) || [];
+    const categoryCounts = new Map();
+    foodItems.forEach((company) => {
+      const category = classifyFoodCategory(company);
+      categoryCounts.set(category, (categoryCounts.get(category) || 0) + 1);
+    });
+    const categoryButtons = foodCategoryPriority
+      .filter((category) => categoryCounts.has(category))
+      .map((category) => (
+        `<button class=\"filter-pill\" type=\"button\" data-filter=\"${escapeHtml(category)}\" data-filter-scope=\"category\">${escapeHtml(category)}</button>`
+      ))
+      .join('');
+    const industryButtons = industryEntries
+      .map(([industry, items]) => ({ industry, count: items.length }))
+      .filter((entry) => entry.industry !== foodIndustry)
+      .map((entry) => (
+        `<button class=\"filter-pill\" type=\"button\" data-filter=\"${escapeHtml(entry.industry)}\" data-filter-scope=\"industry\">${escapeHtml(entry.industry)}</button>`
+      ))
+      .join('');
+    return (
+      `<div class=\"city-tools\" data-city-tools data-food-industry=\"${escapeHtml(foodIndustry)}\">` +
+      `<div class=\"industry-sort\" role=\"group\" aria-label=\"排序\">` +
+      `<span class=\"tools-label\">排序</span>` +
+      `<button class=\"sort-pill is-active\" type=\"button\" data-sort=\"default\">默认</button>` +
+      `<button class=\"sort-pill\" type=\"button\" data-sort=\"distance\">离我最近</button>` +
+      `</div>` +
+      `<div class=\"industry-filters\" role=\"group\" aria-label=\"门店筛选\">` +
+      `<span class=\"tools-label\">筛选</span>` +
+      `<button class=\"filter-pill is-active\" type=\"button\" data-filter=\"all\">全部</button>` +
+      categoryButtons +
+      industryButtons +
+      `</div>` +
+      `</div>`
+    );
+  };
 
   const sectionsHtml = orderedCities.map((city, index) => {
     const cityEntry = cityMap.get(city);
     const industryEntries = Array.from(cityEntry.industries.entries());
-    const industryCount = industryEntries.length;
     const slug = slugifyAscii(city);
     const id = slug ? `city-${slug}` : `city-${index + 1}`;
+    const cityToolsHtml = buildCityToolsHtml(cityEntry, industryEntries);
 
-    const industriesHtml = industryEntries.map(([industry, items]) => {
-      const cardsHtml = items.map((company) => {
-        const safeName = escapeHtml(company.name);
-        const safeSummary = escapeHtml(company.summary);
-        const contactValue = String(company.contact || '').trim();
-        const safeContact = escapeHtml(contactValue);
-        const hasContact = contactValue && !/未提供|暂无/i.test(contactValue);
-        const safeSlug = encodeURIComponent(String(company.slug || ''));
-        const safeCover = sanitizeCover(company.cover);
-        const coverStyle = safeCover
-          ? ` style=\"background-image: linear-gradient(140deg, rgba(15, 23, 42, 0.12), rgba(15, 23, 42, 0.35)), url('${safeCover}')\"`
-          : '';
-        const coverClass = safeCover ? ' company-cover' : '';
+  const industriesHtml = industryEntries.map(([industry, items]) => {
+    if (industry === foodIndustry) {
+      const categoryOrder = [];
+      const categoryIndex = new Map();
+      const categoryMap = new Map();
+
+      items.forEach((company) => {
+        const category = classifyFoodCategory(company) || '其他';
+        if (!categoryMap.has(category)) {
+          categoryMap.set(category, []);
+          categoryIndex.set(category, categoryOrder.length);
+          categoryOrder.push(category);
+        }
+        categoryMap.get(category).push(company);
+      });
+
+      const orderedCategories = [...categoryOrder].sort((a, b) => {
+        const pa = categoryPriority.has(a) ? categoryPriority.get(a) : Number.POSITIVE_INFINITY;
+        const pb = categoryPriority.has(b) ? categoryPriority.get(b) : Number.POSITIVE_INFINITY;
+        if (pa !== pb) return pa - pb;
+        return categoryIndex.get(a) - categoryIndex.get(b);
+      });
+
+      const categoriesHtml = orderedCategories.map((category) => {
+        const categoryItems = categoryMap.get(category) || [];
+        const cardsHtml = renderCompanyCards(categoryItems);
         return (
-          `<a class=\"company-card company-link${coverClass}\" href=\"/company/${safeSlug}\"${coverStyle}>` +
-          `<h4>${safeName}</h4>` +
-          `<p class=\"company-desc\">${safeSummary}</p>` +
-          (hasContact ? `<div class=\"company-contact\"><span>微信/WhatsApp：${safeContact}</span></div>` : '') +
-          `</a>`
+          `<div class=\"industry-subgroup\" data-category=\"${escapeHtml(category)}\">` +
+          `<div class=\"industry-subhead\">` +
+          `<h4>${escapeHtml(category)}</h4>` +
+          `<span class=\"industry-count\">${categoryItems.length} 家</span>` +
+          `</div>` +
+          `<div class=\"company-grid\">${cardsHtml}</div>` +
+          `</div>`
         );
       }).join('');
 
       return (
-        `<div class=\"industry-block\">` +
+        `<div class=\"industry-block\" data-industry=\"${escapeHtml(industry)}\">` +
         `<div class=\"industry-head\">` +
         `<h3>${escapeHtml(industry)}</h3>` +
         `<span class=\"industry-count\">${items.length} 家</span>` +
         `</div>` +
-        `<div class=\"company-grid\">${cardsHtml}</div>` +
+        `<div class=\"industry-subgroups\">${categoriesHtml}</div>` +
         `</div>`
       );
-    }).join('');
+    }
+
+    const cardsHtml = renderCompanyCards(items);
+    return (
+      `<div class=\"industry-block\" data-industry=\"${escapeHtml(industry)}\">` +
+      `<div class=\"industry-head\">` +
+      `<h3>${escapeHtml(industry)}</h3>` +
+      `<span class=\"industry-count\">${items.length} 家</span>` +
+      `</div>` +
+      `<div class=\"company-grid\">${cardsHtml}</div>` +
+      `</div>`
+    );
+  }).join('');
 
     return (
-      `<section class=\"city-section\" id=\"${id}\">` +
+      `<section class=\"city-section\" id=\"${id}\" data-city=\"${escapeHtml(city)}\">` +
       `<div class=\"city-head\">` +
       `<h2>${escapeHtml(city)}</h2>` +
       `</div>` +
+      cityToolsHtml +
       `<div class=\"city-body\">${industriesHtml}</div>` +
       `</section>`
     );

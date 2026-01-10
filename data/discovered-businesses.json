@@ -1,0 +1,3303 @@
+[
+  {
+    "name": "Café Kowlaan",
+    "place_id": "ChIJ3wb71WD_0YURFtxl4PDLtto",
+    "address": "Av. Revolución 107, Tacubaya, Ciudad de México",
+    "rating": 4.3,
+    "user_ratings_total": 17268,
+    "lat": 19.4043527,
+    "lng": -99.18473159999999,
+    "tags": [
+      "中餐"
+    ],
+    "sources": [
+      "Álvaro Obregón｜中餐馆",
+      "Álvaro Obregón｜中餐"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:29.438Z",
+    "last_seen": "2026-01-10T18:04:30.268Z"
+  },
+  {
+    "name": "Yamasan Ramen House",
+    "place_id": "ChIJj6kuS0L_0YURQwn5GkItOVU",
+    "address": "Av. Tamaulipas 103, Hipódromo Condesa, Ciudad de México",
+    "rating": 4.6,
+    "user_ratings_total": 12162,
+    "lat": 19.4106682,
+    "lng": -99.17497519999999,
+    "tags": [
+      "面馆/拉面"
+    ],
+    "sources": [
+      "Álvaro Obregón｜ramen"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:43.144Z",
+    "last_seen": "2026-01-10T18:04:43.144Z"
+  },
+  {
+    "name": "Pinche Gringo BBQ Patio - Narvarte",
+    "place_id": "ChIJBe3CbgT_0YURG29lbNVTx9Y",
+    "address": "Cumbres de Maltrata 360, Narvarte Poniente, Ciudad de México",
+    "rating": 4.4,
+    "user_ratings_total": 10697,
+    "lat": 19.3931052,
+    "lng": -99.1521152,
+    "tags": [
+      "火锅/烧烤/小吃"
+    ],
+    "sources": [
+      "Álvaro Obregón｜烧烤"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:35.993Z",
+    "last_seen": "2026-01-10T18:04:35.993Z"
+  },
+  {
+    "name": "Corazón de Maguey",
+    "place_id": "ChIJGX_PSsP_0YURvm73DGoe4r4",
+    "address": "Parque Centenario 9A, Coyoacán, Ciudad de México",
+    "rating": 4.4,
+    "user_ratings_total": 7869,
+    "lat": 19.3496897,
+    "lng": -99.1635572,
+    "tags": [
+      "中餐"
+    ],
+    "sources": [
+      "Álvaro Obregón｜中餐"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:30.268Z",
+    "last_seen": "2026-01-10T18:04:30.268Z"
+  },
+  {
+    "name": "El Ocho",
+    "place_id": "ChIJVx5NUED_0YURYulXOf2GwV0",
+    "address": "Av México 111, Hipódromo, Ciudad de México",
+    "rating": 4.2,
+    "user_ratings_total": 7644,
+    "lat": 19.410274,
+    "lng": -99.1700094,
+    "tags": [
+      "火锅/烧烤/小吃"
+    ],
+    "sources": [
+      "Álvaro Obregón｜烧烤"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:35.993Z",
+    "last_seen": "2026-01-10T18:04:35.993Z"
+  },
+  {
+    "name": "Deigo",
+    "place_id": "ChIJF9kvDqT_0YURvYZCgC9BMYI",
+    "address": "C. J. Enrique Pestalozzi 1238, Col del Valle Centro, Ciudad de México",
+    "rating": 4.5,
+    "user_ratings_total": 5786,
+    "lat": 19.3779812,
+    "lng": -99.16145379999999,
+    "tags": [
+      "面馆/拉面"
+    ],
+    "sources": [
+      "Álvaro Obregón｜拉面"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:47.062Z",
+    "last_seen": "2026-01-10T18:04:47.062Z"
+  },
+  {
+    "name": "Super Oriental / Super Kise, S.A. de C.V.",
+    "place_id": "ChIJHUMfYOcc0oUR6iJi62zXYzw",
+    "address": "Av. División del Nte. No. 2515-Local A, Del Carmen, Ciudad de México",
+    "rating": 4.3,
+    "user_ratings_total": 5591,
+    "lat": 19.3566464,
+    "lng": -99.15310769999999,
+    "tags": [
+      "火锅/烧烤/小吃",
+      "超市/零售"
+    ],
+    "sources": [
+      "Álvaro Obregón｜bbq chino",
+      "Álvaro Obregón｜supermarket",
+      "Álvaro Obregón｜asian grocery",
+      "Álvaro Obregón｜中国超市",
+      "Álvaro Obregón｜亚洲超市",
+      "Álvaro Obregón｜grocery"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:39.153Z",
+    "last_seen": "2026-01-10T18:05:12.225Z"
+  },
+  {
+    "name": "Porco Rosso",
+    "place_id": "ChIJybdymyoAzoURMBethBV0q4E",
+    "address": "Av. División del Nte. 3103, Los Reyes, El Rosedal, Ciudad de México",
+    "rating": 4.5,
+    "user_ratings_total": 5073,
+    "lat": 19.3379041,
+    "lng": -99.1482017,
+    "tags": [
+      "火锅/烧烤/小吃"
+    ],
+    "sources": [
+      "Álvaro Obregón｜烧烤"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:35.993Z",
+    "last_seen": "2026-01-10T18:04:35.993Z"
+  },
+  {
+    "name": "Yoko Ramen Nápoles",
+    "place_id": "ChIJZxyaoK7_0YURf-eE2RMtKa8",
+    "address": "Montecito 35, Nápoles, Ciudad de México",
+    "rating": 4.7,
+    "user_ratings_total": 4956,
+    "lat": 19.3950343,
+    "lng": -99.17332999999999,
+    "tags": [
+      "面馆/拉面"
+    ],
+    "sources": [
+      "Álvaro Obregón｜noodle",
+      "Álvaro Obregón｜ramen",
+      "Álvaro Obregón｜拉面"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:39.968Z",
+    "last_seen": "2026-01-10T18:04:47.062Z"
+  },
+  {
+    "name": "Sumo Buffet Condesa",
+    "place_id": "ChIJC5AZ-3L_0YURL4D6s0zPHbA",
+    "address": "Av. Tamaulipas, Del. Cuauhtémoc #99, Colonia Condesa, Ciudad de México",
+    "rating": 4.2,
+    "user_ratings_total": 4806,
+    "lat": 19.4107617,
+    "lng": -99.17489049999999,
+    "tags": [
+      "火锅/烧烤/小吃"
+    ],
+    "sources": [
+      "Álvaro Obregón｜烧烤"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:35.993Z",
+    "last_seen": "2026-01-10T18:04:35.993Z"
+  },
+  {
+    "name": "Café Ruta de la Seda",
+    "place_id": "ChIJ9Znww-f_0YURR3ZTX42PUZ8",
+    "address": "Aurora 1, Del Carmen, Ciudad de México",
+    "rating": 4.2,
+    "user_ratings_total": 4601,
+    "lat": 19.3481101,
+    "lng": -99.169462,
+    "tags": [
+      "甜品/茶饮/烘焙"
+    ],
+    "sources": [
+      "Álvaro Obregón｜甜品"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:56.045Z",
+    "last_seen": "2026-01-10T18:04:56.045Z"
+  },
+  {
+    "name": "Café Kowloon",
+    "place_id": "ChIJ_Ww6sNz_0YURMZYPa21PbCA",
+    "address": "Jardin Centenario 6 Villa Coyoacán, Centro Histórico de la Cdad. de México, de Coyoacán, Ciudad de México",
+    "rating": 4.3,
+    "user_ratings_total": 4175,
+    "lat": 19.3486997,
+    "lng": -99.16298619999999,
+    "tags": [
+      "中餐",
+      "甜品/茶饮/烘焙"
+    ],
+    "sources": [
+      "Álvaro Obregón｜Chinese restaurant",
+      "Álvaro Obregón｜comida china",
+      "Álvaro Obregón｜中餐馆",
+      "Álvaro Obregón｜中餐",
+      "Álvaro Obregón｜pastelería china"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:23.325Z",
+    "last_seen": "2026-01-10T18:05:05.641Z"
+  },
+  {
+    "name": "Café La Hija del Jarocho",
+    "place_id": "ChIJ11WS_8L_0YURsPo_GcUKu6Y",
+    "address": "Av. México 193, Del Carmen, Ciudad de México",
+    "rating": 4.3,
+    "user_ratings_total": 3534,
+    "lat": 19.3571086,
+    "lng": -99.16914609999999,
+    "tags": [
+      "甜品/茶饮/烘焙"
+    ],
+    "sources": [
+      "Álvaro Obregón｜甜品"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:56.045Z",
+    "last_seen": "2026-01-10T18:04:56.045Z"
+  },
+  {
+    "name": "Long Du",
+    "place_id": "ChIJC89yNNf_0YUR457Oa76-kbE",
+    "address": "Av. Miguel Ángel de Quevedo 980, Parque San Andrés, Ciudad de México",
+    "rating": 4.1,
+    "user_ratings_total": 3355,
+    "lat": 19.3437491,
+    "lng": -99.15507099999999,
+    "tags": [
+      "中餐"
+    ],
+    "sources": [
+      "Álvaro Obregón｜中餐馆",
+      "Álvaro Obregón｜中餐"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:29.438Z",
+    "last_seen": "2026-01-10T18:04:30.268Z"
+  },
+  {
+    "name": "Yoko Ramen Insurgentes",
+    "place_id": "ChIJu5LNWAL_0YUR9kTq8Hfmc4U",
+    "address": "Av. Insurgentes Sur 1027, Noche Buena, Ciudad de México",
+    "rating": 4.8,
+    "user_ratings_total": 2949,
+    "lat": 19.3824263,
+    "lng": -99.1763802,
+    "tags": [
+      "面馆/拉面"
+    ],
+    "sources": [
+      "Álvaro Obregón｜noodle",
+      "Álvaro Obregón｜ramen",
+      "Álvaro Obregón｜拉面"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:39.968Z",
+    "last_seen": "2026-01-10T18:04:47.062Z"
+  },
+  {
+    "name": "Deigo Ramen Condesa",
+    "place_id": "ChIJU_hgAlv_0YURAZvlWUUDNdU",
+    "address": "Tlaxcala 165, Hipódromo, Cuauhtémoc",
+    "rating": 4.4,
+    "user_ratings_total": 2676,
+    "lat": 19.4069645,
+    "lng": -99.1692984,
+    "tags": [
+      "面馆/拉面"
+    ],
+    "sources": [
+      "Álvaro Obregón｜noodle",
+      "Álvaro Obregón｜ramen",
+      "Álvaro Obregón｜面馆",
+      "Álvaro Obregón｜拉面"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:39.968Z",
+    "last_seen": "2026-01-10T18:04:47.062Z"
+  },
+  {
+    "name": "Miyako Perisur",
+    "place_id": "ChIJvf3Dh9j_zYUR5etQFpAl2Bw",
+    "address": "Periferico Sur 4690-Loc 190-191, Jardines del Pedregal, Ciudad de México",
+    "rating": 4.5,
+    "user_ratings_total": 2512,
+    "lat": 19.3040053,
+    "lng": -99.1888575,
+    "tags": [
+      "面馆/拉面"
+    ],
+    "sources": [
+      "Álvaro Obregón｜拉面"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:47.062Z",
+    "last_seen": "2026-01-10T18:04:47.062Z"
+  },
+  {
+    "name": "Boicot Cafe Coyoacan",
+    "place_id": "ChIJF4IdcOH_0YUR05_bR2ZT8SE",
+    "address": "Felipe Carrillo Puerto 4, Coyoacán, Ciudad de México",
+    "rating": 4.3,
+    "user_ratings_total": 2434,
+    "lat": 19.3485655,
+    "lng": -99.16315100000001,
+    "tags": [
+      "甜品/茶饮/烘焙"
+    ],
+    "sources": [
+      "Álvaro Obregón｜甜品"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:56.045Z",
+    "last_seen": "2026-01-10T18:04:56.045Z"
+  },
+  {
+    "name": "P.F. Chang's Patio Universidad",
+    "place_id": "ChIJLa6-FL7_0YURvw9c44N06x4",
+    "address": "esq. Universidad, Av. Popocatépetl 546-Local J1, Xoco, Ciudad de México",
+    "rating": 4.3,
+    "user_ratings_total": 2352,
+    "lat": 19.3656004,
+    "lng": -99.1669905,
+    "tags": [
+      "中餐"
+    ],
+    "sources": [
+      "Álvaro Obregón｜中餐"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:30.268Z",
+    "last_seen": "2026-01-10T18:04:30.268Z"
+  },
+  {
+    "name": "Asian Bay",
+    "place_id": "ChIJzUtptUP_0YURXgzMEHt4ybs",
+    "address": "Av. Tamaulipas 95, Hipódromo, Ciudad de México",
+    "rating": 4.4,
+    "user_ratings_total": 2214,
+    "lat": 19.4108776,
+    "lng": -99.17477509999999,
+    "tags": [
+      "中餐"
+    ],
+    "sources": [
+      "Álvaro Obregón｜中餐馆",
+      "Álvaro Obregón｜中餐"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:29.438Z",
+    "last_seen": "2026-01-10T18:04:30.268Z"
+  },
+  {
+    "name": "Porco Rosso",
+    "place_id": "ChIJcSQjmkT_0YURBsV9HASlyYk",
+    "address": "Avenida Mazatlan 148, Hipódromo Condesa, Ciudad de México",
+    "rating": 4.5,
+    "user_ratings_total": 2119,
+    "lat": 19.4109197,
+    "lng": -99.17875839999999,
+    "tags": [
+      "火锅/烧烤/小吃"
+    ],
+    "sources": [
+      "Álvaro Obregón｜烧烤"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:35.993Z",
+    "last_seen": "2026-01-10T18:04:35.993Z"
+  },
+  {
+    "name": "All Wood BBQ & Taproom",
+    "place_id": "ChIJnRWJ4sr_0YUR8zqYk3pnn8k",
+    "address": "Av. Yucatán 147, Roma Nte., Ciudad de México",
+    "rating": 4.5,
+    "user_ratings_total": 2063,
+    "lat": 19.4122327,
+    "lng": -99.1601249,
+    "tags": [
+      "火锅/烧烤/小吃"
+    ],
+    "sources": [
+      "Álvaro Obregón｜烧烤"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:35.993Z",
+    "last_seen": "2026-01-10T18:04:35.993Z"
+  },
+  {
+    "name": "Ramen Sairi",
+    "place_id": "ChIJBxMpZHT_0YURCGvWqFqXWIY",
+    "address": "Alfonso Reyes 139, Hipódromo, Ciudad de México",
+    "rating": 3.8,
+    "user_ratings_total": 1684,
+    "lat": 19.408393,
+    "lng": -99.1765078,
+    "tags": [
+      "面馆/拉面"
+    ],
+    "sources": [
+      "Álvaro Obregón｜noodle",
+      "Álvaro Obregón｜ramen",
+      "Álvaro Obregón｜面馆",
+      "Álvaro Obregón｜拉面"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:39.968Z",
+    "last_seen": "2026-01-10T18:04:47.062Z"
+  },
+  {
+    "name": "chonpou",
+    "place_id": "ChIJqWdQtbz_0YURJOtcvXWtS34",
+    "address": "Av. Universidad 793, Col del Valle Centro, Ciudad de México",
+    "rating": 4.4,
+    "user_ratings_total": 1530,
+    "lat": 19.3729425,
+    "lng": -99.1636314,
+    "tags": [
+      "中餐"
+    ],
+    "sources": [
+      "Álvaro Obregón｜中餐馆",
+      "Álvaro Obregón｜中餐"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:29.438Z",
+    "last_seen": "2026-01-10T18:04:30.268Z"
+  },
+  {
+    "name": "Vegan Ramen Mei Condesa",
+    "place_id": "ChIJ786hjHf_0YUR0tVbMBQ3cWA",
+    "address": "Colonia Condesa CDMX MX, Av. Tamaulipas 155B, Hipódromo, Cuauhtémoc",
+    "rating": 4.7,
+    "user_ratings_total": 1468,
+    "lat": 19.4089932,
+    "lng": -99.17642099999999,
+    "tags": [
+      "面馆/拉面"
+    ],
+    "sources": [
+      "Álvaro Obregón｜noodle"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:39.968Z",
+    "last_seen": "2026-01-10T18:04:39.968Z"
+  },
+  {
+    "name": "Inside spa del Valle",
+    "place_id": "ChIJmVVzrFv_0YUR_DpWJDCwFw8",
+    "address": "Gabriel Mancera 877, Col del Valle Centro, Ciudad de México",
+    "rating": 4.8,
+    "user_ratings_total": 1341,
+    "lat": 19.3846863,
+    "lng": -99.16477490000001,
+    "tags": [
+      "按摩/养生"
+    ],
+    "sources": [
+      "Álvaro Obregón｜按摩"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:15.214Z",
+    "last_seen": "2026-01-10T18:05:15.214Z"
+  },
+  {
+    "name": "SUKIYA San Lorenzo",
+    "place_id": "ChIJCzEq-Sn_0YURXjr_pyFcOvc",
+    "address": "Av. Insurgentes Sur 1248, Col del Valle Sur, Ciudad de México",
+    "rating": 4,
+    "user_ratings_total": 1266,
+    "lat": 19.3752666,
+    "lng": -99.17814100000001,
+    "tags": [
+      "面馆/拉面"
+    ],
+    "sources": [
+      "Álvaro Obregón｜拉面"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:47.062Z",
+    "last_seen": "2026-01-10T18:04:47.062Z"
+  },
+  {
+    "name": "Fortunata Café",
+    "place_id": "ChIJ419wCdv_0YURVzxYjuPpLp0",
+    "address": "Calle Pdte. Carranza 24, La Concepción, Ciudad de México",
+    "rating": 4.5,
+    "user_ratings_total": 1192,
+    "lat": 19.3468188,
+    "lng": -99.16046329999999,
+    "tags": [
+      "甜品/茶饮/烘焙"
+    ],
+    "sources": [
+      "Álvaro Obregón｜甜品"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:56.045Z",
+    "last_seen": "2026-01-10T18:04:56.045Z"
+  },
+  {
+    "name": "SUKIYA Del Valle Norte",
+    "place_id": "ChIJfRya9z__0YUR8tx_iODIZHE",
+    "address": "Av. Insurgentes Sur 612, Col del Valle Nte, Ciudad de México",
+    "rating": 4,
+    "user_ratings_total": 1177,
+    "lat": 19.3966417,
+    "lng": -99.1713188,
+    "tags": [
+      "面馆/拉面"
+    ],
+    "sources": [
+      "Álvaro Obregón｜拉面"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:47.062Z",
+    "last_seen": "2026-01-10T18:04:47.062Z"
+  },
+  {
+    "name": "Kokeshi",
+    "place_id": "ChIJo6_Aupf_0YURUbTiXD8Ry-A",
+    "address": "Amores 1529, Col del Valle Sur, Ciudad de México",
+    "rating": 4.4,
+    "user_ratings_total": 1146,
+    "lat": 19.370576,
+    "lng": -99.169964,
+    "tags": [
+      "超市/零售"
+    ],
+    "sources": [
+      "Álvaro Obregón｜中国超市"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:10.406Z",
+    "last_seen": "2026-01-10T18:05:10.406Z"
+  },
+  {
+    "name": "Café Kowloon",
+    "place_id": "ChIJazMXNNL_0YURu6E2RBA7ezk",
+    "address": "Av. División del Nte. 2800 Col, Parque San Andrés, Ciudad de México",
+    "rating": 4.1,
+    "user_ratings_total": 1140,
+    "lat": 19.3474747,
+    "lng": -99.1499842,
+    "tags": [
+      "中餐"
+    ],
+    "sources": [
+      "Álvaro Obregón｜中餐"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:30.268Z",
+    "last_seen": "2026-01-10T18:04:30.268Z"
+  },
+  {
+    "name": "Vegan Ramen Mei Del Valle",
+    "place_id": "ChIJh_x26G__0YURK9mUo4r5Ie0",
+    "address": "Félix Cuevas 835, Col del Valle Sur, Ciudad de México",
+    "rating": 4.7,
+    "user_ratings_total": 1126,
+    "lat": 19.3709347,
+    "lng": -99.1667137,
+    "tags": [
+      "面馆/拉面"
+    ],
+    "sources": [
+      "Álvaro Obregón｜noodle"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:39.968Z",
+    "last_seen": "2026-01-10T18:04:39.968Z"
+  },
+  {
+    "name": "Wan Chon",
+    "place_id": "ChIJ5ScHDwIA0oURv6wT_hCeTg4",
+    "address": "Av. Revolución 1796-AB, Álvaro Obregón, Ciudad de México",
+    "rating": 4.2,
+    "user_ratings_total": 1083,
+    "lat": 19.3430565,
+    "lng": -99.19039699999999,
+    "tags": [
+      "中餐"
+    ],
+    "sources": [
+      "Álvaro Obregón｜中餐馆",
+      "Álvaro Obregón｜中餐"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:29.438Z",
+    "last_seen": "2026-01-10T18:04:30.268Z"
+  },
+  {
+    "name": "Fun Lom",
+    "place_id": "ChIJW2K7Kff_0YURycRIlibublg",
+    "address": "Vito Alessio Robles 170, Florida, Ciudad de México",
+    "rating": 4.3,
+    "user_ratings_total": 1062,
+    "lat": 19.3517603,
+    "lng": -99.1846585,
+    "tags": [
+      "中餐"
+    ],
+    "sources": [
+      "Álvaro Obregón｜中餐馆"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:29.438Z",
+    "last_seen": "2026-01-10T18:04:29.438Z"
+  },
+  {
+    "name": "Manpuku ramen",
+    "place_id": "ChIJcSI3yFL_0YURvJ3HpUFfWtc",
+    "address": "Del valle, C. Tlacoquemecatl 47 Bis, Tlacoquemecatl del Valle, Del valle",
+    "rating": 4.5,
+    "user_ratings_total": 990,
+    "lat": 19.3785196,
+    "lng": -99.1756412,
+    "tags": [
+      "面馆/拉面"
+    ],
+    "sources": [
+      "Álvaro Obregón｜ramen",
+      "Álvaro Obregón｜拉面"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:43.144Z",
+    "last_seen": "2026-01-10T18:04:47.062Z"
+  },
+  {
+    "name": "Deigo Ramen Insurgentes",
+    "place_id": "ChIJAYl1yC7_0YURLGxZPhOOn_U",
+    "address": "Av. Insurgentes Sur 724-Local A, Col del Valle, Ciudad de México",
+    "rating": 4.7,
+    "user_ratings_total": 924,
+    "lat": 19.3928119,
+    "lng": -99.17254989999999,
+    "tags": [
+      "面馆/拉面"
+    ],
+    "sources": [
+      "Álvaro Obregón｜noodle",
+      "Álvaro Obregón｜ramen",
+      "Álvaro Obregón｜拉面"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:39.968Z",
+    "last_seen": "2026-01-10T18:04:47.062Z"
+  },
+  {
+    "name": "Rojo Jade红宝石酒家",
+    "place_id": "ChIJmbhZVAD_0YURHB28iDyCTfY",
+    "address": "Xola 1504, Narvarte Poniente, Ciudad de México",
+    "rating": 4.1,
+    "user_ratings_total": 902,
+    "lat": 19.3957908,
+    "lng": -99.1521977,
+    "tags": [
+      "火锅/烧烤/小吃"
+    ],
+    "sources": [
+      "Álvaro Obregón｜烧烤",
+      "Álvaro Obregón｜bbq chino"
+    ],
+    "signals": [
+      "name_has_han"
+    ],
+    "first_seen": "2026-01-10T18:04:35.993Z",
+    "last_seen": "2026-01-10T18:04:39.153Z"
+  },
+  {
+    "name": "CENTURY 21 De La Torre | Inmobiliaria CDMX",
+    "place_id": "ChIJE3-urtAB0oURyRFC8epzKPE",
+    "address": "Blvd. Adolfo López Mateos 301, Las Águilas, Ciudad de México",
+    "rating": 4.9,
+    "user_ratings_total": 837,
+    "lat": 19.3559327,
+    "lng": -99.19940059999999,
+    "tags": [
+      "地产/中介"
+    ],
+    "sources": [
+      "Álvaro Obregón｜房产",
+      "Álvaro Obregón｜中介"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:06:02.399Z",
+    "last_seen": "2026-01-10T18:06:04.994Z"
+  },
+  {
+    "name": "Ramen Izakaya Tsumugui",
+    "place_id": "ChIJzxlZHab_0YUR1R6d7txP4bg",
+    "address": "Av Michoacán 9, Hipódromo Condesa, Ciudad de México",
+    "rating": 3.6,
+    "user_ratings_total": 819,
+    "lat": 19.410843,
+    "lng": -99.16752360000001,
+    "tags": [
+      "面馆/拉面"
+    ],
+    "sources": [
+      "Álvaro Obregón｜noodle",
+      "Álvaro Obregón｜ramen",
+      "Álvaro Obregón｜拉面"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:39.968Z",
+    "last_seen": "2026-01-10T18:04:47.062Z"
+  },
+  {
+    "name": "Matcha Mío Café",
+    "place_id": "ChIJ4ycDuFb_0YURil-izxPZfYY",
+    "address": "C. Chilpancingo 9, Colonia Condesa, Ciudad de México",
+    "rating": 4.3,
+    "user_ratings_total": 808,
+    "lat": 19.409881,
+    "lng": -99.17041719999999,
+    "tags": [
+      "甜品/茶饮/烘焙"
+    ],
+    "sources": [
+      "Álvaro Obregón｜甜品"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:56.045Z",
+    "last_seen": "2026-01-10T18:04:56.045Z"
+  },
+  {
+    "name": "Sho-Ya",
+    "place_id": "ChIJzWLIhHL_0YURod8lohVhJIo",
+    "address": "esquina con, San Francisco 238 loc.c y g, Pedro Romero de Terreros, Col del Valle Nte, Ciudad de México",
+    "rating": 4.5,
+    "user_ratings_total": 762,
+    "lat": 19.3957667,
+    "lng": -99.1698002,
+    "tags": [
+      "面馆/拉面"
+    ],
+    "sources": [
+      "Álvaro Obregón｜拉面"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:47.062Z",
+    "last_seen": "2026-01-10T18:04:47.062Z"
+  },
+  {
+    "name": "Ka-fú",
+    "place_id": "ChIJCfaZTBX_0YUROYED9KWL-cE",
+    "address": "Tlaxcala 134, Roma Sur, Ciudad de México",
+    "rating": 4.1,
+    "user_ratings_total": 745,
+    "lat": 19.407102,
+    "lng": -99.1673453,
+    "tags": [
+      "中餐"
+    ],
+    "sources": [
+      "Álvaro Obregón｜中餐"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:30.268Z",
+    "last_seen": "2026-01-10T18:04:30.268Z"
+  },
+  {
+    "name": "Thai Massage Del Valle",
+    "place_id": "ChIJDX3ZtyX_0YURlo9bS198mzg",
+    "address": "Adolfo Prieto 213, código 2, Col del Valle Nte, Ciudad de México",
+    "rating": 4.8,
+    "user_ratings_total": 720,
+    "lat": 19.3968771,
+    "lng": -99.16653529999999,
+    "tags": [
+      "按摩/养生"
+    ],
+    "sources": [
+      "Álvaro Obregón｜按摩"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:15.214Z",
+    "last_seen": "2026-01-10T18:05:15.214Z"
+  },
+  {
+    "name": "Chez Vous #Timecafé",
+    "place_id": "ChIJrU5XP83_0YURtwTvpTRuvIw",
+    "address": "Av Miguel Hidalgo 70, San Lucas, Ciudad de México",
+    "rating": 4.5,
+    "user_ratings_total": 649,
+    "lat": 19.350963,
+    "lng": -99.1538775,
+    "tags": [
+      "甜品/茶饮/烘焙"
+    ],
+    "sources": [
+      "Álvaro Obregón｜甜品"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:56.045Z",
+    "last_seen": "2026-01-10T18:04:56.045Z"
+  },
+  {
+    "name": "DONDONBURI",
+    "place_id": "ChIJHSIO6Zv_0YURsWyUVX9hD2k",
+    "address": "Mercado Tlacoquemecatl, local 112, Del Valle, Ciudad de México",
+    "rating": 4.6,
+    "user_ratings_total": 601,
+    "lat": 19.3771073,
+    "lng": -99.17415299999999,
+    "tags": [
+      "面馆/拉面"
+    ],
+    "sources": [
+      "Álvaro Obregón｜拉面"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:47.062Z",
+    "last_seen": "2026-01-10T18:04:47.062Z"
+  },
+  {
+    "name": "SUKIYA Av. Universidad",
+    "place_id": "ChIJY29w0Un_0YUR7pw57OVcNuo",
+    "address": "Av. Universidad 749, Col del Valle Sur, Ciudad de México",
+    "rating": 3.5,
+    "user_ratings_total": 592,
+    "lat": 19.3744713,
+    "lng": -99.1626634,
+    "tags": [
+      "面馆/拉面"
+    ],
+    "sources": [
+      "Álvaro Obregón｜拉面"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:47.062Z",
+    "last_seen": "2026-01-10T18:04:47.062Z"
+  },
+  {
+    "name": "El Mandarino",
+    "place_id": "ChIJLSmXVEP_0YURRQFA7DbAh2s",
+    "address": "C. Pachuca 142, Colonia Condesa, Ciudad de México",
+    "rating": 4.7,
+    "user_ratings_total": 569,
+    "lat": 19.4131303,
+    "lng": -99.17872419999999,
+    "tags": [
+      "中餐"
+    ],
+    "sources": [
+      "Álvaro Obregón｜中餐"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:30.268Z",
+    "last_seen": "2026-01-10T18:04:30.268Z"
+  },
+  {
+    "name": "Teikit Sushi & Noodles",
+    "place_id": "ChIJU1ejqGIBzoURAhqPOky-ZxM",
+    "address": "Blvd. Gransur 5550, El Caracol, Ciudad de México",
+    "rating": 4.8,
+    "user_ratings_total": 541,
+    "lat": 19.3052384,
+    "lng": -99.1658868,
+    "tags": [
+      "面馆/拉面"
+    ],
+    "sources": [
+      "Álvaro Obregón｜noodle"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:39.968Z",
+    "last_seen": "2026-01-10T18:04:39.968Z"
+  },
+  {
+    "name": "Restaurante Bencomo",
+    "place_id": "ChIJRZYedE3_zYUR6uda3GFon44",
+    "address": "Av. Luis Cabrera 52, San Jerónimo Lídice, San Jerónimo Aculco, Ciudad de México",
+    "rating": 4.6,
+    "user_ratings_total": 528,
+    "lat": 19.3220504,
+    "lng": -99.22219059999999,
+    "tags": [
+      "火锅/烧烤/小吃"
+    ],
+    "sources": [
+      "Álvaro Obregón｜烧烤"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:35.993Z",
+    "last_seen": "2026-01-10T18:04:35.993Z"
+  },
+  {
+    "name": "El Café de los Sentidos",
+    "place_id": "ChIJq6o-yd3_0YUR1rz5qRlt8Dw",
+    "address": "Av. Miguel Ángel de Quevedo 621-A, San Francisco, Ciudad de México",
+    "rating": 4.7,
+    "user_ratings_total": 490,
+    "lat": 19.3445914,
+    "lng": -99.1654423,
+    "tags": [
+      "甜品/茶饮/烘焙"
+    ],
+    "sources": [
+      "Álvaro Obregón｜甜品"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:56.045Z",
+    "last_seen": "2026-01-10T18:04:56.045Z"
+  },
+  {
+    "name": "Calma Nail Bar - Roma",
+    "place_id": "ChIJJ6U-1K7_0YURyK2KhvbGk6I",
+    "address": "Av. Insurgentes Sur 386, Roma Sur, Ciudad de México",
+    "rating": 4.8,
+    "user_ratings_total": 482,
+    "lat": 19.4098796,
+    "lng": -99.1670327,
+    "tags": [
+      "美发/美甲/美容"
+    ],
+    "sources": [
+      "Álvaro Obregón｜美甲"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:27.071Z",
+    "last_seen": "2026-01-10T18:05:27.071Z"
+  },
+  {
+    "name": "Buba Buda (Suc. Pilares)",
+    "place_id": "ChIJtY3K2kr_0YURgCJ3C0FDlMo",
+    "address": "Pilares 74, Col del Valle Centro, Ciudad de México",
+    "rating": 4.4,
+    "user_ratings_total": 462,
+    "lat": 19.3795062,
+    "lng": -99.1725944,
+    "tags": [
+      "甜品/茶饮/烘焙"
+    ],
+    "sources": [
+      "Álvaro Obregón｜奶茶"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:52.042Z",
+    "last_seen": "2026-01-10T18:04:52.042Z"
+  },
+  {
+    "name": "Szechuan Gourmet",
+    "place_id": "ChIJyWpztC7_0YURf9i_OYDV6xo",
+    "address": "Av. División del Nte. 820, Narvarte Poniente, Ciudad de México",
+    "rating": 4.5,
+    "user_ratings_total": 457,
+    "lat": 19.3878268,
+    "lng": -99.161627,
+    "tags": [
+      "中餐",
+      "火锅/烧烤/小吃"
+    ],
+    "sources": [
+      "Álvaro Obregón｜中餐馆",
+      "Álvaro Obregón｜中餐",
+      "Álvaro Obregón｜串串"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:29.438Z",
+    "last_seen": "2026-01-10T18:04:35.105Z"
+  },
+  {
+    "name": "Izakaya Sushi",
+    "place_id": "ChIJ9Q_bsyf_0YURlcvA1Btn_Ms",
+    "address": "Av. Insurgentes Sur 866, Col del Valle Centro, Ciudad de México",
+    "rating": 4.5,
+    "user_ratings_total": 454,
+    "lat": 19.3876358,
+    "lng": -99.1742519,
+    "tags": [
+      "面馆/拉面"
+    ],
+    "sources": [
+      "Álvaro Obregón｜ramen",
+      "Álvaro Obregón｜拉面"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:43.144Z",
+    "last_seen": "2026-01-10T18:04:47.062Z"
+  },
+  {
+    "name": "Magic Tea",
+    "place_id": "ChIJlTrArw__0YURucbgXJO-h0k",
+    "address": "Diag. San Antonio 1122, Narvarte Poniente, Ciudad de México",
+    "rating": 4.6,
+    "user_ratings_total": 444,
+    "lat": 19.3945699,
+    "lng": -99.1587478,
+    "tags": [
+      "甜品/茶饮/烘焙"
+    ],
+    "sources": [
+      "Álvaro Obregón｜bubble tea",
+      "Álvaro Obregón｜甜品"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:51.130Z",
+    "last_seen": "2026-01-10T18:04:56.045Z"
+  },
+  {
+    "name": "Cook Ramen Insurgentes",
+    "place_id": "ChIJk8jHtof_0YURMmXk2dX0gmc",
+    "address": "Av. de los Insurgentes Sur 1391, Insurgentes Mixcoac, Local C. A6, MZ Arand, Centro, Ciudad de México",
+    "rating": 4.1,
+    "user_ratings_total": 390,
+    "lat": 19.3712501,
+    "lng": -99.18017139999999,
+    "tags": [
+      "面馆/拉面"
+    ],
+    "sources": [
+      "Álvaro Obregón｜noodle",
+      "Álvaro Obregón｜ramen",
+      "Álvaro Obregón｜拉面"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:39.968Z",
+    "last_seen": "2026-01-10T18:04:47.062Z"
+  },
+  {
+    "name": "Deigo Sushi Insurgentes",
+    "place_id": "ChIJ8ZMeRjX_0YURkAt3nHOYPdk",
+    "address": "Av. Insurgentes Sur 724-Local B, Col del Valle, Ciudad de México",
+    "rating": 4.8,
+    "user_ratings_total": 357,
+    "lat": 19.3929317,
+    "lng": -99.172304,
+    "tags": [
+      "面馆/拉面"
+    ],
+    "sources": [
+      "Álvaro Obregón｜ramen"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:43.144Z",
+    "last_seen": "2026-01-10T18:04:43.144Z"
+  },
+  {
+    "name": "Kahwen Coffee",
+    "place_id": "ChIJX2NVtCz_0YURUWSSwi1zyIY",
+    "address": "Francisco Ortega 17A, Coyoacán, Ciudad de México",
+    "rating": 4.6,
+    "user_ratings_total": 342,
+    "lat": 19.3481614,
+    "lng": -99.1630151,
+    "tags": [
+      "甜品/茶饮/烘焙"
+    ],
+    "sources": [
+      "Álvaro Obregón｜甜品"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:56.045Z",
+    "last_seen": "2026-01-10T18:04:56.045Z"
+  },
+  {
+    "name": "Grupo Inmobiliario Covarrubias y Asociados SA de CV",
+    "place_id": "ChIJqy5tQXf_0YUR_Z2wgqug_AA",
+    "address": "Av. Insurgentes Centro 1915, Guadalupe Inn, Ciudad de México",
+    "rating": 4.9,
+    "user_ratings_total": 339,
+    "lat": 19.3533829,
+    "lng": -99.1858565,
+    "tags": [
+      "地产/中介"
+    ],
+    "sources": [
+      "Álvaro Obregón｜房产",
+      "Álvaro Obregón｜中介"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:06:02.399Z",
+    "last_seen": "2026-01-10T18:06:04.994Z"
+  },
+  {
+    "name": "Gyu-Kaku Japanese BBQ Mitikah",
+    "place_id": "ChIJSwjjqer_0YURQwgKHOwQxG8",
+    "address": "Centro Comercial Mitikah, Av. Río Churubusco 601, Xoco, Ciudad de México",
+    "rating": 4.8,
+    "user_ratings_total": 338,
+    "lat": 19.3597381,
+    "lng": -99.1673533,
+    "tags": [
+      "火锅/烧烤/小吃"
+    ],
+    "sources": [
+      "Álvaro Obregón｜烧烤"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:35.993Z",
+    "last_seen": "2026-01-10T18:04:35.993Z"
+  },
+  {
+    "name": "Comida China \"Gon Fat\"",
+    "place_id": "ChIJXSp4-4D_0YURiMTNsHwW6G8",
+    "address": "Municipio Libre 314-local 1, Sta Cruz Atoyac, Ciudad de México",
+    "rating": 4.2,
+    "user_ratings_total": 326,
+    "lat": 19.3693481,
+    "lng": -99.1574309,
+    "tags": [
+      "中餐"
+    ],
+    "sources": [
+      "Álvaro Obregón｜comida china"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:26.444Z",
+    "last_seen": "2026-01-10T18:04:26.444Z"
+  },
+  {
+    "name": "Saburai Asian Fusion Grill",
+    "place_id": "ChIJAQDs367_0YUR9nK_e8jxdT4",
+    "address": "C. Dr. José María Vértiz, Vértiz Narvarte, Ciudad de México",
+    "rating": 4.6,
+    "user_ratings_total": 310,
+    "lat": 19.3779419,
+    "lng": -99.15385289999999,
+    "tags": [
+      "火锅/烧烤/小吃"
+    ],
+    "sources": [
+      "Álvaro Obregón｜烧烤",
+      "Álvaro Obregón｜bbq chino"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:35.993Z",
+    "last_seen": "2026-01-10T18:04:39.153Z"
+  },
+  {
+    "name": "Pinche Gringo Sandwich Shop San Angel",
+    "place_id": "ChIJc5hjWi4B0oURLc17U-bHHQY",
+    "address": "Av. De La Paz 57 San Angel, Plaza De El Carmen, Ciudad de México",
+    "rating": 4.5,
+    "user_ratings_total": 308,
+    "lat": 19.3463648,
+    "lng": -99.1894865,
+    "tags": [
+      "火锅/烧烤/小吃"
+    ],
+    "sources": [
+      "Álvaro Obregón｜烧烤"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:35.993Z",
+    "last_seen": "2026-01-10T18:04:35.993Z"
+  },
+  {
+    "name": "Cook Ramen Condesa",
+    "place_id": "ChIJiV_b86__0YURK52HJBy_pdc",
+    "address": "Av Nuevo León 139, Hipódromo, Ciudad de México",
+    "rating": 4.5,
+    "user_ratings_total": 292,
+    "lat": 19.409349,
+    "lng": -99.1728971,
+    "tags": [
+      "面馆/拉面"
+    ],
+    "sources": [
+      "Álvaro Obregón｜noodle",
+      "Álvaro Obregón｜ramen",
+      "Álvaro Obregón｜拉面"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:39.968Z",
+    "last_seen": "2026-01-10T18:04:47.062Z"
+  },
+  {
+    "name": "Mahakala tea & coffee",
+    "place_id": "ChIJKduxiR7_0YURfYGhUKoujp4",
+    "address": "Av Melchor Ocampo 398-Local B, Romero de Terreros, Ciudad de México",
+    "rating": 4.5,
+    "user_ratings_total": 267,
+    "lat": 19.3422584,
+    "lng": -99.1714117,
+    "tags": [
+      "甜品/茶饮/烘焙"
+    ],
+    "sources": [
+      "Álvaro Obregón｜奶茶",
+      "Álvaro Obregón｜甜品",
+      "Álvaro Obregón｜pastelería china"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:52.042Z",
+    "last_seen": "2026-01-10T18:05:05.641Z"
+  },
+  {
+    "name": "Michi Sando",
+    "place_id": "ChIJn_lkiKT_0YURgAW0WnOoPSI",
+    "address": "Angel Urraza 935-local 2, Col del Valle Centro, Ciudad de México",
+    "rating": 3.9,
+    "user_ratings_total": 264,
+    "lat": 19.3821649,
+    "lng": -99.16386209999999,
+    "tags": [
+      "面馆/拉面"
+    ],
+    "sources": [
+      "Álvaro Obregón｜拉面"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:47.062Z",
+    "last_seen": "2026-01-10T18:04:47.062Z"
+  },
+  {
+    "name": "TU GURU INMOBILIARIO",
+    "place_id": "ChIJbdfIzCf_0YURtigdCx04OVE",
+    "address": "Gabriel Mancera 1543, Col del Valle Sur, Ciudad de México",
+    "rating": 4.8,
+    "user_ratings_total": 261,
+    "lat": 19.3698996,
+    "lng": -99.16845470000001,
+    "tags": [
+      "地产/中介"
+    ],
+    "sources": [
+      "Álvaro Obregón｜房产"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:06:02.399Z",
+    "last_seen": "2026-01-10T18:06:02.399Z"
+  },
+  {
+    "name": "Restaurante ZHU Sushi Ramen",
+    "place_id": "ChIJgUV_XwD_0YURTMURUtzDMJE",
+    "address": "Av. Insurgentes Sur 1748, Florida, Ciudad de México",
+    "rating": 4.7,
+    "user_ratings_total": 250,
+    "lat": 19.3591708,
+    "lng": -99.1834537,
+    "tags": [
+      "面馆/拉面"
+    ],
+    "sources": [
+      "Álvaro Obregón｜ramen"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:43.144Z",
+    "last_seen": "2026-01-10T18:04:43.144Z"
+  },
+  {
+    "name": "Total Relaxation Day Spa",
+    "place_id": "ChIJ36Bhs4P_0YUR4aaoDgQ6Bwc",
+    "address": "Holbein 74 B, Cd. de los Deportes, Ciudad de México",
+    "rating": 4.6,
+    "user_ratings_total": 240,
+    "lat": 19.3807601,
+    "lng": -99.1826224,
+    "tags": [
+      "按摩/养生"
+    ],
+    "sources": [
+      "Álvaro Obregón｜按摩"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:15.214Z",
+    "last_seen": "2026-01-10T18:05:15.214Z"
+  },
+  {
+    "name": "VIA SOL",
+    "place_id": "ChIJ6_EOlQX_0YURZqpfGI3iL-I",
+    "address": "Unión 88-C, Escandón I Secc, Ciudad de México",
+    "rating": 4.5,
+    "user_ratings_total": 224,
+    "lat": 19.4032532,
+    "lng": -99.17374230000001,
+    "tags": [
+      "中餐"
+    ],
+    "sources": [
+      "Álvaro Obregón｜中餐馆",
+      "Álvaro Obregón｜中餐"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:29.438Z",
+    "last_seen": "2026-01-10T18:04:30.268Z"
+  },
+  {
+    "name": "ChinaInn",
+    "place_id": "ChIJlZoLQXf_0YURA2wCgfun4jI",
+    "address": "03840, C. Pensilvania 182B, Nápoles, Ciudad de México",
+    "rating": 3.8,
+    "user_ratings_total": 218,
+    "lat": 19.3886517,
+    "lng": -99.17770639999999,
+    "tags": [
+      "中餐"
+    ],
+    "sources": [
+      "Álvaro Obregón｜comida china"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:26.444Z",
+    "last_seen": "2026-01-10T18:04:26.444Z"
+  },
+  {
+    "name": "Malú Nails & Spa coyoacan",
+    "place_id": "ChIJ3X18rs8d0oURnnKFSB25Z04",
+    "address": "Av. División del Nte. 2815, Parque San Andrés, Ciudad de México",
+    "rating": 4.8,
+    "user_ratings_total": 204,
+    "lat": 19.3477501,
+    "lng": -99.1503998,
+    "tags": [
+      "美发/美甲/美容"
+    ],
+    "sources": [
+      "Álvaro Obregón｜美甲"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:27.071Z",
+    "last_seen": "2026-01-10T18:05:27.071Z"
+  },
+  {
+    "name": "Perfect Nails Bar & Beauty Center",
+    "place_id": "ChIJ4Uu9EE3_0YUR8p0SlqHHm-U",
+    "address": "C. Concepción Beistegui 112, Col del Valle Nte, Ciudad de México",
+    "rating": 4.5,
+    "user_ratings_total": 196,
+    "lat": 19.3909006,
+    "lng": -99.1714315,
+    "tags": [
+      "美发/美甲/美容"
+    ],
+    "sources": [
+      "Álvaro Obregón｜美甲"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:27.071Z",
+    "last_seen": "2026-01-10T18:05:27.071Z"
+  },
+  {
+    "name": "Comida China",
+    "place_id": "ChIJWwia4P3_0YURh1tKEhtDldA",
+    "address": "Copilco el Bajo, Mexico City",
+    "rating": 4.3,
+    "user_ratings_total": 185,
+    "lat": 19.3380024,
+    "lng": -99.1841329,
+    "tags": [
+      "中餐"
+    ],
+    "sources": [
+      "Álvaro Obregón｜中餐馆"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:29.438Z",
+    "last_seen": "2026-01-10T18:04:29.438Z"
+  },
+  {
+    "name": "Coinnpro",
+    "place_id": "ChIJ05XyfTn_0YUR-cnytH817fg",
+    "address": "Tuxpan 18-Despacho 2, Roma Sur, Ciudad de México",
+    "rating": 5,
+    "user_ratings_total": 179,
+    "lat": 19.4062433,
+    "lng": -99.1676382,
+    "tags": [
+      "地产/中介"
+    ],
+    "sources": [
+      "Álvaro Obregón｜房产",
+      "Álvaro Obregón｜中介"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:06:02.399Z",
+    "last_seen": "2026-01-10T18:06:04.994Z"
+  },
+  {
+    "name": "QCAFÉ Barra de especialidad Del Valle",
+    "place_id": "ChIJl00ecJb_0YURScflUqd03ng",
+    "address": "Av. Coyoacán 206, código 2, Col del Valle Nte, Ciudad de México",
+    "rating": 4.6,
+    "user_ratings_total": 168,
+    "lat": 19.3953217,
+    "lng": -99.1665677,
+    "tags": [
+      "甜品/茶饮/烘焙"
+    ],
+    "sources": [
+      "Álvaro Obregón｜甜品"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:56.045Z",
+    "last_seen": "2026-01-10T18:04:56.045Z"
+  },
+  {
+    "name": "NUDO Ramen y Boba - Del Valle",
+    "place_id": "ChIJMXhSSOP_0YURhzU5yywLbs4",
+    "address": "Av. Coyoacán 1123, Del valle, Ciudad de México",
+    "rating": 4.5,
+    "user_ratings_total": 166,
+    "lat": 19.3778538,
+    "lng": -99.1696214,
+    "tags": [
+      "面馆/拉面"
+    ],
+    "sources": [
+      "Álvaro Obregón｜noodle"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:39.968Z",
+    "last_seen": "2026-01-10T18:04:39.968Z"
+  },
+  {
+    "name": "Bienes raíces HAHN y asociados",
+    "place_id": "ChIJI4ABa8340YURog8DAVWwkgs",
+    "address": "Iguala N° 13-oficina 1, Roma Sur, Ciudad de México",
+    "rating": 4.4,
+    "user_ratings_total": 163,
+    "lat": 19.4022127,
+    "lng": -99.167649,
+    "tags": [
+      "地产/中介"
+    ],
+    "sources": [
+      "Álvaro Obregón｜房产",
+      "Álvaro Obregón｜中介"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:06:02.399Z",
+    "last_seen": "2026-01-10T18:06:04.994Z"
+  },
+  {
+    "name": "El Cafetalero",
+    "place_id": "ChIJsYFe7IH_0YUR3iYOToaZP7s",
+    "address": "Av Miguel Hidalgo 296, La Concepción, Ciudad de México",
+    "rating": 4.3,
+    "user_ratings_total": 160,
+    "lat": 19.34952,
+    "lng": -99.16122999999999,
+    "tags": [
+      "甜品/茶饮/烘焙"
+    ],
+    "sources": [
+      "Álvaro Obregón｜甜品"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:56.045Z",
+    "last_seen": "2026-01-10T18:04:56.045Z"
+  },
+  {
+    "name": "CGC Bienes Raíces",
+    "place_id": "ChIJoyvhXDL_zYURgS2BofgKvmI",
+    "address": "Av. Contreras 516-Int. 201, San Jerónimo Lídice, Ciudad de México",
+    "rating": 4.9,
+    "user_ratings_total": 157,
+    "lat": 19.3238473,
+    "lng": -99.2183474,
+    "tags": [
+      "地产/中介"
+    ],
+    "sources": [
+      "Álvaro Obregón｜房产",
+      "Álvaro Obregón｜中介"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:06:02.399Z",
+    "last_seen": "2026-01-10T18:06:04.994Z"
+  },
+  {
+    "name": "Barril 23",
+    "place_id": "ChIJjd_jxTEB0oURcFJ7XBuUh94",
+    "address": "Barranca del Muerto 541, Merced Gómez, Ciudad de México",
+    "rating": 4.5,
+    "user_ratings_total": 155,
+    "lat": 19.3642246,
+    "lng": -99.1941573,
+    "tags": [
+      "火锅/烧烤/小吃"
+    ],
+    "sources": [
+      "Álvaro Obregón｜烧烤"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:35.993Z",
+    "last_seen": "2026-01-10T18:04:35.993Z"
+  },
+  {
+    "name": "Oh la la( uñas, pestañas y Brazilian blowout)",
+    "place_id": "ChIJ33lrFpH_0YURwRrnLi_HyeA",
+    "address": "Av. Miguel Ángel de Quevedo 969, El Rosedal, Ciudad de México",
+    "rating": 4.6,
+    "user_ratings_total": 138,
+    "lat": 19.3429146,
+    "lng": -99.1526073,
+    "tags": [
+      "美发/美甲/美容"
+    ],
+    "sources": [
+      "Álvaro Obregón｜美甲"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:27.071Z",
+    "last_seen": "2026-01-10T18:05:27.071Z"
+  },
+  {
+    "name": "Zona Benessere SPA",
+    "place_id": "ChIJXQES634BzoUR430cHEG0m_4",
+    "address": "Centro Comercial Gran Sur - Business and Therapy Place Consultorio 23 Av. Iman no 151, col Pedregal de Carrasco, Del. Coyoacan C.P. 04700",
+    "rating": 4.9,
+    "user_ratings_total": 136,
+    "lat": 19.3066997,
+    "lng": -99.1666198,
+    "tags": [
+      "按摩/养生"
+    ],
+    "sources": [
+      "Álvaro Obregón｜按摩"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:15.214Z",
+    "last_seen": "2026-01-10T18:05:15.214Z"
+  },
+  {
+    "name": "The Dumplings",
+    "place_id": "ChIJnUO4F2n_0YURSBZthx0WNpk",
+    "address": "Av. Cuauhtémoc 1201, Sta Cruz Atoyac, Ciudad de México",
+    "rating": 4.7,
+    "user_ratings_total": 130,
+    "lat": 19.3740066,
+    "lng": -99.1606858,
+    "tags": [
+      "中餐"
+    ],
+    "sources": [
+      "Álvaro Obregón｜Chinese restaurant",
+      "Álvaro Obregón｜comida china"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:23.324Z",
+    "last_seen": "2026-01-10T18:04:26.443Z"
+  },
+  {
+    "name": "BIEN ÊTRE SALÓN",
+    "place_id": "ChIJv83iQTn_0YUR_DO_u0vJDZM",
+    "address": "Av. Universidad 740, Sta Cruz Atoyac, Ciudad de México",
+    "rating": 3.5,
+    "user_ratings_total": 130,
+    "lat": 19.3732069,
+    "lng": -99.1623941,
+    "tags": [
+      "美发/美甲/美容"
+    ],
+    "sources": [
+      "Álvaro Obregón｜美甲"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:27.071Z",
+    "last_seen": "2026-01-10T18:05:27.071Z"
+  },
+  {
+    "name": "Místika, barra de café de especialidad",
+    "place_id": "ChIJJ8N0e4D_0YURkfOK7DuOZmc",
+    "address": "Félix Parra 47-Local E, San José Insurgentes, Ciudad de México",
+    "rating": 4.9,
+    "user_ratings_total": 122,
+    "lat": 19.3688417,
+    "lng": -99.18558209999999,
+    "tags": [
+      "甜品/茶饮/烘焙"
+    ],
+    "sources": [
+      "Álvaro Obregón｜甜品"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:56.045Z",
+    "last_seen": "2026-01-10T18:04:56.045Z"
+  },
+  {
+    "name": "Costillas a la bbq",
+    "place_id": "ChIJzfm9v0YAzoURQcd75BVbVmE",
+    "address": "Calle san jorge mz840 lt20 entre san gabino y, San Eleuterio Sant, Sta. Úrsula Coapa, Ciudad de México",
+    "rating": 4.4,
+    "user_ratings_total": 121,
+    "lat": 19.3097601,
+    "lng": -99.1609586,
+    "tags": [
+      "火锅/烧烤/小吃"
+    ],
+    "sources": [
+      "Álvaro Obregón｜烧烤"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:35.993Z",
+    "last_seen": "2026-01-10T18:04:35.993Z"
+  },
+  {
+    "name": "Boba Chai Tea (valle norte)",
+    "place_id": "ChIJqxK1rLj_0YURs7Lq2zzhKIg",
+    "address": "de esquina, Elena Arizmendi Mejía 30, Gabriel Mancera 139-A 20, MZ 2, Col del Valle Nte",
+    "rating": 5,
+    "user_ratings_total": 115,
+    "lat": 19.3971618,
+    "lng": -99.1617258,
+    "tags": [
+      "甜品/茶饮/烘焙"
+    ],
+    "sources": [
+      "Álvaro Obregón｜bubble tea",
+      "Álvaro Obregón｜奶茶",
+      "Álvaro Obregón｜boba"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:51.130Z",
+    "last_seen": "2026-01-10T18:04:52.872Z"
+  },
+  {
+    "name": "Hernanditoz Café",
+    "place_id": "ChIJWRFXZFL_0YURVhMmD5X6-rE",
+    "address": "Av. Miguel Ángel de Quevedo 673, San Francisco, Ciudad de México",
+    "rating": 4.7,
+    "user_ratings_total": 112,
+    "lat": 19.3442687,
+    "lng": -99.16350589999999,
+    "tags": [
+      "甜品/茶饮/烘焙"
+    ],
+    "sources": [
+      "Álvaro Obregón｜甜品"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:56.045Z",
+    "last_seen": "2026-01-10T18:04:56.045Z"
+  },
+  {
+    "name": "Azul Café Coyoacán",
+    "place_id": "ChIJAxzNU-r_0YURS1tpARhtrbY",
+    "address": "Av Miguel Hidalgo 306-108, La Concepción, Ciudad de México",
+    "rating": 4.7,
+    "user_ratings_total": 112,
+    "lat": 19.3494383,
+    "lng": -99.1615119,
+    "tags": [
+      "甜品/茶饮/烘焙"
+    ],
+    "sources": [
+      "Álvaro Obregón｜甜品"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:56.045Z",
+    "last_seen": "2026-01-10T18:04:56.045Z"
+  },
+  {
+    "name": "RAM HOUSE Agencia Inmobiliaria",
+    "place_id": "ChIJVVXS61T-0YURjLwQbctecEA",
+    "address": "Cumbres de Maltrata 617, Narvarte Poniente, Ciudad de México",
+    "rating": 5,
+    "user_ratings_total": 105,
+    "lat": 19.3816608,
+    "lng": -99.14402310000001,
+    "tags": [
+      "地产/中介"
+    ],
+    "sources": [
+      "Álvaro Obregón｜房产",
+      "Álvaro Obregón｜中介"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:06:02.399Z",
+    "last_seen": "2026-01-10T18:06:04.994Z"
+  },
+  {
+    "name": "Estetica Nuria",
+    "place_id": "ChIJF-PC1u__0YURdZ1y7ECudiQ",
+    "address": "Av. Universidad 1601-local A, Hacienda de Guadalupe Chimalistac, Florida, Ciudad de México",
+    "rating": 4.7,
+    "user_ratings_total": 104,
+    "lat": 19.3511459,
+    "lng": -99.1785359,
+    "tags": [
+      "美发/美甲/美容"
+    ],
+    "sources": [
+      "Álvaro Obregón｜美甲"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:27.071Z",
+    "last_seen": "2026-01-10T18:05:27.071Z"
+  },
+  {
+    "name": "El Mundo del Café en Daría Coyoacan",
+    "place_id": "ChIJh_Ir9Rz_0YURqEucu1TAi1U",
+    "address": "Malintzin 24-local A, Del Carmen, Ciudad de México",
+    "rating": 4.6,
+    "user_ratings_total": 103,
+    "lat": 19.3530061,
+    "lng": -99.15753459999999,
+    "tags": [
+      "甜品/茶饮/烘焙"
+    ],
+    "sources": [
+      "Álvaro Obregón｜甜品"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:56.045Z",
+    "last_seen": "2026-01-10T18:04:56.045Z"
+  },
+  {
+    "name": "Inmobiliaria Hábitat SI®",
+    "place_id": "ChIJoYQy71kBzoURbnFjEINnjas",
+    "address": "ARTZ Pedregal, Anillo Perif. 3720-Torre 2, Jardines del Pedregal, Ciudad de México",
+    "rating": 4.7,
+    "user_ratings_total": 103,
+    "lat": 19.3136515,
+    "lng": -99.2193465,
+    "tags": [
+      "地产/中介"
+    ],
+    "sources": [
+      "Álvaro Obregón｜房产"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:06:02.399Z",
+    "last_seen": "2026-01-10T18:06:02.399Z"
+  },
+  {
+    "name": "Fan spa",
+    "place_id": "ChIJD_xgl-n_0YURUtubNPzYQBE",
+    "address": "Suiza 42, Portales Oriente, Ciudad de México",
+    "rating": 5,
+    "user_ratings_total": 98,
+    "lat": 19.3684122,
+    "lng": -99.1408465,
+    "tags": [
+      "按摩/养生"
+    ],
+    "sources": [
+      "Álvaro Obregón｜按摩"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:15.214Z",
+    "last_seen": "2026-01-10T18:05:15.214Z"
+  },
+  {
+    "name": "Centro De Estética (sobre suiza)",
+    "place_id": "ChIJqULYrkv-0YURGJhS24FRAJU",
+    "address": "entrada por Suiza, Calz. de Tlalpan 1320-local \"J, Portales Oriente, Ciudad de México",
+    "rating": 4.6,
+    "user_ratings_total": 97,
+    "lat": 19.3685823,
+    "lng": -99.1410446,
+    "tags": [
+      "美发/美甲/美容"
+    ],
+    "sources": [
+      "Álvaro Obregón｜美甲"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:27.071Z",
+    "last_seen": "2026-01-10T18:05:27.071Z"
+  },
+  {
+    "name": "Light Home Inmobiliaria - Pólizas Jurídicas - CDMX",
+    "place_id": "ChIJ3dpmOwv_0YURk0rdVYcx7M4",
+    "address": "C. Aniceto Ortega 817-Int. D, Col del Valle Centro, Ciudad de México",
+    "rating": 4.9,
+    "user_ratings_total": 94,
+    "lat": 19.3795618,
+    "lng": -99.165387,
+    "tags": [
+      "地产/中介"
+    ],
+    "sources": [
+      "Álvaro Obregón｜房产",
+      "Álvaro Obregón｜中介"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:06:02.399Z",
+    "last_seen": "2026-01-10T18:06:04.994Z"
+  },
+  {
+    "name": "LUXENCE",
+    "place_id": "ChIJHVIzUkv-zYURyVhcYjdNyfs",
+    "address": "Fuego 620, Jardines del Pedregal, Ciudad de México",
+    "rating": 4.8,
+    "user_ratings_total": 94,
+    "lat": 19.3208028,
+    "lng": -99.19636919999999,
+    "tags": [
+      "地产/中介"
+    ],
+    "sources": [
+      "Álvaro Obregón｜中介"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:06:04.994Z",
+    "last_seen": "2026-01-10T18:06:04.994Z"
+  },
+  {
+    "name": "Barbacoa Claudio",
+    "place_id": "ChIJgRFC9PwB0oURBe4gXe07p24",
+    "address": "Gral. Rincón Gallardo 114, Amp Daniel Garza, Ciudad de México",
+    "rating": 4.6,
+    "user_ratings_total": 93,
+    "lat": 19.4081038,
+    "lng": -99.1963509,
+    "tags": [
+      "火锅/烧烤/小吃"
+    ],
+    "sources": [
+      "Álvaro Obregón｜烧烤"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:35.993Z",
+    "last_seen": "2026-01-10T18:04:35.993Z"
+  },
+  {
+    "name": "Orange King Asian Food",
+    "place_id": "ChIJA9UJ6p7_0YUR6y2NWvH0c50",
+    "address": "Av. Miguel Ángel de Quevedo 1144, Parque San Andrés, Ciudad de México",
+    "rating": 4.8,
+    "user_ratings_total": 92,
+    "lat": 19.3428181,
+    "lng": -99.14648489999999,
+    "tags": [
+      "中餐"
+    ],
+    "sources": [
+      "Álvaro Obregón｜Chinese restaurant"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:23.325Z",
+    "last_seen": "2026-01-10T18:04:23.325Z"
+  },
+  {
+    "name": "CENTURY 21 Domaine",
+    "place_id": "ChIJ3w-4wd__0YURSlpWtUFWqX0",
+    "address": "Av. Benjamín Franklin 140-Piso 3, Escandón II Secc, Ciudad de México",
+    "rating": 4.7,
+    "user_ratings_total": 92,
+    "lat": 19.4052141,
+    "lng": -99.17705289999999,
+    "tags": [
+      "地产/中介"
+    ],
+    "sources": [
+      "Álvaro Obregón｜中介"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:06:04.994Z",
+    "last_seen": "2026-01-10T18:06:04.994Z"
+  },
+  {
+    "name": "Szechuan Gourmet Insurgentes",
+    "place_id": "ChIJXVdzNAD_0YURL1yiKu2kSiQ",
+    "address": "C. de Artemio del Valle Arizpe 30, Col del Valle Nte, Ciudad de México",
+    "rating": 4.9,
+    "user_ratings_total": 91,
+    "lat": 19.3962074,
+    "lng": -99.1707419,
+    "tags": [
+      "中餐"
+    ],
+    "sources": [
+      "Álvaro Obregón｜中餐馆",
+      "Álvaro Obregón｜中餐"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:29.438Z",
+    "last_seen": "2026-01-10T18:04:30.268Z"
+  },
+  {
+    "name": "Buba Buda (Suc. Parroquia)",
+    "place_id": "ChIJrwmjwfj_0YURY15wIgjoCpg",
+    "address": "Parroquia 716, Col del Valle Sur, Ciudad de México",
+    "rating": 4.2,
+    "user_ratings_total": 91,
+    "lat": 19.3692638,
+    "lng": -99.169405,
+    "tags": [
+      "甜品/茶饮/烘焙"
+    ],
+    "sources": [
+      "Álvaro Obregón｜奶茶"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:52.042Z",
+    "last_seen": "2026-01-10T18:04:52.042Z"
+  },
+  {
+    "name": "relajaté - Spa Sucursal Coyoacán",
+    "place_id": "ChIJm18ZNIn_0YURS-yLJ2v8_lc",
+    "address": "Av. Universidad 1601-Local E, Hacienda de Guadalupe Chimalistac, Chimalistac, Ciudad de México",
+    "rating": 4.6,
+    "user_ratings_total": 89,
+    "lat": 19.3513915,
+    "lng": -99.1784758,
+    "tags": [
+      "按摩/养生"
+    ],
+    "sources": [
+      "Álvaro Obregón｜按摩"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:15.214Z",
+    "last_seen": "2026-01-10T18:05:15.214Z"
+  },
+  {
+    "name": "Patio Pedregal Spa - Tratamientos faciales y corporales",
+    "place_id": "ChIJCY1LFVMBzoURsJK6rx6ZeQQ",
+    "address": "Periferico Sur 5270, Santa Ursula, Pedregal de Carrasco, Ciudad de México",
+    "rating": 4.5,
+    "user_ratings_total": 89,
+    "lat": 19.3031117,
+    "lng": -99.17215069999999,
+    "tags": [
+      "按摩/养生"
+    ],
+    "sources": [
+      "Álvaro Obregón｜按摩"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:15.214Z",
+    "last_seen": "2026-01-10T18:05:15.214Z"
+  },
+  {
+    "name": "Desértika Spa Miguel Ángel de Quevedo",
+    "place_id": "ChIJ29WT3cr_0YURACAeXQoE5JI",
+    "address": "Av. Miguel Ángel de Quevedo 432, Santa Catarina, Ciudad de México",
+    "rating": 4.6,
+    "user_ratings_total": 85,
+    "lat": 19.3458561,
+    "lng": -99.17214899999999,
+    "tags": [
+      "按摩/养生"
+    ],
+    "sources": [
+      "Álvaro Obregón｜按摩"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:15.214Z",
+    "last_seen": "2026-01-10T18:05:15.214Z"
+  },
+  {
+    "name": "Beauty Power Studio Garden del Valle",
+    "place_id": "ChIJqyL3b6z_0YURQXAXAwVBPcA",
+    "address": "Av. Universidad 767, Del Valle Sur Local 7, Planta Baja",
+    "rating": 4.3,
+    "user_ratings_total": 85,
+    "lat": 19.3738264,
+    "lng": -99.16308939999999,
+    "tags": [
+      "美发/美甲/美容"
+    ],
+    "sources": [
+      "Álvaro Obregón｜美甲"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:27.071Z",
+    "last_seen": "2026-01-10T18:05:27.071Z"
+  },
+  {
+    "name": "Crepas y Chilate Huayamilpas",
+    "place_id": "ChIJCbNNygoBzoURcq6sK_iQX2Q",
+    "address": "Rey Nezahualcóyotl 274, Coyoacán, Ciudad de México",
+    "rating": 4.4,
+    "user_ratings_total": 80,
+    "lat": 19.322559,
+    "lng": -99.1508982,
+    "tags": [
+      "甜品/茶饮/烘焙"
+    ],
+    "sources": [
+      "Álvaro Obregón｜甜品"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:56.045Z",
+    "last_seen": "2026-01-10T18:04:56.045Z"
+  },
+  {
+    "name": "LUXURIUM REALTY",
+    "place_id": "ChIJYw_Cd6b_0YUR-3POv3gY_UA",
+    "address": "Av. Coyoacán 1622, Edif. 4, piso 2, Colonia Del Valle, Ciudad de México",
+    "rating": 4.9,
+    "user_ratings_total": 75,
+    "lat": 19.3655485,
+    "lng": -99.1723777,
+    "tags": [
+      "地产/中介"
+    ],
+    "sources": [
+      "Álvaro Obregón｜房产"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:06:02.400Z",
+    "last_seen": "2026-01-10T18:06:02.400Z"
+  },
+  {
+    "name": "SAUZA & RICO ABOGADOS MIGRATORIOS",
+    "place_id": "ChIJj4PvRq740YURvmmf6WMDrgw",
+    "address": "C. Yácatas 215-PB, Narvarte Poniente, Ciudad de México",
+    "rating": 4.9,
+    "user_ratings_total": 74,
+    "lat": 19.393232,
+    "lng": -99.1555544,
+    "tags": [
+      "法律/财税/咨询"
+    ],
+    "sources": [
+      "Álvaro Obregón｜律师"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:06:11.399Z",
+    "last_seen": "2026-01-10T18:06:11.399Z"
+  },
+  {
+    "name": "Emilio Martínez by KW Premier",
+    "place_id": "ChIJVeLy2A0d0oURECSZHQ3VQ8g",
+    "address": "San Francisco 25-201, Col del Valle Nte, Ciudad de México",
+    "rating": 4.9,
+    "user_ratings_total": 72,
+    "lat": 19.3986247,
+    "lng": -99.16953869999999,
+    "tags": [
+      "地产/中介"
+    ],
+    "sources": [
+      "Álvaro Obregón｜房产"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:06:02.400Z",
+    "last_seen": "2026-01-10T18:06:02.400Z"
+  },
+  {
+    "name": "RK Inmobiliaria",
+    "place_id": "ChIJHR38kan40YUR96yuFMafwlE",
+    "address": "Bartolomé R. Salido 126-Int 2, Independencia, Ciudad de México",
+    "rating": 4.9,
+    "user_ratings_total": 69,
+    "lat": 19.381736,
+    "lng": -99.1486303,
+    "tags": [
+      "地产/中介"
+    ],
+    "sources": [
+      "Álvaro Obregón｜中介"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:06:04.994Z",
+    "last_seen": "2026-01-10T18:06:04.994Z"
+  },
+  {
+    "name": "Casa Di Mahia",
+    "place_id": "ChIJ0yhiL2r_0YURDOG8Cv0Ohhc",
+    "address": "Goya 54, Insurgentes Mixcoac, Ciudad de México",
+    "rating": 4.3,
+    "user_ratings_total": 66,
+    "lat": 19.3736023,
+    "lng": -99.18506289999999,
+    "tags": [
+      "甜品/茶饮/烘焙"
+    ],
+    "sources": [
+      "Álvaro Obregón｜甜品"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:56.045Z",
+    "last_seen": "2026-01-10T18:04:56.045Z"
+  },
+  {
+    "name": "Spa Ejecutivo F&F",
+    "place_id": "ChIJdbHV7ev_0YURVgWHklvNVTg",
+    "address": "Alabama 209, Nápoles, Ciudad de México",
+    "rating": 4.6,
+    "user_ratings_total": 64,
+    "lat": 19.3891122,
+    "lng": -99.18071979999999,
+    "tags": [
+      "按摩/养生"
+    ],
+    "sources": [
+      "Álvaro Obregón｜按摩"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:15.214Z",
+    "last_seen": "2026-01-10T18:05:15.214Z"
+  },
+  {
+    "name": "La Fe Comida China",
+    "place_id": "ChIJOzMOGz4BzoURk7LmY7g4CT8",
+    "address": "El Caracol, Mexico City",
+    "rating": 2.7,
+    "user_ratings_total": 63,
+    "lat": 19.3058038,
+    "lng": -99.1664825,
+    "tags": [
+      "火锅/烧烤/小吃"
+    ],
+    "sources": [
+      "Álvaro Obregón｜bbq chino"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:39.153Z",
+    "last_seen": "2026-01-10T18:04:39.153Z"
+  },
+  {
+    "name": "Daemon 魔辣 Asian Street Food",
+    "place_id": "ChIJI_imRQD_0YUR74VTssqzfP0",
+    "address": "Av México 123-2, Hipódromo, Ciudad de México",
+    "rating": 4.3,
+    "user_ratings_total": 63,
+    "lat": 19.4104422,
+    "lng": -99.16945539999999,
+    "tags": [
+      "面馆/拉面"
+    ],
+    "sources": [
+      "Álvaro Obregón｜面馆"
+    ],
+    "signals": [
+      "name_has_han",
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:46.145Z",
+    "last_seen": "2026-01-10T18:04:46.145Z"
+  },
+  {
+    "name": "Conexión Inmobiliaria",
+    "place_id": "ChIJuWG_5mkB0oUR4pXbekxhnAM",
+    "address": "Torre Anseli, Av. Revolución 1267-Piso 19 of a, Los Alpes, Ciudad de México",
+    "rating": 4.9,
+    "user_ratings_total": 60,
+    "lat": 19.3610543,
+    "lng": -99.189803,
+    "tags": [
+      "地产/中介"
+    ],
+    "sources": [
+      "Álvaro Obregón｜中介"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:06:04.994Z",
+    "last_seen": "2026-01-10T18:06:04.994Z"
+  },
+  {
+    "name": "Top by Gustavo Pimentel (Top Real Estate)",
+    "place_id": "ChIJf3i835L40YURYshJ_ameiAs",
+    "address": "Av. Insurgentes Sur 700, Del Valle Norte, Ciudad de México",
+    "rating": 4.9,
+    "user_ratings_total": 59,
+    "lat": 19.3935634,
+    "lng": -99.1722123,
+    "tags": [
+      "地产/中介"
+    ],
+    "sources": [
+      "Álvaro Obregón｜房产",
+      "Álvaro Obregón｜中介"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:06:02.399Z",
+    "last_seen": "2026-01-10T18:06:04.994Z"
+  },
+  {
+    "name": "Ramen Sairi Insurgentes",
+    "place_id": "ChIJQ2OgQrL_0YURvP1180sn-9s",
+    "address": "Av. Insurgentes Sur 659, Nápoles, Ciudad de México",
+    "rating": 3.5,
+    "user_ratings_total": 58,
+    "lat": 19.3953449,
+    "lng": -99.1722272,
+    "tags": [
+      "面馆/拉面"
+    ],
+    "sources": [
+      "Álvaro Obregón｜ramen",
+      "Álvaro Obregón｜拉面"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:43.144Z",
+    "last_seen": "2026-01-10T18:04:47.062Z"
+  },
+  {
+    "name": "MĀMĀCHÁ - Boba Café",
+    "place_id": "ChIJLzMVWkf_0YURxFwLpXvBD7s",
+    "address": "Manzanas 56, Tlacoquemecatl del Valle, Ciudad de México",
+    "rating": 4.3,
+    "user_ratings_total": 54,
+    "lat": 19.3762673,
+    "lng": -99.1776864,
+    "tags": [
+      "甜品/茶饮/烘焙"
+    ],
+    "sources": [
+      "Álvaro Obregón｜bubble tea",
+      "Álvaro Obregón｜奶茶",
+      "Álvaro Obregón｜boba"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:51.130Z",
+    "last_seen": "2026-01-10T18:04:52.872Z"
+  },
+  {
+    "name": "Ka Wong",
+    "place_id": "ChIJvTzUJWYBzoURXEdYcbY6bx8",
+    "address": "Blvd. Gransur 85-84, El Caracol, Ciudad de México",
+    "rating": 3.9,
+    "user_ratings_total": 53,
+    "lat": 19.3053994,
+    "lng": -99.1666508,
+    "tags": [
+      "中餐"
+    ],
+    "sources": [
+      "Álvaro Obregón｜中餐"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:30.268Z",
+    "last_seen": "2026-01-10T18:04:30.268Z"
+  },
+  {
+    "name": "Estética Mary",
+    "place_id": "ChIJ5_N7kVkBzoURtx9UNgvqeeY",
+    "address": "San Felipe Mz528 Lt16, Pedregal de Sta Úrsula, Ciudad de México",
+    "rating": 4.5,
+    "user_ratings_total": 52,
+    "lat": 19.3162696,
+    "lng": -99.1497291,
+    "tags": [
+      "美发/美甲/美容"
+    ],
+    "sources": [
+      "Álvaro Obregón｜美甲"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:27.071Z",
+    "last_seen": "2026-01-10T18:05:27.071Z"
+  },
+  {
+    "name": "Great Homes",
+    "place_id": "ChIJvdM4vhoA0oURwo95r6e1u1I",
+    "address": "Mariscal 29, San Ángel, Ciudad de México",
+    "rating": 4.7,
+    "user_ratings_total": 51,
+    "lat": 19.3489076,
+    "lng": -99.1998832,
+    "tags": [
+      "地产/中介"
+    ],
+    "sources": [
+      "Álvaro Obregón｜房产",
+      "Álvaro Obregón｜中介"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:06:02.400Z",
+    "last_seen": "2026-01-10T18:06:04.994Z"
+  },
+  {
+    "name": "Beau Bella Nails Bar División",
+    "place_id": "ChIJK_z2xH7_0YUR89Nqn8dtS5M",
+    "address": "Av. División del Nte. 2723, San Lucas, Ciudad de México",
+    "rating": 4.5,
+    "user_ratings_total": 49,
+    "lat": 19.3501914,
+    "lng": -99.15116929999999,
+    "tags": [
+      "美发/美甲/美容"
+    ],
+    "sources": [
+      "Álvaro Obregón｜美甲"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:27.071Z",
+    "last_seen": "2026-01-10T18:05:27.071Z"
+  },
+  {
+    "name": "Roger's Lab BBQ Grill",
+    "place_id": "ChIJG30dS47_0YURog6eBqs141o",
+    "address": "Food Market, Av Insurgentes Sur 1457, Plaza Manacar, 3er Piso, Insurgentes Mixcoac, Ciudad de México",
+    "rating": 4.8,
+    "user_ratings_total": 48,
+    "lat": 19.368452,
+    "lng": -99.181062,
+    "tags": [
+      "火锅/烧烤/小吃"
+    ],
+    "sources": [
+      "Álvaro Obregón｜烧烤"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:35.993Z",
+    "last_seen": "2026-01-10T18:04:35.993Z"
+  },
+  {
+    "name": "Peones al Ataque Academia de Gimnasia y Ajedrez",
+    "place_id": "ChIJ8TLtbEX_0YUR2-vJf0llWBE",
+    "address": "Edificio Condesa Sur, Av. Revolución 67-Local 11-A, Tacubaya, Ciudad de México",
+    "rating": 4.9,
+    "user_ratings_total": 48,
+    "lat": 19.4060698,
+    "lng": -99.1846485,
+    "tags": [
+      "教育/培训"
+    ],
+    "sources": [
+      "Álvaro Obregón｜academia"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:06:09.108Z",
+    "last_seen": "2026-01-10T18:06:09.108Z"
+  },
+  {
+    "name": "Clínica Feng Huang",
+    "place_id": "ChIJtYlWfBcAzoURoAqediC6EuE",
+    "address": "Calle Copal, casi esquina Acatempa, Pedregal de Santo Domingo, Alcaldía, Ciudad de México",
+    "rating": 4.9,
+    "user_ratings_total": 46,
+    "lat": 19.3252171,
+    "lng": -99.1710853,
+    "tags": [
+      "中医/诊所"
+    ],
+    "sources": [
+      "Álvaro Obregón｜中医"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:06:09.490Z",
+    "last_seen": "2026-01-10T18:06:09.490Z"
+  },
+  {
+    "name": "Postura Inmobiliaria",
+    "place_id": "ChIJ646AI_7_0YURHz76OgcoO6c",
+    "address": "Calle Cracovia 72, San Ángel TNT, San Ángel, Ciudad de México",
+    "rating": 5,
+    "user_ratings_total": 45,
+    "lat": 19.3468453,
+    "lng": -99.1886569,
+    "tags": [
+      "地产/中介"
+    ],
+    "sources": [
+      "Álvaro Obregón｜房产",
+      "Álvaro Obregón｜中介"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:06:02.399Z",
+    "last_seen": "2026-01-10T18:06:04.994Z"
+  },
+  {
+    "name": "Pollos a la leña y Costillas BBQ \"Portales\"",
+    "place_id": "ChIJsc2R-0z-0YUREfCC0MeQ720",
+    "address": "Alhambra 202BIS, Portales Nte, Ciudad de México",
+    "rating": 4.3,
+    "user_ratings_total": 44,
+    "lat": 19.3706142,
+    "lng": -99.1433758,
+    "tags": [
+      "火锅/烧烤/小吃"
+    ],
+    "sources": [
+      "Álvaro Obregón｜烧烤"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:35.993Z",
+    "last_seen": "2026-01-10T18:04:35.993Z"
+  },
+  {
+    "name": "ESTÉTICA PAU",
+    "place_id": "ChIJxZSyja3_0YURyjZO6L3ezSQ",
+    "address": "Pilares 1519, Letran Valle, Ciudad de México",
+    "rating": 4.7,
+    "user_ratings_total": 44,
+    "lat": 19.3743993,
+    "lng": -99.14955309999999,
+    "tags": [
+      "美发/美甲/美容"
+    ],
+    "sources": [
+      "Álvaro Obregón｜美甲"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:27.071Z",
+    "last_seen": "2026-01-10T18:05:27.071Z"
+  },
+  {
+    "name": "Estética Moni’k",
+    "place_id": "ChIJKTCYHHQBzoURddbset8dqoE",
+    "address": "Cda. 1 Caliz 22, El Reloj, Ciudad de México",
+    "rating": 4.8,
+    "user_ratings_total": 43,
+    "lat": 19.3174419,
+    "lng": -99.1405103,
+    "tags": [
+      "美发/美甲/美容"
+    ],
+    "sources": [
+      "Álvaro Obregón｜美甲"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:27.071Z",
+    "last_seen": "2026-01-10T18:05:27.071Z"
+  },
+  {
+    "name": "LjMasajes Relajantes y Terapéuticos",
+    "place_id": "ChIJi65c02P_0YURInhcSY7aK_8",
+    "address": "Cumbres de Acultzingo 13, Narvarte Oriente, Ciudad de México",
+    "rating": 5,
+    "user_ratings_total": 42,
+    "lat": 19.3922036,
+    "lng": -99.1503019,
+    "tags": [
+      "按摩/养生"
+    ],
+    "sources": [
+      "Álvaro Obregón｜按摩"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:15.214Z",
+    "last_seen": "2026-01-10T18:05:15.214Z"
+  },
+  {
+    "name": "Estética Junior",
+    "place_id": "ChIJrTm2vUgAzoURDOfx6L7LR5M",
+    "address": "Textitlan # 222 Local 3 esq. con San Felipe, Pedregal de Santa Úrsula Coapa, Ciudad de México",
+    "rating": 4.7,
+    "user_ratings_total": 41,
+    "lat": 19.3144364,
+    "lng": -99.1450399,
+    "tags": [
+      "美发/美甲/美容"
+    ],
+    "sources": [
+      "Álvaro Obregón｜美甲"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:27.071Z",
+    "last_seen": "2026-01-10T18:05:27.071Z"
+  },
+  {
+    "name": "Century 21 Premium Life",
+    "place_id": "ChIJodvpXLX_0YUR1NRkk9rlDLA",
+    "address": "Pedro Romero de Terreros 1211-Planta Baja, Narvarte Poniente, Ciudad de México",
+    "rating": 4.6,
+    "user_ratings_total": 39,
+    "lat": 19.3939427,
+    "lng": -99.1578747,
+    "tags": [
+      "地产/中介"
+    ],
+    "sources": [
+      "Álvaro Obregón｜房产",
+      "Álvaro Obregón｜中介"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:06:02.399Z",
+    "last_seen": "2026-01-10T18:06:04.994Z"
+  },
+  {
+    "name": "Restaurante D' LEOS",
+    "place_id": "ChIJUVYhpPEA0oURb6Bb7hvCOY8",
+    "address": "Cantil 15, Santa Lucía, Ciudad de México",
+    "rating": 4.6,
+    "user_ratings_total": 38,
+    "lat": 19.3656799,
+    "lng": -99.2429913,
+    "tags": [
+      "火锅/烧烤/小吃"
+    ],
+    "sources": [
+      "Álvaro Obregón｜烧烤"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:35.993Z",
+    "last_seen": "2026-01-10T18:04:35.993Z"
+  },
+  {
+    "name": "GBR INVERSIONES INMOBILIARIAS",
+    "place_id": "ChIJ__8Ph3r_0YURdxjz0MxFLoc",
+    "address": "C. Pensilvania 60 B, Nápoles, Ciudad de México",
+    "rating": 4.9,
+    "user_ratings_total": 38,
+    "lat": 19.3929283,
+    "lng": -99.1793063,
+    "tags": [
+      "地产/中介"
+    ],
+    "sources": [
+      "Álvaro Obregón｜房产",
+      "Álvaro Obregón｜中介"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:06:02.399Z",
+    "last_seen": "2026-01-10T18:06:04.994Z"
+  },
+  {
+    "name": "BEAUTY FACTORY ESTETICA",
+    "place_id": "ChIJ6fPzyMsBzoURicM8_JLvkUY",
+    "address": "Cáliz 93, El Reloj, Ciudad de México",
+    "rating": 4.3,
+    "user_ratings_total": 36,
+    "lat": 19.3190121,
+    "lng": -99.14217780000001,
+    "tags": [
+      "美发/美甲/美容"
+    ],
+    "sources": [
+      "Álvaro Obregón｜美甲"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:27.071Z",
+    "last_seen": "2026-01-10T18:05:27.071Z"
+  },
+  {
+    "name": "Luxury Habitat Real Estate Mexico",
+    "place_id": "ChIJ91GUNfj_zYUR7yEadKK2YNk",
+    "address": "Av Cd Universitaria 286-piso 2, Jardines del Pedregal, Ciudad de México",
+    "rating": 4.1,
+    "user_ratings_total": 34,
+    "lat": 19.3331074,
+    "lng": -99.1996705,
+    "tags": [
+      "地产/中介"
+    ],
+    "sources": [
+      "Álvaro Obregón｜房产"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:06:02.399Z",
+    "last_seen": "2026-01-10T18:06:02.399Z"
+  },
+  {
+    "name": "NAVE INMOBILIARIA",
+    "place_id": "ChIJ6fPWEG8AzoUR2lVckIxe8nI",
+    "address": "Periferico Sur 3915, Pedregal de Carrasco, Ciudad de México",
+    "rating": 4.8,
+    "user_ratings_total": 33,
+    "lat": 19.3044178,
+    "lng": -99.174798,
+    "tags": [
+      "地产/中介"
+    ],
+    "sources": [
+      "Álvaro Obregón｜房产",
+      "Álvaro Obregón｜中介"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:06:02.400Z",
+    "last_seen": "2026-01-10T18:06:04.994Z"
+  },
+  {
+    "name": "\"Emmy\" Estética, uñas y cuidado personal.",
+    "place_id": "ChIJXcQbm0kBzoUR8dBI9i0vQ4s",
+    "address": "Av. Anacahuita 424, Pedregal de Santo Domingo, Ciudad de México",
+    "rating": 4.5,
+    "user_ratings_total": 32,
+    "lat": 19.3224376,
+    "lng": -99.1722217,
+    "tags": [
+      "美发/美甲/美容"
+    ],
+    "sources": [
+      "Álvaro Obregón｜美甲"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:27.071Z",
+    "last_seen": "2026-01-10T18:05:27.071Z"
+  },
+  {
+    "name": "Téo Café",
+    "place_id": "ChIJQWacZQD_0YURt0TvOmuX2Cw",
+    "address": "Av. Progreso 49, Santa Catarina, Ciudad de México",
+    "rating": 4.7,
+    "user_ratings_total": 31,
+    "lat": 19.3511248,
+    "lng": -99.17306099999999,
+    "tags": [
+      "甜品/茶饮/烘焙"
+    ],
+    "sources": [
+      "Álvaro Obregón｜甜品"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:56.045Z",
+    "last_seen": "2026-01-10T18:04:56.045Z"
+  },
+  {
+    "name": "Ruz Inmobiliaria",
+    "place_id": "ChIJoxTePGT_0YUR6mPlNGnoRyM",
+    "address": "Av. Miguel Ángel de Quevedo 443-local 24, Romero de Terreros, Ciudad de México",
+    "rating": 4.1,
+    "user_ratings_total": 31,
+    "lat": 19.3452161,
+    "lng": -99.1718563,
+    "tags": [
+      "地产/中介"
+    ],
+    "sources": [
+      "Álvaro Obregón｜中介"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:06:04.994Z",
+    "last_seen": "2026-01-10T18:06:04.994Z"
+  },
+  {
+    "name": "Casamax Soluciones inmobiliarias",
+    "place_id": "ChIJbbG7Bmv_0YURhcgSmfLzleY",
+    "address": "Quintana Roo 131, Local A, 06170, Hipódromo Condesa, Ciudad de México",
+    "rating": 3.9,
+    "user_ratings_total": 30,
+    "lat": 19.4045861,
+    "lng": -99.1701415,
+    "tags": [
+      "地产/中介"
+    ],
+    "sources": [
+      "Álvaro Obregón｜中介"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:06:04.994Z",
+    "last_seen": "2026-01-10T18:06:04.994Z"
+  },
+  {
+    "name": "Oasis Spa",
+    "place_id": "ChIJ4cgEn6D_0YUR3-lNOzWeE90",
+    "address": "Maricopa 10-5, Nápoles, Ciudad de México",
+    "rating": 4.6,
+    "user_ratings_total": 29,
+    "lat": 19.3951746,
+    "lng": -99.1726664,
+    "tags": [
+      "按摩/养生"
+    ],
+    "sources": [
+      "Álvaro Obregón｜按摩"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:15.214Z",
+    "last_seen": "2026-01-10T18:05:15.214Z"
+  },
+  {
+    "name": "Masajes, Faciales/Mon Reve Spa A Domicilió",
+    "place_id": "ChIJO_hcrcf_0YURMsM5_CVm1-s",
+    "address": "Calle Pdte. Carranza 45, La Concepción, Ciudad de México",
+    "rating": 5,
+    "user_ratings_total": 23,
+    "lat": 19.3471017,
+    "lng": -99.1611343,
+    "tags": [
+      "按摩/养生"
+    ],
+    "sources": [
+      "Álvaro Obregón｜按摩"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:15.214Z",
+    "last_seen": "2026-01-10T18:05:15.214Z"
+  },
+  {
+    "name": "Barbacoa Xotepingo local 51",
+    "place_id": "ChIJmaCs62YBzoURnaNVV-zP4pg",
+    "address": "Mercado Xotepingo local 51, Cd Jardín",
+    "rating": 4,
+    "user_ratings_total": 22,
+    "lat": 19.3381287,
+    "lng": -99.1444495,
+    "tags": [
+      "火锅/烧烤/小吃"
+    ],
+    "sources": [
+      "Álvaro Obregón｜烧烤"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:35.993Z",
+    "last_seen": "2026-01-10T18:04:35.993Z"
+  },
+  {
+    "name": "Kanan Inmobiliaria",
+    "place_id": "ChIJQVAwpR7_0YURKfhaMYnYLeo",
+    "address": "11800 Unión 185 int. S.C, Escandón I Secc, Ciudad de México",
+    "rating": 4.6,
+    "user_ratings_total": 22,
+    "lat": 19.3999666,
+    "lng": -99.175305,
+    "tags": [
+      "地产/中介"
+    ],
+    "sources": [
+      "Álvaro Obregón｜中介"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:06:04.994Z",
+    "last_seen": "2026-01-10T18:06:04.994Z"
+  },
+  {
+    "name": "ALPHA Propiedades",
+    "place_id": "ChIJ5_Rc7Kz40YURzwCyjL5ZhB8",
+    "address": "Eje 4 Sur Xola 10, Local B, Del Valle Norte, Ciudad de México",
+    "rating": 4.6,
+    "user_ratings_total": 20,
+    "lat": 19.398362,
+    "lng": -99.1703139,
+    "tags": [
+      "地产/中介"
+    ],
+    "sources": [
+      "Álvaro Obregón｜房产"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:06:02.400Z",
+    "last_seen": "2026-01-10T18:06:02.400Z"
+  },
+  {
+    "name": "Estetica Belleza Integral",
+    "place_id": "ChIJX0fjm9f_0YURRbp4Kf-pKfA",
+    "address": "Real de Los Reyes 87-Local B, Pueblo de, Los Reyes, Ciudad de México",
+    "rating": 4.5,
+    "user_ratings_total": 19,
+    "lat": 19.3405354,
+    "lng": -99.15566799999999,
+    "tags": [
+      "美发/美甲/美容"
+    ],
+    "sources": [
+      "Álvaro Obregón｜美甲"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:27.071Z",
+    "last_seen": "2026-01-10T18:05:27.071Z"
+  },
+  {
+    "name": "Estetica Model",
+    "place_id": "ChIJAwGXHo3_0YURn3wziyW-8gc",
+    "address": "Calle Ajusco 20, Florida, Ciudad de México",
+    "rating": 4.3,
+    "user_ratings_total": 18,
+    "lat": 19.362061,
+    "lng": -99.18133519999999,
+    "tags": [
+      "美发/美甲/美容"
+    ],
+    "sources": [
+      "Álvaro Obregón｜美甲"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:27.071Z",
+    "last_seen": "2026-01-10T18:05:27.071Z"
+  },
+  {
+    "name": "Estética Perfect Del Valle",
+    "place_id": "ChIJ8cEPvGL_0YURiMkr-nJYAps",
+    "address": "Av. Coyoacán 309 - A, código 2, Col del Valle Centro, Ciudad de México",
+    "rating": 4.5,
+    "user_ratings_total": 15,
+    "lat": 19.3946827,
+    "lng": -99.16661549999999,
+    "tags": [
+      "美发/美甲/美容"
+    ],
+    "sources": [
+      "Álvaro Obregón｜美甲"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:27.071Z",
+    "last_seen": "2026-01-10T18:05:27.071Z"
+  },
+  {
+    "name": "DOMHAN SPA",
+    "place_id": "ChIJccQ-uZv_0YUR69xqZSN4jaM",
+    "address": "José María Velasco 82, Colonia, Ciudad de México",
+    "rating": 5,
+    "user_ratings_total": 14,
+    "lat": 19.3638507,
+    "lng": -99.18404319999999,
+    "tags": [
+      "按摩/养生"
+    ],
+    "sources": [
+      "Álvaro Obregón｜按摩"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:15.214Z",
+    "last_seen": "2026-01-10T18:05:15.214Z"
+  },
+  {
+    "name": "BOBA EXXPERIENCE",
+    "place_id": "ChIJ2xz0bQD_zYURblMO5PpLpTU",
+    "address": "Cráter 823, Jardines del Pedregal, Ciudad de México",
+    "rating": 4.4,
+    "user_ratings_total": 13,
+    "lat": 19.3160562,
+    "lng": -99.21147069999999,
+    "tags": [
+      "甜品/茶饮/烘焙"
+    ],
+    "sources": [
+      "Álvaro Obregón｜bubble tea",
+      "Álvaro Obregón｜boba"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:51.130Z",
+    "last_seen": "2026-01-10T18:04:52.872Z"
+  },
+  {
+    "name": "Lily’s Noodles",
+    "place_id": "ChIJSeMEeQD_0YUR0-b07yjnqwY",
+    "address": "Culiacan 19a, Hipódromo, Ciudad de México",
+    "rating": 4.5,
+    "user_ratings_total": 12,
+    "lat": 19.408035,
+    "lng": -99.1713002,
+    "tags": [
+      "面馆/拉面"
+    ],
+    "sources": [
+      "Álvaro Obregón｜noodle"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:39.968Z",
+    "last_seen": "2026-01-10T18:04:39.968Z"
+  },
+  {
+    "name": "consulta de acupuntura",
+    "place_id": "ChIJIV0BDBYAzoUR_cNtcOwNt80",
+    "address": "Pascle 480, Pedregal de Santo Domingo, Ciudad de México",
+    "rating": 4.8,
+    "user_ratings_total": 12,
+    "lat": 19.3200655,
+    "lng": -99.16883059999999,
+    "tags": [
+      "中医/诊所"
+    ],
+    "sources": [
+      "Álvaro Obregón｜中医"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:06:09.490Z",
+    "last_seen": "2026-01-10T18:06:09.490Z"
+  },
+  {
+    "name": "Kame Ramen Del Valle",
+    "place_id": "ChIJ53MQ74__0YURXGBt9MzCvsg",
+    "address": "Romero de Terreros esq Adolfo Prieto local 250, Del Valle, CDMX",
+    "rating": 4.4,
+    "user_ratings_total": 11,
+    "lat": 19.3956102,
+    "lng": -99.1663804,
+    "tags": [
+      "面馆/拉面"
+    ],
+    "sources": [
+      "Álvaro Obregón｜ramen",
+      "Álvaro Obregón｜拉面"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:43.144Z",
+    "last_seen": "2026-01-10T18:04:47.062Z"
+  },
+  {
+    "name": "Embodiment México",
+    "place_id": "ChIJTX_tJA3_0YURhZByeWhm6XU",
+    "address": "Campeche 75, Roma Sur, Ciudad de México",
+    "rating": 3.9,
+    "user_ratings_total": 10,
+    "lat": 19.4104706,
+    "lng": -99.16205,
+    "tags": [
+      "按摩/养生"
+    ],
+    "sources": [
+      "Álvaro Obregón｜按摩"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:15.214Z",
+    "last_seen": "2026-01-10T18:05:15.214Z"
+  },
+  {
+    "name": "Kepler Inmobiliaria Boutique",
+    "place_id": "ChIJ04WxEU7_0YURqIJwbdevhQ0",
+    "address": "C. Indiana 260-interior 802, Cd. de los Deportes, Ciudad de México",
+    "rating": 4.6,
+    "user_ratings_total": 10,
+    "lat": 19.3835871,
+    "lng": -99.17709339999999,
+    "tags": [
+      "地产/中介"
+    ],
+    "sources": [
+      "Álvaro Obregón｜房产"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:06:02.399Z",
+    "last_seen": "2026-01-10T18:06:02.399Z"
+  },
+  {
+    "name": "Carbón & Leña Ahumados BBQ",
+    "place_id": "ChIJmdRtUbv_0YURRXomiQ2jthc",
+    "address": "Av. Miguel Ángel de Quevedo 673, San Francisco, Ciudad de México",
+    "rating": 4.1,
+    "user_ratings_total": 9,
+    "lat": 19.3442687,
+    "lng": -99.16350589999999,
+    "tags": [
+      "火锅/烧烤/小吃"
+    ],
+    "sources": [
+      "Álvaro Obregón｜烧烤"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:35.993Z",
+    "last_seen": "2026-01-10T18:04:35.993Z"
+  },
+  {
+    "name": "Nboba-t “boba bar”",
+    "place_id": "ChIJU4_-HAAB0oURfq12mw2it-8",
+    "address": "Calle 10 132, Tolteca, Ciudad de México",
+    "rating": 3.2,
+    "user_ratings_total": 9,
+    "lat": 19.388971,
+    "lng": -99.191406,
+    "tags": [
+      "甜品/茶饮/烘焙"
+    ],
+    "sources": [
+      "Álvaro Obregón｜boba"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:52.872Z",
+    "last_seen": "2026-01-10T18:04:52.872Z"
+  },
+  {
+    "name": "Café Le Jardin De La Fée",
+    "place_id": "ChIJZdgXDj4AzoURgKJHVPKphIw",
+    "address": "Zihuatlán 132, Pedregal de Santo Domingo, Ciudad de México",
+    "rating": 4.2,
+    "user_ratings_total": 9,
+    "lat": 19.3191071,
+    "lng": -99.16681630000001,
+    "tags": [
+      "甜品/茶饮/烘焙"
+    ],
+    "sources": [
+      "Álvaro Obregón｜甜品"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:56.045Z",
+    "last_seen": "2026-01-10T18:04:56.045Z"
+  },
+  {
+    "name": "Medicina Integrativa \"El Equilibrio Perfecto Para Tu Salud\"",
+    "place_id": "ChIJjeui3jIAzoURgvPYqZdVaPk",
+    "address": "esquina, Omecihuatl, Xoloc MZ 3 LT 13, Adolfo Ruíz Cortínez, Ciudad de México",
+    "rating": 5,
+    "user_ratings_total": 8,
+    "lat": 19.3240865,
+    "lng": -99.1467287,
+    "tags": [
+      "中医/诊所"
+    ],
+    "sources": [
+      "Álvaro Obregón｜中医"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:06:09.490Z",
+    "last_seen": "2026-01-10T18:06:09.490Z"
+  },
+  {
+    "name": "Noizti Nails Punto MAQ",
+    "place_id": "ChIJoRuhLAD_0YUR0qwpzW8TJMQ",
+    "address": "Av. Miguel Ángel de Quevedo 1144, Parque San Andrés, Ciudad de México",
+    "rating": 5,
+    "user_ratings_total": 7,
+    "lat": 19.3427315,
+    "lng": -99.14672859999999,
+    "tags": [
+      "美发/美甲/美容"
+    ],
+    "sources": [
+      "Álvaro Obregón｜美甲"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:27.071Z",
+    "last_seen": "2026-01-10T18:05:27.071Z"
+  },
+  {
+    "name": "BBQ & FRIENDS",
+    "place_id": "ChIJP78LERD_0YURaeoqD0dD7mY",
+    "address": "Av. Baja California 101, Roma Sur, Ciudad de México",
+    "rating": 5,
+    "user_ratings_total": 4,
+    "lat": 19.4064447,
+    "lng": -99.1608825,
+    "tags": [
+      "火锅/烧烤/小吃"
+    ],
+    "sources": [
+      "Álvaro Obregón｜烧烤"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:04:35.993Z",
+    "last_seen": "2026-01-10T18:04:35.993Z"
+  },
+  {
+    "name": "Boba Tea",
+    "place_id": "ChIJ0epkCAD_0YUR9uRvFCatHNI",
+    "address": "Patriotismo, San Pedro de los Pinos, Ciudad de México",
+    "rating": 4,
+    "user_ratings_total": 4,
+    "lat": 19.3954243,
+    "lng": -99.180725,
+    "tags": [
+      "甜品/茶饮/烘焙"
+    ],
+    "sources": [
+      "Álvaro Obregón｜奶茶",
+      "Álvaro Obregón｜boba"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:04:52.042Z",
+    "last_seen": "2026-01-10T18:04:52.872Z"
+  },
+  {
+    "name": "Sakura Market - Ramen, Snacks, Dulces, Bebidas Asiáticas, Productos kawaii",
+    "place_id": "ChIJF33f-cP_0YURyr0IPvGzXZM",
+    "address": "04310, Romero de Terreros, Ciudad de México",
+    "rating": 4,
+    "user_ratings_total": 4,
+    "lat": 19.3450116,
+    "lng": -99.1782429,
+    "tags": [
+      "超市/零售"
+    ],
+    "sources": [
+      "Álvaro Obregón｜asian grocery",
+      "Álvaro Obregón｜中国超市"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:05:09.550Z",
+    "last_seen": "2026-01-10T18:05:10.406Z"
+  },
+  {
+    "name": "金标风味餐厅",
+    "place_id": "ChIJk4cKWNz_0YURDuenuaOtqqw",
+    "address": "Xola 1504, Narvarte Poniente, Ciudad de México",
+    "rating": 3.7,
+    "user_ratings_total": 3,
+    "lat": 19.3957919,
+    "lng": -99.1522131,
+    "tags": [
+      "中餐"
+    ],
+    "sources": [
+      "Álvaro Obregón｜中餐馆",
+      "Álvaro Obregón｜中餐"
+    ],
+    "signals": [
+      "name_has_han"
+    ],
+    "first_seen": "2026-01-10T18:04:29.438Z",
+    "last_seen": "2026-01-10T18:04:30.268Z"
+  },
+  {
+    "name": "Estética Belle Unghie",
+    "place_id": "ChIJibANOBMBzoURvS2mfZxwffs",
+    "address": "Mixtecas 80, Ajusco, Ciudad de México",
+    "rating": 5,
+    "user_ratings_total": 2,
+    "lat": 19.3243957,
+    "lng": -99.15618959999999,
+    "tags": [
+      "美发/美甲/美容"
+    ],
+    "sources": [
+      "Álvaro Obregón｜美甲"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:27.071Z",
+    "last_seen": "2026-01-10T18:05:27.071Z"
+  },
+  {
+    "name": "Chinese School",
+    "place_id": "ChIJFf0GyaT_0YUR4S8S8xlvZqs",
+    "address": "Av. Cuauhtémoc 1221, Sta Cruz Atoyac, Ciudad de México",
+    "rating": 5,
+    "user_ratings_total": 1,
+    "lat": 19.3736354,
+    "lng": -99.1608354,
+    "tags": [
+      "教育/培训"
+    ],
+    "sources": [
+      "Álvaro Obregón｜中文学校"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:06:07.579Z",
+    "last_seen": "2026-01-10T18:06:07.580Z"
+  },
+  {
+    "name": "Clinica De Medicina Tradicional China",
+    "place_id": "ChIJu94cz7MBzoURnNS1CE7aQQ8",
+    "address": "04910, Morelos 19A, Ex-Hacienda Coapa, Ciudad de México",
+    "rating": 1,
+    "user_ratings_total": 1,
+    "lat": 19.306904,
+    "lng": -99.1410021,
+    "tags": [
+      "中医/诊所"
+    ],
+    "sources": [
+      "Álvaro Obregón｜中医"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:06:09.490Z",
+    "last_seen": "2026-01-10T18:06:09.490Z"
+  },
+  {
+    "name": "Super Sano Asia",
+    "place_id": "ChIJAd0ZvWf_zYURzjpnN215azk",
+    "address": "Av. Revolución 2015-Local 1, C.U., Ciudad de México",
+    "rating": "",
+    "user_ratings_total": "",
+    "lat": 19.3359505,
+    "lng": -99.19330149999999,
+    "tags": [
+      "超市/零售"
+    ],
+    "sources": [
+      "Álvaro Obregón｜亚洲超市"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:05:11.302Z",
+    "last_seen": "2026-01-10T18:05:11.302Z"
+  },
+  {
+    "name": "LOGISTICA IGC, S.A. DE C.V.",
+    "place_id": "ChIJn_0AsHb_0YURaOL3dw7y2h8",
+    "address": "Av. Insurgentes Sur 813, Nápoles, Ciudad de México",
+    "rating": "",
+    "user_ratings_total": "",
+    "lat": 19.3895456,
+    "lng": -99.1740961,
+    "tags": [
+      "物流/货运/清关"
+    ],
+    "sources": [
+      "Álvaro Obregón｜货运",
+      "Álvaro Obregón｜快递"
+    ],
+    "signals": [],
+    "first_seen": "2026-01-10T18:05:43.950Z",
+    "last_seen": "2026-01-10T18:05:44.325Z"
+  },
+  {
+    "name": "Consultorio de Medicina China y Homeopatia",
+    "place_id": "ChIJkf_Qqx7_0YUR-_7Ltu3o6Fg",
+    "address": "Plaza Inn, Torre Sur, Av. Insurgentes Sur 1971-Oficina 207, Guadalupe Inn, Ciudad de México",
+    "rating": "",
+    "user_ratings_total": "",
+    "lat": 19.3519899,
+    "lng": -99.1863932,
+    "tags": [
+      "中医/诊所"
+    ],
+    "sources": [
+      "Álvaro Obregón｜中医",
+      "Álvaro Obregón｜medicina china"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:06:09.490Z",
+    "last_seen": "2026-01-10T18:06:10.250Z"
+  },
+  {
+    "name": "Medicina Tradicional China Acupuntura Dra. Sandra Maldonado Moreno",
+    "place_id": "ChIJ78T3rMj_0YURB-3DBhuXZng",
+    "address": "Priv. Corina 15, Del Carmen, Ciudad de México",
+    "rating": "",
+    "user_ratings_total": "",
+    "lat": 19.3558361,
+    "lng": -99.15621399999999,
+    "tags": [
+      "中医/诊所"
+    ],
+    "sources": [
+      "Álvaro Obregón｜中医"
+    ],
+    "signals": [
+      "name_has_hint"
+    ],
+    "first_seen": "2026-01-10T18:06:09.490Z",
+    "last_seen": "2026-01-10T18:06:09.490Z"
+  }
+]

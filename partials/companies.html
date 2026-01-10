@@ -14,3 +14,270 @@
 
   <!--COMPANY_SECTIONS-->
 </section>
+<script>
+  (() => {
+    const cards = Array.from(document.querySelectorAll('.company-card'));
+    if (!cards.length) return;
+
+    const cityButtons = Array.from(document.querySelectorAll('.city-nav [data-city]'));
+    const cityNavSections = Array.from(document.querySelectorAll('.city-section[data-city]'));
+    if (cityButtons.length && cityNavSections.length) {
+      const stabilizeScroll = (anchor, action) => {
+        if (!anchor) {
+          action();
+          return;
+        }
+        const before = anchor.getBoundingClientRect().top;
+        action();
+        requestAnimationFrame(() => {
+          const after = anchor.getBoundingClientRect().top;
+          if (Number.isFinite(before) && Number.isFinite(after)) {
+            window.scrollBy(0, after - before);
+          }
+        });
+      };
+
+      const applyCityFilter = (cityValue) => {
+        cityNavSections.forEach((section) => {
+          const match = cityValue === 'all' || section.dataset.city === cityValue;
+          section.hidden = !match;
+        });
+      };
+
+      cityButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          const target = button.dataset.city || 'all';
+          cityButtons.forEach((item) => item.classList.remove('is-active'));
+          button.classList.add('is-active');
+          stabilizeScroll(button.closest('.city-nav'), () => applyCityFilter(target));
+        });
+      });
+
+      applyCityFilter('all');
+    }
+
+    const grids = Array.from(document.querySelectorAll('.company-grid'));
+    grids.forEach((grid) => {
+      Array.from(grid.querySelectorAll('.company-card')).forEach((card, index) => {
+        card.dataset.order = String(index);
+      });
+    });
+
+    const stabilizeScroll = (anchor, action) => {
+      if (!anchor) {
+        action();
+        return;
+      }
+      const before = anchor.getBoundingClientRect().top;
+      action();
+      requestAnimationFrame(() => {
+        const after = anchor.getBoundingClientRect().top;
+        if (Number.isFinite(before) && Number.isFinite(after)) {
+          window.scrollBy(0, after - before);
+        }
+      });
+    };
+
+    const sortSection = (section, mode) => {
+      const targetGrids = Array.from(section.querySelectorAll('.company-grid'));
+      targetGrids.forEach((grid) => {
+        const gridCards = Array.from(grid.querySelectorAll('.company-card'));
+        const sorted = [...gridCards].sort((a, b) => {
+          if (mode === 'distance') {
+            const da = parseFloat(a.dataset.distanceKm || '');
+            const db = parseFloat(b.dataset.distanceKm || '');
+            const hasA = Number.isFinite(da);
+            const hasB = Number.isFinite(db);
+            if (hasA && hasB) return da - db;
+            if (hasA) return -1;
+            if (hasB) return 1;
+            return 0;
+          }
+          return Number(a.dataset.order || 0) - Number(b.dataset.order || 0);
+        });
+        sorted.forEach((card) => grid.appendChild(card));
+      });
+    };
+
+    const showAllInBlock = (block) => {
+      Array.from(block.querySelectorAll('.company-card')).forEach((card) => {
+        card.hidden = false;
+      });
+      Array.from(block.querySelectorAll('.industry-subgroup')).forEach((group) => {
+        group.hidden = false;
+      });
+    };
+
+    const getScrollOffset = (tools) => {
+      const header = document.querySelector('.site-header');
+      const headerHeight = header ? header.getBoundingClientRect().height : 0;
+      const toolsHeight = tools ? tools.getBoundingClientRect().height : 0;
+      return headerHeight + toolsHeight + 16;
+    };
+
+    const scrollToTarget = (target, tools) => {
+      if (!target) return;
+      const offset = getScrollOffset(tools);
+      const top = window.scrollY + target.getBoundingClientRect().top - offset;
+      window.scrollTo({ top, behavior: 'smooth' });
+    };
+
+    const applySectionFilter = (section, filterValue, scope) => {
+      const foodIndustry = section.querySelector('[data-city-tools]')?.dataset.foodIndustry || '';
+      const blocks = Array.from(section.querySelectorAll('.industry-block[data-industry]'));
+      if (filterValue === 'all') {
+        blocks.forEach((block) => {
+          block.hidden = false;
+          showAllInBlock(block);
+        });
+        return;
+      }
+      if (scope === 'industry') {
+        blocks.forEach((block) => {
+          const match = block.dataset.industry === filterValue;
+          block.hidden = !match;
+          if (match) {
+            showAllInBlock(block);
+          }
+        });
+        return;
+      }
+      blocks.forEach((block) => {
+        const isFood = block.dataset.industry === foodIndustry;
+        block.hidden = !isFood;
+        if (!isFood) return;
+        const cardsInBlock = Array.from(block.querySelectorAll('.company-card'));
+        cardsInBlock.forEach((card) => {
+          const category = card.dataset.category || '';
+          card.hidden = category !== filterValue;
+        });
+        const subgroups = Array.from(block.querySelectorAll('.industry-subgroup'));
+        subgroups.forEach((group) => {
+          const visible = group.querySelectorAll('.company-card:not([hidden])').length;
+          group.hidden = visible === 0;
+        });
+      });
+    };
+
+    const citySections = Array.from(document.querySelectorAll('.city-section[data-city]'));
+    citySections.forEach((section) => {
+      const tools = section.querySelector('[data-city-tools]');
+      if (!tools) return;
+      const filterButtons = Array.from(tools.querySelectorAll('[data-filter]'));
+      const sortButtons = Array.from(tools.querySelectorAll('[data-sort]'));
+      const getActiveSort = () => {
+        const active = sortButtons.find((button) => button.classList.contains('is-active'));
+        return active ? active.dataset.sort : 'default';
+      };
+      filterButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          filterButtons.forEach((item) => item.classList.remove('is-active'));
+          button.classList.add('is-active');
+          applySectionFilter(section, button.dataset.filter || 'all', button.dataset.filterScope || 'category');
+          sortSection(section, getActiveSort());
+          const filterValue = button.dataset.filter || 'all';
+          const scope = button.dataset.filterScope || 'category';
+          requestAnimationFrame(() => {
+            let target = null;
+            if (filterValue === 'all') {
+              target = section.querySelector('.industry-block[data-industry] .industry-head') || section.querySelector('.city-head');
+            } else if (scope === 'industry') {
+              const block = section.querySelector(`.industry-block[data-industry="${filterValue}"]`);
+              target = block?.querySelector('.industry-head') || block;
+            } else {
+              const subgroup = section.querySelector(`.industry-subgroup[data-category="${filterValue}"]:not([hidden])`);
+              target = subgroup?.querySelector('.industry-subhead') || subgroup;
+            }
+            scrollToTarget(target || section.querySelector('.city-head'), tools);
+          });
+        });
+      });
+      sortButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          sortButtons.forEach((item) => item.classList.remove('is-active'));
+          button.classList.add('is-active');
+          stabilizeScroll(tools, () => {
+            sortSection(section, button.dataset.sort || 'default');
+          });
+        });
+      });
+      applySectionFilter(section, 'all', 'category');
+    });
+
+    const geoCards = cards.filter((card) => card.dataset.lat && card.dataset.lng);
+    if (!geoCards.length || !navigator.geolocation) return;
+
+    const storageKey = 'mx_user_location_v1';
+    const maxAgeMs = 12 * 60 * 60 * 1000;
+
+    const loadLocation = () => {
+      try {
+        const raw = localStorage.getItem(storageKey);
+        if (!raw) return null;
+        const parsed = JSON.parse(raw);
+        if (!parsed || typeof parsed.lat !== 'number' || typeof parsed.lng !== 'number') return null;
+        if (Date.now() - parsed.time > maxAgeMs) return null;
+        return parsed;
+      } catch (err) {
+        return null;
+      }
+    };
+
+    const saveLocation = (lat, lng) => {
+      localStorage.setItem(storageKey, JSON.stringify({ lat, lng, time: Date.now() }));
+    };
+
+    const toRad = (value) => (value * Math.PI) / 180;
+    const distanceKm = (lat1, lng1, lat2, lng2) => {
+      const r = 6371;
+      const dLat = toRad(lat2 - lat1);
+      const dLng = toRad(lng2 - lng1);
+      const a = Math.sin(dLat / 2) ** 2
+        + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLng / 2) ** 2;
+      return 2 * r * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    };
+
+    const formatDistance = (km) => {
+      if (km < 1) return `${Math.round(km * 1000)} m`;
+      if (km < 10) return `${km.toFixed(1)} km`;
+      return `${Math.round(km)} km`;
+    };
+
+    const updateDistances = (lat, lng) => {
+      geoCards.forEach((card) => {
+        const cardLat = Number(card.dataset.lat);
+        const cardLng = Number(card.dataset.lng);
+        const distanceEl = card.querySelector('[data-distance]');
+        if (!distanceEl || !Number.isFinite(cardLat) || !Number.isFinite(cardLng)) return;
+        const km = distanceKm(lat, lng, cardLat, cardLng);
+        card.dataset.distanceKm = km.toFixed(4);
+        distanceEl.textContent = `距我 ${formatDistance(km)}`;
+        distanceEl.hidden = false;
+      });
+      citySections.forEach((section) => {
+        const tools = section.querySelector('[data-city-tools]');
+        const active = tools?.querySelector('[data-sort].is-active');
+        if (active && active.dataset.sort === 'distance') {
+          sortSection(section, 'distance');
+        }
+      });
+    };
+
+    const cached = loadLocation();
+    if (cached) {
+      updateDistances(cached.lat, cached.lng);
+      return;
+    }
+
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        const lat = pos.coords.latitude;
+        const lng = pos.coords.longitude;
+        saveLocation(lat, lng);
+        updateDistances(lat, lng);
+      },
+      () => {},
+      { enableHighAccuracy: false, maximumAge: 600000, timeout: 8000 }
+    );
+  })();
+</script>
