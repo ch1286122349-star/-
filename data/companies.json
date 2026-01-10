@@ -1,62 +1,497 @@
 [
   {
-    "slug": "yunhai-mx",
-    "name": "云海中餐（示例）",
+    "slug": "senorita-axia",
+    "name": "阿囍小酒馆 Señorita Axia",
     "industry": "餐饮与零售",
     "city": "墨西哥城",
-    "summary": "主营粤菜与商务套餐，支持企业团餐预定。",
-    "contact": "yunhai-mx",
-    "cover": "/assets/thumb_320_20161111161018_57761.jpg",
+    "summary": "中式小酒馆与融合菜，适合朋友聚餐与小型聚会。",
+    "contact": "暂未提供",
+    "cover": "/api/place-photo/ChIJb84HQ1n50YUR-VNUaqbcbeI",
     "detailPaid": true,
-    "detail": "提供企业团餐、宴会包场与节日活动方案，支持菜单定制与送餐服务。可按企业人数与预算给出搭配建议，提供中/西语双语服务。"
+    "detail": "提供堂食与预订服务，建议提前联系确认座位与营业时间。",
+    "mapLink": "https://maps.app.goo.gl/FT72QStUCy78Zqg29",
+    "mapQuery": "阿囍小酒馆 Señorita Axia Mexico City",
+    "placeId": "ChIJb84HQ1n50YUR-VNUaqbcbeI"
   },
   {
-    "slug": "nanfeng-eat",
-    "name": "南风面馆（示例）",
+    "slug": "longmenzhen",
+    "name": "龙门阵 LONGMENZHEN",
     "industry": "餐饮与零售",
     "city": "墨西哥城",
-    "summary": "川湘小炒与面食连锁，提供团餐与外卖服务。",
-    "contact": "nanfeng-eat"
+    "summary": "评分 4.4（371）· 中餐馆",
+    "cover": "/api/place-photo/ChIJU5u6GuH50YURVCgCqr7tn7o",
+    "placeId": "ChIJU5u6GuH50YURVCgCqr7tn7o",
+    "mapQuery": "龙门阵 LONGMENZHEN Mexico City"
   },
   {
-    "slug": "haijiao-bento",
-    "name": "海角便当（示例）",
+    "slug": "yiwei-ramen",
+    "name": "yiwei ramen 一味兰州牛肉面",
     "industry": "餐饮与零售",
     "city": "墨西哥城",
-    "summary": "商务便当与会议餐定制，覆盖核心区配送。",
-    "contact": "haijiao-bento"
+    "summary": "评分 4.7（195）· 拉面/面馆",
+    "cover": "/api/place-photo/ChIJidzXUQD50YUR7CMP_6lTzGs",
+    "placeId": "ChIJidzXUQD50YUR7CMP_6lTzGs",
+    "mapQuery": "yiwei ramen 一味兰州牛肉面 Mexico City"
   },
   {
-    "slug": "jinwei-roast",
-    "name": "锦味烧味（示例）",
+    "slug": "chaotianmen-hotpot",
+    "name": "朝天门火锅 chaotianmen hotpot",
     "industry": "餐饮与零售",
     "city": "墨西哥城",
-    "summary": "港式烧味与简餐供应，支持批量订购。",
-    "contact": "jinwei-roast"
+    "summary": "评分 4.5（97）· 火锅",
+    "cover": "/api/place-photo/ChIJn3cbBgAD0oURvnzd19qjpR0",
+    "placeId": "ChIJn3cbBgAD0oURvnzd19qjpR0",
+    "mapQuery": "朝天门火锅 chaotianmen hotpot Mexico City"
   },
   {
-    "slug": "siji-tea",
-    "name": "四季茶房（示例）",
+    "slug": "lion-noodles",
+    "name": "Lion Noodles醒狮面馆",
     "industry": "餐饮与零售",
     "city": "墨西哥城",
-    "summary": "茶饮与甜点定制，适合活动场景配套。",
-    "contact": "siji-tea"
+    "summary": "评分 4.2（38）· 中式面馆",
+    "cover": "/api/place-photo/ChIJAbA5vMv50YUR450PhAdIj1Y",
+    "placeId": "ChIJAbA5vMv50YUR450PhAdIj1Y",
+    "mapQuery": "Lion Noodles 醒狮面馆 Mexico City"
   },
   {
-    "slug": "xijia-mart",
-    "name": "囍家超市（示例）",
+    "slug": "mu-lan",
+    "name": "Mu Lan 木蘭",
     "industry": "餐饮与零售",
     "city": "墨西哥城",
-    "summary": "亚洲食品零售与团购，提供批发服务。",
-    "contact": "xijia-mart"
+    "summary": "评分 4.2（10）· 中餐馆",
+    "cover": "/api/place-photo/ChIJuT9UVAAD0oURZIDXEiHzVi8",
+    "placeId": "ChIJuT9UVAAD0oURZIDXEiHzVi8",
+    "mapQuery": "Mu Lan 木蘭 Mexico City"
   },
   {
-    "slug": "mixiang-sweet",
-    "name": "蜜巷甜品（示例）",
+    "slug": "royal-stew",
+    "name": "Royal stew江湖一品楼",
     "industry": "餐饮与零售",
     "city": "墨西哥城",
-    "summary": "甜品与下午茶方案，适合企业活动。",
-    "contact": "mixiang-sweet"
+    "summary": "评分 4.8（160）· 中餐馆",
+    "cover": "/api/place-photo/ChIJD9s4t9v50YURHup-unQtvRo",
+    "placeId": "ChIJD9s4t9v50YURHup-unQtvRo",
+    "mapQuery": "Royal stew 江湖一品楼 Mexico City"
+  },
+  {
+    "slug": "qinyun-noodle-art",
+    "name": "秦韵餐厅Chin Noodle Art",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4.2（128）· 面馆/餐厅",
+    "cover": "/api/place-photo/ChIJBxOfCYUD0oUR_SFosOcU6Sc",
+    "placeId": "ChIJBxOfCYUD0oUR_SFosOcU6Sc",
+    "mapQuery": "秦韵餐厅 Chin Noodle Art Mexico City"
+  },
+  {
+    "slug": "yangguofu-malatang",
+    "name": "杨国福麻辣烫",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4.8（97）· 麻辣烫",
+    "cover": "/api/place-photo/ChIJtwx2PgD_0YURSSVx2wsOuWI",
+    "placeId": "ChIJtwx2PgD_0YURSSVx2wsOuWI",
+    "mapQuery": "杨国福麻辣烫 Mexico City"
+  },
+  {
+    "slug": "moochene-mexico",
+    "name": "墨臣一品MOOCHEN MÉXICO",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4.4（49）· 中餐馆",
+    "cover": "/api/place-photo/ChIJMx9NAQD50YURv3I7oV0eedA",
+    "placeId": "ChIJMx9NAQD50YURv3I7oV0eedA",
+    "mapQuery": "墨臣一品 MOOCHEN MÉXICO Mexico City"
+  },
+  {
+    "slug": "xike-zhongcanting",
+    "name": "xike禧客中餐厅",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4.3（35）· 中餐馆",
+    "cover": "/api/place-photo/ChIJBUEjCwAD0oURObevZWXTj3g",
+    "placeId": "ChIJBUEjCwAD0oURObevZWXTj3g",
+    "mapQuery": "xike 禧客中餐厅 Mexico City"
+  },
+  {
+    "slug": "kowloon-delight-tacubaya",
+    "name": "Kowloon Delight Tacubaya 九龍餐廳",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4.3（4912） · 中餐馆",
+    "cover": "/api/place-photo/ChIJpZUBA6f_0YURuCkS8CHj8YY",
+    "placeId": "ChIJpZUBA6f_0YURuCkS8CHj8YY",
+    "mapQuery": "Kowloon Delight Tacubaya 九龍餐廳 Mexico City"
+  },
+  {
+    "slug": "shaanxi-sabor",
+    "name": "陕西味道·羊汤馆 Shaanxi Sabor",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4.7（72） · 中餐馆",
+    "cover": "/api/place-photo/ChIJlam8KDAD0oURhpGkugZMRAU",
+    "placeId": "ChIJlam8KDAD0oURhpGkugZMRAU",
+    "mapQuery": "陕西味道·羊汤馆 Shaanxi Sabor Mexico City"
+  },
+  {
+    "slug": "yuntianlou",
+    "name": "云天楼 - Yuntianlou",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4.4（64） · 中餐馆",
+    "cover": "/api/place-photo/ChIJzQoL9xH_0YUR6JXo4vb3Keo",
+    "placeId": "ChIJzQoL9xH_0YUR6JXo4vb3Keo",
+    "mapQuery": "云天楼 - Yuntianlou Mexico City"
+  },
+  {
+    "slug": "xi-yang-yang-restaurant",
+    "name": "XI YANG YANG RESTAURANT 喜洋洋",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4.1（15） · 中餐馆",
+    "cover": "/api/place-photo/ChIJU7KKdQAD0oUR0inkNuKTHJQ",
+    "placeId": "ChIJU7KKdQAD0oUR0inkNuKTHJQ",
+    "mapQuery": "XI YANG YANG RESTAURANT 喜洋洋 Mexico City"
+  },
+  {
+    "slug": "nhnk",
+    "name": "城楠食府",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 2.2（6） · 中餐馆",
+    "cover": "/api/place-photo/ChIJxd20tUX50YURuV63w5znhnk",
+    "placeId": "ChIJxd20tUX50YURuV63w5znhnk",
+    "mapQuery": "城楠食府 Mexico City"
+  },
+  {
+    "slug": "awhy",
+    "name": "榕树下",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4（6） · 中餐馆",
+    "cover": "/api/place-photo/ChIJr9assWsD0oURubJxn4_awHY",
+    "placeId": "ChIJr9assWsD0oURubJxn4_awHY",
+    "mapQuery": "榕树下 Mexico City"
+  },
+  {
+    "slug": "cjs",
+    "name": "吉庆 中餐馆",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4（4） · 中餐馆",
+    "cover": "/api/place-photo/ChIJB5KdsRz50YURucyJ4-K-cjs",
+    "placeId": "ChIJB5KdsRz50YURucyJ4-K-cjs",
+    "mapQuery": "吉庆 中餐馆 Mexico City"
+  },
+  {
+    "slug": "1zsy",
+    "name": "小食代.卤味凉粉",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 5（2） · 中餐馆",
+    "cover": "/api/place-photo/ChIJtzACcAAD0oURcH2mjX81zsY",
+    "placeId": "ChIJtzACcAAD0oURcH2mjX81zsY",
+    "mapQuery": "小食代.卤味凉粉 Mexico City"
+  },
+  {
+    "slug": "canton-mexicali",
+    "name": "Canton Mexicali 廣東墨西加利",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4.4（1897） · 中餐馆",
+    "cover": "/api/place-photo/ChIJfwKSrYz_0YUR-lBOgwvBbFw",
+    "placeId": "ChIJfwKSrYz_0YUR-lBOgwvBbFw",
+    "mapQuery": "Canton Mexicali 廣東墨西加利 Mexico City"
+  },
+  {
+    "slug": "jiangnan-memor",
+    "name": "Jiangnan Memor忆江南",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4.7（20） · 中餐馆",
+    "cover": "/api/place-photo/ChIJHYokM5YB0oUR2JX6S9zo-iA",
+    "placeId": "ChIJHYokM5YB0oUR2JX6S9zo-iA",
+    "mapQuery": "Jiangnan Memor忆江南 Mexico City"
+  },
+  {
+    "slug": "yi-pin-ju",
+    "name": "YI PIN JU 一品居中餐厅 中国超市",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4.1（556） · 中餐馆",
+    "cover": "/api/place-photo/ChIJAYqemTb_0YURk8xveQ7jUnw",
+    "placeId": "ChIJAYqemTb_0YURk8xveQ7jUnw",
+    "mapQuery": "YI PIN JU 一品居中餐厅 中国超市 Mexico City"
+  },
+  {
+    "slug": "kjbc",
+    "name": "温州小吃",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4.1（382） · 中餐馆",
+    "cover": "/api/place-photo/ChIJ9YaoINX40YURD6QzdnNkjBc",
+    "placeId": "ChIJ9YaoINX40YURD6QzdnNkjBc",
+    "mapQuery": "温州小吃 Mexico City"
+  },
+  {
+    "slug": "chuan-bai-wei",
+    "name": "川百味【Chuan Bai Wei】火锅串串香",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4.2（378） · 中餐馆",
+    "cover": "/api/place-photo/ChIJocfro4z_0YURlagBNm55oWE",
+    "placeId": "ChIJocfro4z_0YURlagBNm55oWE",
+    "mapQuery": "川百味【Chuan Bai Wei】火锅串串香 Mexico City"
+  },
+  {
+    "slug": "fideos-chinos",
+    "name": "Fideos Chinos 兰州往事牛肉面",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4.6（331） · 中餐馆",
+    "cover": "/api/place-photo/ChIJAyaU7v3_0YURehcUFwuShAw",
+    "placeId": "ChIJAyaU7v3_0YURehcUFwuShAw",
+    "mapQuery": "Fideos Chinos 兰州往事牛肉面 Mexico City"
+  },
+  {
+    "slug": "dumpling-e",
+    "name": "东方饺 Dumpling E",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4.8（287） · 中餐馆",
+    "cover": "/api/place-photo/ChIJ95L8JAD_0YUR_3gZyQHJ91s",
+    "placeId": "ChIJ95L8JAD_0YUR_3gZyQHJ91s",
+    "mapQuery": "东方饺 Dumpling E Mexico City"
+  },
+  {
+    "slug": "du-te-chinese-breakfast",
+    "name": "Du Te Chinese Breakfast (独特小吃)",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4.4（162） · 中餐馆",
+    "cover": "/api/place-photo/ChIJpZTPcAD50YURMUvQ8p6PCwo",
+    "placeId": "ChIJpZTPcAD50YURMUvQ8p6PCwo",
+    "mapQuery": "Du Te Chinese Breakfast (独特小吃) Mexico City"
+  },
+  {
+    "slug": "hada-ramen",
+    "name": "HaDa Ramen 麻辣烫",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4.7（125） · 中餐馆",
+    "cover": "/api/place-photo/ChIJqf5KXz7_0YURjg7EcqFj1CY",
+    "placeId": "ChIJqf5KXz7_0YURjg7EcqFj1CY",
+    "mapQuery": "HaDa Ramen 麻辣烫 Mexico City"
+  },
+  {
+    "slug": "jinxi-sabor-oriental",
+    "name": "JinXi • Sabor Oriental 今囍小館",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4.6（82） · 中餐馆",
+    "cover": "/api/place-photo/ChIJQVmPya__0YURJSToNSgXg4A",
+    "placeId": "ChIJQVmPya__0YURJSToNSgXg4A",
+    "mapQuery": "JinXi • Sabor Oriental 今囍小館 Mexico City"
+  },
+  {
+    "slug": "b83w",
+    "name": "食为天",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 3.8（70） · 中餐馆",
+    "cover": "/api/place-photo/ChIJx1MOtjT_0YURYllO2Z-B83w",
+    "placeId": "ChIJx1MOtjT_0YURYllO2Z-B83w",
+    "mapQuery": "食为天 Mexico City"
+  },
+  {
+    "slug": "kbcc",
+    "name": "台山火焰鹅",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4（27） · 中餐馆",
+    "cover": "/api/place-photo/ChIJy15HC7v_0YURZZdI-dWKBCc",
+    "placeId": "ChIJy15HC7v_0YURZZdI-dWKBCc",
+    "mapQuery": "台山火焰鹅 Mexico City"
+  },
+  {
+    "slug": "hong-yuan",
+    "name": "鸿苑Hong Yuan",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4.3（27） · 中餐馆",
+    "cover": "/api/place-photo/ChIJ-XWNFRL_0YUR6DFwQ_FRccw",
+    "placeId": "ChIJ-XWNFRL_0YUR6DFwQ_FRccw",
+    "mapQuery": "鸿苑Hong Yuan Mexico City"
+  },
+  {
+    "slug": "fmae",
+    "name": "靖丰私房粤菜",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4.7（23） · 中餐馆",
+    "cover": "/api/place-photo/ChIJX75SLwD_0YURqyIEahtFMAE",
+    "placeId": "ChIJX75SLwD_0YURqyIEahtFMAE",
+    "mapQuery": "靖丰私房粤菜 Mexico City"
+  },
+  {
+    "slug": "el-sabor-del-carbon",
+    "name": "香香炭烤（El sabor del carbón)",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4.4（20） · 中餐馆",
+    "cover": "/api/place-photo/ChIJLXksOQD_0YURhPylXnDIWVw",
+    "placeId": "ChIJLXksOQD_0YURhPylXnDIWVw",
+    "mapQuery": "香香炭烤（El sabor del carbón) Mexico City"
+  },
+  {
+    "slug": "ng8y",
+    "name": "墨城一九烧烤",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4.3（4） · 中餐馆",
+    "cover": "/api/place-photo/ChIJb8BHJwD50YURK3YvlVqng8Y",
+    "placeId": "ChIJb8BHJwD50YURK3YvlVqng8Y",
+    "mapQuery": "墨城一九烧烤 Mexico City"
+  },
+  {
+    "slug": "y5m8",
+    "name": "尚鼎楼",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4.3（4） · 中餐馆",
+    "cover": "/api/place-photo/ChIJTYzPD8__0YURSfLHX5hY5M8",
+    "placeId": "ChIJTYzPD8__0YURSfLHX5hY5M8",
+    "mapQuery": "尚鼎楼 Mexico City"
+  },
+  {
+    "slug": "moyan",
+    "name": "墨宴 MOYAN",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 5（3） · 中餐馆",
+    "cover": "/api/place-photo/ChIJPwthWyr_0YURGFkb1PkwbQc",
+    "placeId": "ChIJPwthWyr_0YURGFkb1PkwbQc",
+    "mapQuery": "墨宴 MOYAN Mexico City"
+  },
+  {
+    "slug": "comida-china-autentica",
+    "name": "私房菜.comida china autentica",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 5（2） · 中餐馆",
+    "cover": "/api/place-photo/ChIJ0U6mKwD_0YURFvPa54_-ppI",
+    "placeId": "ChIJ0U6mKwD_0YURFvPa54_-ppI",
+    "mapQuery": "私房菜.comida china autentica Mexico City"
+  },
+  {
+    "slug": "kupq",
+    "name": "嘉城",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4.6（181） · 中餐馆",
+    "cover": "/api/place-photo/ChIJn24o1YMC0oUR9QR5DvmkUpQ",
+    "placeId": "ChIJn24o1YMC0oUR9QR5DvmkUpQ",
+    "mapQuery": "嘉城 Mexico City"
+  },
+  {
+    "slug": "restaurante-arcoiris-la-verdadera-esencia-de-la-comida-china",
+    "name": "Restaurante Arcoiris 彩虹堂餐厅 la verdadera esencia de la comida china",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4.7（106） · 中餐馆",
+    "cover": "/api/place-photo/ChIJD6_ZIgD50YURv45rsQMKv1U",
+    "placeId": "ChIJD6_ZIgD50YURv45rsQMKv1U",
+    "mapQuery": "Restaurante Arcoiris 彩虹堂餐厅 la verdadera esencia de la comida china Mexico City"
+  },
+  {
+    "slug": "kowloon-delight-narvarte",
+    "name": "Kowloon Delight Narvarte 九龍餐廳",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4.3（3887） · 中餐馆",
+    "cover": "/api/place-photo/ChIJof-JfAX_0YURnMwgYw3HWJU",
+    "placeId": "ChIJof-JfAX_0YURnMwgYw3HWJU",
+    "mapQuery": "Kowloon Delight Narvarte 九龍餐廳 Mexico City"
+  },
+  {
+    "slug": "xo-q",
+    "name": "东子功夫茶",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4.2（837） · 中餐馆",
+    "cover": "/api/place-photo/ChIJr9hLWQP_0YUREK6JLdMXo_Q",
+    "placeId": "ChIJr9hLWQP_0YUREK6JLdMXo_Q",
+    "mapQuery": "东子功夫茶 Mexico City"
+  },
+  {
+    "slug": "cjfe",
+    "name": "聚福楼",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4.2（288） · 中餐馆",
+    "cover": "/api/place-photo/ChIJG-DRWOX-0YURl3__oHoCJfE",
+    "placeId": "ChIJG-DRWOX-0YURl3__oHoCJfE",
+    "mapQuery": "聚福楼 Mexico City"
+  },
+  {
+    "slug": "manke-tea",
+    "name": "Manke Tea 滿客製茶",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4.4（7） · 中餐馆",
+    "cover": "/api/place-photo/ChIJtRDPCwAB0oURQqZEfrx8Ilg",
+    "placeId": "ChIJtRDPCwAB0oURQqZEfrx8Ilg",
+    "mapQuery": "Manke Tea 滿客製茶 Mexico City"
+  },
+  {
+    "slug": "ka-won-seng",
+    "name": "Ka Won Seng（嘉旺城）",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4（706） · 中餐馆",
+    "cover": "/api/place-photo/ChIJGd1yoe_-0YURncc2UqNJOGU",
+    "placeId": "ChIJGd1yoe_-0YURncc2UqNJOGU",
+    "mapQuery": "Ka Won Seng（嘉旺城） Mexico City"
+  },
+  {
+    "slug": "yj1i",
+    "name": "乐芙酒家",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4.2（522） · 中餐馆",
+    "cover": "/api/place-photo/ChIJZ8Mame_-0YURJqYgjDRyJ1I",
+    "placeId": "ChIJZ8Mame_-0YURJqYgjDRyJ1I",
+    "mapQuery": "乐芙酒家 Mexico City"
+  },
+  {
+    "slug": "rffm",
+    "name": "川粤轩",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4.1（314） · 中餐馆",
+    "cover": "/api/place-photo/ChIJ8TYmg-_-0YURtNEeUdYRfFM",
+    "placeId": "ChIJ8TYmg-_-0YURtNEeUdYRfFM",
+    "mapQuery": "川粤轩 Mexico City"
+  },
+  {
+    "slug": "cd0o",
+    "name": "余氏中餐自助餐",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4.1（154） · 中餐馆",
+    "cover": "/api/place-photo/ChIJU7CFaob30YURvBJiOdkcD0o",
+    "placeId": "ChIJU7CFaob30YURvBJiOdkcD0o",
+    "mapQuery": "余氏中餐自助餐 Mexico City"
+  },
+  {
+    "slug": "3",
+    "name": "鱼米之乡（3楼）",
+    "industry": "餐饮与零售",
+    "city": "墨西哥城",
+    "summary": "评分 4.8（11） · 中餐馆",
+    "cover": "/api/place-photo/ChIJA7GiDQD_0YUR1fletQkbmvA",
+    "placeId": "ChIJA7GiDQD_0YUR1fletQkbmvA",
+    "mapQuery": "鱼米之乡（3楼） Mexico City"
   },
   {
     "slug": "xinghai-log",

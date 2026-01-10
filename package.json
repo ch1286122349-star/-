@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon --watch server.js --watch partials --watch site.css --watch home.html --watch companies.html --watch index.html --ext js,html,css server.js"
+    "dev": "nodemon --watch server.js --watch partials --watch site.css --watch home.html --watch companies.html --watch company.html --watch index.html --watch data/companies.json --ext js,html,css,json server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",

@@ -40,6 +40,14 @@
 - 若开启 Google Sheet 同步：查看指定表格的 `Submissions` 工作表。
 - 若开启飞书多维表格同步：查看对应表。
 
+## 企业卡片封面（Google Places）
+- 统一逻辑：企业卡片与详情封面背景图优先使用 Google Places 原图。
+- 配置方式：在 `data/companies.json` 中为企业设置 `cover` 为 `/api/place-photo/<placeId>`（placeId 来自 Google Places）。
+- 依赖环境：需要 `GOOGLE_PLACES_API_KEY`，否则图片接口返回 404。
+- 样式要求：`.company-cover` 使用 `background-size: cover` + `background-position: center` + `no-repeat`，保证方格卡片背景铺满不平铺。
+- 可读性：封面图不得遮挡标题，需通过遮罩层或文字样式确保标题清晰可读。
+- 对齐规范：首屏关键模块（主图/右侧图/行动卡）需高度对齐，不留空白断层。
+
 ## Google Sheet 同步（可选）
 - 需要一个服务账号 JSON，设置环境变量：
   - `GOOGLE_SERVICE_ACCOUNT_BASE64`（Base64 编码后的 JSON）或 `GOOGLE_SERVICE_ACCOUNT_JSON`（原始 JSON 字符串）

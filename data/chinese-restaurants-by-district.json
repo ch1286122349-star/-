@@ -1,0 +1,354 @@
+[
+  {
+    "district": "Miguel Hidalgo",
+    "districtZh": "米格尔·伊达尔戈",
+    "items": [
+      {
+        "name": "Kowloon Delight Tacubaya 九龍餐廳",
+        "rating": 4.3,
+        "user_ratings_total": 4912,
+        "address": "Av. Revolución 107-Local 21, Tacubaya, Miguel Hidalgo, 11870 Ciudad de México, CDMX, 墨西哥",
+        "place_id": "ChIJpZUBA6f_0YURuCkS8CHj8YY",
+        "tag": "米格尔·伊达尔戈"
+      },
+      {
+        "name": "陕西味道·羊汤馆 Shaanxi Sabor",
+        "rating": 4.7,
+        "user_ratings_total": 72,
+        "address": "C. Lago Filt 7-local C D3-02, Amp Granada, Miguel Hidalgo, 11529 Ciudad de México, CDMX, 墨西哥",
+        "place_id": "ChIJlam8KDAD0oURhpGkugZMRAU",
+        "tag": "米格尔·伊达尔戈"
+      },
+      {
+        "name": "云天楼 - Yuntianlou",
+        "rating": 4.4,
+        "user_ratings_total": 64,
+        "address": "Leibnitz 67, Anzures, Miguel Hidalgo, 11590 Ciudad de México, CDMX, 墨西哥",
+        "place_id": "ChIJzQoL9xH_0YUR6JXo4vb3Keo",
+        "tag": "米格尔·伊达尔戈"
+      },
+      {
+        "name": "XI YANG YANG RESTAURANT 喜洋洋",
+        "rating": 4.1,
+        "user_ratings_total": 15,
+        "address": "Prol. Moliere 450a, Amp Granada, Miguel Hidalgo, 11529 Ciudad de México, CDMX, 墨西哥",
+        "place_id": "ChIJU7KKdQAD0oUR0inkNuKTHJQ",
+        "tag": "米格尔·伊达尔戈"
+      },
+      {
+        "name": "城楠食府",
+        "rating": 2.2,
+        "user_ratings_total": 6,
+        "address": "Calz. Gral. Mariano Escobedo 470, Chapultepec Morales, Anzures, Miguel Hidalgo, 11590 Ciudad de México, CDMX, 墨西哥",
+        "place_id": "ChIJxd20tUX50YURuV63w5znhnk",
+        "tag": "米格尔·伊达尔戈"
+      },
+      {
+        "name": "榕树下",
+        "rating": 4,
+        "user_ratings_total": 6,
+        "address": "Lago Andromaco 1, Granada, Miguel Hidalgo, 11529 Ciudad de México, CDMX, 墨西哥",
+        "place_id": "ChIJr9assWsD0oURubJxn4_awHY",
+        "tag": "米格尔·伊达尔戈"
+      },
+      {
+        "name": "吉庆 中餐馆",
+        "rating": 4,
+        "user_ratings_total": 4,
+        "address": "Calle Bahia de Sta. Barbara 16 int pueda roja, Verónica Anzúres, Miguel Hidalgo, 11320 CDMX, 墨西哥",
+        "place_id": "ChIJB5KdsRz50YURucyJ4-K-cjs",
+        "tag": "米格尔·伊达尔戈"
+      },
+      {
+        "name": "小食代.卤味凉粉",
+        "rating": 5,
+        "user_ratings_total": 2,
+        "address": "Blvd. Miguel de Cervantes Saavedra 240, Granada, Miguel Hidalgo, 11520 Ciudad de México, CDMX, 墨西哥",
+        "place_id": "ChIJtzACcAAD0oURcH2mjX81zsY",
+        "tag": "米格尔·伊达尔戈"
+      }
+    ]
+  },
+  {
+    "district": "Álvaro Obregón",
+    "districtZh": "阿尔瓦罗·奥夫雷贡",
+    "items": [
+      {
+        "name": "Canton Mexicali 廣東墨西加利",
+        "rating": 4.4,
+        "user_ratings_total": 1897,
+        "address": "Av. Álvaro Obregón 264, Hipódromo, Cuauhtémoc, 06100 Ciudad de México, CDMX, 墨西哥",
+        "place_id": "ChIJfwKSrYz_0YUR-lBOgwvBbFw",
+        "tag": "阿尔瓦罗·奥夫雷贡"
+      },
+      {
+        "name": "Jiangnan Memor忆江南",
+        "rating": 4.7,
+        "user_ratings_total": 20,
+        "address": "C. Guillermo Gonzalez Camarena 900, Santa Fe, Zedec Sta Fé, Álvaro Obregón, 01210 Ciudad de México, CDMX, 墨西哥",
+        "place_id": "ChIJHYokM5YB0oUR2JX6S9zo-iA",
+        "tag": "阿尔瓦罗·奥夫雷贡"
+      }
+    ]
+  },
+  {
+    "district": "Cuauhtémoc",
+    "districtZh": "库奥特莫克",
+    "items": [
+      {
+        "name": "YI PIN JU 一品居中餐厅 中国超市",
+        "rating": 4.1,
+        "user_ratings_total": 556,
+        "address": "Londres 114, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, 墨西哥",
+        "place_id": "ChIJAYqemTb_0YURk8xveQ7jUnw",
+        "tag": "库奥特莫克"
+      },
+      {
+        "name": "温州小吃",
+        "rating": 4.1,
+        "user_ratings_total": 382,
+        "address": "Humboldt 44, Colonia Centro, Centro, Cuauhtémoc, 06000 Ciudad de México, CDMX, 墨西哥",
+        "place_id": "ChIJ9YaoINX40YURD6QzdnNkjBc",
+        "tag": "库奥特莫克"
+      },
+      {
+        "name": "川百味【Chuan Bai Wei】火锅串串香",
+        "rating": 4.2,
+        "user_ratings_total": 378,
+        "address": "Hamburgo 234, Juárez, Cuauhtémoc, 06600 Col. Juárez, CDMX, 墨西哥",
+        "place_id": "ChIJocfro4z_0YURlagBNm55oWE",
+        "tag": "库奥特莫克"
+      },
+      {
+        "name": "Fideos Chinos 兰州往事牛肉面",
+        "rating": 4.6,
+        "user_ratings_total": 331,
+        "address": "Medellín 219-PB, Roma Sur, Cuauhtémoc, 06760 Cuauhtémoc, CDMX, 墨西哥",
+        "place_id": "ChIJAyaU7v3_0YURehcUFwuShAw",
+        "tag": "库奥特莫克"
+      },
+      {
+        "name": "东方饺 Dumpling E",
+        "rating": 4.8,
+        "user_ratings_total": 287,
+        "address": "José María Pino Suárez 89, Centro, Cuauhtémoc, 06090 Ciudad de México, CDMX, 墨西哥",
+        "place_id": "ChIJ95L8JAD_0YUR_3gZyQHJ91s",
+        "tag": "库奥特莫克"
+      },
+      {
+        "name": "Du Te Chinese Breakfast (独特小吃)",
+        "rating": 4.4,
+        "user_ratings_total": 162,
+        "address": "Av Independencia 69, Colonia Centro, Centro, Cuauhtémoc, 06000 Ciudad de México, CDMX, 墨西哥",
+        "place_id": "ChIJpZTPcAD50YURMUvQ8p6PCwo",
+        "tag": "库奥特莫克"
+      },
+      {
+        "name": "HaDa Ramen 麻辣烫",
+        "rating": 4.7,
+        "user_ratings_total": 125,
+        "address": "Regina 70, Centro Histórico de la Cdad. de México, Centro, Cuauhtémoc, 06090 Ciudad de México, CDMX, 墨西哥",
+        "place_id": "ChIJqf5KXz7_0YURjg7EcqFj1CY",
+        "tag": "库奥特莫克"
+      },
+      {
+        "name": "JinXi • Sabor Oriental 今囍小館",
+        "rating": 4.6,
+        "user_ratings_total": 82,
+        "address": "C. Versalles 15, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, 墨西哥",
+        "place_id": "ChIJQVmPya__0YURJSToNSgXg4A",
+        "tag": "库奥特莫克"
+      },
+      {
+        "name": "食为天",
+        "rating": 3.8,
+        "user_ratings_total": 70,
+        "address": "Londres 104, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, 墨西哥",
+        "place_id": "ChIJx1MOtjT_0YURYllO2Z-B83w",
+        "tag": "库奥特莫克"
+      },
+      {
+        "name": "台山火焰鹅",
+        "rating": 4,
+        "user_ratings_total": 27,
+        "address": "Calle de Niza 39, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, 墨西哥",
+        "place_id": "ChIJy15HC7v_0YURZZdI-dWKBCc",
+        "tag": "库奥特莫克"
+      },
+      {
+        "name": "鸿苑Hong Yuan",
+        "rating": 4.3,
+        "user_ratings_total": 27,
+        "address": "Hamburgo 140, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, 墨西哥",
+        "place_id": "ChIJ-XWNFRL_0YUR6DFwQ_FRccw",
+        "tag": "库奥特莫克"
+      },
+      {
+        "name": "靖丰私房粤菜",
+        "rating": 4.7,
+        "user_ratings_total": 23,
+        "address": "C. Amberes 81, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, 墨西哥",
+        "place_id": "ChIJX75SLwD_0YURqyIEahtFMAE",
+        "tag": "库奥特莫克"
+      },
+      {
+        "name": "香香炭烤（El sabor del carbón)",
+        "rating": 4.4,
+        "user_ratings_total": 20,
+        "address": "Londres 277, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, 墨西哥",
+        "place_id": "ChIJLXksOQD_0YURhPylXnDIWVw",
+        "tag": "库奥特莫克"
+      },
+      {
+        "name": "墨城一九烧烤",
+        "rating": 4.3,
+        "user_ratings_total": 4,
+        "address": "José Azueta 34, Colonia Centro, Centro, Cuauhtémoc, 06050 Centro CDMX, 墨西哥",
+        "place_id": "ChIJb8BHJwD50YURK3YvlVqng8Y",
+        "tag": "库奥特莫克"
+      },
+      {
+        "name": "尚鼎楼",
+        "rating": 4.3,
+        "user_ratings_total": 4,
+        "address": "Londres 161, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, 墨西哥",
+        "place_id": "ChIJTYzPD8__0YURSfLHX5hY5M8",
+        "tag": "库奥特莫克"
+      },
+      {
+        "name": "墨宴 MOYAN",
+        "rating": 5,
+        "user_ratings_total": 3,
+        "address": "Hamburgo 175, Cuauhtémoc, 06600 Cuauhtémoc, CDMX, 墨西哥",
+        "place_id": "ChIJPwthWyr_0YURGFkb1PkwbQc",
+        "tag": "库奥特莫克"
+      },
+      {
+        "name": "私房菜.comida china autentica",
+        "rating": 5,
+        "user_ratings_total": 2,
+        "address": "C. Amberes 81A, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, 墨西哥",
+        "place_id": "ChIJ0U6mKwD_0YURFvPa54_-ppI",
+        "tag": "库奥特莫克"
+      }
+    ]
+  },
+  {
+    "district": "Azcapotzalco",
+    "districtZh": "阿斯卡波察尔科",
+    "items": [
+      {
+        "name": "嘉城",
+        "rating": 4.6,
+        "user_ratings_total": 181,
+        "address": "Santo Domingo 8BIS, San Mateo, Azcapotzalco, 02490 Ciudad de México, CDMX, 墨西哥",
+        "place_id": "ChIJn24o1YMC0oUR9QR5DvmkUpQ",
+        "tag": "阿斯卡波察尔科"
+      },
+      {
+        "name": "Restaurante Arcoiris 彩虹堂餐厅 la verdadera esencia de la comida china",
+        "rating": 4.7,
+        "user_ratings_total": 106,
+        "address": "Abasolo 256, Arenal, Azcapotzalco, 02980 Ciudad de México, CDMX, 墨西哥",
+        "place_id": "ChIJD6_ZIgD50YURv45rsQMKv1U",
+        "tag": "阿斯卡波察尔科"
+      }
+    ]
+  },
+  {
+    "district": "Benito Juárez",
+    "districtZh": "贝尼托·华雷斯",
+    "items": [
+      {
+        "name": "Kowloon Delight Narvarte 九龍餐廳",
+        "rating": 4.3,
+        "user_ratings_total": 3887,
+        "address": "Av. Cuauhtémoc 655 A, Narvarte Poniente, Benito Juárez, 03020 Ciudad de México, CDMX, 墨西哥",
+        "place_id": "ChIJof-JfAX_0YURnMwgYw3HWJU",
+        "tag": "贝尼托·华雷斯"
+      },
+      {
+        "name": "东子功夫茶",
+        "rating": 4.2,
+        "user_ratings_total": 837,
+        "address": "C. Dr. José María Vértiz 692, Narvarte Poniente, Benito Juárez, 03023 Ciudad de México, CDMX, 墨西哥",
+        "place_id": "ChIJr9hLWQP_0YUREK6JLdMXo_Q",
+        "tag": "贝尼托·华雷斯"
+      },
+      {
+        "name": "聚福楼",
+        "rating": 4.2,
+        "user_ratings_total": 288,
+        "address": "Calz. Sta. Anita 58-A, Viaducto Piedad, Benito Juárez, 08200 Ciudad de México, CDMX, 墨西哥",
+        "place_id": "ChIJG-DRWOX-0YURl3__oHoCJfE",
+        "tag": "贝尼托·华雷斯"
+      }
+    ]
+  },
+  {
+    "district": "Cuajimalpa de Morelos",
+    "districtZh": "瓜希马尔帕",
+    "items": [
+      {
+        "name": "Manke Tea 滿客製茶",
+        "rating": 4.4,
+        "user_ratings_total": 7,
+        "address": "Av. Santa Fe 498, Santa Fe, Contadero, Cuajimalpa de Morelos, 05348 Ciudad de México, CDMX, 墨西哥",
+        "place_id": "ChIJtRDPCwAB0oURQqZEfrx8Ilg",
+        "tag": "瓜希马尔帕"
+      }
+    ]
+  },
+  {
+    "district": "Iztacalco",
+    "districtZh": "伊斯塔卡尔科",
+    "items": [
+      {
+        "name": "Ka Won Seng（嘉旺城）",
+        "rating": 4,
+        "user_ratings_total": 706,
+        "address": "Albino García 362, Viaducto Piedad, Iztacalco, 08200 Ciudad de México, CDMX, 墨西哥",
+        "place_id": "ChIJGd1yoe_-0YURncc2UqNJOGU",
+        "tag": "伊斯塔卡尔科"
+      },
+      {
+        "name": "乐芙酒家",
+        "rating": 4.2,
+        "user_ratings_total": 522,
+        "address": "C. José María Correa 304, Viaducto Piedad, Iztacalco, 08200 Ciudad de México, CDMX, 墨西哥",
+        "place_id": "ChIJZ8Mame_-0YURJqYgjDRyJ1I",
+        "tag": "伊斯塔卡尔科"
+      },
+      {
+        "name": "川粤轩",
+        "rating": 4.1,
+        "user_ratings_total": 314,
+        "address": "Marcos Carrillo 308-Local A, Viaducto Piedad, Iztacalco, 08200 Ciudad de México, CDMX, 墨西哥",
+        "place_id": "ChIJ8TYmg-_-0YURtNEeUdYRfFM",
+        "tag": "伊斯塔卡尔科"
+      }
+    ]
+  },
+  {
+    "district": "Gustavo A. Madero",
+    "districtZh": "古斯塔沃·马德罗",
+    "items": [
+      {
+        "name": "余氏中餐自助餐",
+        "rating": 4.1,
+        "user_ratings_total": 154,
+        "address": "C. Luis Espinoza 29 B, Solidaridad Nacional, Gustavo A. Madero, 07268 Ciudad de México, CDMX, 墨西哥",
+        "place_id": "ChIJU7CFaob30YURvBJiOdkcD0o",
+        "tag": "古斯塔沃·马德罗"
+      },
+      {
+        "name": "鱼米之乡（3楼）",
+        "rating": 4.8,
+        "user_ratings_total": 11,
+        "address": "墨西哥 Cd. de México, Ejido del Centro Centro, Centro Histórico de la Cdad. de México, Calle de Mesones, 邮政编码: 06090",
+        "place_id": "ChIJA7GiDQD_0YUR1fletQkbmvA",
+        "tag": "古斯塔沃·马德罗"
+      }
+    ]
+  }
+]

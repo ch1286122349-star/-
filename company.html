@@ -6,32 +6,125 @@
   <title>企业详情模板 · <!--COMPANY_NAME--></title>
   <!--HEAD-->
 </head>
-<body class="company-detail-page">
+<body class="company-detail-page" data-company-slug="<!--COMPANY_SLUG-->">
   <!--HEADER-->
   <div class="page">
     <section class="company-detail">
-      <div class="company-hero" <!--COMPANY_COVER_STYLE-->></div>
+      <!--COMPANY_HERO_SECTION-->
       <div class="company-detail-top">
-        <div>
-          <div class="eyebrow">企业详情模板</div>
+        <div class="company-detail-title">
           <h1><!--COMPANY_NAME--></h1>
+          <!--COMPANY_VALUE_LINE-->
+          <!--COMPANY_VALUE_SUBLINE-->
+          <!--COMPANY_SOURCE_LINE-->
           <div class="company-detail-meta">
             <span>行业：<!--COMPANY_INDUSTRY--></span>
             <span>城市：<!--COMPANY_CITY--></span>
           </div>
+          <div class="company-detail-body company-detail-body--inline">
+            <h2>简介</h2>
+            <!--COMPANY_SUMMARY_LINES-->
+          </div>
         </div>
-        <div class="company-detail-contact">
-          <h2>联系方式</h2>
-          <p>微信/WhatsApp：<!--COMPANY_CONTACT--></p>
-        </div>
+        <!--COMPANY_ACTION_CARD-->
       </div>
-      <div class="company-detail-body">
-        <h2>简介</h2>
-        <p><!--COMPANY_SUMMARY--></p>
-      </div>
+      <!--COMPANY_MAP_SECTION-->
       <!--COMPANY_DETAIL_SECTION-->
+      <!--COMPANY_ACTION_BAR-->
     </section>
   </div>
   <!--FOOTER-->
+  <script>
+    (() => {
+      const mapToggles = document.querySelectorAll('[data-map-toggle]');
+      const mapEmbed = document.querySelector('[data-map-embed]');
+      const updateMapLabels = (expanded) => {
+        mapToggles.forEach((button) => {
+          const label = button.dataset.mapLabel || '展开地图';
+          button.textContent = expanded ? '收起地图' : label;
+        });
+      };
+      if (mapToggles.length && mapEmbed) {
+        mapToggles.forEach((button) => {
+          button.addEventListener('click', () => {
+            const expanded = mapEmbed.classList.toggle('map-embed--expanded');
+            document.body.classList.toggle('map-expanded', expanded);
+            updateMapLabels(expanded);
+          });
+        });
+      }
+
+      const shareBtn = document.querySelector('[data-share]');
+      if (shareBtn) {
+        shareBtn.addEventListener('click', async () => {
+          const url = window.location.href;
+          const title = document.querySelector('h1')?.textContent?.trim() || document.title;
+          if (navigator.share) {
+            try {
+              await navigator.share({ title, url });
+              return;
+            } catch (err) {
+              // Fall back to clipboard.
+            }
+          }
+          if (navigator.clipboard?.writeText) {
+            await navigator.clipboard.writeText(url);
+            const original = shareBtn.textContent;
+            shareBtn.textContent = '链接已复制';
+            window.setTimeout(() => {
+              shareBtn.textContent = original;
+            }, 1800);
+          }
+        });
+      }
+
+      const copyButtons = document.querySelectorAll('[data-copy]');
+      copyButtons.forEach((button) => {
+        button.addEventListener('click', async () => {
+          const encoded = button.dataset.copy || '';
+          if (!encoded) return;
+          const value = decodeURIComponent(encoded);
+          if (navigator.clipboard?.writeText) {
+            await navigator.clipboard.writeText(value);
+            const original = button.textContent;
+            button.textContent = '已复制';
+            window.setTimeout(() => {
+              button.textContent = original;
+            }, 1800);
+          }
+        });
+      });
+
+      const favoriteBtn = document.querySelector('[data-favorite]');
+      const slug = document.body.dataset.companySlug;
+      if (favoriteBtn && slug) {
+        const storageKey = 'mx_favorites';
+        const loadFavorites = () => {
+          try {
+            const raw = window.localStorage.getItem(storageKey);
+            return raw ? JSON.parse(raw) : [];
+          } catch (err) {
+            return [];
+          }
+        };
+        const saveFavorites = (list) => {
+          window.localStorage.setItem(storageKey, JSON.stringify(list));
+        };
+        const updateFavorite = (isFav) => {
+          favoriteBtn.classList.toggle('is-active', isFav);
+          favoriteBtn.textContent = isFav ? '已收藏' : '收藏';
+        };
+        const favorites = loadFavorites();
+        updateFavorite(favorites.includes(slug));
+        favoriteBtn.addEventListener('click', () => {
+          const list = loadFavorites();
+          const exists = list.includes(slug);
+          const next = exists ? list.filter((item) => item !== slug) : [...list, slug];
+          saveFavorites(next);
+          updateFavorite(!exists);
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
