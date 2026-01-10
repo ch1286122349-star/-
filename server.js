@@ -90,10 +90,14 @@ try {
 
 const COMPANIES_DATA_PATH = path.join(__dirname, 'data', 'companies.json');
 const GOOGLE_PLACES_API_KEY = (process.env.GOOGLE_PLACES_API_KEY || '').trim();
-const PLACES_CACHE_TTL_MS = 12 * 60 * 60 * 1000;
+const PLACES_CACHE_TTL_MS = 7 * 24 * 60 * 60 * 1000;
 const placesCache = new Map();
 const placeIdCache = new Map();
 const placePhotoCache = new Map();
+const PREFETCH_INTERVAL_MS = 7 * 24 * 60 * 60 * 1000;
+const PREFETCH_START_DELAY_MS = 15 * 1000;
+const PREFETCH_DELAY_MS = 250;
+let prefetchRunning = false;
 
 const escapeHtml = (value) => String(value ?? '')
   .replace(/&/g, '&amp;')
@@ -219,6 +223,8 @@ const setCachedValue = (cache, key, value) => {
   cache.set(key, { value, expiresAt: Date.now() + PLACES_CACHE_TTL_MS });
 };
 
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
 const fetchJson = async (url, options) => {
   const res = await fetch(url, options);
   const data = await res.json();
@@ -317,6 +323,30 @@ const fetchPlacePhoto = async (placeId, index = 0) => {
   } catch (err) {
     console.warn('Places photo failed:', err.message);
     return null;
+  }
+};
+
+const prefetchPlacesCache = async () => {
+  if (!GOOGLE_PLACES_API_KEY || prefetchRunning) return;
+  prefetchRunning = true;
+  try {
+    const companies = loadCompaniesData();
+    const placeIds = [...new Set(companies.map((company) => (
+      String(company.placeId || company.place_id || '').trim()
+    )).filter(Boolean))];
+    if (!placeIds.length) return;
+    console.log(`Prefetching ${placeIds.length} place entries...`);
+    for (const placeId of placeIds) {
+      await fetchPlaceDetails(placeId);
+      await fetchPlacePhoto(placeId);
+      if (PREFETCH_DELAY_MS) {
+        await sleep(PREFETCH_DELAY_MS);
+      }
+    }
+  } catch (err) {
+    console.warn('Prefetch places failed:', err.message);
+  } finally {
+    prefetchRunning = false;
   }
 };
 
@@ -867,4 +897,10 @@ app.get('*', (_req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
   console.log(`DB file at ${DB_PATH}`);
+  if (GOOGLE_PLACES_API_KEY) {
+    setTimeout(() => {
+      prefetchPlacesCache();
+      setInterval(prefetchPlacesCache, PREFETCH_INTERVAL_MS);
+    }, PREFETCH_START_DELAY_MS);
+  }
 });
