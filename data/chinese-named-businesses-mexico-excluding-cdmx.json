@@ -1,0 +1,2772 @@
+[
+  {
+    "name": "Hong Xing comida china中国歺厅",
+    "place_id": "ChIJJdM1uIb3yoURJn2BwNODi98",
+    "address": "Francisco Javier Mina 9, El Parazal, 39300 Acapulco de Juárez, Gro.",
+    "city": "Acapulco de Juárez",
+    "state": "Guerrero",
+    "rating": 3.8,
+    "user_ratings_total": 26,
+    "lat": 16.8518683,
+    "lng": -99.90633500000001,
+    "sources": [
+      "中国 Acapulco"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:27:33.587Z",
+    "last_seen": "2026-01-10T22:27:33.588Z"
+  },
+  {
+    "name": "Comida Sabrosa 美味",
+    "place_id": "ChIJPc9AeIDvKYQRvkw99TMm8_g",
+    "address": "AV Ojocaliente, Av. Alameda 159A, Ojocaliente, 20196 Aguascalientes, Ags.",
+    "city": "Aguascalientes",
+    "state": "Aguascalientes",
+    "rating": "",
+    "user_ratings_total": "",
+    "lat": 21.8886497,
+    "lng": -102.2570829,
+    "sources": [
+      "中餐 Aguascalientes"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:26:33.853Z",
+    "last_seen": "2026-01-10T22:26:33.853Z"
+  },
+  {
+    "name": "KABUKI 麺やカブキ",
+    "place_id": "ChIJU9J2g_ftKYQR69dNlVCqPQI",
+    "address": "Adolfo López Mateos 205, Trojes de Alonso, 20908 Aguascalientes, Ags.",
+    "city": "Aguascalientes",
+    "state": "Aguascalientes",
+    "rating": 4.7,
+    "user_ratings_total": 244,
+    "lat": 21.9420977,
+    "lng": -102.3027495,
+    "sources": [
+      "面馆 Aguascalientes",
+      "拉面 Aguascalientes",
+      "饺子 Aguascalientes"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:26:40.903Z",
+    "last_seen": "2026-01-10T22:26:44.749Z"
+  },
+  {
+    "name": "Peking kitchen",
+    "place_id": "ChIJnSzu6HPvKYQRDHVY9GeR8pY",
+    "address": "Av. Aguascalientes Nte 1603, Plaza Merlot, 20157 Aguascalientes, Ags.",
+    "city": "Aguascalientes",
+    "state": "Aguascalientes",
+    "rating": 4.5,
+    "user_ratings_total": 8,
+    "lat": 21.9144413,
+    "lng": -102.2778113,
+    "sources": [
+      "中餐 Aguascalientes",
+      "chinese restaurant Aguascalientes"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:26:33.567Z",
+    "last_seen": "2026-01-10T22:27:10.504Z"
+  },
+  {
+    "name": "邹陪左3店Mall china",
+    "place_id": "ChIJXTagIgDvKYQRe-dDaztzdqc",
+    "address": "58, Av. Universidad, del Prado Nte, 20127 Aguascalientes, Ags.",
+    "city": "Aguascalientes",
+    "state": "Aguascalientes",
+    "rating": 3.2,
+    "user_ratings_total": 21,
+    "lat": 21.916863,
+    "lng": -102.3131636,
+    "sources": [
+      "中文 Aguascalientes",
+      "中国 Aguascalientes",
+      "supermercado chino Aguascalientes",
+      "chinese supermarket Aguascalientes",
+      "chinatown Aguascalientes"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:26:50.535Z",
+    "last_seen": "2026-01-10T22:27:14.210Z"
+  },
+  {
+    "name": "Zhōngcān 中餐",
+    "place_id": "ChIJ50t6vWnbYoYRVriFZgdNfo0",
+    "address": "Josefa Ortiz de Domínguez 203, Sin Nombre de Col 1, 67480 Cadereyta Jiménez, N.L.",
+    "city": "Cadereyta Jiménez",
+    "state": "Nuevo León",
+    "rating": 4.4,
+    "user_ratings_total": 28,
+    "lat": 25.5899301,
+    "lng": -99.99823649999999,
+    "sources": [
+      "中餐 Leon"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:39:47.788Z",
+    "last_seen": "2026-01-10T22:39:47.792Z"
+  },
+  {
+    "name": "ASIAN FOOD 多米餐厅 DOMI RESTAURANTE",
+    "place_id": "ChIJ3UL-2ucpTI8RbQTGnVB7_HU",
+    "address": "Kilómetro 3.5 Zona Hotelera Local 4A y 4B, Lote D, Manzana 30 7-9, Kukulcan Boulevard, Zona Hotelera, 77500 Cancún, Q.R.",
+    "city": "Cancún",
+    "state": "Quintana Roo",
+    "rating": 4.9,
+    "user_ratings_total": 127,
+    "lat": 21.1474619,
+    "lng": -86.79293299999999,
+    "sources": [
+      "中餐 Cancun",
+      "饺子 Cancun",
+      "restaurante chino Cancun",
+      "chinese restaurant Cancun",
+      "oriental Cancun"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:28:26.544Z",
+    "last_seen": "2026-01-10T22:29:07.238Z"
+  },
+  {
+    "name": "BEIJING",
+    "place_id": "ChIJu1UDfaErTI8RDuQJv2gK5gc",
+    "address": "Plaza la Luna, Av. la Luna LT1-MZ1, 77533 Cancún, Q.R.",
+    "city": "Cancún",
+    "state": "Quintana Roo",
+    "rating": 4,
+    "user_ratings_total": 101,
+    "lat": 21.1389449,
+    "lng": -86.8507823,
+    "sources": [
+      "中餐 Cancun",
+      "饺子 Cancun",
+      "comida china Cancun",
+      "restaurante chino Cancun",
+      "chinese restaurant Cancun"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:28:27.187Z",
+    "last_seen": "2026-01-10T22:29:03.207Z"
+  },
+  {
+    "name": "Beijing express",
+    "place_id": "ChIJQ32lWGQrTI8RzqtZ5_LTogM",
+    "address": "Av. José López Portillo 4, 77518 Cancún, Q.R.",
+    "city": "Cancún",
+    "state": "Quintana Roo",
+    "rating": 4.3,
+    "user_ratings_total": 20,
+    "lat": 21.1537222,
+    "lng": -86.8684655,
+    "sources": [
+      "comida china Cancun",
+      "restaurante chino Cancun",
+      "chinese restaurant Cancun"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:28:49.639Z",
+    "last_seen": "2026-01-10T22:29:03.207Z"
+  },
+  {
+    "name": "Hong Kong Express",
+    "place_id": "ChIJN7UKcmgsTI8R9hoy2eVzPbg",
+    "address": "Smza.228 mza.22 lote 1 local G-9 centro comercial plaza las Américas II, Supermanzana 228, 77516 Cancún, Q.R.",
+    "city": "Cancún",
+    "state": "Quintana Roo",
+    "rating": 3.9,
+    "user_ratings_total": 513,
+    "lat": 21.182015,
+    "lng": -86.85152599999999,
+    "sources": [
+      "comida china Cancun"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:28:50.455Z",
+    "last_seen": "2026-01-10T22:28:50.455Z"
+  },
+  {
+    "name": "Hong Kong Express 510",
+    "place_id": "ChIJ5xmbJKArTI8ReA07JhStxlQ",
+    "address": "Av México Mza 35-Lt 8, Jacinto Pat, 77535 Cancún, Q.R.",
+    "city": "Cancún",
+    "state": "Quintana Roo",
+    "rating": 3.7,
+    "user_ratings_total": 831,
+    "lat": 21.135698,
+    "lng": -86.860672,
+    "sources": [
+      "comida china Cancun"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:28:50.188Z",
+    "last_seen": "2026-01-10T22:28:50.188Z"
+  },
+  {
+    "name": "Hong Kong Express López",
+    "place_id": "ChIJe9ZWHWYrTI8RwwvCiP9RigI",
+    "address": "Av. José López Portillo 01-Loc. G, H and J, Villas Carobin, 77538 Cancún, Q.R.",
+    "city": "Cancún",
+    "state": "Quintana Roo",
+    "rating": 3.7,
+    "user_ratings_total": 1208,
+    "lat": 21.1484246,
+    "lng": -86.87791469999999,
+    "sources": [
+      "comida china Cancun",
+      "restaurante chino Cancun"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:28:49.915Z",
+    "last_seen": "2026-01-10T22:28:53.744Z"
+  },
+  {
+    "name": "Hong Kong Restaurant",
+    "place_id": "ChIJCUbAonqv14ARD8kapb9XMNs",
+    "address": "Av. Xcaret Mz. 2 Lt. 6, Supermanzana 35, SM. 35, 77500 Cancún, Q.R.",
+    "city": "Cancún",
+    "state": "Quintana Roo",
+    "rating": 4.1,
+    "user_ratings_total": 2492,
+    "lat": 21.1565087,
+    "lng": -86.83108399999999,
+    "sources": [
+      "中餐 Cancun",
+      "饺子 Cancun",
+      "中文 Cancun",
+      "comida china Cancun",
+      "restaurante chino Cancun",
+      "chinese restaurant Cancun"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:28:26.907Z",
+    "last_seen": "2026-01-10T22:29:03.207Z"
+  },
+  {
+    "name": "柚柚派華人旅遊地接",
+    "place_id": "ChIJMbQNBkkrTI8RyC2nT3GBpjk",
+    "address": "Av. la Luna 21, 77506 Cancún, Q.R.",
+    "city": "Cancún",
+    "state": "Quintana Roo",
+    "rating": "",
+    "user_ratings_total": "",
+    "lat": 21.1481242,
+    "lng": -86.84218109999999,
+    "sources": [
+      "华人 Cancun"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:28:44.745Z",
+    "last_seen": "2026-01-10T22:28:44.745Z"
+  },
+  {
+    "name": "El Junco de Hong Kong",
+    "place_id": "ChIJwwM-qnOjW48RjP_dkH1uO_U",
+    "address": "Av Reforma 21, Plutarco Elías Calles, 77000 Chetumal, Q.R.",
+    "city": "Chetumal",
+    "state": "Quintana Roo",
+    "rating": 4.2,
+    "user_ratings_total": 287,
+    "lat": 18.4942343,
+    "lng": -88.2926402,
+    "sources": [
+      "中餐 Chetumal",
+      "火锅 Chetumal",
+      "饺子 Chetumal",
+      "中文 Chetumal",
+      "华人 Chetumal",
+      "中国 Chetumal",
+      "comida china Chetumal",
+      "restaurante chino Chetumal",
+      "supermercado chino Chetumal",
+      "chinese restaurant Chetumal",
+      "chinese supermarket Chetumal",
+      "chinatown Chetumal",
+      "oriental Chetumal"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:29:08.531Z",
+    "last_seen": "2026-01-10T22:29:49.868Z"
+  },
+  {
+    "name": "Comida China Buffet Chang Sheng ( 中国餐厅）",
+    "place_id": "ChIJe3ETifRD6oYR1C_Gyh2Znuk",
+    "address": "Av. Tecnológico 7313, Unidad Vallarta, Tecnológico, 31120 Chihuahua, Chih.",
+    "city": "Chihuahua",
+    "state": "Chihuahua",
+    "rating": 4.4,
+    "user_ratings_total": 14,
+    "lat": 28.6797795,
+    "lng": -106.1067794,
+    "sources": [
+      "中餐 Chihuahua",
+      "comida china Chihuahua",
+      "chinese restaurant Chihuahua"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:29:53.602Z",
+    "last_seen": "2026-01-10T22:30:21.138Z"
+  },
+  {
+    "name": "LANZHOU RESTAURANT",
+    "place_id": "ChIJscHbQBFD6oYRJw8XGcQsmmQ",
+    "address": "Avenida Universidad 3507, Universidad, 31203 Chihuahua, Chih.",
+    "city": "Chihuahua",
+    "state": "Chihuahua",
+    "rating": 4.7,
+    "user_ratings_total": 539,
+    "lat": 28.6592505,
+    "lng": -106.0947451,
+    "sources": [
+      "中餐 Chihuahua",
+      "麻辣烫 Chihuahua",
+      "面馆 Chihuahua",
+      "拉面 Chihuahua",
+      "饺子 Chihuahua",
+      "comida china Chihuahua",
+      "restaurante chino Chihuahua",
+      "chinese restaurant Chihuahua",
+      "oriental Chihuahua"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:29:53.326Z",
+    "last_seen": "2026-01-10T22:30:27.790Z"
+  },
+  {
+    "name": "Shi Wei Xian",
+    "place_id": "ChIJP72GYZbry4URJHKwqtUglHk",
+    "address": "Lic. René Juárez Cisneros 130-207, Fraccionamiento Villas Vicente Guerrero, 39010 Chilpancingo de los Bravo, Gro.",
+    "city": "Chilpancingo de los Bravo",
+    "state": "Guerrero",
+    "rating": 4,
+    "user_ratings_total": 4,
+    "lat": 17.5150984,
+    "lng": -99.48500849999999,
+    "sources": [
+      "中餐 Chilpancingo",
+      "火锅 Chilpancingo",
+      "饺子 Chilpancingo",
+      "中文 Chilpancingo",
+      "中国 Chilpancingo",
+      "comida china Chilpancingo",
+      "restaurante chino Chilpancingo",
+      "chinese restaurant Chilpancingo"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:30:31.424Z",
+    "last_seen": "2026-01-10T22:31:01.686Z"
+  },
+  {
+    "name": "宜宾燃面",
+    "place_id": "ChIJxceIRwDtYoYR6almhNV-KGQ",
+    "address": "Nuevo León, Cdad. Apodaca, Sta. Rosa - Mezquital, Avenida Concordia邮政编码: 66610",
+    "city": "Ciudad Apodaca",
+    "state": "Nuevo León",
+    "rating": 5,
+    "user_ratings_total": 3,
+    "lat": 25.7859863,
+    "lng": -100.226228,
+    "sources": [
+      "中文 Leon"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:40:02.383Z",
+    "last_seen": "2026-01-10T22:40:02.383Z"
+  },
+  {
+    "name": "火锅店",
+    "place_id": "ChIJu1_WNwDtYoYRg0yqQirgRTI",
+    "address": "Valle de Aragón 1036, Valle de Los Nogales, 66610 Cdad. Apodaca, N.L.",
+    "city": "Ciudad Apodaca",
+    "state": "Nuevo León",
+    "rating": "",
+    "user_ratings_total": "",
+    "lat": 25.7918542,
+    "lng": -100.2309613,
+    "sources": [
+      "火锅 Nogales"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:45:10.491Z",
+    "last_seen": "2026-01-10T22:45:10.491Z"
+  },
+  {
+    "name": "Comida china Shenzhen",
+    "place_id": "ChIJlciiAADpYoYReJJBjbtD_uo",
+    "address": "Av. Ruiz Cortines 1000, 67258 Cdad. Benito Juárez, N.L.",
+    "city": "Ciudad Benito Juárez",
+    "state": "Nuevo León",
+    "rating": 4.7,
+    "user_ratings_total": 6,
+    "lat": 25.6964944,
+    "lng": -100.106172,
+    "sources": [
+      "comida china Ciudad Juarez"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:31:29.239Z",
+    "last_seen": "2026-01-10T22:31:29.239Z"
+  },
+  {
+    "name": "COMIDA CHINA SHENZHEN",
+    "place_id": "ChIJWe3CSvbDYoYRHuexjqil4Po",
+    "address": "Carr. a San Roque 1001-3, villa de San Francisco, 67276 Cdad. Benito Juárez, N.L.",
+    "city": "Ciudad Benito Juárez",
+    "state": "Nuevo León",
+    "rating": 4,
+    "user_ratings_total": 23,
+    "lat": 25.6215388,
+    "lng": -100.1527458,
+    "sources": [
+      "中文 Ciudad Juarez",
+      "comida china Ciudad Juarez"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:31:25.953Z",
+    "last_seen": "2026-01-10T22:31:29.239Z"
+  },
+  {
+    "name": "COMIDA CHINA 兴Xing Long隆",
+    "place_id": "ChIJW-DLQwDDYoYRsPZDbd9AHO0",
+    "address": "Vista de la Primavera 419A, Vistas del Rio, 67251 Cdad. Benito Juárez, N.L.",
+    "city": "Ciudad Benito Juárez",
+    "state": "Nuevo León",
+    "rating": 5,
+    "user_ratings_total": 7,
+    "lat": 25.6657988,
+    "lng": -100.1037318,
+    "sources": [
+      "comida china Ciudad Juarez"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:31:28.968Z",
+    "last_seen": "2026-01-10T22:31:28.968Z"
+  },
+  {
+    "name": "Restaurant Beijing",
+    "place_id": "ChIJ07nVEJcVyIYRXYEO8DYRJtk",
+    "address": "Av. Miguel Alemán 850, Norte, Urb. No. 4, 85000 Cdad. Obregón, Son.",
+    "city": "Ciudad Obregón",
+    "state": "Sonora",
+    "rating": 4.4,
+    "user_ratings_total": 420,
+    "lat": 27.5109224,
+    "lng": -109.9302506,
+    "sources": [
+      "中餐 Ciudad Obregon",
+      "饺子 Ciudad Obregon",
+      "comida china Ciudad Obregon",
+      "restaurante chino Ciudad Obregon",
+      "chinese restaurant Ciudad Obregon",
+      "oriental Ciudad Obregon"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:31:52.219Z",
+    "last_seen": "2026-01-10T22:32:21.873Z"
+  },
+  {
+    "name": "Restaurant Hong Kong",
+    "place_id": "ChIJTYn19owVyIYRr0PT1CLlha0",
+    "address": "Calle Hermenegildo Galeana 302, Centro, Urb. No. 7, 85000 Cdad. Obregón, Son.",
+    "city": "Ciudad Obregón",
+    "state": "Sonora",
+    "rating": 4.3,
+    "user_ratings_total": 964,
+    "lat": 27.490649,
+    "lng": -109.941906,
+    "sources": [
+      "中餐 Ciudad Obregon",
+      "火锅 Ciudad Obregon",
+      "麻辣烫 Ciudad Obregon",
+      "饺子 Ciudad Obregon",
+      "华人 Ciudad Obregon",
+      "comida china Ciudad Obregon",
+      "restaurante chino Ciudad Obregon",
+      "chinese restaurant Ciudad Obregon",
+      "oriental Ciudad Obregon"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:31:51.942Z",
+    "last_seen": "2026-01-10T22:32:21.873Z"
+  },
+  {
+    "name": "Montaña del Dragón 龙山",
+    "place_id": "ChIJ8w5PDCLhzYURc4z527JUbFI",
+    "address": "Santa María Ahuacatitlán, 62100 Cuernavaca, Morelos",
+    "city": "Cuernavaca",
+    "state": "Morelos",
+    "rating": 4.8,
+    "user_ratings_total": 17,
+    "lat": 18.9749534,
+    "lng": -99.2634089,
+    "sources": [
+      "acupuntura Cuernavaca"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:34:00.196Z",
+    "last_seen": "2026-01-10T22:34:00.202Z"
+  },
+  {
+    "name": "Shanghai restaurante",
+    "place_id": "ChIJTYZxphnavIYRth8BHMEf2-k",
+    "address": "Blvd. Constitución 444, Jorge Almada, Almada, 80200 Culiacán Rosales, Sin.",
+    "city": "Culiacán Rosales",
+    "state": "Sinaloa",
+    "rating": 4.3,
+    "user_ratings_total": 477,
+    "lat": 24.7990398,
+    "lng": -107.3988102,
+    "sources": [
+      "中餐 Culiacan",
+      "火锅 Culiacan",
+      "麻辣烫 Culiacan",
+      "饺子 Culiacan",
+      "中文 Culiacan",
+      "华人 Culiacan",
+      "中国 Culiacan",
+      "唐人街 Culiacan",
+      "comida china Culiacan",
+      "restaurante chino Culiacan",
+      "chinese restaurant Culiacan"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:34:13.645Z",
+    "last_seen": "2026-01-10T22:34:55.775Z"
+  },
+  {
+    "name": "SHANGHAI TRES RIOS",
+    "place_id": "ChIJEeR934DbvIYRF91yFPI2Zto",
+    "address": "ENRIQUE, Blvrd Enrique Sánchez Alonso 2093, Desarrollo Urbano Tres Ríos, 80020 Culiacán Rosales, Sin.",
+    "city": "Culiacán Rosales",
+    "state": "Sinaloa",
+    "rating": 4.3,
+    "user_ratings_total": 94,
+    "lat": 24.8256174,
+    "lng": -107.400378,
+    "sources": [
+      "中餐 Culiacan",
+      "火锅 Culiacan",
+      "麻辣烫 Culiacan",
+      "饺子 Culiacan",
+      "中文 Culiacan",
+      "华人 Culiacan",
+      "中国 Culiacan",
+      "comida china Culiacan",
+      "restaurante chino Culiacan",
+      "chinese restaurant Culiacan"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:34:13.920Z",
+    "last_seen": "2026-01-10T22:34:55.775Z"
+  },
+  {
+    "name": "comida china shenzhen",
+    "place_id": "ChIJ5dCIdgDpYoYRGyA1BmsrNyU",
+    "address": "Av. San Fernando 308, 66670 Dulces Nombres, N.L.",
+    "city": "Dulces Nombres",
+    "state": "Nuevo León",
+    "rating": 3.5,
+    "user_ratings_total": 10,
+    "lat": 25.7146455,
+    "lng": -100.1054511,
+    "sources": [
+      "chinese restaurant La Paz",
+      "restaurante chino San Cristobal de las Casas",
+      "restaurante chino Villahermosa"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:39:36.351Z",
+    "last_seen": "2026-01-10T22:59:17.732Z"
+  },
+  {
+    "name": "Hong kong comida China",
+    "place_id": "ChIJV1v6VwC3m4YROsoT9JN4l0Q",
+    "address": "Blvd. Francisco Villa 3700, Cd Industrial, 34208 Durango, Dgo.",
+    "city": "Durango",
+    "state": "Durango",
+    "rating": 4.1,
+    "user_ratings_total": 9,
+    "lat": 24.0520815,
+    "lng": -104.6196907,
+    "sources": [
+      "中餐 Durango",
+      "comida china Durango"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:35:03.611Z",
+    "last_seen": "2026-01-10T22:35:19.862Z"
+  },
+  {
+    "name": "Shi Wei Xian 食为先",
+    "place_id": "ChIJUQ7zWCJF04URJCE5xVN-yBU",
+    "address": "Plaza punta real, local 16, Puerta Real Residencial Desarrollo Urbana 08, 76910 El Pueblito, Qro.",
+    "city": "El Pueblito",
+    "state": "Querétaro",
+    "rating": 4.8,
+    "user_ratings_total": 141,
+    "lat": 20.5585134,
+    "lng": -100.4339583,
+    "sources": [
+      "中餐 Queretaro",
+      "chinese restaurant Queretaro"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:49:29.654Z",
+    "last_seen": "2026-01-10T22:50:12.778Z"
+  },
+  {
+    "name": "Restaurante Cong Chau 广州酒家",
+    "place_id": "ChIJwS3ZmYmN2IARCYRgjwUmoBA",
+    "address": "Prolongacion, Calz. Cortez 100, Independencia, 22840 Ensenada, B.C.",
+    "city": "Ensenada",
+    "state": "Baja California",
+    "rating": 4.1,
+    "user_ratings_total": 101,
+    "lat": 31.8604297,
+    "lng": -116.6060059,
+    "sources": [
+      "华人 Ensenada"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:35:56.828Z",
+    "last_seen": "2026-01-10T22:35:56.828Z"
+  },
+  {
+    "name": "Restaurante Gran Hong Kong",
+    "place_id": "ChIJj9P_8maS2IARyPfW2U05uQY",
+    "address": "Av. Miramar 51-53, Zona Centro, 22800 Ensenada, B.C.",
+    "city": "Ensenada",
+    "state": "Baja California",
+    "rating": 4.3,
+    "user_ratings_total": 179,
+    "lat": 31.8628708,
+    "lng": -116.6276026,
+    "sources": [
+      "中餐 Ensenada",
+      "comida china Ensenada",
+      "chinese restaurant Ensenada"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:35:35.708Z",
+    "last_seen": "2026-01-10T22:36:11.134Z"
+  },
+  {
+    "name": "Hong Kong",
+    "place_id": "ChIJ-YgGkaQLg4YReBQA1-dT6Y0",
+    "address": "Calle Fco. J. Mina, Centro, 99000 Fresnillo, Zac.",
+    "city": "Fresnillo",
+    "state": "Zacatecas",
+    "rating": 4.4,
+    "user_ratings_total": 269,
+    "lat": 23.1772537,
+    "lng": -102.8717806,
+    "sources": [
+      "中餐 Zacatecas",
+      "restaurante chino Zacatecas"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T23:00:21.402Z",
+    "last_seen": "2026-01-10T23:00:45.027Z"
+  },
+  {
+    "name": "El Dragón Rojo （华龙中餐厅 Hua Long）",
+    "place_id": "ChIJ9-uCIdixKIQRQcoHtFtKYhc",
+    "address": "C. Miguel Blanco 871, Zona Centro, 44100 Guadalajara, Jal.",
+    "city": "Guadalajara",
+    "state": "Jalisco",
+    "rating": 4.4,
+    "user_ratings_total": 124,
+    "lat": 20.6716934,
+    "lng": -103.3475273,
+    "sources": [
+      "中餐 Guadalajara",
+      "饺子 Guadalajara",
+      "中文 Guadalajara",
+      "华人 Guadalajara",
+      "中国 Guadalajara",
+      "restaurante chino Guadalajara",
+      "chinese restaurant Guadalajara"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:36:47.650Z",
+    "last_seen": "2026-01-10T22:37:29.092Z"
+  },
+  {
+    "name": "Kumian Ramen 中華料理",
+    "place_id": "ChIJFX6fFgCxKIQR92cQTiT0ukQ",
+    "address": "Av. Fidel Velazquez 913, Santa Elena Alcalde, 44220 Guadalajara, Jal.",
+    "city": "Guadalajara",
+    "state": "Jalisco",
+    "rating": 4.9,
+    "user_ratings_total": 47,
+    "lat": 20.7118144,
+    "lng": -103.3442281,
+    "sources": [
+      "中餐 Guadalajara"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:36:47.101Z",
+    "last_seen": "2026-01-10T22:36:47.101Z"
+  },
+  {
+    "name": "Shun Fa Super Oriental - 順發超市",
+    "place_id": "ChIJx1RBEqixKIQRzGuW2nTbOAY",
+    "address": "Héroes de la Independencia 83, Centro, 44290 Guadalajara, Jal.",
+    "city": "Guadalajara",
+    "state": "Jalisco",
+    "rating": 2.4,
+    "user_ratings_total": 5,
+    "lat": 20.6718139,
+    "lng": -103.3454264,
+    "sources": [
+      "chinese supermarket Guadalajara"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:37:32.404Z",
+    "last_seen": "2026-01-10T22:37:32.404Z"
+  },
+  {
+    "name": "YUDU HOTPOT 渝都火锅",
+    "place_id": "ChIJt-jZ4kuxKIQRYPWb_RnVopE",
+    "address": "C. Donato Guerra 26, Zona Centro, 44100 Guadalajara, Jal.",
+    "city": "Guadalajara",
+    "state": "Jalisco",
+    "rating": 4.5,
+    "user_ratings_total": 115,
+    "lat": 20.6761053,
+    "lng": -103.350611,
+    "sources": [
+      "中餐 Guadalajara",
+      "火锅 Guadalajara",
+      "麻辣烫 Guadalajara"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:36:47.925Z",
+    "last_seen": "2026-01-10T22:36:51.525Z"
+  },
+  {
+    "name": "家家樂華人超市",
+    "place_id": "ChIJsciB2g6xKIQRI9bSCPr_NRQ",
+    "address": "Héroes de la Independencia 1, Zona Centro, 44100 Guadalajara, Jal.",
+    "city": "Guadalajara",
+    "state": "Jalisco",
+    "rating": 2,
+    "user_ratings_total": 4,
+    "lat": 20.6714828,
+    "lng": -103.3445278,
+    "sources": [
+      "华人 Guadalajara"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:37:09.600Z",
+    "last_seen": "2026-01-10T22:37:09.600Z"
+  },
+  {
+    "name": "老梅仔 (中餐馆) - Lao Mei Zai (COMIDA ORIGINAL CHINA)",
+    "place_id": "ChIJ0-j4EACzKIQRaATR650nxeQ",
+    "address": "Calz. Revolución 170, Analco, 44450 Guadalajara, Jal.",
+    "city": "Guadalajara",
+    "state": "Jalisco",
+    "rating": 4.6,
+    "user_ratings_total": 67,
+    "lat": 20.6694662,
+    "lng": -103.3420452,
+    "sources": [
+      "中餐 Guadalajara"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:36:47.378Z",
+    "last_seen": "2026-01-10T22:36:47.378Z"
+  },
+  {
+    "name": "Restaurante Hong Kong La Florida",
+    "place_id": "ChIJq8SFstqpgIYRSnXXGCPd1oE",
+    "address": "La Florida 203, Las Arboledas, 98168 Guadalupe, Zac.",
+    "city": "Guadalupe",
+    "state": "Zacatecas",
+    "rating": 4.4,
+    "user_ratings_total": 327,
+    "lat": 22.7596753,
+    "lng": -102.5400513,
+    "sources": [
+      "中餐 Zacatecas",
+      "面馆 Zacatecas",
+      "comida china Zacatecas",
+      "restaurante chino Zacatecas"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T23:00:21.125Z",
+    "last_seen": "2026-01-10T23:00:45.027Z"
+  },
+  {
+    "name": "鑫发中餐",
+    "place_id": "ChIJO1bs_g50K4QRFKHt2mq7A4U",
+    "address": "Av. Benito Juárez 139, Zona Centro, 36000 Guanajuato, Gto.",
+    "city": "Guanajuato",
+    "state": "Guanajuato",
+    "rating": 4.1,
+    "user_ratings_total": 146,
+    "lat": 21.0194608,
+    "lng": -101.2606109,
+    "sources": [
+      "中餐 Guanajuato",
+      "中文 Guanajuato",
+      "中国 Guanajuato",
+      "comida china Guanajuato",
+      "restaurante chino Guanajuato",
+      "chinese restaurant Guanajuato"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:36:21.224Z",
+    "last_seen": "2026-01-10T22:36:41.760Z"
+  },
+  {
+    "name": "Comida China Jing Hu 京湖",
+    "place_id": "ChIJpUpxsviHzoYRbxkry-gvPE4",
+    "address": "Blvd. Juan Bautista de Escalante 140, Alto Valle, 83106 Hermosillo, Son.",
+    "city": "Hermosillo",
+    "state": "Sonora",
+    "rating": 4.1,
+    "user_ratings_total": 42,
+    "lat": 29.145185,
+    "lng": -110.9669456,
+    "sources": [
+      "中餐 Hermosillo",
+      "中文 Hermosillo",
+      "中国 Hermosillo",
+      "comida china Hermosillo",
+      "chinese restaurant Hermosillo"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:37:37.034Z",
+    "last_seen": "2026-01-10T22:38:16.361Z"
+  },
+  {
+    "name": "Lanzhou Ramen",
+    "place_id": "ChIJt7BuJADrz4UR2o85mv_KKD0",
+    "address": "Blvd. Xonacatepec 174, Bosques de San Sebastián, 72310 Heroica Puebla de Zaragoza, Pue.",
+    "city": "Heroica Puebla de Zaragoza",
+    "state": "Puebla",
+    "rating": 3.4,
+    "user_ratings_total": 13,
+    "lat": 19.0593172,
+    "lng": -98.1289297,
+    "sources": [
+      "面馆 Puebla"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:48:03.115Z",
+    "last_seen": "2026-01-10T22:48:03.115Z"
+  },
+  {
+    "name": "MI CHA 觅茶 té y tapioca",
+    "place_id": "ChIJoyM0RB9_LIQRiOER-pH5Jp8",
+    "address": "Blvd. Lázaro Cárdenas 261, Moderna, 36690 Irapuato, Gto.",
+    "city": "Irapuato",
+    "state": "Guanajuato",
+    "rating": 4.7,
+    "user_ratings_total": 159,
+    "lat": 20.6829381,
+    "lng": -101.3570431,
+    "sources": [
+      "奶茶 Irapuato"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:38:39.775Z",
+    "last_seen": "2026-01-10T22:38:39.775Z"
+  },
+  {
+    "name": "MI CHA 觅茶 té y tapioca C.C Fragaria",
+    "place_id": "ChIJewCB9DR_LIQRgla0TCJqHOI",
+    "address": "Blvrd Paseo Solidaridad 13588-local 08, Terracota, 36620 Irapuato, Gto.",
+    "city": "Irapuato",
+    "state": "Guanajuato",
+    "rating": 4.8,
+    "user_ratings_total": 5,
+    "lat": 20.7094566,
+    "lng": -101.3513709,
+    "sources": [
+      "奶茶 Irapuato"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:38:40.324Z",
+    "last_seen": "2026-01-10T22:38:40.324Z"
+  },
+  {
+    "name": "MI CHA 觅茶 té y tapioca Plaza Cibeles",
+    "place_id": "ChIJc-RaquB_LIQRwmjy3961UmU",
+    "address": "Blvd. a Villas de Irapuato #1443 Local 98, Colonia Ejido, Segundo piso, Plaza Cibeles, 36643 Irapuato, Gto.",
+    "city": "Irapuato",
+    "state": "Guanajuato",
+    "rating": 4.2,
+    "user_ratings_total": 53,
+    "lat": 20.6809662,
+    "lng": -101.3806107,
+    "sources": [
+      "奶茶 Irapuato"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:38:40.054Z",
+    "last_seen": "2026-01-10T22:38:40.054Z"
+  },
+  {
+    "name": "Hong Kong City - by Comida China Jrz",
+    "place_id": "ChIJDZHEYFZZ54YRgWMh8fppsyk",
+    "address": "Av. Paseo Triunfo de la República 4630, Monumental, 32310 Juárez, Chih.",
+    "city": "Juárez",
+    "state": "Chihuahua",
+    "rating": 4.3,
+    "user_ratings_total": 314,
+    "lat": 31.7352408,
+    "lng": -106.4432221,
+    "sources": [
+      "中餐 Ciudad Juarez",
+      "麻辣烫 Ciudad Juarez",
+      "华人 Ciudad Juarez",
+      "中国 Ciudad Juarez",
+      "restaurante chino Ciudad Juarez",
+      "chinese restaurant Ciudad Juarez"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:31:09.413Z",
+    "last_seen": "2026-01-10T22:31:41.949Z"
+  },
+  {
+    "name": "Clínica Taiyang 太阳",
+    "place_id": "ChIJvz-OhphX04URiZz1MQHU0fo",
+    "address": "Residencial Caletto, Blvd. Jurica la Campana 1000, 76230 Juriquilla, Qro.",
+    "city": "Juriquilla",
+    "state": "Querétaro",
+    "rating": 5,
+    "user_ratings_total": 2,
+    "lat": 20.7114858,
+    "lng": -100.4424765,
+    "sources": [
+      "medicina china Queretaro"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:50:06.725Z",
+    "last_seen": "2026-01-10T22:50:06.725Z"
+  },
+  {
+    "name": "中国超市旺旺食品商店WANGWANG",
+    "place_id": "ChIJzRGuZclX04URkNE0bYRHJpU",
+    "address": "Anillo Vial Fray Junípero Serra 2651, Santa Fé, 76230 Juriquilla, Qro.",
+    "city": "Juriquilla",
+    "state": "Querétaro",
+    "rating": 5,
+    "user_ratings_total": 2,
+    "lat": 20.6921177,
+    "lng": -100.4406304,
+    "sources": [
+      "chinese supermarket Queretaro"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:50:16.078Z",
+    "last_seen": "2026-01-10T22:50:16.078Z"
+  },
+  {
+    "name": "Gran China (大中華)",
+    "place_id": "ChIJiUEPXFvTr4YR9jv7vsnYUkE",
+    "address": "Ignacio Manuel Altamirano esquina Ignacio Altamirano, Centro, Zona Central, 23000 La Paz, B.C.S.",
+    "city": "La Paz",
+    "state": "Baja California Sur",
+    "rating": 4.1,
+    "user_ratings_total": 285,
+    "lat": 24.1549461,
+    "lng": -110.3134511,
+    "sources": [
+      "中餐 La Paz",
+      "火锅 La Paz",
+      "饺子 La Paz",
+      "chinese restaurant La Paz"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:39:10.612Z",
+    "last_seen": "2026-01-10T22:39:35.814Z"
+  },
+  {
+    "name": "Restaurant Bar Dragón de Oro (金龍酒家)",
+    "place_id": "ChIJu6l6m1DTr4YRJyP_gjRnVPE",
+    "address": "Ignacio Allende, C. Francisco I. Madero 96 Esq, Zona Central, 23000 La Paz, B.C.S.",
+    "city": "La Paz",
+    "state": "Baja California Sur",
+    "rating": 4.1,
+    "user_ratings_total": 502,
+    "lat": 24.1564007,
+    "lng": -110.3193769,
+    "sources": [
+      "中餐 La Paz",
+      "火锅 La Paz",
+      "面馆 La Paz",
+      "饺子 La Paz",
+      "chinese restaurant La Paz"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:39:10.316Z",
+    "last_seen": "2026-01-10T22:39:35.814Z"
+  },
+  {
+    "name": "Restaurant Jeon San (香山酒家)",
+    "place_id": "ChIJCzhDMFnTr4YRIPoCvoPqJKg",
+    "address": "Av, Revolución de 1910, Zona Central, 23000 La Paz, B.C.S.",
+    "city": "La Paz",
+    "state": "Baja California Sur",
+    "rating": 4.6,
+    "user_ratings_total": 255,
+    "lat": 24.1612069,
+    "lng": -110.3135105,
+    "sources": [
+      "中餐 La Paz",
+      "饺子 La Paz",
+      "chinese restaurant La Paz"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:39:09.748Z",
+    "last_seen": "2026-01-10T22:39:35.814Z"
+  },
+  {
+    "name": "COCINA EXPRESS SHANGHAI",
+    "place_id": "ChIJU3IZqQ1HIYQR7eBscR-Sho8",
+    "address": "Venustiano Carranza num316 local D Delegacion, Puerto Vallarta, 48291 Las Juntas, Jal.",
+    "city": "Las Juntas",
+    "state": "Jalisco",
+    "rating": 4.9,
+    "user_ratings_total": 9,
+    "lat": 20.6998118,
+    "lng": -105.2452113,
+    "sources": [
+      "comida china Puerto Vallarta"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:49:08.783Z",
+    "last_seen": "2026-01-10T22:49:08.783Z"
+  },
+  {
+    "name": "Asia Market Leon 亞洲超市",
+    "place_id": "ChIJaRhqSkS_K4QRUmbNXtBTo8E",
+    "address": "Blvd. Hermanos Aldama 2502-local 4, Industrial la Pompa, 37490 León de los Aldama, Gto.",
+    "city": "León de los Aldama",
+    "state": "Guanajuato",
+    "rating": 4.8,
+    "user_ratings_total": 42,
+    "lat": 21.0863879,
+    "lng": -101.6798953,
+    "sources": [
+      "supermercado chino Guanajuato",
+      "chinese supermarket Guanajuato",
+      "supermercado chino Leon",
+      "chinese supermarket Leon"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:36:37.469Z",
+    "last_seen": "2026-01-10T22:40:21.082Z"
+  },
+  {
+    "name": "One Family Hot Pot Restaurant 一家人重庆火锅店",
+    "place_id": "ChIJj2YTqDW_K4QRKdfrcKY1T4Y",
+    "address": "A. Francia 604, Los Paraisos, 37328 León de los Aldama, Gto.",
+    "city": "León de los Aldama",
+    "state": "Guanajuato",
+    "rating": 4.1,
+    "user_ratings_total": 14,
+    "lat": 21.1385343,
+    "lng": -101.6901266,
+    "sources": [
+      "火锅 Leon"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:39:48.751Z",
+    "last_seen": "2026-01-10T22:39:48.751Z"
+  },
+  {
+    "name": "Vitalita Masaje Oriental 中式按摩",
+    "place_id": "ChIJ4R70r62_K4QR4S_wiTK93Nk",
+    "address": "Blvr. Mariano Escobedo Pte. 2502-Local 4 -5, León Moderno, 37480 León de los Aldama, Gto.",
+    "city": "León de los Aldama",
+    "state": "Guanajuato",
+    "rating": 4.7,
+    "user_ratings_total": 325,
+    "lat": 21.10842,
+    "lng": -101.66474,
+    "sources": [
+      "按摩 Leon"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:39:59.055Z",
+    "last_seen": "2026-01-10T22:39:59.055Z"
+  },
+  {
+    "name": "Comida China Zui Xiang Chun",
+    "place_id": "ChIJBaZoYvfXJIQRoFnIUf-Uzsg",
+    "address": "Reforma 29, Santiago Centro, 28860 Manzanillo, Col.",
+    "city": "Manzanillo",
+    "state": "Colima",
+    "rating": 4.4,
+    "user_ratings_total": 16,
+    "lat": 19.1209498,
+    "lng": -104.3525551,
+    "sources": [
+      "中餐 Manzanillo",
+      "饺子 Manzanillo",
+      "中文 Manzanillo",
+      "中国 Manzanillo",
+      "comida china Manzanillo",
+      "restaurante chino Manzanillo",
+      "medicina china Manzanillo",
+      "chinese restaurant Manzanillo",
+      "chinatown Manzanillo"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:40:23.510Z",
+    "last_seen": "2026-01-10T22:40:52.998Z"
+  },
+  {
+    "name": "\"Ruixiang\" Comida China",
+    "place_id": "ChIJBWonC_xSn4YR4CJuYWJqsr8",
+    "address": "Mazatlan ÌII, 82195 Mazatlán, Sin.",
+    "city": "Mazatlán",
+    "state": "Sinaloa",
+    "rating": 3,
+    "user_ratings_total": 2,
+    "lat": 23.2301683,
+    "lng": -106.3877783,
+    "sources": [
+      "中国 Mazatlan"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:41:46.531Z",
+    "last_seen": "2026-01-10T22:41:46.532Z"
+  },
+  {
+    "name": "Mi té 蜜茶",
+    "place_id": "ChIJ86HCDgdTn4YRDzKwKqNnV9M",
+    "address": "Apolo 82123, Alameda, 82123 Mazatlán, Sin.",
+    "city": "Mazatlán",
+    "state": "Sinaloa",
+    "rating": 4.1,
+    "user_ratings_total": 24,
+    "lat": 23.2402813,
+    "lng": -106.4369502,
+    "sources": [
+      "奶茶 Mazatlan"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:41:38.037Z",
+    "last_seen": "2026-01-10T22:41:38.037Z"
+  },
+  {
+    "name": "Fu Xiang",
+    "place_id": "ChIJPeFRfgNxVo8R8Tdzlyr6c3M",
+    "address": "C. 65 205, Cortés Sarmiento, 97168 Mérida, Yuc.",
+    "city": "Mérida",
+    "state": "Yucatán",
+    "rating": 4.4,
+    "user_ratings_total": 303,
+    "lat": 20.9594614,
+    "lng": -89.5921046,
+    "sources": [
+      "comida china Merida",
+      "chinese restaurant Merida"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:42:23.931Z",
+    "last_seen": "2026-01-10T22:42:40.015Z"
+  },
+  {
+    "name": "Comida China Buffet Zhu yuan 竹苑",
+    "place_id": "ChIJ-W6_wm6LzYURxBMHnBryvJA",
+    "address": "BLVRD TOLUCA METEPEC, Calle Guadalupe Victoria 601, La Purisima, 52169 Metepec, Méx.",
+    "city": "Metepec",
+    "state": "Estado de México",
+    "rating": 4.5,
+    "user_ratings_total": 123,
+    "lat": 19.2586007,
+    "lng": -99.6259845,
+    "sources": [
+      "comida china Toluca",
+      "restaurante chino Toluca",
+      "chinese restaurant Toluca"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:56:24.790Z",
+    "last_seen": "2026-01-10T22:56:37.380Z"
+  },
+  {
+    "name": "Beijing Restaurante",
+    "place_id": "ChIJMSBeAxVw14ARF6u-oe-FiDc",
+    "address": "Calz. Justo Sierra 891, Cuauhtémoc Sur, 21200 Mexicali, B.C.",
+    "city": "Mexicali",
+    "state": "Baja California",
+    "rating": 4.4,
+    "user_ratings_total": 1360,
+    "lat": 32.6596481,
+    "lng": -115.4521771,
+    "sources": [
+      "comida china Mexicali",
+      "restaurante chino Mexicali",
+      "chinese restaurant Mexicali"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:43:17.784Z",
+    "last_seen": "2026-01-10T22:43:30.633Z"
+  },
+  {
+    "name": "Palacio Hunan",
+    "place_id": "ChIJT0xkHfVw14ARzk5_K1cT8MA",
+    "address": "Blvd. Benito Juárez 3, Las Palmas, 21360 Mexicali, B.C.",
+    "city": "Mexicali",
+    "state": "Baja California",
+    "rating": 4.1,
+    "user_ratings_total": 609,
+    "lat": 32.62361110000001,
+    "lng": -115.4438889,
+    "sources": [
+      "火锅 Mexicali",
+      "饺子 Mexicali",
+      "中文 Mexicali",
+      "华人 Mexicali"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:42:52.084Z",
+    "last_seen": "2026-01-10T22:43:14.692Z"
+  },
+  {
+    "name": "Baozi",
+    "place_id": "ChIJuz5vCAC_YoYRVi47lC0Z-s8",
+    "address": "Av Lázaro Cárdenas 2610, Del Paseo Residencial, 64765 Monterrey, N.L.",
+    "city": "Monterrey",
+    "state": "Nuevo León",
+    "rating": 4.4,
+    "user_ratings_total": 30,
+    "lat": 25.6313095,
+    "lng": -100.3022486,
+    "sources": [
+      "饺子 Monterrey"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:43:46.108Z",
+    "last_seen": "2026-01-10T22:43:46.108Z"
+  },
+  {
+    "name": "Beijing Comida China",
+    "place_id": "ChIJ6RotTS--YoYRn5r1NGgmCz4",
+    "address": "Av. Benito Juárez 745, Centro, 64000 Monterrey, N.L.",
+    "city": "Monterrey",
+    "state": "Nuevo León",
+    "rating": 4.3,
+    "user_ratings_total": 51,
+    "lat": 25.669112,
+    "lng": -100.3152709,
+    "sources": [
+      "中国 Monterrey"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:25:55.692Z",
+    "last_seen": "2026-01-10T22:43:59.168Z"
+  },
+  {
+    "name": "HICHA 槑茶",
+    "place_id": "ChIJZ8SFI0yVYoYRLui2vrnVxOQ",
+    "address": "plaza bella Anáhuac, Av. Sendero Divisorio 1001, Privadas de Anáhuac, Cerrada de Anáhuac Residencial, 66059 Monterrey, N.L.",
+    "city": "Monterrey",
+    "state": "Nuevo León",
+    "rating": 4,
+    "user_ratings_total": 1,
+    "lat": 25.7711618,
+    "lng": -100.2736388,
+    "sources": [
+      "奶茶 Monterrey"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:25:44.767Z",
+    "last_seen": "2026-01-10T22:43:49.055Z"
+  },
+  {
+    "name": "Huayuan Buffet 华苑",
+    "place_id": "ChIJWw1zSACXYoYRNDB7oNP8sgc",
+    "address": "Av Paseo de los Leones 1001, Cumbres Madeira, 64349 Monterrey, N.L.",
+    "city": "Monterrey",
+    "state": "Nuevo León",
+    "rating": 3.9,
+    "user_ratings_total": 572,
+    "lat": 25.7423426,
+    "lng": -100.4084143,
+    "sources": [
+      "中餐 Monterrey",
+      "华人 Monterrey",
+      "restaurante chino Monterrey"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:25:29.914Z",
+    "last_seen": "2026-01-10T22:44:05.635Z"
+  },
+  {
+    "name": "JI XIANG",
+    "place_id": "ChIJoe-jHOOVYoYRd3nRHvibm-Y",
+    "address": "Guadalajara Dr. Alfredo Piñeyro Lopez 1024, Mitras Sur, 64020 Monterrey, N.L.",
+    "city": "Monterrey",
+    "state": "Nuevo León",
+    "rating": 4.6,
+    "user_ratings_total": 1592,
+    "lat": 25.6864796,
+    "lng": -100.34676,
+    "sources": [
+      "中餐 Monterrey",
+      "面馆 Monterrey",
+      "饺子 Monterrey",
+      "comida china Monterrey",
+      "restaurante chino Monterrey",
+      "chinese restaurant Monterrey",
+      "comida china Guadalajara",
+      "restaurante chino Guadalajara",
+      "chinese restaurant Guadalajara",
+      "comida china Leon",
+      "chinese restaurant Leon"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:25:29.730Z",
+    "last_seen": "2026-01-10T22:44:14.985Z"
+  },
+  {
+    "name": "Mo Mo Cha 奶爸王子",
+    "place_id": "ChIJqypZ1bKVYoYRsBYm3V9aV4k",
+    "address": "Av. Alfonso Reyes, Plaza California 318-interior 102, Contry San Juanito, 64859 Monterrey, N.L.",
+    "city": "Monterrey",
+    "state": "Nuevo León",
+    "rating": 4.5,
+    "user_ratings_total": 101,
+    "lat": 25.6426721,
+    "lng": -100.2769046,
+    "sources": [
+      "奶茶 Monterrey"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:25:44.591Z",
+    "last_seen": "2026-01-10T22:43:49.055Z"
+  },
+  {
+    "name": "CHINAMICH Comida china estilo Shanghái",
+    "place_id": "ChIJeXvj65MPLYQRUE7KulnkeFE",
+    "address": "Av Francisco I. Madero Ote 1871, Isaac Arriaga, 58210 Morelia, Mich.",
+    "city": "Morelia",
+    "state": "Michoacán",
+    "rating": 4.9,
+    "user_ratings_total": 27,
+    "lat": 19.7064277,
+    "lng": -101.1744856,
+    "sources": [
+      "comida china Morelia",
+      "chinese restaurant Morelia"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:44:49.267Z",
+    "last_seen": "2026-01-10T22:45:02.096Z"
+  },
+  {
+    "name": "Hong Kong Express",
+    "place_id": "ChIJMXRAtBwSLYQRIPI1FuYH8BI",
+    "address": "Av. Lic. Enrique Ramírez Miguel 1000, Las Américas, 58270 Morelia, Mich.",
+    "city": "Morelia",
+    "state": "Michoacán",
+    "rating": 3.4,
+    "user_ratings_total": 53,
+    "lat": 19.6890903,
+    "lng": -101.1573231,
+    "sources": [
+      "restaurante chino Morelia",
+      "chinese supermarket Morelia"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:44:52.555Z",
+    "last_seen": "2026-01-10T22:45:05.007Z"
+  },
+  {
+    "name": "MI CHA 觅茶 té y tapioca C.C Paseo Altozano",
+    "place_id": "ChIJBfVtxhUNLYQR3eeiFWIj_HM",
+    "address": "Av Montaña Monarca norte #1000-Local 1N-19B, 58350 Morelia, Mich.",
+    "city": "Morelia",
+    "state": "Michoacán",
+    "rating": 4.8,
+    "user_ratings_total": 17,
+    "lat": 19.6752026,
+    "lng": -101.1622665,
+    "sources": [
+      "奶茶 Morelia"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:44:35.563Z",
+    "last_seen": "2026-01-10T22:44:35.563Z"
+  },
+  {
+    "name": "MIDORI 緑 Té y tapioca",
+    "place_id": "ChIJESMYfG4NLYQR-Q7TulgafzM",
+    "address": "Av. Universidad 1174, Villa Universidad, Valle Quieto, 58060 Morelia, Mich.",
+    "city": "Morelia",
+    "state": "Michoacán",
+    "rating": 4.7,
+    "user_ratings_total": 27,
+    "lat": 19.6848962,
+    "lng": -101.2021734,
+    "sources": [
+      "奶茶 Morelia"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:44:35.865Z",
+    "last_seen": "2026-01-10T22:44:35.865Z"
+  },
+  {
+    "name": "Shenzhen Comida China Express",
+    "place_id": "ChIJmxJL5gIPLYQRqxtr0eSfV0E",
+    "address": "Av Lázaro Cárdenas 973, Centro, 58000 Morelia, Mich.",
+    "city": "Morelia",
+    "state": "Michoacán",
+    "rating": 3.3,
+    "user_ratings_total": 116,
+    "lat": 19.6950857,
+    "lng": -101.1850525,
+    "sources": [
+      "中文 Morelia",
+      "comida china Morelia",
+      "restaurante chino Morelia",
+      "chinese restaurant Morelia"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:44:41.623Z",
+    "last_seen": "2026-01-10T22:45:02.096Z"
+  },
+  {
+    "name": "Buffet Chino Hong Kong",
+    "place_id": "ChIJHSqwRUkix4URFfF18XMORuw",
+    "address": "Lateral 206, FERROCARRIL, Jose Vasconcelos, 68115 Oaxaca de Juárez, Oax.",
+    "city": "Oaxaca de Juárez",
+    "state": "Oaxaca",
+    "rating": 4,
+    "user_ratings_total": 430,
+    "lat": 17.0562274,
+    "lng": -96.7128187,
+    "sources": [
+      "中餐 Oaxaca",
+      "火锅 Oaxaca",
+      "麻辣烫 Oaxaca",
+      "comida china Oaxaca",
+      "restaurante chino Oaxaca",
+      "chinese restaurant Oaxaca"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:45:44.110Z",
+    "last_seen": "2026-01-10T22:46:24.116Z"
+  },
+  {
+    "name": "Hong Kong",
+    "place_id": "ChIJzTUK1Tsix4UR07vHCYLd6kI",
+    "address": "Dr. Liceaga 107, RUTA INDEPENDENCIA, Centro, 68000 Oaxaca de Juárez, Oax.",
+    "city": "Oaxaca de Juárez",
+    "state": "Oaxaca",
+    "rating": 4.1,
+    "user_ratings_total": 803,
+    "lat": 17.0669984,
+    "lng": -96.72013249999999,
+    "sources": [
+      "中餐 Oaxaca",
+      "火锅 Oaxaca",
+      "麻辣烫 Oaxaca",
+      "面馆 Oaxaca",
+      "饺子 Oaxaca",
+      "中文 Oaxaca",
+      "华人 Oaxaca",
+      "中国 Oaxaca",
+      "comida china Oaxaca",
+      "restaurante chino Oaxaca",
+      "chinese restaurant Oaxaca",
+      "chinese supermarket Oaxaca"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:45:43.833Z",
+    "last_seen": "2026-01-10T22:46:27.043Z"
+  },
+  {
+    "name": "Cafetería Hong Kong",
+    "place_id": "ChIJmfheMGCn0YURgdQ-pzIkqwY",
+    "address": "Av Francisco I. Madero 120, Céspedes, 42090 Pachuca de Soto, Hgo.",
+    "city": "Pachuca de Soto",
+    "state": "Hidalgo",
+    "rating": 4.2,
+    "user_ratings_total": 570,
+    "lat": 20.1136943,
+    "lng": -98.7240266,
+    "sources": [
+      "面馆 Pachuca",
+      "华人 Pachuca",
+      "中国 Pachuca",
+      "comida china Pachuca",
+      "restaurante chino Pachuca",
+      "chinese restaurant Pachuca",
+      "chinatown Pachuca"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:46:43.445Z",
+    "last_seen": "2026-01-10T22:47:15.280Z"
+  },
+  {
+    "name": "COMIDA CHINA SHENZHEN",
+    "place_id": "ChIJVRlWFQDpYoYR5ND__apl7_Q",
+    "address": "Av. Lucca 402, 66673 Pesquería, N.L.",
+    "city": "Pesquería",
+    "state": "Nuevo León",
+    "rating": 4.1,
+    "user_ratings_total": 15,
+    "lat": 25.7562992,
+    "lng": -100.1083815,
+    "sources": [
+      "restaurante chino Cancun",
+      "chinese restaurant La Paz",
+      "comida china Playa del Carmen",
+      "restaurante chino Playa del Carmen",
+      "comida china Villahermosa",
+      "restaurante chino Villahermosa",
+      "chinese restaurant Villahermosa"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:28:53.744Z",
+    "last_seen": "2026-01-10T22:59:22.839Z"
+  },
+  {
+    "name": "Hong Kong Express",
+    "place_id": "ChIJz0Q4u3RDTo8RKEM4Ij19QxA",
+    "address": "Carretera Cancún Tulúm 2422, 77712 Playa del Carmen, Q.R.",
+    "city": "Playa del Carmen",
+    "state": "Quintana Roo",
+    "rating": 3.8,
+    "user_ratings_total": 385,
+    "lat": 20.6154896,
+    "lng": -87.09808880000001,
+    "sources": [
+      "中餐 Playa del Carmen",
+      "comida china Playa del Carmen",
+      "restaurante chino Playa del Carmen",
+      "chinese restaurant Playa del Carmen",
+      "chinatown Playa del Carmen"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:47:17.399Z",
+    "last_seen": "2026-01-10T22:47:52.515Z"
+  },
+  {
+    "name": "Hong Kong Express Colosio",
+    "place_id": "ChIJtUCEMQBDTo8RJt9WhlI8X00",
+    "address": "Av Luis Donaldo Colosio 59, Santa Fe del Carmen, 77710 Playa del Carmen, Q.R.",
+    "city": "Playa del Carmen",
+    "state": "Quintana Roo",
+    "rating": 2.5,
+    "user_ratings_total": 15,
+    "lat": 20.649598,
+    "lng": -87.0708245,
+    "sources": [
+      "comida china Playa del Carmen",
+      "restaurante chino Playa del Carmen",
+      "chinatown Playa del Carmen"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:47:36.299Z",
+    "last_seen": "2026-01-10T22:47:52.515Z"
+  },
+  {
+    "name": "Xian Wei",
+    "place_id": "ChIJj-fRwU5FIYQRPsLggWgdgyQ",
+    "address": "C. Juárez 252, Centro, 48300 Puerto Vallarta, Jal.",
+    "city": "Puerto Vallarta",
+    "state": "Jalisco",
+    "rating": 4.1,
+    "user_ratings_total": 175,
+    "lat": 20.6077222,
+    "lng": -105.2355998,
+    "sources": [
+      "中餐 Puerto Vallarta",
+      "中国 Puerto Vallarta",
+      "comida china Puerto Vallarta",
+      "restaurante chino Puerto Vallarta",
+      "chinese restaurant Puerto Vallarta",
+      "oriental Puerto Vallarta"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:48:47.147Z",
+    "last_seen": "2026-01-10T22:49:25.538Z"
+  },
+  {
+    "name": "Comida china Beijing",
+    "place_id": "ChIJ-c4_EdcFZYYRHPY1Xzvcd68",
+    "address": "Naranjos 18, Lomas del Real de Jarachina Nte., 88730 Reynosa, Tamps.",
+    "city": "Reynosa",
+    "state": "Tamaulipas",
+    "rating": 2.3,
+    "user_ratings_total": 3,
+    "lat": 26.0499859,
+    "lng": -98.34731169999999,
+    "sources": [
+      "中餐 Reynosa"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:50:21.438Z",
+    "last_seen": "2026-01-10T22:50:21.438Z"
+  },
+  {
+    "name": "Comida China Xian",
+    "place_id": "ChIJJ96DZEUFZYYREbk7AvBUsOc",
+    "address": "Punta Calabozo, Puerta del Sol, 88736 Reynosa, Tamps.",
+    "city": "Reynosa",
+    "state": "Tamaulipas",
+    "rating": 4.1,
+    "user_ratings_total": 19,
+    "lat": 26.0439174,
+    "lng": -98.3364002,
+    "sources": [
+      "中餐 Reynosa",
+      "火锅 Reynosa",
+      "饺子 Reynosa",
+      "中国 Reynosa",
+      "comida china Reynosa",
+      "restaurante chino Reynosa",
+      "chinese restaurant Reynosa"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:50:20.909Z",
+    "last_seen": "2026-01-10T22:50:59.970Z"
+  },
+  {
+    "name": "HICHA 槑茶",
+    "place_id": "ChIJPycphlcFZYYR1S5loCDq6Uw",
+    "address": "sucursal periférico,libramiento sur, Autop. Monterrey - Reynosa 1000-s/n, Lomas del Real de Jarachina Sur, 88730 Reynosa, Tamps.",
+    "city": "Reynosa",
+    "state": "Tamaulipas",
+    "rating": 3,
+    "user_ratings_total": 3,
+    "lat": 26.0561202,
+    "lng": -98.36614929999999,
+    "sources": [
+      "奶茶 Reynosa"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:50:37.407Z",
+    "last_seen": "2026-01-10T22:50:37.407Z"
+  },
+  {
+    "name": "Hong Kong",
+    "place_id": "ChIJ0RTruPoFZYYRQHOdoegrJa0",
+    "address": "Blvd. Hidalgo 101, Las Fuentes, 88710 Reynosa, Tamps.",
+    "city": "Reynosa",
+    "state": "Tamaulipas",
+    "rating": 4.1,
+    "user_ratings_total": 15,
+    "lat": 26.0744621,
+    "lng": -98.3188642,
+    "sources": [
+      "中餐 Reynosa",
+      "comida china Reynosa",
+      "chinese restaurant Reynosa"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:50:21.159Z",
+    "last_seen": "2026-01-10T22:50:59.970Z"
+  },
+  {
+    "name": "Comida China Hong Kong",
+    "place_id": "ChIJYUayuUpziIYR8S1idbco4Yg",
+    "address": "Parque Industrial Amistad Alianzas, 25083 Saltillo, Coah.",
+    "city": "Saltillo",
+    "state": "Coahuila de Zaragoza",
+    "rating": 4.3,
+    "user_ratings_total": 11,
+    "lat": 25.3770454,
+    "lng": -101.01512,
+    "sources": [
+      "中餐 Saltillo",
+      "chinese restaurant Saltillo"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:51:08.195Z",
+    "last_seen": "2026-01-10T22:51:46.049Z"
+  },
+  {
+    "name": "Hong Kong City",
+    "place_id": "ChIJG3pRKgATiIYRSfUxH3QYrU4",
+    "address": "Blvd. Eulalio Gutiérrez Treviño 525-Local 19, Planta alta, Jardines de la Florida, 25296 Saltillo, Coah.",
+    "city": "Saltillo",
+    "state": "Coahuila de Zaragoza",
+    "rating": 3.6,
+    "user_ratings_total": 26,
+    "lat": 25.4447033,
+    "lng": -100.9579524,
+    "sources": [
+      "中餐 Saltillo",
+      "饺子 Saltillo",
+      "comida china Saltillo",
+      "restaurante chino Saltillo",
+      "chinese restaurant Saltillo"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:51:07.924Z",
+    "last_seen": "2026-01-10T22:51:46.048Z"
+  },
+  {
+    "name": "JíXiáng Saltillo",
+    "place_id": "ChIJpSZ-HQBziIYRi74qXZpVIbk",
+    "address": "Pérez Treviño, Perez Treviño 449, Zona Centro, 25000 Saltillo, Coah.",
+    "city": "Saltillo",
+    "state": "Coahuila de Zaragoza",
+    "rating": 3,
+    "user_ratings_total": 3,
+    "lat": 25.4254845,
+    "lng": -101.0023885,
+    "sources": [
+      "中国 Saltillo"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:51:30.012Z",
+    "last_seen": "2026-01-10T22:51:30.012Z"
+  },
+  {
+    "name": "Hong - Kong",
+    "place_id": "ChIJq-4mWqZF7YURKVl8sJj-OeM",
+    "address": "Periférico Norte Poniente #29, Los Alcanfores, 29265 San Cristóbal de las Casas, Chis.",
+    "city": "San Cristóbal de las Casas",
+    "state": "Chiapas",
+    "rating": 4.2,
+    "user_ratings_total": 237,
+    "lat": 16.7376989,
+    "lng": -92.66206509999999,
+    "sources": [
+      "中餐 San Cristobal de las Casas",
+      "麻辣烫 San Cristobal de las Casas",
+      "饺子 San Cristobal de las Casas",
+      "comida china San Cristobal de las Casas",
+      "restaurante chino San Cristobal de las Casas",
+      "chinese restaurant San Cristobal de las Casas",
+      "chinese supermarket San Cristobal de las Casas",
+      "oriental San Cristobal de las Casas"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:51:51.441Z",
+    "last_seen": "2026-01-10T22:52:28.215Z"
+  },
+  {
+    "name": "Hong Kong Comida China",
+    "place_id": "ChIJ5clfV0hF7YURd0KRERrV76w",
+    "address": "San Ramon, 29265 San Cristóbal de las Casas, Chis.",
+    "city": "San Cristóbal de las Casas",
+    "state": "Chiapas",
+    "rating": 2.8,
+    "user_ratings_total": 6,
+    "lat": 16.7344932,
+    "lng": -92.6525611,
+    "sources": [
+      "comida china San Cristobal de las Casas",
+      "restaurante chino San Cristobal de las Casas",
+      "chinese restaurant San Cristobal de las Casas"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:52:12.564Z",
+    "last_seen": "2026-01-10T22:52:23.628Z"
+  },
+  {
+    "name": "HONG COMIDA CHINA 宏中国菜",
+    "place_id": "ChIJ6xI2nZl30oURwGnpRsjyImg",
+    "address": "50200, Manzana 017, San Cristóbal Huichochitlan, Delegación San Cristóbal Huichochitlán, 50200 San Cristóbal Huichochitlán, Méx.",
+    "city": "San Cristóbal Huichochitlán",
+    "state": "Estado de México",
+    "rating": 4.6,
+    "user_ratings_total": 87,
+    "lat": 19.3365449,
+    "lng": -99.64166329999999,
+    "sources": [
+      "中餐 Toluca",
+      "comida china Toluca",
+      "chinese restaurant Toluca"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:56:08.015Z",
+    "last_seen": "2026-01-10T22:56:37.380Z"
+  },
+  {
+    "name": "Restaurante Shanghai II",
+    "place_id": "ChIJvWsrHvEz-IURMMD80t3kws8",
+    "address": "C. 10 55, Zona Centro, 24000 San Francisco de Campeche, Camp.",
+    "city": "San Francisco de Campeche",
+    "state": "Campeche",
+    "rating": 3.9,
+    "user_ratings_total": 168,
+    "lat": 19.8460587,
+    "lng": -90.5376032,
+    "sources": [
+      "中文 Campeche",
+      "comida china Campeche",
+      "restaurante chino Campeche",
+      "chinese restaurant Campeche",
+      "oriental Campeche"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:28:10.716Z",
+    "last_seen": "2026-01-10T22:28:23.123Z"
+  },
+  {
+    "name": "Comida china 【长城】GRAN MURALLA",
+    "place_id": "ChIJo6McEqCZKoQR4pMxrYNUzWE",
+    "address": "Av. Venustiano Carranza 565, Reforma, 78000 San Luis Potosí, S.L.P.",
+    "city": "San Luis Potosí",
+    "state": "San Luis Potosí",
+    "rating": 4.5,
+    "user_ratings_total": 66,
+    "lat": 22.151085,
+    "lng": -100.9817252,
+    "sources": [
+      "comida china San Luis Potosi",
+      "restaurante chino San Luis Potosi",
+      "chinese restaurant San Luis Potosi",
+      "chinatown San Luis Potosi"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:52:50.681Z",
+    "last_seen": "2026-01-10T22:53:09.187Z"
+  },
+  {
+    "name": "Restaurante Comida China Hong Kong Express",
+    "place_id": "ChIJs7T5ufihKoQRuuwTdkLjCkU",
+    "address": "Juan Sarabia 315, Centro Historico, 78000 San Luis Potosí, S.L.P.",
+    "city": "San Luis Potosí",
+    "state": "San Luis Potosí",
+    "rating": 4,
+    "user_ratings_total": 881,
+    "lat": 22.1538605,
+    "lng": -100.9743133,
+    "sources": [
+      "comida china San Luis Potosi",
+      "restaurante chino San Luis Potosi",
+      "chinese restaurant San Luis Potosi"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:52:50.967Z",
+    "last_seen": "2026-01-10T22:53:03.349Z"
+  },
+  {
+    "name": "按摩店私人医院",
+    "place_id": "ChIJL6D0IimfKoQRdPwoHwib3ZM",
+    "address": "Francisco de Urdinola 185, Parque España 3ra Secc, 78200 San Luis Potosí, S.L.P.",
+    "city": "San Luis Potosí",
+    "state": "San Luis Potosí",
+    "rating": 5,
+    "user_ratings_total": 1,
+    "lat": 22.1533702,
+    "lng": -101.0049266,
+    "sources": [
+      "按摩 San Luis Potosi"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:52:44.568Z",
+    "last_seen": "2026-01-10T22:52:44.568Z"
+  },
+  {
+    "name": "Lanzhou Ramen Mty 兰州拉面",
+    "place_id": "ChIJv2oNNgCVYoYRnGsEIMubRB8",
+    "address": "Avenida Universidad 1250-3 piso local C307, Villarreal, 66427 San Nicolás de los Garza, N.L.",
+    "city": "San Nicolás de los Garza",
+    "state": "Nuevo León",
+    "rating": 4.7,
+    "user_ratings_total": 33,
+    "lat": 25.764054,
+    "lng": -100.29312,
+    "sources": [
+      "拉面 Monterrey"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:25:38.477Z",
+    "last_seen": "2026-01-10T22:43:42.580Z"
+  },
+  {
+    "name": "yihotpot 燚火锅",
+    "place_id": "ChIJAYpbEgC_YoYRvM1wwclGNEI",
+    "address": "Nuevo León, San Pedro Garza García, Zona San Agustín, Av. Real San Agustin, local 14B-1邮政编码: 66260",
+    "city": "San Pedro Garza García",
+    "state": "Nuevo León",
+    "rating": 4.8,
+    "user_ratings_total": 237,
+    "lat": 25.6482377,
+    "lng": -100.3389912,
+    "sources": [
+      "火锅 Monterrey",
+      "麻辣烫 Monterrey",
+      "饺子 Monterrey",
+      "火锅 La Paz",
+      "火锅 Leon",
+      "chinese restaurant Leon"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:25:33.166Z",
+    "last_seen": "2026-01-10T22:43:45.522Z"
+  },
+  {
+    "name": "Comida china 中国快餐",
+    "place_id": "ChIJNWZFdQBF04URyOx8HbwSYwc",
+    "address": "Av. Constituyentes 6d, San Francisquito, 76040 Santiago de Querétaro, Qro.",
+    "city": "Santiago de Querétaro",
+    "state": "Querétaro",
+    "rating": 4.8,
+    "user_ratings_total": 8,
+    "lat": 20.5875318,
+    "lng": -100.38471,
+    "sources": [
+      "中国 Queretaro"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:49:53.734Z",
+    "last_seen": "2026-01-10T22:49:53.734Z"
+  },
+  {
+    "name": "Novedades Hong Kong China",
+    "place_id": "ChIJi1L6dLdb04UR0ICMQJRDgkY",
+    "address": "C. Benito Juárez Sur 52, Centro, 76000 Santiago de Querétaro, Qro.",
+    "city": "Santiago de Querétaro",
+    "state": "Querétaro",
+    "rating": 4.1,
+    "user_ratings_total": 183,
+    "lat": 20.5903286,
+    "lng": -100.3913548,
+    "sources": [
+      "中文 Queretaro",
+      "中国 Queretaro"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:49:49.557Z",
+    "last_seen": "2026-01-10T22:49:53.734Z"
+  },
+  {
+    "name": "Pollo Kowloon",
+    "place_id": "ChIJXYBNMABb04URtk_jua3XXak",
+    "address": "Querétaro, Santiago de Querétaro, La Purísima, Anillo Vial Fray Junípero Serra, JJMX+66 墨西哥克雷塔罗拉普里西马邮政编码: 76146",
+    "city": "Santiago de Querétaro",
+    "state": "Querétaro",
+    "rating": 4.7,
+    "user_ratings_total": 19,
+    "lat": 20.6323785,
+    "lng": -100.3547001,
+    "sources": [
+      "中餐 Queretaro"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:49:29.932Z",
+    "last_seen": "2026-01-10T22:49:29.932Z"
+  },
+  {
+    "name": "XingHe Dumpling de china y té星禾饺子茶馆",
+    "place_id": "ChIJPd6frUhb04URBbCt6egsdsI",
+    "address": "Av Reforma Ote 127A, La Santa Cruz, La Cruz, 76020 Santiago de Querétaro, Qro.",
+    "city": "Santiago de Querétaro",
+    "state": "Querétaro",
+    "rating": 4.8,
+    "user_ratings_total": 364,
+    "lat": 20.5924906,
+    "lng": -100.3849179,
+    "sources": [
+      "中餐 Queretaro",
+      "面馆 Queretaro",
+      "饺子 Queretaro",
+      "中文 Queretaro",
+      "中国 Queretaro",
+      "comida china Queretaro",
+      "restaurante chino Queretaro",
+      "chinese restaurant Queretaro"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:49:29.087Z",
+    "last_seen": "2026-01-10T22:50:12.778Z"
+  },
+  {
+    "name": "Yong Xing Comida China (永兴）",
+    "place_id": "ChIJQ-l8KVFF04UR2KaOJM_8Yss",
+    "address": "Av. Constituyentes 34 Ote-Local 10-C, zona dos extendida, Mercurio, 76046 Santiago de Querétaro, Qro.",
+    "city": "Santiago de Querétaro",
+    "state": "Querétaro",
+    "rating": 4.5,
+    "user_ratings_total": 88,
+    "lat": 20.585636,
+    "lng": -100.3823845,
+    "sources": [
+      "中餐 Queretaro",
+      "中文 Queretaro",
+      "中国 Queretaro",
+      "comida china Queretaro",
+      "restaurante chino Queretaro",
+      "chinese restaurant Queretaro"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:49:29.361Z",
+    "last_seen": "2026-01-10T22:50:12.778Z"
+  },
+  {
+    "name": "中国店Baishun百顺杂货店",
+    "place_id": "ChIJryV5frNF04URhhq0_VCQx6w",
+    "address": "Av. Prol. Luis Pasteur Sur 135, zona dos extendida, Alameda, 76040 Santiago de Querétaro, Qro.",
+    "city": "Santiago de Querétaro",
+    "state": "Querétaro",
+    "rating": 4.6,
+    "user_ratings_total": 49,
+    "lat": 20.5860095,
+    "lng": -100.3850634,
+    "sources": [
+      "中文 Queretaro",
+      "中国 Queretaro",
+      "supermercado chino Queretaro",
+      "chinese supermarket Queretaro"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:49:49.273Z",
+    "last_seen": "2026-01-10T22:50:15.690Z"
+  },
+  {
+    "name": "Comida China Shi Wei Xian",
+    "place_id": "ChIJo9UmnMH514URG6ivn02Z2Yc",
+    "address": "Los Pinos, 89137 Tampico, Tamps.",
+    "city": "Tampico",
+    "state": "Tamaulipas",
+    "rating": 4.9,
+    "user_ratings_total": 7,
+    "lat": 22.2527774,
+    "lng": -97.86146579999999,
+    "sources": [
+      "中餐 Tampico",
+      "comida china Tampico",
+      "chinese restaurant Tampico"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:53:11.358Z",
+    "last_seen": "2026-01-10T22:53:40.900Z"
+  },
+  {
+    "name": "Xiang Wang Comida China Express",
+    "place_id": "ChIJM3cW7Gv314URNwywbTZrXZE",
+    "address": "Altamira 101-C JOYERIA JASMIN, Zona Centro, 89000 Tampico, Tamps.",
+    "city": "Tampico",
+    "state": "Tamaulipas",
+    "rating": 3.9,
+    "user_ratings_total": 21,
+    "lat": 22.2170738,
+    "lng": -97.85732379999999,
+    "sources": [
+      "中国 Tampico",
+      "comida china Tampico",
+      "chinese restaurant Tampico"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:53:26.611Z",
+    "last_seen": "2026-01-10T22:53:40.900Z"
+  },
+  {
+    "name": "恒 HENG FA 發 Comida China",
+    "place_id": "ChIJMSi7vM83J4QRVvQl5z-GIkk",
+    "address": "Av Jacarandas 33, Versalles, 63139 Tepic, Nay.",
+    "city": "Tepic",
+    "state": "Nayarit",
+    "rating": 3,
+    "user_ratings_total": 20,
+    "lat": 21.5100875,
+    "lng": -104.904623,
+    "sources": [
+      "中餐 Tepic",
+      "chinese supermarket Tepic"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:53:56.863Z",
+    "last_seen": "2026-01-10T22:54:28.372Z"
+  },
+  {
+    "name": "（Ten Seconds）Shimiaodao Yunnan Rice Noodles Tijuana",
+    "place_id": "ChIJI6BLf8VH2YARgYmNZiLmp7U",
+    "address": "Plaza Alameda Otay Town Center, Aeropuerto 16000, La Pechuga, 22425 Tijuana, B.C.",
+    "city": "Tijuana",
+    "state": "Baja California",
+    "rating": 4.9,
+    "user_ratings_total": 41,
+    "lat": 32.531512,
+    "lng": -116.951691,
+    "sources": [
+      "面馆 Tijuana"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:54:41.662Z",
+    "last_seen": "2026-01-10T22:54:41.662Z"
+  },
+  {
+    "name": "China Inn 美味园",
+    "place_id": "ChIJf_k3GI052YARA_lSlWHcQ1I",
+    "address": "Blvd. Gustavo Díaz Ordaz 565 B, La Mesa, 22105 Tijuana, B.C.",
+    "city": "Tijuana",
+    "state": "Baja California",
+    "rating": 4.9,
+    "user_ratings_total": 664,
+    "lat": 32.5011902,
+    "lng": -116.9699281,
+    "sources": [
+      "中餐 Tijuana",
+      "中文 Tijuana",
+      "中国 Tijuana",
+      "chinese restaurant Tijuana"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:54:33.089Z",
+    "last_seen": "2026-01-10T22:55:17.606Z"
+  },
+  {
+    "name": "Comida china Hua Xiang Yuan",
+    "place_id": "ChIJWUX3M9Y_2YARoD_8IwdqnZ4",
+    "address": "Gral. Lázaro Cárdenas 15-INT, -1, Col Ejido Francisco Villa, Lázaro Cárdenas, 22236 Tijuana, B.C.",
+    "city": "Tijuana",
+    "state": "Baja California",
+    "rating": 4.5,
+    "user_ratings_total": 42,
+    "lat": 32.48746089999999,
+    "lng": -116.8635491,
+    "sources": [
+      "中餐 Tijuana",
+      "饺子 Tijuana",
+      "华人 Tijuana"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:54:33.370Z",
+    "last_seen": "2026-01-10T22:55:01.423Z"
+  },
+  {
+    "name": "HONG KONG CAFE COMIDA CHINA",
+    "place_id": "ChIJvYmnpfQk-xQR6XRP1hUHzSQ",
+    "address": "Blvd. Gustavo Díaz Ordaz 500, Chapultepec California, 22117 Tijuana, B.C.",
+    "city": "Tijuana",
+    "state": "Baja California",
+    "rating": 4.4,
+    "user_ratings_total": 529,
+    "lat": 32.4971763,
+    "lng": -116.9644608,
+    "sources": [
+      "饺子 Tijuana",
+      "chinatown Tijuana",
+      "oriental Tijuana"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:54:48.330Z",
+    "last_seen": "2026-01-10T22:55:26.536Z"
+  },
+  {
+    "name": "Hong Kong City",
+    "place_id": "ChIJ2fleu8Q42YARZYfYhEPrxH4",
+    "address": "Blvd. Gustavo Díaz Ordaz 16139, Martinez, 22127 Tijuana, B.C.",
+    "city": "Tijuana",
+    "state": "Baja California",
+    "rating": 4.3,
+    "user_ratings_total": 1583,
+    "lat": 32.4791071,
+    "lng": -116.9375432,
+    "sources": [
+      "华人 Tijuana",
+      "comida china Tijuana"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:55:01.788Z",
+    "last_seen": "2026-01-10T22:55:06.881Z"
+  },
+  {
+    "name": "Hong Kong Gentlemen's Club",
+    "place_id": "ChIJuXfDlAZJ2YARPmalWewuM3U",
+    "address": "C. Coahuila 2009, Zona Nte., 22000 Tijuana, B.C.",
+    "city": "Tijuana",
+    "state": "Baja California",
+    "rating": 4,
+    "user_ratings_total": 631,
+    "lat": 32.5376338,
+    "lng": -117.039968,
+    "sources": [
+      "唐人街 Tijuana",
+      "chinatown Tijuana"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:55:06.143Z",
+    "last_seen": "2026-01-10T22:55:23.432Z"
+  },
+  {
+    "name": "Man Xiang",
+    "place_id": "ChIJ5-wIZKI32YARF3_0KOvBujw",
+    "address": "Lib. Sur 22643, Industrial Pacifico, Sin Asignación En Nombre de Asentamiento, 22643 Tijuana, B.C.",
+    "city": "Tijuana",
+    "state": "Baja California",
+    "rating": 3.3,
+    "user_ratings_total": 25,
+    "lat": 32.4772486,
+    "lng": -116.9926404,
+    "sources": [
+      "中国 Tijuana"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:55:03.029Z",
+    "last_seen": "2026-01-10T22:55:03.029Z"
+  },
+  {
+    "name": "人乐超 （Super de la Gente Feliz)",
+    "place_id": "ChIJR8xTEcpJ2YARaugMgw7HUog",
+    "address": "Calle Ignacio Zaragoza 8359b, Zona Centro, 22000 Tijuana, B.C.",
+    "city": "Tijuana",
+    "state": "Baja California",
+    "rating": 4.7,
+    "user_ratings_total": 6,
+    "lat": 32.527001,
+    "lng": -117.0333905,
+    "sources": [
+      "supermercado chino Tijuana",
+      "chinese supermarket Tijuana"
+    ],
+    "match_types": [
+      "han"
+    ],
+    "first_seen": "2026-01-10T22:55:13.272Z",
+    "last_seen": "2026-01-10T22:55:20.562Z"
+  },
+  {
+    "name": "Comida China \"Dao Xiang\" (Presidente Carranza Centro)",
+    "place_id": "ChIJm_GSLGbZj4YRobQm3Y6VZ1E",
+    "address": "Av Pdte Carranza 500, Primitivo Centro, 27000 Torreón, Coah.",
+    "city": "Torreón",
+    "state": "Coahuila de Zaragoza",
+    "rating": 3.6,
+    "user_ratings_total": 29,
+    "lat": 25.5362638,
+    "lng": -103.4622816,
+    "sources": [
+      "comida china Torreon",
+      "restaurante chino Torreon"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:57:12.950Z",
+    "last_seen": "2026-01-10T22:57:15.932Z"
+  },
+  {
+    "name": "Hong Kong",
+    "place_id": "ChIJ44wQXpjbj4YRFe6GjhC9Ns4",
+    "address": "Presidente Carranza, Oriente 3201, Primero de Cobián Centro, 27000 Torreón, Coah.",
+    "city": "Torreón",
+    "state": "Coahuila de Zaragoza",
+    "rating": 4.5,
+    "user_ratings_total": 1559,
+    "lat": 25.5363267,
+    "lng": -103.4139982,
+    "sources": [
+      "中餐 Torreon",
+      "中文 Torreon",
+      "中国 Torreon",
+      "comida china Torreon",
+      "restaurante chino Torreon",
+      "chinese restaurant Torreon"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:56:45.293Z",
+    "last_seen": "2026-01-10T22:57:23.136Z"
+  },
+  {
+    "name": "GUANGZHOU. Comida china en especialidad cantonesa.",
+    "place_id": "ChIJp06EiKsn7YUR-HbRhxBgikM",
+    "address": "Fraccionamiento Vida Mejor, Cto Prosperidad Pte Nte, Zona Sin Asignación de Nombre de Col 24, 29045 Tuxtla Gutiérrez, Chis.",
+    "city": "Tuxtla Gutiérrez",
+    "state": "Chiapas",
+    "rating": 4.9,
+    "user_ratings_total": 17,
+    "lat": 16.7576538,
+    "lng": -93.06215949999999,
+    "sources": [
+      "中餐 Tuxtla Gutierrez",
+      "中文 Tuxtla Gutierrez",
+      "中国 Tuxtla Gutierrez",
+      "comida china Tuxtla Gutierrez",
+      "restaurante chino Tuxtla Gutierrez",
+      "chinese restaurant Tuxtla Gutierrez"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:57:31.000Z",
+    "last_seen": "2026-01-10T22:58:06.119Z"
+  },
+  {
+    "name": "Hong Kong",
+    "place_id": "ChIJoXoQyg3Z7IURCZYNzrjawgo",
+    "address": "Blvd. Belisario Domínguez 2238, Jardines de Tuxtla, 29020 Tuxtla Gutiérrez, Chis.",
+    "city": "Tuxtla Gutiérrez",
+    "state": "Chiapas",
+    "rating": 4.3,
+    "user_ratings_total": 307,
+    "lat": 16.7558659,
+    "lng": -93.1535043,
+    "sources": [
+      "中餐 Tuxtla Gutierrez",
+      "火锅 Tuxtla Gutierrez",
+      "麻辣烫 Tuxtla Gutierrez",
+      "面馆 Tuxtla Gutierrez",
+      "饺子 Tuxtla Gutierrez",
+      "中文 Tuxtla Gutierrez",
+      "华人 Tuxtla Gutierrez",
+      "中国 Tuxtla Gutierrez",
+      "唐人街 Tuxtla Gutierrez",
+      "comida china Tuxtla Gutierrez",
+      "restaurante chino Tuxtla Gutierrez",
+      "chinese restaurant Tuxtla Gutierrez"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:57:31.282Z",
+    "last_seen": "2026-01-10T22:58:06.119Z"
+  },
+  {
+    "name": "Local De Bnixian Chao Comida China",
+    "place_id": "ChIJkWu_6DfY7YURneLLn8xS9eQ",
+    "address": "Benito Juárez 427, Centro Delegacion Dos, 86077 Villahermosa, Tab.",
+    "city": "Villahermosa",
+    "state": "Tabasco",
+    "rating": 3.4,
+    "user_ratings_total": 12,
+    "lat": 17.9894013,
+    "lng": -92.9182629,
+    "sources": [
+      "中文 Villahermosa",
+      "中国 Villahermosa",
+      "comida china Villahermosa",
+      "oriental Villahermosa"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:59:07.666Z",
+    "last_seen": "2026-01-10T22:59:29.552Z"
+  },
+  {
+    "name": "Shanghai",
+    "place_id": "ChIJKcJpIH7X7YUR2TA3GMRnMcA",
+    "address": "Av 16 de Septiembre 132, Primero de Mayo, 86190 Villahermosa, Tab.",
+    "city": "Villahermosa",
+    "state": "Tabasco",
+    "rating": 4.5,
+    "user_ratings_total": 795,
+    "lat": 17.974032,
+    "lng": -92.937619,
+    "sources": [
+      "中餐 Villahermosa",
+      "火锅 Villahermosa",
+      "麻辣烫 Villahermosa",
+      "拉面 Villahermosa",
+      "饺子 Villahermosa",
+      "中文 Villahermosa",
+      "中国 Villahermosa",
+      "comida china Villahermosa",
+      "restaurante chino Villahermosa",
+      "chinese restaurant Villahermosa",
+      "chinese supermarket Villahermosa",
+      "chinatown Villahermosa",
+      "oriental Villahermosa"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:58:48.500Z",
+    "last_seen": "2026-01-10T22:59:29.552Z"
+  },
+  {
+    "name": "SHANGHAI",
+    "place_id": "ChIJP2NZN9PZ7YURiHbqMQ8BZVk",
+    "address": "Av Paseo Usumacinta 1110, Local 4, Tabasco 2000, Los Rios, 86035 Villahermosa, Tab.",
+    "city": "Villahermosa",
+    "state": "Tabasco",
+    "rating": 3.9,
+    "user_ratings_total": 65,
+    "lat": 17.9937079,
+    "lng": -92.94616669999999,
+    "sources": [
+      "中餐 Villahermosa",
+      "麻辣烫 Villahermosa",
+      "饺子 Villahermosa",
+      "中文 Villahermosa",
+      "中国 Villahermosa",
+      "comida china Villahermosa",
+      "restaurante chino Villahermosa",
+      "chinese restaurant Villahermosa",
+      "chinatown Villahermosa",
+      "oriental Villahermosa"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:58:49.113Z",
+    "last_seen": "2026-01-10T22:59:29.552Z"
+  },
+  {
+    "name": "Xiang Fa Comida China",
+    "place_id": "ChIJAz-6ZHHY7YUR9qU4_wjl9m8",
+    "address": "Plaza Sendero, Perif. Carlos Pellicer Cámara 1020, El Recreo, 86029 Villahermosa, Tab.",
+    "city": "Villahermosa",
+    "state": "Tabasco",
+    "rating": 4,
+    "user_ratings_total": 542,
+    "lat": 18.0181219,
+    "lng": -92.9122359,
+    "sources": [
+      "中餐 Villahermosa",
+      "中文 Villahermosa",
+      "comida china Villahermosa",
+      "restaurante chino Villahermosa",
+      "chinese restaurant Villahermosa",
+      "chinatown Villahermosa",
+      "oriental Villahermosa"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:58:48.775Z",
+    "last_seen": "2026-01-10T22:59:29.552Z"
+  },
+  {
+    "name": "CHINA BEIJING",
+    "place_id": "ChIJl0V4cAAx24URHAC3WGGqJUA",
+    "address": "C. Lázaro Cárdenas 302, Independencia, 91170 Xalapa-Enríquez, Ver.",
+    "city": "Xalapa-Enríquez",
+    "state": "Veracruz",
+    "rating": 4.5,
+    "user_ratings_total": 24,
+    "lat": 19.5426148,
+    "lng": -96.90828259999999,
+    "sources": [
+      "中餐 Xalapa",
+      "comida china Xalapa",
+      "restaurante chino Xalapa",
+      "chinese restaurant Xalapa"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:59:33.116Z",
+    "last_seen": "2026-01-10T23:00:12.500Z"
+  },
+  {
+    "name": "Restaurant Hong Kong YeeMon",
+    "place_id": "ChIJHebhiJVPgoYR7kJdV5vB4qw",
+    "address": "Alameda Trinidad García de La Cadena #306, Zacatecas Centro, 98000 Zacatecas, Zac.",
+    "city": "Zacatecas",
+    "state": "Zacatecas",
+    "rating": 4.1,
+    "user_ratings_total": 41,
+    "lat": 22.7736295,
+    "lng": -102.5765873,
+    "sources": [
+      "中餐 Zacatecas",
+      "火锅 Zacatecas",
+      "面馆 Zacatecas",
+      "拉面 Zacatecas",
+      "饺子 Zacatecas",
+      "中文 Zacatecas",
+      "comida china Zacatecas",
+      "restaurante chino Zacatecas",
+      "oriental Zacatecas"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T23:00:20.548Z",
+    "last_seen": "2026-01-10T23:01:01.386Z"
+  },
+  {
+    "name": "Shanghai Wok",
+    "place_id": "ChIJy8rj0b1PgoYRjfcm0qF5hvU",
+    "address": "Miguel Auza #316, Zacatecas Centro, 98000 Zacatecas, Zac.",
+    "city": "Zacatecas",
+    "state": "Zacatecas",
+    "rating": 4.7,
+    "user_ratings_total": 30,
+    "lat": 22.7739659,
+    "lng": -102.573991,
+    "sources": [
+      "中餐 Zacatecas"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T23:00:20.824Z",
+    "last_seen": "2026-01-10T23:00:20.824Z"
+  },
+  {
+    "name": "Restaurant Hong Kong",
+    "place_id": "ChIJ2YxkRbe3m4YR-N_QiEEqONA",
+    "address": "墨西哥杜兰戈 Máximo Gámiz",
+    "city": "杜兰戈",
+    "state": "杜兰戈",
+    "rating": 4.6,
+    "user_ratings_total": 191,
+    "lat": 24.0403182,
+    "lng": -104.6304195,
+    "sources": [
+      "中餐 Durango",
+      "comida china Durango",
+      "restaurante chino Durango",
+      "chinese restaurant Durango"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:35:03.316Z",
+    "last_seen": "2026-01-10T22:35:27.727Z"
+  },
+  {
+    "name": "Restaurant Xiang Long",
+    "place_id": "ChIJFYtSZqBS0YYRsNFSM7yW8yI",
+    "address": "墨西哥索诺拉诺加莱斯 Lomas de Anza",
+    "city": "诺加莱斯",
+    "state": "索诺拉",
+    "rating": 3.3,
+    "user_ratings_total": 21,
+    "lat": 31.300304,
+    "lng": -110.9044214,
+    "sources": [
+      "中国 Nogales",
+      "restaurante chino Nogales",
+      "chinese restaurant Nogales"
+    ],
+    "match_types": [
+      "pinyin"
+    ],
+    "first_seen": "2026-01-10T22:45:20.101Z",
+    "last_seen": "2026-01-10T22:45:35.877Z"
+  }
+]

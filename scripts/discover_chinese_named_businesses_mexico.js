@@ -216,7 +216,7 @@ const fetchTextSearch = async (query, token = '') => {
   url.searchParams.set('query', query);
   if (token) url.searchParams.set('pagetoken', token);
   url.searchParams.set('region', 'mx');
-  url.searchParams.set('language', 'zh-CN');
+  url.searchParams.set('language', 'es');
   url.searchParams.set('key', apiKey);
   const res = await fetch(url.toString());
   return res.json();
@@ -252,10 +252,21 @@ const pickFirstComponent = (components, types) => {
   return '';
 };
 
-const isInMexico = (components) => normalize(pickComponent(components, 'country')) === 'mexico';
+const isInMexico = (components) => {
+  const country = pickComponent(components, 'country');
+  if (!country) return false;
+  if (String(country).includes('墨西哥')) return true;
+  return normalize(country) === 'mexico';
+};
 const cdmxTokens = new Set(['ciudad de mexico', 'mexico city', 'cdmx', 'distrito federal']);
+const cdmxRawTokens = ['墨西哥城', '墨西哥市'];
 
 const isMexicoCity = (city, state, formattedAddress) => {
+  const rawValues = [city, state, formattedAddress].map((value) => String(value || ''));
+  if (rawValues.some((value) => cdmxRawTokens.some((token) => value.includes(token)))) {
+    return true;
+  }
+
   const normalizedCity = normalize(city);
   const normalizedState = normalize(state);
   const normalizedAddress = normalize(formattedAddress);

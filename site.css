@@ -240,6 +240,12 @@ body::after {
   color: rgba(15, 20, 42, 0.7);
 }
 
+.home .hero-card .contact-shortcut__value,
+.home .hero-card .contact-shortcut__hint {
+  font-size: 18px;
+  line-height: 1.1;
+}
+
 .hero > * {
   position: relative;
   z-index: 2;
@@ -504,6 +510,62 @@ body::after {
   flex-wrap: wrap;
   align-items: center;
   gap: 10px 16px;
+}
+
+.city-service {
+  margin: 10px 0 18px;
+  padding: 16px 18px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.1);
+}
+
+.city-service-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.city-service-head h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.city-service-head span {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.city-service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.service-card {
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1px dashed rgba(15, 23, 42, 0.15);
+  background: linear-gradient(145deg, rgba(47, 107, 255, 0.08), rgba(255, 255, 255, 0.9));
+  display: grid;
+  gap: 6px;
+}
+
+.service-card strong {
+  font-size: 14px;
+  color: var(--ink);
+}
+
+.service-card p {
+  margin: 0;
+  font-size: 12px;
+  color: var(--muted);
 }
 
 .industry-block + .industry-block {
@@ -1572,18 +1634,18 @@ textarea {
 }
 
 .contact-shortcut__value {
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 700;
   color: var(--ink);
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
 }
 
 .contact-shortcut__hint {
   display: block;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 700;
   color: var(--ink);
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
 }
 
 .contact-shortcut__btn {
@@ -1802,6 +1864,10 @@ textarea {
     width: 100%;
   }
 
+  .city-service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .footer-grid {
     grid-template-columns: 1fr;
   }
@@ -1841,6 +1907,10 @@ textarea {
 
   .hero-card {
     padding: 22px;
+  }
+
+  .city-service-grid {
+    grid-template-columns: 1fr;
   }
 
   .contact-card {

@@ -512,12 +512,27 @@ const buildCompaniesHtml = () => {
     );
   };
 
+  const buildCityServiceHtml = () => (
+    `<div class=\"city-service\">` +
+    `<div class=\"city-service-head\">` +
+    `<h3>企业服务</h3>` +
+    `<span>企业广告招租</span>` +
+    `</div>` +
+    `<div class=\"city-service-grid\">` +
+    `<div class=\"service-card\"><strong>企业广告招租</strong><p>把你的企业放上来</p></div>` +
+    `<div class=\"service-card\"><strong>企业广告招租</strong><p>把你的企业放上来</p></div>` +
+    `<div class=\"service-card\"><strong>企业广告招租</strong><p>把你的企业放上来</p></div>` +
+    `</div>` +
+    `</div>`
+  );
+
   const sectionsHtml = orderedCities.map((city, index) => {
     const cityEntry = cityMap.get(city);
     const industryEntries = Array.from(cityEntry.industries.entries());
     const slug = slugifyAscii(city);
     const id = slug ? `city-${slug}` : `city-${index + 1}`;
     const cityToolsHtml = buildCityToolsHtml(cityEntry, industryEntries);
+    const cityServiceHtml = buildCityServiceHtml();
 
   const industriesHtml = industryEntries.map(([industry, items]) => {
     if (industry === foodIndustry) {
@@ -585,6 +600,7 @@ const buildCompaniesHtml = () => {
       `<h2>${escapeHtml(city)}</h2>` +
       `</div>` +
       cityToolsHtml +
+      cityServiceHtml +
       `<div class=\"city-body\">${industriesHtml}</div>` +
       `</section>`
     );
