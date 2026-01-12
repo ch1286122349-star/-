@@ -869,7 +869,8 @@ const renderCompanyPage = async (company) => {
     : `<div class="company-detail-extra locked"><h2>详情</h2><p>该企业未开通详情展示，如需展示请联系站长。</p></div>`;
   const placeId = String(placeData?.place_id || company.placeId || company.place_id || '').trim();
   const seo = buildCompanySeo(company, placeData);
-  const safeCover = sanitizeCover(company.cover) || buildPlacePhotoUrl(placeId, 0);
+  const localCover = getLocalPlacePhoto(placeId, 0)?.url || '';
+  const safeCover = localCover || sanitizeCover(company.cover) || buildPlacePhotoUrl(placeId, 0);
   const galleryImages = new Set();
   const addGalleryImage = (value) => {
     const raw = String(value || '').trim();
