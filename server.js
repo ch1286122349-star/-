@@ -373,6 +373,23 @@ const getLocalPlacePhoto = (placeId, index = 0) => {
   }
   return null;
 };
+const countLocalPlacePhotos = (placeId) => {
+  const safeId = String(placeId || '').trim();
+  if (!safeId) return 0;
+  const MAX_SCAN = 12;
+  let count = 0;
+  for (let i = 0; i < MAX_SCAN; i += 1) {
+    const exists = getLocalPlacePhoto(safeId, i);
+    if (exists) {
+      count += 1;
+    } else if (i === 0) {
+      break;
+    } else {
+      break;
+    }
+  }
+  return count;
+};
 
 const buildPlacePhotoUrl = (placeId, index = 0) => {
   const local = getLocalPlacePhoto(placeId, index);
@@ -534,12 +551,21 @@ const prefetchPlacesCache = async () => {
 const getCompanyPlaceData = async (company) => {
   const explicitPlaceId = String(company.placeId || company.place_id || '').trim();
   const query = String(company.mapQuery || company.name || '').trim();
+
+  // 永远先看本地缓存，避免未授权调用
+  const diskCache = loadPlaceDetailsDiskCache();
+  const cachedByPlaceId = explicitPlaceId ? diskCache[explicitPlaceId] : null;
+  if (!PLACES_API_ENABLED || !GOOGLE_PLACES_API_KEY) {
+    // API 未开启时，只返回本地数据
+    if (cachedByPlaceId) return cachedByPlaceId;
+    // 尝试根据 query 找一下匹配的条目
+    const match = Object.values(diskCache || {}).find((item) => item?.name === company.name);
+    return match || null;
+  }
+
+  // API 开启时才允许查找/更新
   const placeId = explicitPlaceId || await fetchPlaceIdByQuery(query);
   if (!placeId) return null;
-  const diskCache = loadPlaceDetailsDiskCache();
-  if (!PLACES_API_ENABLED || !GOOGLE_PLACES_API_KEY) {
-    return diskCache[placeId] || null;
-  }
   const live = await fetchPlaceDetails(placeId);
   if (live) {
     diskCache[placeId] = live;
@@ -853,15 +879,14 @@ const renderCompanyPage = async (company) => {
   const heroStyle = safeCover
     ? ` style="background-image: linear-gradient(140deg, rgba(15, 23, 42, 0.1), rgba(15, 23, 42, 0.35)), url('${safeCover}')"`
     : '';
-  const photoCount = Array.isArray(placeData?.photos) ? placeData.photos.length : 0;
+  const localPhotoCount = countLocalPlacePhotos(placeId);
+  const photoCount = localPhotoCount || (Array.isArray(placeData?.photos) ? placeData.photos.length : 0);
   const mapLinkForPhotos = safeMapLink || safePlaceUrl;
   const thumbTiles = [];
   if (placeId && photoCount > 1) {
-    const maxThumbs = 4;
-    const available = Math.max(1, photoCount - 1);
-    for (let i = 0; i < maxThumbs; i += 1) {
-      const photoIndex = 1 + (i % available);
-      const thumbUrl = buildPlacePhotoUrl(placeId, photoIndex);
+    const maxThumbs = Math.min(4, Math.max(1, photoCount - 1));
+    for (let i = 1; i <= maxThumbs; i += 1) {
+      const thumbUrl = buildPlacePhotoUrl(placeId, i);
       if (!thumbUrl) continue;
       addGalleryImage(thumbUrl);
       if (mapLinkForPhotos) {
