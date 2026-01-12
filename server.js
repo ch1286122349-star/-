@@ -98,6 +98,7 @@ const PREFETCH_INTERVAL_MS = 7 * 24 * 60 * 60 * 1000;
 const PREFETCH_START_DELAY_MS = 15 * 1000;
 const PREFETCH_DELAY_MS = 250;
 let prefetchRunning = false;
+const SITE_ORIGIN = (process.env.SITE_ORIGIN || 'https://mxchino.com').replace(/\/$/, '');
 
 const escapeHtml = (value) => String(value ?? '')
   .replace(/&/g, '&amp;')
@@ -118,6 +119,132 @@ const sanitizeUrl = (value) => {
   if (!raw) return '';
   if (!/^https?:\/\/[^\s"'<>]+$/i.test(raw)) return '';
   return raw;
+};
+
+const buildAbsoluteUrl = (value) => {
+  const raw = String(value || '').trim();
+  if (!raw) return '';
+  if (/^https?:\/\//i.test(raw)) return raw;
+  const prefix = raw.startsWith('/') ? '' : '/';
+  return `${SITE_ORIGIN}${prefix}${raw}`;
+};
+
+const parseCategoryFromSummary = (summary) => {
+  const raw = String(summary || '').trim();
+  if (!raw.includes('·')) return '';
+  const parts = raw.split('·').map((part) => part.trim()).filter(Boolean);
+  return parts.length > 1 ? parts[parts.length - 1] : '';
+};
+
+const formatCategoryLabel = (company) => {
+  const raw = String(company.category || '').trim() || parseCategoryFromSummary(company.summary);
+  if (!raw) return '';
+  if (raw === '中餐') return '中餐馆';
+  return raw;
+};
+
+const buildRatingSummary = (company, placeData, categoryLabel) => {
+  if (typeof placeData?.rating === 'number') {
+    const ratingCount = placeData.user_ratings_total ? `（${placeData.user_ratings_total}）` : '';
+    return `评分 ${placeData.rating}${ratingCount}${categoryLabel ? ` · ${categoryLabel}` : ''}`;
+  }
+  const summary = String(company.summary || '').trim();
+  if (summary) return summary;
+  return categoryLabel || '';
+};
+
+const resolveSchemaType = (company, categoryLabel) => {
+  const raw = `${categoryLabel || ''} ${company.industry || ''}`;
+  if (/超市|市场|商店/.test(raw)) return 'GroceryStore';
+  if (/饮品|茶|咖啡/.test(raw)) return 'Cafe';
+  if (/餐|火锅|面馆|烧烤|中餐/.test(raw)) return 'Restaurant';
+  return 'LocalBusiness';
+};
+
+const resolveOgType = (schemaType) => {
+  if (schemaType === 'Restaurant') return 'restaurant';
+  return 'business.business';
+};
+
+const buildCompanyStructuredData = (company, placeData, url, imageUrl, categoryLabel) => {
+  const schemaType = resolveSchemaType(company, categoryLabel);
+  const geoSource = placeData?.geometry?.location
+    || (Number.isFinite(company.lat) && Number.isFinite(company.lng) ? { lat: company.lat, lng: company.lng } : null);
+  const addressText = placeData?.formatted_address || '';
+  const ratingValue = placeData?.rating;
+  const ratingCount = placeData?.user_ratings_total;
+  const payload = {
+    '@context': 'https://schema.org',
+    '@type': schemaType,
+    name: company.name,
+    url,
+  };
+  if (imageUrl) payload.image = imageUrl;
+  if (addressText || company.city) {
+    payload.address = {
+      '@type': 'PostalAddress',
+      streetAddress: addressText || company.city,
+      addressLocality: company.city || '',
+      addressCountry: 'MX',
+    };
+  }
+  if (geoSource) {
+    payload.geo = {
+      '@type': 'GeoCoordinates',
+      latitude: geoSource.lat,
+      longitude: geoSource.lng,
+    };
+  }
+  if (typeof ratingValue === 'number' && Number.isFinite(ratingValue) && ratingCount) {
+    payload.aggregateRating = {
+      '@type': 'AggregateRating',
+      ratingValue,
+      ratingCount,
+    };
+  }
+  if (categoryLabel && (schemaType === 'Restaurant' || schemaType === 'Cafe')) {
+    payload.servesCuisine = categoryLabel;
+  }
+  return payload;
+};
+
+const buildCompanySeo = (company, placeData) => {
+  const name = String(company.name || '').trim();
+  const city = String(company.city || '').trim();
+  const categoryLabel = formatCategoryLabel(company);
+  const title = `墨西哥中文网 - ${name}${city ? `｜${city}` : ''}${categoryLabel ? `｜${categoryLabel}` : ''}`;
+  const ratingSummary = buildRatingSummary(company, placeData, categoryLabel);
+  const address = placeData?.formatted_address || '';
+  let description = `墨西哥中文网收录：${name}${city ? `（${city}）` : ''}`;
+  if (ratingSummary) description += `，${ratingSummary}`;
+  description += address ? `。地址：${address}` : '。';
+
+  const slug = encodeURIComponent(String(company.slug || ''));
+  const canonicalUrl = `${SITE_ORIGIN}/company/${slug}`;
+  const placeId = String(placeData?.place_id || company.placeId || company.place_id || '').trim();
+  const cover = sanitizeCover(company.cover) || buildPlacePhotoUrl(placeId, 0);
+  const imageUrl = buildAbsoluteUrl(cover) || buildAbsoluteUrl('/apple-touch-icon.png');
+  const schema = buildCompanyStructuredData(company, placeData, canonicalUrl, imageUrl, categoryLabel);
+  const ogType = resolveOgType(schema['@type']);
+
+  const metaTags = [
+    `<meta name="description" content="${escapeHtml(description)}">`,
+    `<link rel="canonical" href="${canonicalUrl}">`,
+    `<meta property="og:title" content="${escapeHtml(title)}">`,
+    `<meta property="og:description" content="${escapeHtml(description)}">`,
+    `<meta property="og:type" content="${ogType}">`,
+    `<meta property="og:url" content="${canonicalUrl}">`,
+    `<meta property="og:site_name" content="墨西哥中文网">`,
+    `<meta property="og:image" content="${imageUrl}">`,
+    `<meta property="og:image:alt" content="${escapeHtml(name)}">`,
+    `<meta name="twitter:card" content="summary_large_image">`,
+    `<meta name="twitter:title" content="${escapeHtml(title)}">`,
+    `<meta name="twitter:description" content="${escapeHtml(description)}">`,
+    `<meta name="twitter:image" content="${imageUrl}">`,
+  ].join('\n');
+
+  const jsonLd = `<script type="application/ld+json">${JSON.stringify(schema)}</script>`;
+  return { title, description, headHtml: `${metaTags}\n${jsonLd}` };
 };
 
 const slugifyAscii = (value) => String(value ?? '')
@@ -653,6 +780,7 @@ const renderCompanyPage = async (company) => {
     ? `<div class="company-detail-extra"><h2>详情</h2><p>${safeDetail}</p></div>`
     : `<div class="company-detail-extra locked"><h2>详情</h2><p>该企业未开通详情展示，如需展示请联系站长。</p></div>`;
   const placeId = String(placeData?.place_id || company.placeId || company.place_id || '').trim();
+  const seo = buildCompanySeo(company, placeData);
   const safeCover = sanitizeCover(company.cover) || buildPlacePhotoUrl(placeId, 0);
   const heroStyle = safeCover
     ? ` style="background-image: linear-gradient(140deg, rgba(15, 23, 42, 0.1), rgba(15, 23, 42, 0.35)), url('${safeCover}')"`
@@ -767,11 +895,13 @@ const renderCompanyPage = async (company) => {
     `<button class="action-pill" type="button" data-favorite>收藏</button>` +
     `</div>`
   );
+  const mergedHeadHtml = `${headHtml || ''}\n${seo.headHtml || ''}`.trim();
   return companyTemplate
-    .replace('<!--HEAD-->', headHtml || '')
+    .replace('<!--HEAD-->', mergedHeadHtml)
     .replace('<!--HEADER-->', headerHtml || '')
     .replace('<!--FOOTER-->', footerHtml || '')
     .replace(/<!--COMPANY_NAME-->/g, safeName)
+    .replace('<!--COMPANY_TITLE-->', escapeHtml(seo.title || safeName))
     .replace('<!--COMPANY_SLUG-->', safeSlug)
     .replace('<!--COMPANY_INDUSTRY-->', safeIndustry)
     .replace('<!--COMPANY_CITY-->', safeCity)
