@@ -61,9 +61,23 @@ db.serialize(() => {
       created_at DATETIME DEFAULT CURRENT_TIMESTAMP
     )`
   );
+  db.run(
+    `CREATE TABLE IF NOT EXISTS forum_posts (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      title TEXT NOT NULL,
+      content TEXT NOT NULL,
+      category TEXT,
+      city TEXT,
+      contact TEXT,
+      ip_hash TEXT,
+      user_agent TEXT,
+      created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+    )`
+  );
   db.run('CREATE INDEX IF NOT EXISTS idx_page_views_created_at ON page_views(created_at)');
   db.run('CREATE INDEX IF NOT EXISTS idx_page_views_path ON page_views(path)');
   db.run('CREATE INDEX IF NOT EXISTS idx_page_views_visitor ON page_views(visitor_id)');
+  db.run('CREATE INDEX IF NOT EXISTS idx_forum_posts_created_at ON forum_posts(created_at)');
   insertPageViewStmt = db.prepare(
     `INSERT INTO page_views (visitor_id, path, referrer, user_agent, ip_hash)
      VALUES (?, ?, ?, ?, ?)`
@@ -156,6 +170,36 @@ const normalizeDateParam = (value) => {
   const raw = String(value || '').trim();
   if (/^\d{4}-\d{2}-\d{2}$/.test(raw)) return raw;
   return formatLocalDate(new Date());
+};
+
+const FORUM_RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
+const FORUM_RATE_LIMIT_MAX = 4;
+const FORUM_MIN_INTERVAL_MS = 25 * 1000;
+const forumRateLimits = new Map();
+
+const checkForumRateLimit = (ip) => {
+  const key = String(ip || 'unknown');
+  const now = Date.now();
+  const entry = forumRateLimits.get(key) || {
+    count: 0,
+    resetAt: now + FORUM_RATE_LIMIT_WINDOW_MS,
+    lastAt: 0,
+  };
+  if (now > entry.resetAt) {
+    entry.count = 0;
+    entry.resetAt = now + FORUM_RATE_LIMIT_WINDOW_MS;
+    entry.lastAt = 0;
+  }
+  if (now - entry.lastAt < FORUM_MIN_INTERVAL_MS) {
+    return { ok: false, reason: 'too_fast', retryIn: FORUM_MIN_INTERVAL_MS - (now - entry.lastAt) };
+  }
+  if (entry.count >= FORUM_RATE_LIMIT_MAX) {
+    return { ok: false, reason: 'rate_limited', retryIn: entry.resetAt - now };
+  }
+  entry.count += 1;
+  entry.lastAt = now;
+  forumRateLimits.set(key, entry);
+  return { ok: true };
 };
 
 app.use((req, res, next) => {
@@ -251,6 +295,8 @@ try {
 
 const COMPANIES_DATA_PATH = path.join(__dirname, 'data', 'companies.json');
 const GOOGLE_PLACES_API_KEY = (process.env.GOOGLE_PLACES_API_KEY || '').trim();
+const SERPAPI_KEY = (process.env.SERPAPI_KEY || '').trim();
+const PLACES_PROVIDER = String(process.env.PLACES_PROVIDER || (SERPAPI_KEY ? 'serpapi' : 'google')).trim().toLowerCase();
 const PLACES_API_ENABLED = String(process.env.PLACES_API_ENABLED || '').toLowerCase() === 'true';
 const PLACES_PREFETCH_ENABLED = String(process.env.PLACES_PREFETCH_ENABLED || '').toLowerCase() === 'true';
 const PLACE_DETAILS_CACHE_PATH = path.join(__dirname, 'data', 'place-details.json');
@@ -264,6 +310,11 @@ const PREFETCH_DELAY_MS = 250;
 let prefetchRunning = false;
 const SITE_ORIGIN = (process.env.SITE_ORIGIN || 'https://mxchino.com').replace(/\/$/, '');
 let placeDetailsDiskCache = null;
+const isPlacesApiEnabled = () => {
+  if (!PLACES_API_ENABLED) return false;
+  if (PLACES_PROVIDER === 'serpapi') return Boolean(SERPAPI_KEY);
+  return Boolean(GOOGLE_PLACES_API_KEY);
+};
 const loadPlaceDetailsDiskCache = () => {
   if (placeDetailsDiskCache) return placeDetailsDiskCache;
   try {
@@ -405,10 +456,10 @@ const buildCompanySeo = (company, placeData) => {
   const name = String(company.name || '').trim();
   const city = String(company.city || '').trim();
   const categoryLabel = formatCategoryLabel(company);
-  const title = `墨西哥中文网 - ${name}${city ? `｜${city}` : ''}${categoryLabel ? `｜${categoryLabel}` : ''}`;
+  const title = `墨西哥华人网 - ${name}${city ? `｜${city}` : ''}${categoryLabel ? `｜${categoryLabel}` : ''}`;
   const ratingSummary = buildRatingSummary(company, placeData, categoryLabel);
   const address = placeData?.formatted_address || '';
-  let description = `墨西哥中文网收录：${name}${city ? `（${city}）` : ''}`;
+  let description = `墨西哥华人网收录：${name}${city ? `（${city}）` : ''}`;
   if (ratingSummary) description += `，${ratingSummary}`;
   description += address ? `。地址：${address}` : '。';
 
@@ -428,7 +479,7 @@ const buildCompanySeo = (company, placeData) => {
     `<meta property="og:description" content="${escapeHtml(description)}">`,
     `<meta property="og:type" content="${ogType}">`,
     `<meta property="og:url" content="${canonicalUrl}">`,
-    `<meta property="og:site_name" content="墨西哥中文网">`,
+    `<meta property="og:site_name" content="墨西哥华人网">`,
     `<meta property="og:image" content="${imageUrl}">`,
     `<meta property="og:image:alt" content="${escapeHtml(name)}">`,
     `<meta name="twitter:card" content="summary_large_image">`,
@@ -556,7 +607,7 @@ const countLocalPlacePhotos = (placeId) => {
 const buildPlacePhotoUrl = (placeId, index = 0) => {
   const local = getLocalPlacePhoto(placeId, index);
   if (local) return local.url;
-  if (!PLACES_API_ENABLED || !GOOGLE_PLACES_API_KEY) return '';
+  if (!isPlacesApiEnabled()) return '';
   const safeId = String(placeId || '').trim();
   if (!safeId) return '';
   const safeIndex = Number.isInteger(index) && index > 0 ? `/${index}` : '';
@@ -586,10 +637,149 @@ const fetchJson = async (url, options) => {
   return data;
 };
 
+const isHttpUrl = (value) => /^https?:\/\//i.test(String(value || ''));
+
+const fetchSerpApiJson = async (params) => {
+  if (!SERPAPI_KEY) {
+    throw new Error('Missing SERPAPI_KEY');
+  }
+  const url = new URL('https://serpapi.com/search.json');
+  Object.entries(params).forEach(([key, value]) => {
+    if (value !== undefined && value !== null && String(value).trim() !== '') {
+      url.searchParams.set(key, String(value));
+    }
+  });
+  url.searchParams.set('api_key', SERPAPI_KEY);
+  return fetchJson(url.toString());
+};
+
+const normalizeSerpOpenNow = (value) => {
+  if (typeof value === 'boolean') return value;
+  const raw = String(value || '').trim().toLowerCase();
+  if (!raw) return undefined;
+  if (['true', 'yes', 'open', 'open now', '营业', '营业中'].includes(raw)) return true;
+  if (['false', 'no', 'closed', '休息', '休息中'].includes(raw)) return false;
+  return undefined;
+};
+
+const normalizeSerpWeekdayText = (hours) => {
+  if (Array.isArray(hours?.weekday_text) && hours.weekday_text.length >= 7) {
+    return hours.weekday_text;
+  }
+  if (Array.isArray(hours?.days)) {
+    const mapped = hours.days
+      .map((entry) => {
+        const day = String(entry?.day || '').trim();
+        const span = String(entry?.hours || '').trim();
+        if (!day || !span) return '';
+        return `${day}: ${span}`;
+      })
+      .filter(Boolean);
+    return mapped.length ? mapped : [];
+  }
+  return [];
+};
+
+const normalizeSerpPriceLevel = (value) => {
+  const numeric = Number(value);
+  if (Number.isFinite(numeric)) return numeric;
+  const raw = String(value || '');
+  const match = raw.match(/[$¥€£]+/);
+  if (!match) return undefined;
+  return match[0].length;
+};
+
+const normalizeSerpPhotos = (photos) => {
+  if (!Array.isArray(photos)) return [];
+  const output = [];
+  photos.forEach((item) => {
+    if (!item) return;
+    if (typeof item === 'string') {
+      output.push({ photo_reference: item });
+      return;
+    }
+    const url = item.image || item.photo || item.thumbnail || item.url || '';
+    if (url) {
+      output.push({ photo_reference: url });
+    }
+  });
+  return output;
+};
+
+const buildMapsUrlFromPlaceId = (placeId) => {
+  const safeId = String(placeId || '').trim();
+  if (!safeId) return '';
+  return `https://www.google.com/maps/place/?q=place_id:${encodeURIComponent(safeId)}`;
+};
+
+const mapSerpPlaceResult = (place, fallbackPlaceId = '') => {
+  if (!place) return null;
+  const placeId = String(place.place_id || fallbackPlaceId || '').trim();
+  const rating = Number(place.rating);
+  const reviews = Number(place.reviews || place.reviews_count || place.user_ratings_total);
+  const priceLevel = normalizeSerpPriceLevel(place.price_level || place.price);
+  const gps = place.gps_coordinates || place.gps || null;
+  const latitude = Number(gps?.latitude ?? gps?.lat);
+  const longitude = Number(gps?.longitude ?? gps?.lng);
+  const geometry = (Number.isFinite(latitude) && Number.isFinite(longitude))
+    ? { location: { lat: latitude, lng: longitude } }
+    : undefined;
+  const address = place.address || place.full_address || place.formatted_address || '';
+  const phone = place.phone || place.phone_number || '';
+  const hours = place.hours || place.opening_hours || {};
+  const openingHours = {};
+  const openNow = normalizeSerpOpenNow(hours?.open_now ?? place.open_state);
+  if (typeof openNow === 'boolean') openingHours.open_now = openNow;
+  const weekdayText = normalizeSerpWeekdayText(hours);
+  if (weekdayText.length) openingHours.weekday_text = weekdayText;
+  const photos = normalizeSerpPhotos(place.photos);
+  const images = Array.isArray(place.images) ? place.images : [];
+  const mapsUrl = place.links?.google_maps || place.google_maps_url || place.url || buildMapsUrlFromPlaceId(placeId);
+  const website = place.website || place.links?.website || '';
+
+  return {
+    place_id: placeId || place.place_id,
+    name: place.title || place.name || '',
+    rating: Number.isFinite(rating) ? rating : undefined,
+    user_ratings_total: Number.isFinite(reviews) ? reviews : undefined,
+    price_level: Number.isFinite(priceLevel) ? priceLevel : undefined,
+    geometry,
+    formatted_address: address || undefined,
+    formatted_phone_number: phone || undefined,
+    opening_hours: Object.keys(openingHours).length ? openingHours : undefined,
+    photos: photos.length ? photos : undefined,
+    images: images.length ? images : undefined,
+    url: mapsUrl || undefined,
+    website: website || undefined,
+  };
+};
+
 const fetchPlaceIdByQuery = async (query) => {
-  if (!PLACES_API_ENABLED || !GOOGLE_PLACES_API_KEY || !query) return '';
+  if (!isPlacesApiEnabled() || !query) return '';
   const cached = getCachedValue(placeIdCache, query);
   if (cached) return cached;
+  if (PLACES_PROVIDER === 'serpapi') {
+    try {
+      const data = await fetchSerpApiJson({
+        engine: 'google_maps',
+        type: 'search',
+        q: query,
+        hl: 'zh-CN',
+        gl: 'mx',
+      });
+      const localResults = Array.isArray(data.local_results) ? data.local_results : [];
+      const first = localResults[0] || data.place_results || null;
+      const placeId = String(first?.place_id || '').trim();
+      if (placeId) {
+        setCachedValue(placeIdCache, query, placeId);
+      }
+      return placeId;
+    } catch (err) {
+      console.warn('SerpApi find failed:', err.message);
+      return '';
+    }
+  }
+  if (!GOOGLE_PLACES_API_KEY) return '';
   const url = new URL('https://maps.googleapis.com/maps/api/place/findplacefromtext/json');
   url.searchParams.set('input', query);
   url.searchParams.set('inputtype', 'textquery');
@@ -614,7 +804,7 @@ const fetchPlaceIdByQuery = async (query) => {
 };
 
 const fetchPlaceDetails = async (placeId) => {
-  if (!PLACES_API_ENABLED || !GOOGLE_PLACES_API_KEY || !placeId) return null;
+  if (!isPlacesApiEnabled() || !placeId) return null;
   const cached = getCachedValue(placesCache, placeId);
   if (cached) return cached;
   const diskCache = loadPlaceDetailsDiskCache();
@@ -622,6 +812,28 @@ const fetchPlaceDetails = async (placeId) => {
     setCachedValue(placesCache, placeId, diskCache[placeId]);
     return diskCache[placeId];
   }
+  if (PLACES_PROVIDER === 'serpapi') {
+    try {
+      const data = await fetchSerpApiJson({
+        engine: 'google_maps',
+        type: 'place',
+        place_id: placeId,
+        hl: 'zh-CN',
+        gl: 'mx',
+      });
+      const place = data.place_results || data.place_result || (Array.isArray(data.local_results) ? data.local_results[0] : null);
+      const mapped = mapSerpPlaceResult(place, placeId);
+      if (!mapped) return null;
+      setCachedValue(placesCache, placeId, mapped);
+      diskCache[placeId] = mapped;
+      savePlaceDetailsDiskCache();
+      return mapped;
+    } catch (err) {
+      console.warn('SerpApi detail failed:', err.message);
+      return null;
+    }
+  }
+  if (!GOOGLE_PLACES_API_KEY) return null;
   const url = new URL('https://maps.googleapis.com/maps/api/place/details/json');
   url.searchParams.set('place_id', placeId);
   url.searchParams.set('fields', [
@@ -657,15 +869,43 @@ const fetchPlaceDetails = async (placeId) => {
 };
 
 const fetchPlacePhoto = async (placeId, index = 0) => {
-  if (!PLACES_API_ENABLED || !GOOGLE_PLACES_API_KEY || !placeId) return null;
+  if (!isPlacesApiEnabled() || !placeId) return null;
   const normalizedIndex = Number.isInteger(index) && index >= 0 ? index : 0;
   const cacheKey = `${placeId}:${normalizedIndex}`;
   const cached = getCachedValue(placePhotoCache, cacheKey);
   if (cached) return cached;
   const details = await fetchPlaceDetails(placeId);
-  const photoRef = details?.photos?.[normalizedIndex]?.photo_reference
-    || details?.photos?.[0]?.photo_reference;
+  const photoEntry = details?.photos?.[normalizedIndex] || details?.photos?.[0] || null;
+  const imageEntry = Array.isArray(details?.images)
+    ? (details.images[normalizedIndex] || details.images[0])
+    : null;
+  const photoRef = photoEntry?.photo_reference
+    || photoEntry?.url
+    || photoEntry?.image
+    || photoEntry?.thumbnail
+    || imageEntry?.image
+    || imageEntry?.url
+    || imageEntry?.thumbnail
+    || photoEntry
+    || imageEntry;
   if (!photoRef) return null;
+  if (isHttpUrl(photoRef)) {
+    try {
+      const response = await fetch(photoRef);
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}`);
+      }
+      const buffer = Buffer.from(await response.arrayBuffer());
+      const contentType = response.headers.get('content-type') || 'image/jpeg';
+      const payload = { buffer, contentType };
+      setCachedValue(placePhotoCache, cacheKey, payload);
+      return payload;
+    } catch (err) {
+      console.warn('Places photo failed:', err.message);
+      return null;
+    }
+  }
+  if (!GOOGLE_PLACES_API_KEY) return null;
   const photoUrl = new URL('https://maps.googleapis.com/maps/api/place/photo');
   photoUrl.searchParams.set('maxwidth', '1600');
   photoUrl.searchParams.set('photo_reference', photoRef);
@@ -687,7 +927,7 @@ const fetchPlacePhoto = async (placeId, index = 0) => {
 };
 
 const prefetchPlacesCache = async () => {
-  if (!PLACES_PREFETCH_ENABLED || !PLACES_API_ENABLED || !GOOGLE_PLACES_API_KEY || prefetchRunning) return;
+  if (!PLACES_PREFETCH_ENABLED || !isPlacesApiEnabled() || prefetchRunning) return;
   prefetchRunning = true;
   try {
     const companies = loadCompaniesData();
@@ -717,7 +957,7 @@ const getCompanyPlaceData = async (company) => {
   // 永远先看本地缓存，避免未授权调用
   const diskCache = loadPlaceDetailsDiskCache();
   const cachedByPlaceId = explicitPlaceId ? diskCache[explicitPlaceId] : null;
-  if (!PLACES_API_ENABLED || !GOOGLE_PLACES_API_KEY) {
+  if (!isPlacesApiEnabled()) {
     // API 未开启时，只返回本地数据
     if (cachedByPlaceId) return cachedByPlaceId;
     // 尝试根据 query 找一下匹配的条目
@@ -742,7 +982,7 @@ const buildMapEmbedUrl = (company, placeData) => {
   if (embed) return embed;
   const placeId = String(placeData?.place_id || company.placeId || company.place_id || '').trim();
   const query = String(placeData?.name || company.mapQuery || '').trim();
-  if (PLACES_API_ENABLED && GOOGLE_PLACES_API_KEY && (placeId || query)) {
+  if (GOOGLE_PLACES_API_KEY && (placeId || query)) {
     const base = 'https://www.google.com/maps/embed/v1/place';
     const key = encodeURIComponent(GOOGLE_PLACES_API_KEY);
     const q = placeId ? `place_id:${placeId}` : query;
@@ -1438,6 +1678,65 @@ app.get('/api/submissions', (req, res) => {
   );
 });
 
+app.get('/api/forum-posts', (req, res) => {
+  const limit = Math.min(parseInt(req.query.limit, 10) || 50, 200);
+  db.all(
+    `SELECT id, title, content, category, city, contact, created_at
+     FROM forum_posts
+     ORDER BY datetime(created_at) DESC
+     LIMIT ?`,
+    [limit],
+    (err, rows) => {
+      if (err) {
+        console.error('Forum read error:', err);
+        return res.status(500).json({ ok: false, message: '读取失败' });
+      }
+      return res.json({ ok: true, data: rows });
+    }
+  );
+});
+
+app.post('/api/forum-posts', (req, res) => {
+  const honeypot = String(req.body.website || '').trim();
+  if (honeypot) {
+    return res.status(400).json({ ok: false, message: '提交失败' });
+  }
+
+  const rate = checkForumRateLimit(req.ip || '');
+  if (!rate.ok) {
+    const retrySeconds = Math.max(1, Math.ceil((rate.retryIn || 1000) / 1000));
+    return res.status(429).json({ ok: false, message: `发布太频繁，请 ${retrySeconds} 秒后再试` });
+  }
+
+  const title = String(req.body.title || '').trim();
+  const content = String(req.body.content || '').trim();
+  const category = String(req.body.category || '').trim();
+  const city = String(req.body.city || '').trim();
+  const contact = String(req.body.contact || '').trim();
+
+  if (title.length < 2 || title.length > 80) {
+    return res.status(400).json({ ok: false, message: '标题需要 2-80 个字' });
+  }
+  if (content.length < 10 || content.length > 2000) {
+    return res.status(400).json({ ok: false, message: '内容需要 10-2000 个字' });
+  }
+
+  const ipHash = hashIp(req.ip || req.connection?.remoteAddress || '');
+  const userAgent = String(req.get('user-agent') || '').slice(0, ANALYTICS_UA_MAX_LENGTH);
+
+  const stmt = db.prepare(
+    `INSERT INTO forum_posts (title, content, category, city, contact, ip_hash, user_agent)
+     VALUES (?, ?, ?, ?, ?, ?, ?)`
+  );
+  stmt.run([title, content, category, city, contact, ipHash, userAgent], function (err) {
+    if (err) {
+      console.error('Forum insert error:', err);
+      return res.status(500).json({ ok: false, message: '存储失败' });
+    }
+    return res.json({ ok: true, id: this.lastID });
+  });
+});
+
 app.get('/api/analytics', (req, res) => {
   if (!isAnalyticsAuthorized(req)) {
     return res.status(401).json({ ok: false, message: '未授权' });
@@ -1510,6 +1809,10 @@ app.get(['/contact', '/contact.html', '/index.html'], (_req, res) => {
   res.send(renderPage('index.html'));
 });
 
+app.get(['/forum', '/forum.html'], (_req, res) => {
+  res.send(renderPage('forum.html'));
+});
+
 app.get(['/companies', '/companies.html'], (_req, res) => {
   res.send(renderPage('companies.html'));
 });
@@ -1546,7 +1849,7 @@ app.get('/company/:slug', async (req, res) => {
 app.get('/api/place-photo/:placeId/:index?', async (req, res) => {
   const placeId = String(req.params.placeId || '').trim();
   const index = Number.parseInt(req.params.index || '0', 10);
-  if (!PLACES_API_ENABLED || !placeId || !GOOGLE_PLACES_API_KEY) {
+  if (!isPlacesApiEnabled() || !placeId) {
     return res.status(404).send('Not found');
   }
   const photo = await fetchPlacePhoto(placeId, Number.isNaN(index) ? 0 : index);
@@ -1568,7 +1871,7 @@ app.get('*', (_req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
   console.log(`DB file at ${DB_PATH}`);
-  if (PLACES_PREFETCH_ENABLED && PLACES_API_ENABLED && GOOGLE_PLACES_API_KEY) {
+  if (PLACES_PREFETCH_ENABLED && isPlacesApiEnabled()) {
     setTimeout(() => {
       prefetchPlacesCache();
       setInterval(prefetchPlacesCache, PREFETCH_INTERVAL_MS);
