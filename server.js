@@ -461,10 +461,10 @@ const buildCompanySeo = (company, placeData) => {
   const name = String(company.name || '').trim();
   const city = String(company.city || '').trim();
   const categoryLabel = formatCategoryLabel(company);
-  const title = `墨西哥华人网 - ${name}${city ? `｜${city}` : ''}${categoryLabel ? `｜${categoryLabel}` : ''}`;
+  const title = `墨西哥中文网 - ${name}${city ? `｜${city}` : ''}${categoryLabel ? `｜${categoryLabel}` : ''}`;
   const ratingSummary = buildRatingSummary(company, placeData, categoryLabel);
   const address = placeData?.formatted_address || '';
-  let description = `墨西哥华人网收录：${name}${city ? `（${city}）` : ''}`;
+  let description = `墨西哥中文网收录：${name}${city ? `（${city}）` : ''}`;
   if (ratingSummary) description += `，${ratingSummary}`;
   description += address ? `。地址：${address}` : '。';
 
@@ -483,7 +483,7 @@ const buildCompanySeo = (company, placeData) => {
     `<meta property="og:description" content="${escapeHtml(description)}">`,
     `<meta property="og:type" content="${ogType}">`,
     `<meta property="og:url" content="${canonicalUrl}">`,
-    `<meta property="og:site_name" content="墨西哥华人网">`,
+    `<meta property="og:site_name" content="墨西哥中文网">`,
     `<meta property="og:image" content="${imageUrl}">`,
     `<meta property="og:image:alt" content="${escapeHtml(name)}">`,
     `<meta name="twitter:card" content="summary_large_image">`,
