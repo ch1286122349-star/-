@@ -45,7 +45,7 @@
       <h1>墨西哥华人商家与中资企业导航</h1>
     </section>
 
-    <section class="home-filters" aria-label="城市筛选">
+    <section class="home-filters home-sticky" aria-label="城市筛选" data-home-sticky>
       <div class="city-nav home-city-nav" data-home-city-nav></div>
     </section>
 
@@ -173,6 +173,18 @@
           });
         });
       };
+
+      const stickyEl = root?.querySelector('[data-home-sticky]');
+      const headerEl = document.querySelector('.site-header');
+      if (stickyEl && headerEl) {
+        const updateStickyTop = () => {
+          const headerHeight = headerEl.offsetHeight;
+          stickyEl.style.setProperty('--home-sticky-top', `${headerHeight + 12}px`);
+        };
+        updateStickyTop();
+        window.addEventListener('resize', updateStickyTop);
+        window.addEventListener('load', updateStickyTop);
+      }
 
       const renderPreviewCard = (item) => {
         const cover = item.cover ? String(item.cover).replace(/'/g, '%27') : '';

@@ -1450,7 +1450,7 @@ const renderCompanyPage = async (company) => {
   const mapLinkForPhotos = safeMapLink || safePlaceUrl;
   const thumbTiles = [];
   if (placeId && photoCount > 1) {
-    const maxThumbs = Math.min(4, Math.max(1, photoCount - 1));
+    const maxThumbs = Math.min(3, Math.max(1, photoCount - 1));
     for (let i = 1; i <= maxThumbs; i += 1) {
       const thumbUrl = buildPlacePhotoUrl(placeId, i);
       if (!thumbUrl) continue;

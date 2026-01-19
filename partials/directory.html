@@ -3,11 +3,8 @@
     <h1>墨西哥华人商家与中资企业导航</h1>
   </header>
 
-  <div class="directory-controls">
-    <div class="city-nav directory-city-nav" aria-label="城市筛选" data-directory-city-nav></div>
-  </div>
-
   <div class="directory-sticky" data-directory-sticky>
+    <div class="city-nav directory-city-nav" aria-label="城市筛选" data-directory-city-nav></div>
     <div class="directory-tabs" role="tablist" aria-label="板块切换" data-directory-tabs></div>
     <div class="directory-filters" aria-label="分类筛选" data-directory-filters hidden></div>
   </div>
@@ -191,9 +188,10 @@
       if (state.category !== 'all' && !counts.has(state.category)) {
         state.category = 'all';
       }
+      const visibleCategories = FOOD_CATEGORIES.filter((category) => counts.has(category));
       const pills = [
         `<button class="filter-pill${state.category === 'all' ? ' is-active' : ''}" type="button" data-category="all">全部</button>`,
-        ...FOOD_CATEGORIES.filter((category) => counts.has(category)).map((category) => (
+        ...visibleCategories.map((category) => (
           `<button class="filter-pill${state.category === category ? ' is-active' : ''}" type="button" data-category="${category}">${category}</button>`
         )),
       ].join('');
@@ -283,10 +281,11 @@
     if (stickyEl && headerEl) {
       const updateStickyTop = () => {
         const headerHeight = headerEl.offsetHeight;
-        stickyEl.style.top = `${headerHeight + 14}px`;
+        stickyEl.style.setProperty('--directory-sticky-top', `${headerHeight + 12}px`);
       };
       updateStickyTop();
       window.addEventListener('resize', updateStickyTop);
+      window.addEventListener('load', updateStickyTop);
     }
   })();
 </script>
