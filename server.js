@@ -1836,8 +1836,14 @@ app.get('/api/analytics', (req, res) => {
   });
 });
 
+const renderDirectoryPage = () => renderPage('companies.html', {
+  companies: {
+    showCityHeadings: false,
+  },
+});
+
 app.get('/', (_req, res) => {
-  res.send(renderPage('home.html'));
+  res.send(renderDirectoryPage());
 });
 
 app.get(['/home', '/home.html'], (_req, res) => {
@@ -1853,11 +1859,7 @@ app.get(['/forum', '/forum.html'], (_req, res) => {
 });
 
 app.get(['/companies', '/companies.html'], (_req, res) => {
-  res.send(renderPage('companies.html', {
-    companies: {
-      showCityHeadings: false,
-    },
-  }));
+  res.send(renderDirectoryPage());
 });
 
 app.get(['/restaurants', '/restaurants.html'], (_req, res) => {
