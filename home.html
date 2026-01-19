@@ -72,6 +72,17 @@
         <div class="home-block__grid" data-block-grid></div>
       </section>
 
+      <section class="home-block" data-block="play">
+        <div class="home-block__head">
+          <h2>玩乐地点</h2>
+          <div class="home-block__meta">
+            <span class="home-chip" data-block-city></span>
+            <span class="home-chip" data-block-count></span>
+          </div>
+        </div>
+        <div class="home-block__grid" data-block-grid></div>
+      </section>
+
       <section class="home-block" data-block="enterprises">
         <div class="home-block__head">
           <h2>中资企业</h2>
@@ -112,6 +123,7 @@
       const STORAGE_KEY = 'mx-home-city';
       const FOOD_INDUSTRY = '餐饮与服务';
       const ENTERPRISE_INDUSTRY = '中资企业';
+      const PLAY_INDUSTRY = '玩乐地点';
       const MARKET_CATEGORY = '超市';
 
       const root = document.querySelector('.home-directory');
@@ -119,10 +131,11 @@
       const blocks = {
         restaurants: root?.querySelector('[data-block="restaurants"]'),
         markets: root?.querySelector('[data-block="markets"]'),
+        play: root?.querySelector('[data-block="play"]'),
         enterprises: root?.querySelector('[data-block="enterprises"]'),
         suppliers: root?.querySelector('[data-block="suppliers"]'),
       };
-      if (!root || !cityNav || !blocks.restaurants || !blocks.markets || !blocks.enterprises || !blocks.suppliers) return;
+      if (!root || !cityNav || !blocks.restaurants || !blocks.markets || !blocks.play || !blocks.enterprises || !blocks.suppliers) return;
 
       const normalizeCity = (value) => (CITY_ORDER.includes(value) ? value : 'all');
       let currentCity = normalizeCity(localStorage.getItem(STORAGE_KEY) || 'all');
@@ -144,9 +157,14 @@
       const getRestaurantItems = () => getFoodItems().filter((item) => item.category !== MARKET_CATEGORY);
       const getMarketItems = () => getFoodItems().filter((item) => item.category === MARKET_CATEGORY);
       const getEnterpriseItems = () => data.filter((item) => item.industry === ENTERPRISE_INDUSTRY);
+      const getPlayItems = () => data.filter((item) => item.industry === PLAY_INDUSTRY);
 
       const buildCityCounts = () => {
-        const items = data.filter((item) => item.industry === FOOD_INDUSTRY || item.industry === ENTERPRISE_INDUSTRY);
+        const items = data.filter((item) => (
+          item.industry === FOOD_INDUSTRY
+          || item.industry === ENTERPRISE_INDUSTRY
+          || item.industry === PLAY_INDUSTRY
+        ));
         const counts = new Map();
         counts.set('all', items.length);
         items.forEach((item) => {
@@ -194,8 +212,9 @@
         const coverClass = cover ? ' company-cover' : '';
         const desc = escapeHtml(item.summary || '欢迎了解更多详情。');
         const safeSlug = encodeURIComponent(item.slug);
+        const href = item.href ? String(item.href) : `/company/${safeSlug}`;
         return (
-          `<a class="company-card company-link home-card${coverClass}" href="/company/${safeSlug}"${coverStyle}>` +
+          `<a class="company-card company-link home-card${coverClass}" href="${href}"${coverStyle}>` +
           `<h4>${escapeHtml(item.name)}</h4>` +
           `<p class="company-desc">${desc}</p>` +
           `</a>`
@@ -252,6 +271,41 @@
           .join('')
       );
 
+      const renderPlayCards = (count) => {
+        if (!count) return '';
+        return Array.from({ length: count }, () => (
+          `<div class="home-card home-card--placeholder">` +
+          `<h4>即将更新</h4>` +
+          `<p>玩乐地点内容整理中。</p>` +
+          `</div>`
+        )).join('');
+      };
+
+      const renderPlayBlock = () => {
+        const blockEl = blocks.play;
+        if (!blockEl) return;
+        const cityEl = blockEl.querySelector('[data-block-city]');
+        const countEl = blockEl.querySelector('[data-block-count]');
+        const grid = blockEl.querySelector('[data-block-grid]');
+        if (!grid) return;
+
+        const items = getPlayItems();
+        const allItems = filterByCity(items);
+        const previewItems = allItems.slice(-5);
+        const placeholdersNeeded = Math.max(0, 5 - previewItems.length);
+        const cityLabel = CITY_LABELS.get(currentCity) || currentCity;
+
+        if (cityEl) cityEl.textContent = allItems.length ? cityLabel : '全部';
+        if (countEl) countEl.textContent = allItems.length ? `${allItems.length} 条` : '即将上线';
+
+        const cards = [
+          ...previewItems.map(renderPreviewCard),
+          renderPlayCards(placeholdersNeeded),
+          renderMoreCard(buildDirectoryLink('play'), '查看更多'),
+        ];
+        grid.innerHTML = cards.join('');
+      };
+
       const renderBlock = (blockEl, items, tabId) => {
         const cityLabel = CITY_LABELS.get(currentCity) || currentCity;
         const allItems = filterByCity(items);
@@ -273,6 +327,7 @@
         renderCityNav();
         renderBlock(blocks.restaurants, getRestaurantItems(), 'restaurants');
         renderBlock(blocks.markets, getMarketItems(), 'markets');
+        renderPlayBlock();
         renderBlock(blocks.enterprises, getEnterpriseItems(), 'enterprises');
         const supplierGrid = blocks.suppliers.querySelector('[data-block-grid]');
         if (supplierGrid) {
