@@ -11,6 +11,7 @@
   --shadow: 0 28px 70px rgba(15, 23, 42, 0.12);
   --page-max: 1080px;
   --hero-bg: url('/assets/pexels-rickyrecap-1720086.jpg');
+  --sticky-offset: 76px;
 }
 
  .site-header {
@@ -33,17 +34,18 @@
    padding: 12px 24px;
  }
 
- .logo-link {
-   display: inline-flex;
-   align-items: center;
-   text-decoration: none;
-   color: inherit;
- }
+.logo-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  gap: 10px;
+}
 
- .logo {
-   width: 38px;
-   height: 38px;
-   border-radius: 12px;
+.logo {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
    background: linear-gradient(135deg, var(--primary), var(--primary-2));
    display: grid;
    place-items: center;
@@ -516,8 +518,8 @@ body::after {
 
 .city-tools {
   position: sticky;
-  top: 76px;
-  z-index: 40;
+  top: calc(var(--sticky-offset) + env(safe-area-inset-top, 0px));
+  z-index: 120;
   margin: 12px 0 16px;
   padding: 10px 12px;
   border-radius: 16px;
@@ -529,6 +531,12 @@ body::after {
   flex-wrap: wrap;
   align-items: center;
   gap: 10px 16px;
+}
+
+@media (max-width: 640px) {
+  .city-tools {
+    top: calc(64px + env(safe-area-inset-top, 0px));
+  }
 }
 
 .city-service {
@@ -646,6 +654,15 @@ body::after {
   color: rgba(15, 20, 42, 0.6);
   text-transform: uppercase;
   letter-spacing: 0.08em;
+}
+
+.logo-text {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #111111;
+  text-shadow: none;
+  white-space: nowrap;
 }
 
 .filter-pill,

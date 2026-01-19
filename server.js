@@ -9,6 +9,7 @@ const { google } = require('googleapis');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const HOST = process.env.HOST || '127.0.0.1';
 const DB_PATH = process.env.DB_PATH || path.join(__dirname, 'data.db');
 const isDev = process.env.NODE_ENV !== 'production';
 const ANALYTICS_ENABLED = String(process.env.ANALYTICS_ENABLED || 'true').toLowerCase() !== 'false';
@@ -1051,6 +1052,7 @@ const buildMapEmbedUrl = (company, placeData) => {
 const buildCompaniesHtml = (options = {}) => {
   const template = options.template || companiesTemplate;
   if (!template) return '';
+  const showCityHeadings = options.showCityHeadings !== false;
   const allCompanies = loadCompaniesData();
   const companies = typeof options.filter === 'function'
     ? allCompanies.filter(options.filter)
@@ -1132,6 +1134,7 @@ const buildCompaniesHtml = (options = {}) => {
       ? ` style=\"background-image: linear-gradient(140deg, rgba(15, 23, 42, 0.12), rgba(15, 23, 42, 0.35)), url('${safeCover}')\"`
       : '';
     const coverClass = safeCover ? ' company-cover' : '';
+    const coverAriaLabel = safeCover ? ` role=\"img\" aria-label=\"${safeName}封面图片\"` : '';
     const lat = Number(company.lat);
     const lng = Number(company.lng);
     const coordsAttr = Number.isFinite(lat) && Number.isFinite(lng)
@@ -1142,7 +1145,7 @@ const buildCompaniesHtml = (options = {}) => {
     const resolvedCategory = industry === foodIndustry ? classifyFoodCategory(company) : '';
     const categoryAttr = resolvedCategory ? ` data-category=\"${escapeHtml(resolvedCategory)}\"` : '';
     return (
-      `<a class=\"company-card company-link${coverClass}\" href=\"/company/${safeSlug}\"${coverStyle}${coordsAttr}${industryAttr}${categoryAttr}>` +
+      `<a class=\"company-card company-link${coverClass}\" href=\"/company/${safeSlug}\"${coverStyle}${coordsAttr}${industryAttr}${categoryAttr}${coverAriaLabel}>` +
       `<h4>${safeName}</h4>` +
       `<p class=\"company-desc\">${safeSummary}</p>` +
       `<div class=\"company-distance\" data-distance hidden></div>` +
@@ -1190,27 +1193,12 @@ const buildCompaniesHtml = (options = {}) => {
     );
   };
 
-  const buildCityServiceHtml = () => (
-    `<div class=\"city-service\">` +
-    `<div class=\"city-service-head\">` +
-    `<h3>企业服务</h3>` +
-    `<span>企业广告招租</span>` +
-    `</div>` +
-    `<div class=\"city-service-grid\">` +
-    `<div class=\"service-card\"><strong>企业广告招租</strong><p>把你的企业放上来</p></div>` +
-    `<div class=\"service-card\"><strong>企业广告招租</strong><p>把你的企业放上来</p></div>` +
-    `<div class=\"service-card\"><strong>企业广告招租</strong><p>把你的企业放上来</p></div>` +
-    `</div>` +
-    `</div>`
-  );
-
   const sectionsHtml = orderedCities.map((city, index) => {
     const cityEntry = cityMap.get(city);
     const industryEntries = Array.from(cityEntry.industries.entries());
     const slug = slugifyAscii(city);
     const id = slug ? `city-${slug}` : `city-${index + 1}`;
     const cityToolsHtml = buildCityToolsHtml(cityEntry, industryEntries);
-    const cityServiceHtml = buildCityServiceHtml();
 
   const industriesHtml = industryEntries.map(([industry, items]) => {
     if (industry === foodIndustry) {
@@ -1272,13 +1260,18 @@ const buildCompaniesHtml = (options = {}) => {
     );
   }).join('');
 
+    const cityHeadHtml = showCityHeadings
+      ? (
+        `<div class=\"city-head\">` +
+        `<h2>${escapeHtml(city)}</h2>` +
+        `</div>`
+      )
+      : '';
+
     return (
       `<section class=\"city-section\" id=\"${id}\" data-city=\"${escapeHtml(city)}\">` +
-      `<div class=\"city-head\">` +
-      `<h2>${escapeHtml(city)}</h2>` +
-      `</div>` +
+      cityHeadHtml +
       cityToolsHtml +
-      cityServiceHtml +
       `<div class=\"city-body\">${industriesHtml}</div>` +
       `</section>`
     );
@@ -1315,10 +1308,10 @@ const formatWebsiteLabel = (value) => {
   }
 };
 
-const renderPage = (fileName) => {
+const renderPage = (fileName, options = {}) => {
   const filePath = path.join(__dirname, fileName);
   const page = fs.readFileSync(filePath, 'utf8');
-  const companiesHtml = buildCompaniesHtml();
+  const companiesHtml = buildCompaniesHtml(options.companies);
   return page
     .replace('<!--HEAD-->', headHtml || '')
     .replace('<!--COMPANIES-->', companiesHtml || '')
@@ -1395,10 +1388,10 @@ const renderCompanyPage = async (company) => {
       addGalleryImage(thumbUrl);
       if (mapLinkForPhotos) {
         thumbTiles.push(
-          `<a class="company-hero-thumb company-hero-link" href="${mapLinkForPhotos}" target="_blank" rel="noopener" aria-label="在 Google 地图中查看" style="background-image: url('${thumbUrl}')"></a>`
+          `<a class="company-hero-thumb company-hero-link" href="${mapLinkForPhotos}" target="_blank" rel="noopener" aria-label="在 Google 地图中查看${name}的照片 ${i}" role="img" style="background-image: url('${thumbUrl}')"></a>`
         );
       } else {
-        thumbTiles.push(`<div class="company-hero-thumb" style="background-image: url('${thumbUrl}')"></div>`);
+        thumbTiles.push(`<div class="company-hero-thumb" role="img" aria-label="${name}的照片 ${i}" style="background-image: url('${thumbUrl}')"></div>`);
       }
     }
   }
@@ -1406,8 +1399,8 @@ const renderCompanyPage = async (company) => {
     ? `<div class="company-hero-thumbs">${thumbTiles.join('')}</div>`
     : '';
   const heroTile = mapLinkForPhotos
-    ? `<a class="company-hero company-hero-link"${heroStyle} href="${mapLinkForPhotos}" target="_blank" rel="noopener" aria-label="在 Google 地图中查看"></a>`
-    : `<div class="company-hero"${heroStyle}></div>`;
+    ? `<a class="company-hero company-hero-link"${heroStyle} href="${mapLinkForPhotos}" target="_blank" rel="noopener" aria-label="在 Google 地图中查看${name}" role="img"></a>`
+    : `<div class="company-hero"${heroStyle} role="img" aria-label="${name}封面图片"></div>`;
   const galleryAttr = galleryImages.size ? ` data-gallery="${escapeHtml(Array.from(galleryImages).join('|'))}"` : '';
   const galleryButtonHtml = galleryImages.size > 1
     ? ''
@@ -1860,7 +1853,11 @@ app.get(['/forum', '/forum.html'], (_req, res) => {
 });
 
 app.get(['/companies', '/companies.html'], (_req, res) => {
-  res.send(renderPage('companies.html'));
+  res.send(renderPage('companies.html', {
+    companies: {
+      showCityHeadings: false,
+    },
+  }));
 });
 
 app.get(['/restaurants', '/restaurants.html'], (_req, res) => {
@@ -1936,8 +1933,8 @@ app.get('*', (_req, res) => {
   res.send(renderPage('home.html'));
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
+app.listen(PORT, HOST, () => {
+  console.log(`Server running at http://${HOST}:${PORT}`);
   console.log(`DB file at ${DB_PATH}`);
   if (PLACES_PREFETCH_ENABLED && isPlacesApiEnabled()) {
     setTimeout(() => {
