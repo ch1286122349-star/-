@@ -1461,10 +1461,10 @@ const renderCompanyPage = async (company) => {
       addGalleryImage(thumbUrl);
       if (mapLinkForPhotos) {
         thumbTiles.push(
-          `<a class="company-hero-thumb company-hero-link" href="${mapLinkForPhotos}" target="_blank" rel="noopener" aria-label="在 Google 地图中查看${name}的照片 ${i}" role="img" style="background-image: url('${thumbUrl}')"></a>`
+          `<a class="company-hero-thumb company-hero-link" href="${mapLinkForPhotos}" target="_blank" rel="noopener" aria-label="在 Google 地图中查看${safeName}的照片 ${i}" role="img" style="background-image: url('${thumbUrl}')"></a>`
         );
       } else {
-        thumbTiles.push(`<div class="company-hero-thumb" role="img" aria-label="${name}的照片 ${i}" style="background-image: url('${thumbUrl}')"></div>`);
+        thumbTiles.push(`<div class="company-hero-thumb" role="img" aria-label="${safeName}的照片 ${i}" style="background-image: url('${thumbUrl}')"></div>`);
       }
     }
   }
@@ -1472,8 +1472,8 @@ const renderCompanyPage = async (company) => {
     ? `<div class="company-hero-thumbs">${thumbTiles.join('')}</div>`
     : '';
   const heroTile = mapLinkForPhotos
-    ? `<a class="company-hero company-hero-link"${heroStyle} href="${mapLinkForPhotos}" target="_blank" rel="noopener" aria-label="在 Google 地图中查看${name}" role="img"></a>`
-    : `<div class="company-hero"${heroStyle} role="img" aria-label="${name}封面图片"></div>`;
+    ? `<a class="company-hero company-hero-link"${heroStyle} href="${mapLinkForPhotos}" target="_blank" rel="noopener" aria-label="在 Google 地图中查看${safeName}" role="img"></a>`
+    : `<div class="company-hero"${heroStyle} role="img" aria-label="${safeName}封面图片"></div>`;
   const galleryAttr = galleryImages.size ? ` data-gallery="${escapeHtml(Array.from(galleryImages).join('|'))}"` : '';
   const galleryButtonHtml = galleryImages.size > 1
     ? ''
