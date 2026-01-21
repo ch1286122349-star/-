@@ -9,9 +9,6 @@ const { google } = require('googleapis');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const HOST = process.env.NODE_ENV === 'production'
-  ? '0.0.0.0'
-  : (process.env.HOST || '0.0.0.0');
 const DB_PATH = process.env.DB_PATH || path.join(__dirname, 'data.db');
 const isDev = process.env.NODE_ENV !== 'production';
 const ANALYTICS_ENABLED = String(process.env.ANALYTICS_ENABLED || 'true').toLowerCase() !== 'false';
@@ -309,7 +306,7 @@ let directoryPageTemplate = '';
 try {
   directoryPageTemplate = fs.readFileSync(DIRECTORY_PAGE_TEMPLATE_PATH, 'utf8');
 } catch (err) {
-  console.warn('Directory page template not found:', err.message);
+  console.warn('Directory template not found:', err.message);
 }
 
 const COMPANIES_DATA_PATH = path.join(__dirname, 'data', 'companies.json');
@@ -637,6 +634,44 @@ const buildPlacePhotoUrl = (placeId, index = 0) => {
   if (!safeId) return '';
   const safeIndex = Number.isInteger(index) && index > 0 ? `/${index}` : '';
   return `/api/place-photo/${safeId}${safeIndex}`;
+};
+
+const DIRECTORY_FOOD_CATEGORIES = ['中餐', '火锅', '面馆', '烧烤', '饮品', '超市'];
+const classifyFoodCategoryForDirectory = (company) => {
+  const existing = String(company.category || '').trim();
+  if (existing) return existing;
+  const text = `${company.name || ''} ${company.summary || ''}`.toLowerCase();
+  if (/火锅|hot\s*pot|hotpot|麻辣烫|串串香/i.test(text)) return '火锅';
+  if (/面馆|拉面|ramen|noodle|noodles|牛肉面|兰州|刀削面|米线/i.test(text)) return '面馆';
+  if (/烧烤|串串|烤肉|bbq|barbecue|烤鱼/i.test(text)) return '烧烤';
+  if (/茶|奶茶|饮品|咖啡|coffee|bubble\s*tea/i.test(text)) return '饮品';
+  if (/超市|便利|market|grocery/i.test(text)) return '超市';
+  return '中餐';
+};
+
+const buildDirectoryDataScript = () => {
+  const items = loadCompaniesData()
+    .filter((company) => company && company.slug && company.name)
+    .map((company) => {
+      const placeId = String(company.placeId || company.place_id || '').trim();
+      const industry = String(company.industry || '').trim() || '其他';
+      const item = {
+        slug: String(company.slug || '').trim(),
+        name: String(company.name || '').trim(),
+        summary: String(company.summary || '').trim(),
+        cover: resolveCompanyCoverUrl(company, placeId),
+        city: String(company.city || '未分类城市').trim(),
+        industry,
+        category: industry === '餐饮与服务' ? classifyFoodCategoryForDirectory(company) : '',
+      };
+      if (company.href) {
+        item.href = String(company.href).trim();
+      }
+      return item;
+    });
+  const payload = { items };
+  const json = JSON.stringify(payload).replace(/</g, '\\u003c');
+  return `<script>window.__DIRECTORY_DATA__=${json};</script>`;
 };
 
 const getCachedValue = (cache, key) => {
@@ -1070,7 +1105,6 @@ const buildMapEmbedUrl = (company, placeData) => {
 const buildCompaniesHtml = (options = {}) => {
   const template = options.template || companiesTemplate;
   if (!template) return '';
-  const showCityHeadings = options.showCityHeadings !== false;
   const allCompanies = loadCompaniesData();
   const companies = typeof options.filter === 'function'
     ? allCompanies.filter(options.filter)
@@ -1123,7 +1157,21 @@ const buildCompaniesHtml = (options = {}) => {
     })
   ].join('');
 
-  const foodIndustry = FOOD_INDUSTRY;
+  const foodIndustry = '餐饮与服务';
+  const foodCategoryPriority = ['中餐', '火锅', '面馆', '烧烤', '饮品', '超市'];
+  const hotpotRe = /火锅|hot\s*pot|hotpot|麻辣烫|串串香/i;
+  const noodleRe = /面馆|拉面|ramen|noodle|noodles|牛肉面|兰州|刀削面|米线/i;
+  const bbqRe = /烧烤|串串|烤肉|bbq|barbecue|烤鱼/i;
+
+  const classifyFoodCategory = (company) => {
+    const existing = String(company.category || '').trim();
+    if (existing) return existing;
+    const text = `${company.name || ''} ${company.summary || ''}`.toLowerCase();
+    if (hotpotRe.test(text)) return '火锅';
+    if (noodleRe.test(text)) return '面馆';
+    if (bbqRe.test(text)) return '烧烤';
+    return '中餐';
+  };
 
   const renderCompanyCards = (items) => items.map((company) => {
     const safeName = escapeHtml(company.name);
@@ -1138,7 +1186,6 @@ const buildCompaniesHtml = (options = {}) => {
       ? ` style=\"background-image: linear-gradient(140deg, rgba(15, 23, 42, 0.12), rgba(15, 23, 42, 0.35)), url('${safeCover}')\"`
       : '';
     const coverClass = safeCover ? ' company-cover' : '';
-    const coverAriaLabel = safeCover ? ` role=\"img\" aria-label=\"${safeName}封面图片\"` : '';
     const lat = Number(company.lat);
     const lng = Number(company.lng);
     const coordsAttr = Number.isFinite(lat) && Number.isFinite(lng)
@@ -1149,7 +1196,7 @@ const buildCompaniesHtml = (options = {}) => {
     const resolvedCategory = industry === foodIndustry ? classifyFoodCategory(company) : '';
     const categoryAttr = resolvedCategory ? ` data-category=\"${escapeHtml(resolvedCategory)}\"` : '';
     return (
-      `<a class=\"company-card company-link${coverClass}\" href=\"/company/${safeSlug}\"${coverStyle}${coordsAttr}${industryAttr}${categoryAttr}${coverAriaLabel}>` +
+      `<a class=\"company-card company-link${coverClass}\" href=\"/company/${safeSlug}\"${coverStyle}${coordsAttr}${industryAttr}${categoryAttr}>` +
       `<h4>${safeName}</h4>` +
       `<p class=\"company-desc\">${safeSummary}</p>` +
       `<div class=\"company-distance\" data-distance hidden></div>` +
@@ -1158,7 +1205,7 @@ const buildCompaniesHtml = (options = {}) => {
     );
   }).join('');
 
-  const categoryPriority = new Map(FOOD_CATEGORY_PRIORITY.map((name, index) => [name, index]));
+  const categoryPriority = new Map(foodCategoryPriority.map((name, index) => [name, index]));
 
   const buildCityToolsHtml = (cityEntry, industryEntries) => {
     const foodItems = cityEntry.industries.get(foodIndustry) || [];
@@ -1167,7 +1214,7 @@ const buildCompaniesHtml = (options = {}) => {
       const category = classifyFoodCategory(company);
       categoryCounts.set(category, (categoryCounts.get(category) || 0) + 1);
     });
-    const categoryButtons = FOOD_CATEGORY_PRIORITY
+    const categoryButtons = foodCategoryPriority
       .filter((category) => categoryCounts.has(category))
       .map((category) => (
         `<button class=\"filter-pill\" type=\"button\" data-filter=\"${escapeHtml(category)}\" data-filter-scope=\"category\">${escapeHtml(category)}</button>`
@@ -1197,12 +1244,27 @@ const buildCompaniesHtml = (options = {}) => {
     );
   };
 
+  const buildCityServiceHtml = () => (
+    `<div class=\"city-service\">` +
+    `<div class=\"city-service-head\">` +
+    `<h3>企业服务</h3>` +
+    `<span>企业广告招租</span>` +
+    `</div>` +
+    `<div class=\"city-service-grid\">` +
+    `<div class=\"service-card\"><strong>企业广告招租</strong><p>把你的企业放上来</p></div>` +
+    `<div class=\"service-card\"><strong>企业广告招租</strong><p>把你的企业放上来</p></div>` +
+    `<div class=\"service-card\"><strong>企业广告招租</strong><p>把你的企业放上来</p></div>` +
+    `</div>` +
+    `</div>`
+  );
+
   const sectionsHtml = orderedCities.map((city, index) => {
     const cityEntry = cityMap.get(city);
     const industryEntries = Array.from(cityEntry.industries.entries());
     const slug = slugifyAscii(city);
     const id = slug ? `city-${slug}` : `city-${index + 1}`;
     const cityToolsHtml = buildCityToolsHtml(cityEntry, industryEntries);
+    const cityServiceHtml = buildCityServiceHtml();
 
   const industriesHtml = industryEntries.map(([industry, items]) => {
     if (industry === foodIndustry) {
@@ -1264,18 +1326,13 @@ const buildCompaniesHtml = (options = {}) => {
     );
   }).join('');
 
-    const cityHeadHtml = showCityHeadings
-      ? (
-        `<div class=\"city-head\">` +
-        `<h2>${escapeHtml(city)}</h2>` +
-        `</div>`
-      )
-      : '';
-
     return (
       `<section class=\"city-section\" id=\"${id}\" data-city=\"${escapeHtml(city)}\">` +
-      cityHeadHtml +
+      `<div class=\"city-head\">` +
+      `<h2>${escapeHtml(city)}</h2>` +
+      `</div>` +
       cityToolsHtml +
+      cityServiceHtml +
       `<div class=\"city-body\">${industriesHtml}</div>` +
       `</section>`
     );
@@ -1312,82 +1369,15 @@ const formatWebsiteLabel = (value) => {
   }
 };
 
-const FOOD_INDUSTRY = '餐饮与服务';
-const FOOD_CATEGORY_PRIORITY = ['中餐', '火锅', '面馆', '烧烤', '饮品', '超市'];
-const HOTPOT_RE = /火锅|hot\\s*pot|hotpot|麻辣烫|串串香/i;
-const NOODLE_RE = /面馆|拉面|ramen|noodle|noodles|牛肉面|兰州|刀削面|米线/i;
-const BBQ_RE = /烧烤|串串|烤肉|bbq|barbecue|烤鱼/i;
-
-const classifyFoodCategory = (company) => {
-  const existing = String(company?.category || '').trim();
-  if (existing) return existing;
-  const text = `${company?.name || ''} ${company?.summary || ''}`.toLowerCase();
-  if (HOTPOT_RE.test(text)) return '火锅';
-  if (NOODLE_RE.test(text)) return '面馆';
-  if (BBQ_RE.test(text)) return '烧烤';
-  return '中餐';
-};
-
 const renderPage = (fileName, options = {}) => {
   const filePath = path.join(__dirname, fileName);
   const page = fs.readFileSync(filePath, 'utf8');
-  const companiesHtml = buildCompaniesHtml(options.companies);
+  const companiesHtml = options.companiesHtml || buildCompaniesHtml(options.companies);
+  const dataScript = options.dataScript || '';
   return page
     .replace('<!--HEAD-->', headHtml || '')
     .replace('<!--COMPANIES-->', companiesHtml || '')
     .replace('<!--HEADER-->', headerHtml || '')
-    .replace('<!--FOOTER-->', footerHtml || '')
-    .replace('<!--DATA-->', options.dataScript || '');
-};
-
-const PLAY_ITEMS = [
-  {
-    slug: 'play-nido',
-    name: 'Nido de los Aguiluchos · Eagle\'s Nest',
-    summary: 'La Huasteca 国家公园的日出山体。',
-    cover: '/assets/play/nido-02.jpg',
-    city: '蒙特雷',
-    industry: '玩乐地点',
-    category: '',
-    href: '/play/nido#hero',
-  },
-];
-
-const buildDirectoryData = () => {
-  const companies = loadCompaniesData();
-  const items = companies.map((company) => {
-    const slug = String(company?.slug || '').trim();
-    const name = String(company?.name || '').trim();
-    if (!slug || !name) return null;
-    const placeId = String(company?.placeId || company?.place_id || '').trim();
-    const industry = String(company?.industry || '其他').trim();
-    const category = industry === FOOD_INDUSTRY
-      ? classifyFoodCategory(company)
-      : '';
-    return {
-      slug,
-      name,
-      summary: String(company?.summary || '').trim(),
-      cover: resolveCompanyCoverUrl(company, placeId),
-      city: String(company?.city || '未分类城市').trim(),
-      industry,
-      category: String(category || ''),
-    };
-  }).filter(Boolean);
-  return items.concat(PLAY_ITEMS);
-};
-
-const buildDirectoryDataScript = () => {
-  const payload = { items: buildDirectoryData() };
-  return `<script>window.__DIRECTORY_DATA__=${JSON.stringify(payload)};</script>`;
-};
-
-const renderDirectoryPage = (dataScript = '') => {
-  if (!directoryPageTemplate || !directoryTemplate) return '';
-  return directoryPageTemplate
-    .replace('<!--HEAD-->', headHtml || '')
-    .replace('<!--HEADER-->', headerHtml || '')
-    .replace('<!--COMPANIES-->', directoryTemplate || '')
     .replace('<!--FOOTER-->', footerHtml || '')
     .replace('<!--DATA-->', dataScript || '');
 };
@@ -1416,6 +1406,16 @@ const renderRestaurantsPage = () => {
     .replace('<!--COMPANIES-->', restaurantsHtml || '')
     .replace('<!--HEADER-->', headerHtml || '')
     .replace('<!--FOOTER-->', footerHtml || '');
+};
+
+const renderDirectoryPage = (dataScript = '') => {
+  if (!directoryPageTemplate || !directoryTemplate) return '';
+  return directoryPageTemplate
+    .replace('<!--HEAD-->', headHtml || '')
+    .replace('<!--COMPANIES-->', directoryTemplate || '')
+    .replace('<!--HEADER-->', headerHtml || '')
+    .replace('<!--FOOTER-->', footerHtml || '')
+    .replace('<!--DATA-->', dataScript || '');
 };
 
 const renderCompanyPage = async (company) => {
@@ -1454,17 +1454,17 @@ const renderCompanyPage = async (company) => {
   const mapLinkForPhotos = safeMapLink || safePlaceUrl;
   const thumbTiles = [];
   if (placeId && photoCount > 1) {
-    const maxThumbs = Math.min(4, Math.max(1, photoCount - 1));
+    const maxThumbs = Math.min(3, Math.max(1, photoCount - 1));
     for (let i = 1; i <= maxThumbs; i += 1) {
       const thumbUrl = buildPlacePhotoUrl(placeId, i);
       if (!thumbUrl) continue;
       addGalleryImage(thumbUrl);
       if (mapLinkForPhotos) {
         thumbTiles.push(
-          `<a class="company-hero-thumb company-hero-link" href="${mapLinkForPhotos}" target="_blank" rel="noopener" aria-label="在 Google 地图中查看${safeName}的照片 ${i}" role="img" style="background-image: url('${thumbUrl}')"></a>`
+          `<a class="company-hero-thumb company-hero-link" href="${mapLinkForPhotos}" target="_blank" rel="noopener" aria-label="在 Google 地图中查看" style="background-image: url('${thumbUrl}')"></a>`
         );
       } else {
-        thumbTiles.push(`<div class="company-hero-thumb" role="img" aria-label="${safeName}的照片 ${i}" style="background-image: url('${thumbUrl}')"></div>`);
+        thumbTiles.push(`<div class="company-hero-thumb" style="background-image: url('${thumbUrl}')"></div>`);
       }
     }
   }
@@ -1472,8 +1472,8 @@ const renderCompanyPage = async (company) => {
     ? `<div class="company-hero-thumbs">${thumbTiles.join('')}</div>`
     : '';
   const heroTile = mapLinkForPhotos
-    ? `<a class="company-hero company-hero-link"${heroStyle} href="${mapLinkForPhotos}" target="_blank" rel="noopener" aria-label="在 Google 地图中查看${safeName}" role="img"></a>`
-    : `<div class="company-hero"${heroStyle} role="img" aria-label="${safeName}封面图片"></div>`;
+    ? `<a class="company-hero company-hero-link"${heroStyle} href="${mapLinkForPhotos}" target="_blank" rel="noopener" aria-label="在 Google 地图中查看"></a>`
+    : `<div class="company-hero"${heroStyle}></div>`;
   const galleryAttr = galleryImages.size ? ` data-gallery="${escapeHtml(Array.from(galleryImages).join('|'))}"` : '';
   const galleryButtonHtml = galleryImages.size > 1
     ? ''
@@ -1910,20 +1910,11 @@ app.get('/api/analytics', (req, res) => {
 });
 
 app.get('/', (_req, res) => {
-  const dataScript = buildDirectoryDataScript();
-  res.send(renderPage('home.html', { dataScript }));
-});
-
-app.get(['/directory', '/directory.html'], (_req, res) => {
-  const dataScript = buildDirectoryDataScript();
-  const html = renderDirectoryPage(dataScript);
-  if (!html) return res.status(500).send('Directory template missing');
-  return res.send(html);
+  res.send(renderPage('home.html', { dataScript: buildDirectoryDataScript() }));
 });
 
 app.get(['/home', '/home.html'], (_req, res) => {
-  const dataScript = buildDirectoryDataScript();
-  res.send(renderPage('home.html', { dataScript }));
+  res.send(renderPage('home.html', { dataScript: buildDirectoryDataScript() }));
 });
 
 app.get(['/contact', '/contact.html', '/index.html'], (_req, res) => {
@@ -1934,20 +1925,17 @@ app.get(['/forum', '/forum.html'], (_req, res) => {
   res.send(renderPage('forum.html'));
 });
 
-app.get(['/play', '/play.html'], (_req, res) => {
-  res.redirect('/directory?tab=play');
-});
-
-app.get(['/play/nido', '/play/nido.html'], (_req, res) => {
-  res.send(renderPage('play-nido.html'));
+app.get('/play-:slug.html', (req, res) => {
+  const fileName = `play-${req.params.slug}.html`;
+  const filePath = path.join(__dirname, fileName);
+  if (!fs.existsSync(filePath)) {
+    return res.status(404).send('页面不存在');
+  }
+  return res.send(renderPage(fileName));
 });
 
 app.get(['/companies', '/companies.html'], (_req, res) => {
-  res.send(renderPage('companies.html', {
-    companies: {
-      showCityHeadings: false,
-    },
-  }));
+  res.send(renderPage('companies.html'));
 });
 
 app.get(['/restaurants', '/restaurants.html'], (_req, res) => {
@@ -1962,6 +1950,14 @@ app.get(['/enterprises', '/enterprises.html'], (_req, res) => {
   const html = renderEnterprisesPage();
   if (!html) {
     return res.status(500).send('Enterprises template missing');
+  }
+  return res.send(html);
+});
+
+app.get(['/directory', '/directory.html'], (_req, res) => {
+  const html = renderDirectoryPage(buildDirectoryDataScript());
+  if (!html) {
+    return res.status(500).send('Directory template missing');
   }
   return res.send(html);
 });
@@ -2020,12 +2016,11 @@ app.get('/api/place-photo/:placeId/:index?', async (req, res) => {
 app.use(express.static(path.join(__dirname)));
 
 app.get('*', (_req, res) => {
-  const dataScript = buildDirectoryDataScript();
-  res.send(renderPage('home.html', { dataScript }));
+  res.send(renderPage('home.html', { dataScript: buildDirectoryDataScript() }));
 });
 
-app.listen(PORT, HOST, () => {
-  console.log(`Server running at http://${HOST}:${PORT}`);
+app.listen(PORT, () => {
+  console.log(`Server running at http://localhost:${PORT}`);
   console.log(`DB file at ${DB_PATH}`);
   if (PLACES_PREFETCH_ENABLED && isPlacesApiEnabled()) {
     setTimeout(() => {

@@ -3046,5 +3046,140 @@
     "lat": 19.45,
     "lng": -99.186,
     "cover": "/api/place-photo/ChIJ4Yl0EMsA0oURbJ1edKpZ9Qk"
+  },
+  {
+    "slug": "play-nido",
+    "name": "Nido de los Aguiluchos · Eagle's Nest",
+    "industry": "玩乐地点",
+    "city": "蒙特雷",
+    "summary": "La Huasteca 国家公园，独特地质与平行岭谷，墨西哥最奇伟的山体之一",
+    "cover": "/assets/play/nido-02.jpg",
+    "href": "/play-nido.html"
+  },
+  {
+    "slug": "play-cerro-de-la-silla",
+    "name": "Cerro de la Silla 国家公园",
+    "industry": "玩乐地点",
+    "city": "蒙特雷",
+    "summary": "蒙特雷人最爱的日常徒步地标，登顶 Las Antenas Peak",
+    "cover": "/assets/play/cerro-de-la-silla/hero-01.jpg",
+    "href": "/play-cerro-de-la-silla.html"
+  },
+  {
+    "slug": "play-el-potrero-chico",
+    "name": "El Potrero Chico 多段运动攀",
+    "industry": "玩乐地点",
+    "city": "蒙特雷",
+    "summary": "墨西哥 EPC 多段运动攀体验，十月岩季、approach 极短",
+    "cover": "/assets/play/el-potrero-chico/hero-01.jpg",
+    "href": "/play-el-potrero-chico.html"
+  },
+  {
+    "slug": "play-la-estanzuela",
+    "name": "La Estanzuela 周末徒步",
+    "industry": "玩乐地点",
+    "city": "蒙特雷",
+    "summary": "周末徒步公园，60 比索线路，小瀑布与溪水一路相伴",
+    "cover": "/assets/play/la-estanzuela/hero-01.jpg",
+    "href": "/play-la-estanzuela.html"
+  },
+  {
+    "slug": "play-grutas-de-garcia",
+    "name": "Grutas de García 加西亚溶洞",
+    "industry": "玩乐地点",
+    "city": "蒙特雷",
+    "summary": "5000万年历史溶洞，缆车上山，钟乳石与史前海洋化石",
+    "cover": "/assets/play/grutas-de-garcia/hero-01.jpg",
+    "href": "/play-grutas-de-garcia.html"
+  },
+  {
+    "slug": "play-cola-de-caballo",
+    "name": "Cola de Caballo 马尾瀑布",
+    "industry": "玩乐地点",
+    "city": "蒙特雷",
+    "summary": "25米森林瀑布，轻松徒步，适合全家出游",
+    "cover": "/assets/play/cola-de-caballo/hero-01.jpg",
+    "href": "/play-cola-de-caballo.html"
+  },
+  {
+    "slug": "play-chipinque",
+    "name": "Chipinque 奇平克生态公园",
+    "industry": "玩乐地点",
+    "city": "蒙特雷",
+    "summary": "市区近郊天然氧吧，森林步道与城市全景，全家户外首选",
+    "cover": "/assets/play/chipinque/hero-01.jpg",
+    "href": "/play-chipinque.html"
+  },
+  {
+    "slug": "play-cerro-de-las-mitras",
+    "name": "Cerro de las Mitras 主教山",
+    "industry": "玩乐地点",
+    "city": "蒙特雷",
+    "summary": "硬核登山挑战，废弃矿洞探险，2060米山顶俯瞰全城",
+    "cover": "/assets/play/cerro-de-las-mitras/hero-01.jpg",
+    "href": "/play-cerro-de-las-mitras.html"
+  },
+  {
+    "slug": "play-fundidora",
+    "name": "Parque Fundidora 芬迪多拉公园",
+    "industry": "玩乐地点",
+    "city": "蒙特雷",
+    "summary": "百年钢铁厂遗址变身城市绿洲，144公顷工业遗产公园",
+    "cover": "/assets/play/fundidora/hero-01.jpg",
+    "href": "/play-fundidora.html"
+  },
+  {
+    "slug": "play-macroplaza",
+    "name": "Macroplaza 大广场",
+    "industry": "玩乐地点",
+    "city": "蒙特雷",
+    "summary": "40公顷墨西哥最大城市广场，Faro del Comercio夜间激光",
+    "cover": "/assets/play/macroplaza/hero-01.jpg",
+    "href": "/play-macroplaza.html"
+  },
+  {
+    "slug": "play-museo-historia-mexicana",
+    "name": "Museo de Historia Mexicana 墨西哥历史博物馆",
+    "industry": "玩乐地点",
+    "city": "蒙特雷",
+    "summary": "13000件藏品，从前哥伦布时代到现代墨西哥四千年历史",
+    "cover": "/assets/play/museo-historia-mexicana/hero-01.jpg",
+    "href": "/play-museo-historia-mexicana.html"
+  },
+  {
+    "slug": "play-paseo-santa-lucia",
+    "name": "Paseo Santa Lucía 圣卢西亚河道",
+    "industry": "玩乐地点",
+    "city": "蒙特雷",
+    "summary": "2.5公里人工运河，乘船游览或河畔漫步，24座喷泉",
+    "cover": "/assets/play/paseo-santa-lucia/hero-01.jpg",
+    "href": "/play-paseo-santa-lucia.html"
+  },
+  {
+    "slug": "play-bioparque-estrella",
+    "name": "Bioparque Estrella 星星动物园",
+    "industry": "玩乐地点",
+    "city": "蒙特雷",
+    "summary": "270公顷非洲风情野生动物园，Safari近距离接触长颈鹿",
+    "cover": "/assets/play/bioparque-estrella/hero-01.jpg",
+    "href": "/play-bioparque-estrella.html"
+  },
+  {
+    "slug": "play-matacanes",
+    "name": "Matacanes 峡谷探险",
+    "industry": "玩乐地点",
+    "city": "蒙特雷",
+    "summary": "墨西哥顶级溯溪探险，30米瀑布速降，8-12小时极限挑战",
+    "cover": "/assets/play/matacanes/hero-01.jpg",
+    "href": "/play-matacanes.html"
+  },
+  {
+    "slug": "play-presa-la-boca",
+    "name": "Presa de la Boca 水库",
+    "industry": "玩乐地点",
+    "city": "蒙特雷",
+    "summary": "450公顷湖面，钓鱼划船野餐，傍晚蝙蝠洞奇观",
+    "cover": "/assets/play/presa-la-boca/hero-01.jpg",
+    "href": "/play-presa-la-boca.html"
   }
 ]
