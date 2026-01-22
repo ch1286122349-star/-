@@ -48,17 +48,48 @@
    | `gallery-01~04.jpg` | 画册图片 | 页面底部展示 |
    | `wild-01.jpg` | 生态图片 | 可选，展示动植物 |
 
-3. **图片来源**（按优先级）
-   - **Wikimedia Commons**：搜索真实景点照片（CC 许可）
-   - **Unsplash**：高质量免费图片
-   - **Pexels**：免费商用图片
-   - 用户提供的图片
+3. **图片来源**（推荐稳定渠道）
 
-4. **下载图片命令**
+   **⚠️ 重要提示**：由于防爬机制，自动下载经常失败。推荐手动下载！
+
+   | 来源 | 特点 | 获取方式 |
+   |------|------|----------|
+   | **Wikimedia Commons** | 真实景点照片、CC许可 | 手动下载最可靠 |
+   | **Unsplash** | 高质量、免费 | 需登录后下载 |
+   | **Pexels** | 免费商用 | 直接下载 |
+   | **Pixabay** | 免费、多语言 | 需注册 |
+   | **小红书/抖音截图** | 真实用户拍摄 | 需注明来源 |
+
+4. **手动下载图片流程（推荐）**
+
+   **方法 A：Wikimedia Commons（最稳定）**
+   1. 访问 `commons.wikimedia.org`
+   2. 搜索景点英文/西班牙文名称
+   3. 点击图片 → 点击「原始文件」→ 右键「另存为」
+   4. 保存到 `assets/play/景点slug/` 并按规则命名
+
+   **方法 B：Unsplash/Pexels**
+   1. 访问 `unsplash.com` 或 `pexels.com`
+   2. 搜索景点名称（英文效果更好）
+   3. 点击图片 → 点击「Free Download」或「下载」
+   4. 选择「Medium」或「Large」尺寸（1600px 左右最佳）
+
+   **方法 C：使用 Pexels API（自动化，推荐开发者使用）**
+   ```bash
+   # 1. 注册 Pexels 获取免费 API Key: https://www.pexels.com/api/
+   # 2. 使用 API 下载
+   curl -H "Authorization: YOUR_API_KEY" \
+     "https://api.pexels.com/v1/search?query=teotihuacan&per_page=5" \
+     | jq '.photos[].src.large' 
+   ```
+
+5. **自动下载命令（成功率约 30%）**
    ```bash
    cd assets/play/景点slug/
    curl -L -A "Mozilla/5.0" -o hero-01.jpg "图片直接链接"
    ```
+   
+   **如果返回 HTML 文本而非图片**：说明链接被重定向，需手动下载
 
 5. **图片压缩**（必须执行，否则页面会卡顿）
    ```bash
@@ -209,6 +240,24 @@ lsof -ti:3000 | xargs kill -9; npm start
 1. 在浏览器中打开图片页面
 2. 找到"原始文件"或"下载"链接
 3. 复制真正的 `.jpg` 直接链接
+4. **最可靠方法**：直接在浏览器中右键另存为
+
+### Q: 图片重复/与文案不符
+**检查重复**：
+```bash
+# 检查某目录图片是否重复
+cd assets/play/目录名/
+md5 -q *.jpg | sort | uniq -d
+```
+**解决**：
+1. 删除重复图片
+2. 从上述推荐来源手动下载不同角度的照片
+3. 确保每张图片内容与其用途对应：
+   - `hero` = 标志性全景
+   - `geo` = 地理环境
+   - `tour` = 活动/体验
+   - `gallery` = 多角度展示
+   - `wild` = 生态/动植物
 
 ---
 
