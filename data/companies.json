@@ -3271,5 +3271,95 @@
     "summary": "世界第二大天主教朝圣地，年接待 2000 万访客，墨西哥人的精神家园",
     "cover": "/assets/play/guadalupe/hero-01.jpg",
     "href": "/play-guadalupe.html"
+  },
+  {
+    "slug": "play-castillo-chapultepec",
+    "name": "Castillo de Chapultepec 查普尔特佩克城堡",
+    "industry": "玩乐地点",
+    "city": "墨西哥城",
+    "summary": "北美唯一的皇家城堡，国家历史博物馆，俯瞰整个墨西哥城",
+    "cover": "/assets/play/castillo-chapultepec/hero-01.jpg",
+    "href": "/play-castillo-chapultepec.html"
+  },
+  {
+    "slug": "play-torre-latino",
+    "name": "Torre Latinoamericana 拉丁美洲塔",
+    "industry": "玩乐地点",
+    "city": "墨西哥城",
+    "summary": "44层观景台360度俯瞰城市，1985年大地震安然无恙的工程奇迹",
+    "cover": "/assets/play/torre-latino/hero-01.jpg",
+    "href": "/play-torre-latino.html"
+  },
+  {
+    "slug": "play-soumaya",
+    "name": "Museo Soumaya 苏马亚博物馆",
+    "industry": "玩乐地点",
+    "city": "墨西哥城",
+    "summary": "银色未来主义建筑，免费参观罗丹、达利、莫奈等大师作品",
+    "cover": "/assets/play/soumaya/hero-01.jpg",
+    "href": "/play-soumaya.html"
+  },
+  {
+    "slug": "play-arena-mexico",
+    "name": "Arena México 墨西哥竞技场",
+    "industry": "玩乐地点",
+    "city": "墨西哥城",
+    "summary": "体验正宗 Lucha Libre 摔跤，面具、飞跃、热血对决",
+    "cover": "/assets/play/arena-mexico/hero-01.jpg",
+    "href": "/play-arena-mexico.html"
+  },
+  {
+    "slug": "play-templo-mayor",
+    "name": "Templo Mayor 大神庙博物馆",
+    "industry": "玩乐地点",
+    "city": "墨西哥城",
+    "summary": "阿兹特克帝国心脏遗址，1978年意外发现的考古奇迹",
+    "cover": "/assets/play/templo-mayor/hero-01.jpg",
+    "href": "/play-templo-mayor.html"
+  },
+  {
+    "slug": "play-palacio-nacional",
+    "name": "Palacio Nacional 国家宫殿",
+    "industry": "玩乐地点",
+    "city": "墨西哥城",
+    "summary": "免费参观里维拉巨幅壁画《墨西哥历史》，500年权力中心",
+    "cover": "/assets/play/palacio-nacional/hero-01.jpg",
+    "href": "/play-palacio-nacional.html"
+  },
+  {
+    "slug": "play-roma-condesa",
+    "name": "La Roma & Condesa 罗马与孔德萨区",
+    "industry": "玩乐地点",
+    "city": "墨西哥城",
+    "summary": "墨城最时髦街区，新艺术建筑、潮流咖啡馆、文艺青年天堂",
+    "cover": "/assets/play/roma-condesa/hero-01.jpg",
+    "href": "/play-roma-condesa.html"
+  },
+  {
+    "slug": "play-polanco",
+    "name": "Polanco 波兰科区",
+    "industry": "玩乐地点",
+    "city": "墨西哥城",
+    "summary": "墨城最高档街区，奢侈品购物、米其林餐厅、画廊与博物馆",
+    "cover": "/assets/play/polanco/hero-01.jpg",
+    "href": "/play-polanco.html"
+  },
+  {
+    "slug": "play-san-juan",
+    "name": "Mercado de San Juan 圣胡安市场",
+    "industry": "玩乐地点",
+    "city": "墨西哥城",
+    "summary": "美食家天堂，最新鲜海鲜、进口食材、异域肉类，现场品尝",
+    "cover": "/assets/play/san-juan/hero-01.jpg",
+    "href": "/play-san-juan.html"
+  },
+  {
+    "slug": "play-arte-moderno",
+    "name": "Museo de Arte Moderno 现代艺术博物馆",
+    "industry": "玩乐地点",
+    "city": "墨西哥城",
+    "summary": "弗里达《两个弗里达》真迹所在地，墨西哥现代艺术殿堂",
+    "cover": "/assets/play/arte-moderno/hero-01.jpg",
+    "href": "/play-arte-moderno.html"
   }
 ]
