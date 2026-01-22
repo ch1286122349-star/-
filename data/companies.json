@@ -3181,5 +3181,50 @@
     "summary": "450公顷湖面，钓鱼划船野餐，傍晚蝙蝠洞奇观",
     "cover": "/assets/play/presa-la-boca/hero-01.jpg",
     "href": "/play-presa-la-boca.html"
+  },
+  {
+    "slug": "play-teotihuacan",
+    "name": "Teotihuacán 特奥蒂瓦坎",
+    "industry": "玩乐地点",
+    "city": "墨西哥城",
+    "summary": "世界文化遗产，太阳金字塔、月亮金字塔、死亡大道，千年古文明遗址",
+    "cover": "/assets/play/teotihuacan/hero-01.jpg",
+    "href": "/play-teotihuacan.html"
+  },
+  {
+    "slug": "play-antropologia",
+    "name": "Museo Nacional de Antropología 国家人类学博物馆",
+    "industry": "玩乐地点",
+    "city": "墨西哥城",
+    "summary": "世界顶级人类学博物馆，太阳石、奥尔梅克巨石头像，60万件藏品",
+    "cover": "/assets/play/antropologia/hero-01.jpg",
+    "href": "/play-antropologia.html"
+  },
+  {
+    "slug": "play-xochimilco",
+    "name": "Xochimilco 霍奇米尔科",
+    "industry": "玩乐地点",
+    "city": "墨西哥城",
+    "summary": "世界文化遗产，乘坐彩色木船游览古老运河，体验地道墨西哥文化",
+    "cover": "/assets/play/xochimilco/hero-01.jpg",
+    "href": "/play-xochimilco.html"
+  },
+  {
+    "slug": "play-frida-kahlo",
+    "name": "Museo Frida Kahlo 弗里达博物馆",
+    "industry": "玩乐地点",
+    "city": "墨西哥城",
+    "summary": "蓝房子 Casa Azul，传奇女画家弗里达·卡罗的故居，艺术爱好者必去",
+    "cover": "/assets/play/frida-kahlo/hero-01.jpg",
+    "href": "/play-frida-kahlo.html"
+  },
+  {
+    "slug": "play-chapultepec",
+    "name": "Bosque de Chapultepec 查普尔特佩克公园",
+    "industry": "玩乐地点",
+    "city": "墨西哥城",
+    "summary": "西半球最大城市公园，城堡、博物馆、动物园、湖泊，一天玩不完",
+    "cover": "/assets/play/chapultepec/hero-01.jpg",
+    "href": "/play-chapultepec.html"
   }
 ]
