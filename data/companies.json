@@ -3226,5 +3226,50 @@
     "summary": "西半球最大城市公园，城堡、博物馆、动物园、湖泊，一天玩不完",
     "cover": "/assets/play/chapultepec/hero-01.jpg",
     "href": "/play-chapultepec.html"
+  },
+  {
+    "slug": "play-bellas-artes",
+    "name": "Palacio de Bellas Artes 艺术宫",
+    "industry": "玩乐地点",
+    "city": "墨西哥城",
+    "summary": "墨西哥最重要的文化地标，新艺术与装饰艺术风格的完美融合，收藏里维拉等大师壁画",
+    "cover": "/assets/play/bellas-artes/hero-01.jpg",
+    "href": "/play-bellas-artes.html"
+  },
+  {
+    "slug": "play-zocalo",
+    "name": "Zócalo 宪法广场",
+    "industry": "玩乐地点",
+    "city": "墨西哥城",
+    "summary": "墨西哥城的心脏，世界最大广场之一，主教座堂、国家宫殿环绕",
+    "cover": "/assets/play/zocalo/hero-01.jpg",
+    "href": "/play-zocalo.html"
+  },
+  {
+    "slug": "play-coyoacan",
+    "name": "Coyoacán 科约阿坎",
+    "industry": "玩乐地点",
+    "city": "墨西哥城",
+    "summary": "墨西哥城最文艺街区，弗里达故居所在地，鹅卵石街道、彩色房屋、咖啡馆",
+    "cover": "/assets/play/coyoacan/hero-01.jpg",
+    "href": "/play-coyoacan.html"
+  },
+  {
+    "slug": "play-ciudadela",
+    "name": "Mercado de la Ciudadela 工艺品市场",
+    "industry": "玩乐地点",
+    "city": "墨西哥城",
+    "summary": "墨西哥最大工艺品市场，银饰、陶器、纺织品、骷髅头艺术品应有尽有",
+    "cover": "/assets/play/ciudadela/hero-01.jpg",
+    "href": "/play-ciudadela.html"
+  },
+  {
+    "slug": "play-guadalupe",
+    "name": "Basílica de Guadalupe 瓜达卢佩圣母大教堂",
+    "industry": "玩乐地点",
+    "city": "墨西哥城",
+    "summary": "世界第二大天主教朝圣地，年接待 2000 万访客，墨西哥人的精神家园",
+    "cover": "/assets/play/guadalupe/hero-01.jpg",
+    "href": "/play-guadalupe.html"
   }
 ]
