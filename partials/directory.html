@@ -17,12 +17,14 @@
     const data = window.__DIRECTORY_DATA__?.items;
     if (!Array.isArray(data)) return;
 
-    const CITY_ORDER = ['all', '墨西哥城', '蒙特雷', '瓜达拉哈拉'];
+    const CITY_ORDER = ['all', '墨西哥城', '蒙特雷', '瓜达拉哈拉', '坎昆', '瓜纳华托'];
     const CITY_LABELS = new Map([
       ['all', '全部'],
       ['墨西哥城', '墨西哥城'],
       ['蒙特雷', '蒙特雷'],
       ['瓜达拉哈拉', '瓜达拉哈拉'],
+      ['坎昆', '坎昆'],
+      ['瓜纳华托', '瓜纳华托'],
     ]);
     const FOOD_CATEGORIES = ['中餐', '火锅', '面馆', '烧烤', '饮品'];
     const FOOD_INDUSTRY = '餐饮与服务';

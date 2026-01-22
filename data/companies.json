@@ -3451,5 +3451,185 @@
     "summary": "瓜达拉哈拉最时尚的夜生活区，餐厅、酒吧、咖啡馆、街头艺术",
     "cover": "/assets/play/chapultepec-gdl/hero-01.jpg",
     "href": "/play-chapultepec-gdl.html"
+  },
+  {
+    "slug": "play-chichen-itza",
+    "name": "Chichen Itza 奇琴伊察",
+    "industry": "玩乐地点",
+    "city": "坎昆",
+    "summary": "世界新七大奇迹之一，玛雅文明最著名的遗址，库库尔坎金字塔",
+    "cover": "/assets/play/chichen-itza/hero-01.jpg",
+    "href": "/play-chichen-itza.html"
+  },
+  {
+    "slug": "play-tulum",
+    "name": "Tulum 图卢姆",
+    "industry": "玩乐地点",
+    "city": "坎昆",
+    "summary": "加勒比海边的玛雅遗址，唯一建在海边的玛雅古城",
+    "cover": "/assets/play/tulum/hero-01.jpg",
+    "href": "/play-tulum.html"
+  },
+  {
+    "slug": "play-xcaret",
+    "name": "Xcaret 谢卡雷特",
+    "industry": "玩乐地点",
+    "city": "坎昆",
+    "summary": "墨西哥最受欢迎的主题公园，天坑、地下河、玛雅文化表演",
+    "cover": "/assets/play/xcaret/hero-01.jpg",
+    "href": "/play-xcaret.html"
+  },
+  {
+    "slug": "play-isla-mujeres",
+    "name": "Isla Mujeres 女人岛",
+    "industry": "玩乐地点",
+    "city": "坎昆",
+    "summary": "加勒比海小岛，浮潜、海龟、彩色小镇，一日游天堂",
+    "cover": "/assets/play/isla-mujeres/hero-01.jpg",
+    "href": "/play-isla-mujeres.html"
+  },
+  {
+    "slug": "play-coba",
+    "name": "Coba 科巴",
+    "industry": "玩乐地点",
+    "city": "坎昆",
+    "summary": "可以攀爬的玛雅金字塔，丛林中的古老遗址",
+    "cover": "/assets/play/coba/hero-01.jpg",
+    "href": "/play-coba.html"
+  },
+  {
+    "slug": "play-xel-ha",
+    "name": "Xel-Ha 谢尔哈",
+    "industry": "玩乐地点",
+    "city": "坎昆",
+    "summary": "天然水族馆，浮潜、跳水、天坑，水上乐园",
+    "cover": "/assets/play/xel-ha/hero-01.jpg",
+    "href": "/play-xel-ha.html"
+  },
+  {
+    "slug": "play-playa-carmen",
+    "name": "Playa del Carmen 普拉亚德尔卡门",
+    "industry": "玩乐地点",
+    "city": "坎昆",
+    "summary": "坎昆以南的度假小镇，第五大道购物、海滩、夜生活",
+    "cover": "/assets/play/playa-carmen/hero-01.jpg",
+    "href": "/play-playa-carmen.html"
+  },
+  {
+    "slug": "play-cozumel",
+    "name": "Cozumel 科苏梅尔",
+    "industry": "玩乐地点",
+    "city": "坎昆",
+    "summary": "世界顶级潜水胜地，加勒比海第二大岛，珊瑚礁天堂",
+    "cover": "/assets/play/cozumel/hero-01.jpg",
+    "href": "/play-cozumel.html"
+  },
+  {
+    "slug": "play-cancun-beach",
+    "name": "Cancun Beach 坎昆海滩",
+    "industry": "玩乐地点",
+    "city": "坎昆",
+    "summary": "7字形酒店区，加勒比海白沙滩，度假天堂",
+    "cover": "/assets/play/cancun-beach/hero-01.jpg",
+    "href": "/play-cancun-beach.html"
+  },
+  {
+    "slug": "play-el-rey",
+    "name": "El Rey Ruins 埃尔雷伊遗址",
+    "industry": "玩乐地点",
+    "city": "坎昆",
+    "summary": "坎昆酒店区内的玛雅小遗址，蜥蜴、古迹、免费参观",
+    "cover": "/assets/play/el-rey/hero-01.jpg",
+    "href": "/play-el-rey.html"
+  },
+  {
+    "slug": "play-guanajuato-centro",
+    "name": "Guanajuato Centro 瓜纳华托历史中心",
+    "industry": "玩乐地点",
+    "city": "瓜纳华托",
+    "summary": "世界文化遗产，彩色殖民建筑、地下隧道、接吻巷",
+    "cover": "/assets/play/guanajuato-centro/hero-01.jpg",
+    "href": "/play-guanajuato-centro.html"
+  },
+  {
+    "slug": "play-san-miguel",
+    "name": "San Miguel de Allende 圣米格尔德阿连德",
+    "industry": "玩乐地点",
+    "city": "瓜纳华托",
+    "summary": "世界最美小城，粉色大教堂、艺术画廊、外籍社区",
+    "cover": "/assets/play/san-miguel/hero-01.jpg",
+    "href": "/play-san-miguel.html"
+  },
+  {
+    "slug": "play-beso-alley",
+    "name": "Callejón del Beso 接吻巷",
+    "industry": "玩乐地点",
+    "city": "瓜纳华托",
+    "summary": "世界上最窄的街道之一，68厘米宽，情侣必去",
+    "cover": "/assets/play/beso-alley/hero-01.jpg",
+    "href": "/play-beso-alley.html"
+  },
+  {
+    "slug": "play-teatro-juarez",
+    "name": "Teatro Juárez 华雷斯剧院",
+    "industry": "玩乐地点",
+    "city": "瓜纳华托",
+    "summary": "新古典主义歌剧院，瓜纳华托国际艺术节主场",
+    "cover": "/assets/play/teatro-juarez/hero-01.jpg",
+    "href": "/play-teatro-juarez.html"
+  },
+  {
+    "slug": "play-momias",
+    "name": "Museo de las Momias 木乃伊博物馆",
+    "industry": "玩乐地点",
+    "city": "瓜纳华托",
+    "summary": "世界最著名的木乃伊收藏，自然形成的木乃伊，神秘而震撼",
+    "cover": "/assets/play/momias/hero-01.jpg",
+    "href": "/play-momias.html"
+  },
+  {
+    "slug": "play-pipila",
+    "name": "Monumento al Pipila 皮皮拉纪念碑",
+    "industry": "玩乐地点",
+    "city": "瓜纳华托",
+    "summary": "俯瞰瓜纳华托全景的最佳观景点，缆车直达",
+    "cover": "/assets/play/pipila/hero-01.jpg",
+    "href": "/play-pipila.html"
+  },
+  {
+    "slug": "play-parroquia-san-miguel",
+    "name": "Parroquia de San Miguel Arcángel 圣米格尔大教堂",
+    "industry": "玩乐地点",
+    "city": "瓜纳华托",
+    "summary": "粉色新哥特式大教堂，圣米格尔的标志性建筑",
+    "cover": "/assets/play/parroquia-san-miguel/hero-01.jpg",
+    "href": "/play-parroquia-san-miguel.html"
+  },
+  {
+    "slug": "play-jardin-principal",
+    "name": "Jardín Principal 主广场",
+    "industry": "玩乐地点",
+    "city": "瓜纳华托",
+    "summary": "瓜纳华托和圣米格尔的主广场，城市生活的中心",
+    "cover": "/assets/play/jardin-principal/hero-01.jpg",
+    "href": "/play-jardin-principal.html"
+  },
+  {
+    "slug": "play-casa-rivera",
+    "name": "Museo Casa Diego Rivera 迭戈·里维拉故居",
+    "industry": "玩乐地点",
+    "city": "瓜纳华托",
+    "summary": "墨西哥壁画大师迭戈·里维拉的出生地，艺术博物馆",
+    "cover": "/assets/play/casa-rivera/hero-01.jpg",
+    "href": "/play-casa-rivera.html"
+  },
+  {
+    "slug": "play-valenciana",
+    "name": "Mina de la Valenciana 瓦伦西亚纳矿",
+    "industry": "玩乐地点",
+    "city": "瓜纳华托",
+    "summary": "18世纪世界最大银矿，参观地下矿井，了解采矿历史",
+    "cover": "/assets/play/valenciana/hero-01.jpg",
+    "href": "/play-valenciana.html"
   }
 ]
