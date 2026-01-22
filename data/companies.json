@@ -3361,5 +3361,95 @@
     "summary": "弗里达《两个弗里达》真迹所在地，墨西哥现代艺术殿堂",
     "cover": "/assets/play/arte-moderno/hero-01.jpg",
     "href": "/play-arte-moderno.html"
+  },
+  {
+    "slug": "play-catedral-gdl",
+    "name": "Catedral de Guadalajara 瓜达拉哈拉大教堂",
+    "industry": "玩乐地点",
+    "city": "瓜达拉哈拉",
+    "summary": "瓜达拉哈拉地标，双塔新哥特式建筑，收藏瓜达拉哈拉圣母像",
+    "cover": "/assets/play/catedral-gdl/hero-01.jpg",
+    "href": "/play-catedral-gdl.html"
+  },
+  {
+    "slug": "play-tlaquepaque",
+    "name": "Tlaquepaque 特拉克帕克艺术村",
+    "industry": "玩乐地点",
+    "city": "瓜达拉哈拉",
+    "summary": "手工艺品、陶瓷、玻璃制品，殖民建筑与艺术完美融合",
+    "cover": "/assets/play/tlaquepaque/hero-01.jpg",
+    "href": "/play-tlaquepaque.html"
+  },
+  {
+    "slug": "play-tequila",
+    "name": "Tequila 特奎拉镇",
+    "industry": "玩乐地点",
+    "city": "瓜达拉哈拉",
+    "summary": "龙舌兰酒故乡，参观酒庄、品尝特奎拉，体验墨西哥国酒文化",
+    "cover": "/assets/play/tequila/hero-01.jpg",
+    "href": "/play-tequila.html"
+  },
+  {
+    "slug": "play-chapala",
+    "name": "Lake Chapala 查帕拉湖",
+    "industry": "玩乐地点",
+    "city": "瓜达拉哈拉",
+    "summary": "墨西哥最大淡水湖，退休社区、湖景餐厅、水上活动",
+    "cover": "/assets/play/chapala/hero-01.jpg",
+    "href": "/play-chapala.html"
+  },
+  {
+    "slug": "play-cabanas",
+    "name": "Hospicio Cabañas 卡瓦尼亚斯收容所",
+    "industry": "玩乐地点",
+    "city": "瓜达拉哈拉",
+    "summary": "世界文化遗产，奥罗斯科壁画《火人》所在地，新古典主义建筑",
+    "cover": "/assets/play/cabanas/hero-01.jpg",
+    "href": "/play-cabanas.html"
+  },
+  {
+    "slug": "play-degollado",
+    "name": "Teatro Degollado 德戈拉多剧院",
+    "industry": "玩乐地点",
+    "city": "瓜达拉哈拉",
+    "summary": "新古典主义歌剧院，瓜达拉哈拉爱乐乐团主场，建筑精美",
+    "cover": "/assets/play/degollado/hero-01.jpg",
+    "href": "/play-degollado.html"
+  },
+  {
+    "slug": "play-mercado-libertad",
+    "name": "Mercado Libertad 自由市场",
+    "industry": "玩乐地点",
+    "city": "瓜达拉哈拉",
+    "summary": "拉丁美洲最大室内市场，美食、手工艺品、日用品应有尽有",
+    "cover": "/assets/play/mercado-libertad/hero-01.jpg",
+    "href": "/play-mercado-libertad.html"
+  },
+  {
+    "slug": "play-tonala",
+    "name": "Tonalá 托纳拉",
+    "industry": "玩乐地点",
+    "city": "瓜达拉哈拉",
+    "summary": "手工艺品市场，陶瓷、玻璃、木雕，每周四和周日大市集",
+    "cover": "/assets/play/tonala/hero-01.jpg",
+    "href": "/play-tonala.html"
+  },
+  {
+    "slug": "play-zoo-gdl",
+    "name": "Zoológico Guadalajara 瓜达拉哈拉动物园",
+    "industry": "玩乐地点",
+    "city": "瓜达拉哈拉",
+    "summary": "墨西哥最大动物园之一，大熊猫、长颈鹿、非洲动物",
+    "cover": "/assets/play/zoo-gdl/hero-01.jpg",
+    "href": "/play-zoo-gdl.html"
+  },
+  {
+    "slug": "play-chapultepec-gdl",
+    "name": "Avenida Chapultepec 查普尔特佩克大道",
+    "industry": "玩乐地点",
+    "city": "瓜达拉哈拉",
+    "summary": "瓜达拉哈拉最时尚的夜生活区，餐厅、酒吧、咖啡馆、街头艺术",
+    "cover": "/assets/play/chapultepec-gdl/hero-01.jpg",
+    "href": "/play-chapultepec-gdl.html"
   }
 ]
