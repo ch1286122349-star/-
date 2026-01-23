@@ -1348,6 +1348,23 @@
     "category": "火锅"
   },
   {
+    "slug": "kawaiyou-boba-mty",
+    "name": "Kawaiyou Boba 可爱优",
+    "industry": "餐饮与服务",
+    "city": "蒙特雷",
+    "summary": "评分 4.5（44） · 火锅",
+    "contact": "暂未提供",
+    "cover": "/image/place-photos/kawaiyou-boba-mty.jpg",
+    "placeId": "kawaiyou-boba-mty",
+    "mapLink": "https://maps.app.goo.gl/uXnQfDnB8uZo9j7A8",
+    "mapQuery": "Kawaiyou Boba Tapioca DimSum HotPot Monterrey",
+    "lat": 25.6511028,
+    "lng": -100.3744502,
+    "category": "火锅",
+    "phone": "81 3078 8863",
+    "address": "Bosques de Siberia 50-L-35, Bosques del Valle 1er Sector, 66250 San Pedro Garza García, N.L."
+  },
+  {
     "slug": "yibin-ranmian-mty",
     "name": "宜宾燃面",
     "industry": "餐饮与服务",
@@ -3054,7 +3071,9 @@
     "city": "蒙特雷",
     "summary": "La Huasteca 国家公园，独特地质与平行岭谷，墨西哥最奇伟的山体之一",
     "cover": "/assets/play/nido-02.jpg",
-    "href": "/play-nido.html"
+    "href": "/play-nido.html",
+    "lat": 25.6419,
+    "lng": -100.4553
   },
   {
     "slug": "play-cerro-de-la-silla",
@@ -3063,7 +3082,9 @@
     "city": "蒙特雷",
     "summary": "蒙特雷人最爱的日常徒步地标，登顶 Las Antenas Peak",
     "cover": "/assets/play/cerro-de-la-silla/hero-01.jpg",
-    "href": "/play-cerro-de-la-silla.html"
+    "href": "/play-cerro-de-la-silla.html",
+    "lat": 25.6275,
+    "lng": -100.2356
   },
   {
     "slug": "play-el-potrero-chico",
@@ -3072,7 +3093,9 @@
     "city": "蒙特雷",
     "summary": "墨西哥 EPC 多段运动攀体验，十月岩季、approach 极短",
     "cover": "/assets/play/el-potrero-chico/hero-01.jpg",
-    "href": "/play-el-potrero-chico.html"
+    "href": "/play-el-potrero-chico.html",
+    "lat": 25.9561,
+    "lng": -100.4697
   },
   {
     "slug": "play-la-estanzuela",
@@ -3081,7 +3104,9 @@
     "city": "蒙特雷",
     "summary": "周末徒步公园，60 比索线路，小瀑布与溪水一路相伴",
     "cover": "/assets/play/la-estanzuela/hero-01.jpg",
-    "href": "/play-la-estanzuela.html"
+    "href": "/play-la-estanzuela.html",
+    "lat": 25.5983,
+    "lng": -100.3556
   },
   {
     "slug": "play-grutas-de-garcia",
@@ -3090,7 +3115,9 @@
     "city": "蒙特雷",
     "summary": "5000万年历史溶洞，缆车上山，钟乳石与史前海洋化石",
     "cover": "/assets/play/grutas-de-garcia/hero-01.jpg",
-    "href": "/play-grutas-de-garcia.html"
+    "href": "/play-grutas-de-garcia.html",
+    "lat": 25.7833,
+    "lng": -100.55
   },
   {
     "slug": "play-cola-de-caballo",
@@ -3099,7 +3126,9 @@
     "city": "蒙特雷",
     "summary": "25米森林瀑布，轻松徒步，适合全家出游",
     "cover": "/assets/play/cola-de-caballo/hero-01.jpg",
-    "href": "/play-cola-de-caballo.html"
+    "href": "/play-cola-de-caballo.html",
+    "lat": 25.3667,
+    "lng": -100.15
   },
   {
     "slug": "play-chipinque",
@@ -3108,7 +3137,9 @@
     "city": "蒙特雷",
     "summary": "市区近郊天然氧吧，森林步道与城市全景，全家户外首选",
     "cover": "/assets/play/chipinque/hero-01.jpg",
-    "href": "/play-chipinque.html"
+    "href": "/play-chipinque.html",
+    "lat": 25.6167,
+    "lng": -100.3667
   },
   {
     "slug": "play-cerro-de-las-mitras",
@@ -3117,7 +3148,9 @@
     "city": "蒙特雷",
     "summary": "硬核登山挑战，废弃矿洞探险，2060米山顶俯瞰全城",
     "cover": "/assets/play/cerro-de-las-mitras/hero-01.jpg",
-    "href": "/play-cerro-de-las-mitras.html"
+    "href": "/play-cerro-de-las-mitras.html",
+    "lat": 25.7,
+    "lng": -100.4167
   },
   {
     "slug": "play-fundidora",
@@ -3126,7 +3159,9 @@
     "city": "蒙特雷",
     "summary": "百年钢铁厂遗址变身城市绿洲，144公顷工业遗产公园",
     "cover": "/assets/play/fundidora/hero-01.jpg",
-    "href": "/play-fundidora.html"
+    "href": "/play-fundidora.html",
+    "lat": 25.6783,
+    "lng": -100.2839
   },
   {
     "slug": "play-macroplaza",
@@ -3135,7 +3170,9 @@
     "city": "蒙特雷",
     "summary": "40公顷墨西哥最大城市广场，Faro del Comercio夜间激光",
     "cover": "/assets/play/macroplaza/hero-01.jpg",
-    "href": "/play-macroplaza.html"
+    "href": "/play-macroplaza.html",
+    "lat": 25.6692,
+    "lng": -100.3094
   },
   {
     "slug": "play-museo-historia-mexicana",
@@ -3144,7 +3181,9 @@
     "city": "蒙特雷",
     "summary": "13000件藏品，从前哥伦布时代到现代墨西哥四千年历史",
     "cover": "/assets/play/museo-historia-mexicana/hero-01.jpg",
-    "href": "/play-museo-historia-mexicana.html"
+    "href": "/play-museo-historia-mexicana.html",
+    "lat": 25.6697,
+    "lng": -100.3069
   },
   {
     "slug": "play-paseo-santa-lucia",
@@ -3153,7 +3192,9 @@
     "city": "蒙特雷",
     "summary": "2.5公里人工运河，乘船游览或河畔漫步，24座喷泉",
     "cover": "/assets/play/paseo-santa-lucia/hero-01.jpg",
-    "href": "/play-paseo-santa-lucia.html"
+    "href": "/play-paseo-santa-lucia.html",
+    "lat": 25.6722,
+    "lng": -100.3028
   },
   {
     "slug": "play-bioparque-estrella",
@@ -3162,7 +3203,9 @@
     "city": "蒙特雷",
     "summary": "270公顷非洲风情野生动物园，Safari近距离接触长颈鹿",
     "cover": "/assets/play/bioparque-estrella/hero-01.jpg",
-    "href": "/play-bioparque-estrella.html"
+    "href": "/play-bioparque-estrella.html",
+    "lat": 25.5833,
+    "lng": -99.9833
   },
   {
     "slug": "play-matacanes",
@@ -3171,7 +3214,9 @@
     "city": "蒙特雷",
     "summary": "墨西哥顶级溯溪探险，30米瀑布速降，8-12小时极限挑战",
     "cover": "/assets/play/matacanes/hero-01.jpg",
-    "href": "/play-matacanes.html"
+    "href": "/play-matacanes.html",
+    "lat": 25.2167,
+    "lng": -100.1333
   },
   {
     "slug": "play-presa-la-boca",
@@ -3180,7 +3225,9 @@
     "city": "蒙特雷",
     "summary": "450公顷湖面，钓鱼划船野餐，傍晚蝙蝠洞奇观",
     "cover": "/assets/play/presa-la-boca/hero-01.jpg",
-    "href": "/play-presa-la-boca.html"
+    "href": "/play-presa-la-boca.html",
+    "lat": 25.4333,
+    "lng": -100.1333
   },
   {
     "slug": "play-teotihuacan",
@@ -3189,7 +3236,9 @@
     "city": "墨西哥城",
     "summary": "世界文化遗产，太阳金字塔、月亮金字塔、死亡大道，千年古文明遗址",
     "cover": "/assets/play/teotihuacan/hero-01.jpg",
-    "href": "/play-teotihuacan.html"
+    "href": "/play-teotihuacan.html",
+    "lat": 19.6925,
+    "lng": -98.8438
   },
   {
     "slug": "play-antropologia",
@@ -3198,7 +3247,9 @@
     "city": "墨西哥城",
     "summary": "世界顶级人类学博物馆，太阳石、奥尔梅克巨石头像，60万件藏品",
     "cover": "/assets/play/antropologia/hero-01.jpg",
-    "href": "/play-antropologia.html"
+    "href": "/play-antropologia.html",
+    "lat": 19.426,
+    "lng": -99.1863
   },
   {
     "slug": "play-xochimilco",
@@ -3207,7 +3258,9 @@
     "city": "墨西哥城",
     "summary": "世界文化遗产，乘坐彩色木船游览古老运河，体验地道墨西哥文化",
     "cover": "/assets/play/xochimilco/hero-01.jpg",
-    "href": "/play-xochimilco.html"
+    "href": "/play-xochimilco.html",
+    "lat": 19.2578,
+    "lng": -99.1039
   },
   {
     "slug": "play-frida-kahlo",
@@ -3216,7 +3269,9 @@
     "city": "墨西哥城",
     "summary": "蓝房子 Casa Azul，传奇女画家弗里达·卡罗的故居，艺术爱好者必去",
     "cover": "/assets/play/frida-kahlo/hero-01.jpg",
-    "href": "/play-frida-kahlo.html"
+    "href": "/play-frida-kahlo.html",
+    "lat": 19.355,
+    "lng": -99.1626
   },
   {
     "slug": "play-chapultepec",
@@ -3225,7 +3280,9 @@
     "city": "墨西哥城",
     "summary": "西半球最大城市公园，城堡、博物馆、动物园、湖泊，一天玩不完",
     "cover": "/assets/play/chapultepec/hero-01.jpg",
-    "href": "/play-chapultepec.html"
+    "href": "/play-chapultepec.html",
+    "lat": 19.4204,
+    "lng": -99.1893
   },
   {
     "slug": "play-bellas-artes",
@@ -3234,7 +3291,9 @@
     "city": "墨西哥城",
     "summary": "墨西哥最重要的文化地标，新艺术与装饰艺术风格的完美融合，收藏里维拉等大师壁画",
     "cover": "/assets/play/bellas-artes/hero-01.jpg",
-    "href": "/play-bellas-artes.html"
+    "href": "/play-bellas-artes.html",
+    "lat": 19.4352,
+    "lng": -99.1412
   },
   {
     "slug": "play-zocalo",
@@ -3243,7 +3302,9 @@
     "city": "墨西哥城",
     "summary": "墨西哥城的心脏，世界最大广场之一，主教座堂、国家宫殿环绕",
     "cover": "/assets/play/zocalo/hero-01.jpg",
-    "href": "/play-zocalo.html"
+    "href": "/play-zocalo.html",
+    "lat": 19.4326,
+    "lng": -99.1332
   },
   {
     "slug": "play-coyoacan",
@@ -3252,7 +3313,9 @@
     "city": "墨西哥城",
     "summary": "墨西哥城最文艺街区，弗里达故居所在地，鹅卵石街道、彩色房屋、咖啡馆",
     "cover": "/assets/play/coyoacan/hero-01.jpg",
-    "href": "/play-coyoacan.html"
+    "href": "/play-coyoacan.html",
+    "lat": 19.35,
+    "lng": -99.1617
   },
   {
     "slug": "play-ciudadela",
@@ -3261,7 +3324,9 @@
     "city": "墨西哥城",
     "summary": "墨西哥最大工艺品市场，银饰、陶器、纺织品、骷髅头艺术品应有尽有",
     "cover": "/assets/play/ciudadela/hero-01.jpg",
-    "href": "/play-ciudadela.html"
+    "href": "/play-ciudadela.html",
+    "lat": 19.4269,
+    "lng": -99.1444
   },
   {
     "slug": "play-guadalupe",
@@ -3270,7 +3335,9 @@
     "city": "墨西哥城",
     "summary": "世界第二大天主教朝圣地，年接待 2000 万访客，墨西哥人的精神家园",
     "cover": "/assets/play/guadalupe/hero-01.jpg",
-    "href": "/play-guadalupe.html"
+    "href": "/play-guadalupe.html",
+    "lat": 19.4847,
+    "lng": -99.1172
   },
   {
     "slug": "play-castillo-chapultepec",
@@ -3279,7 +3346,9 @@
     "city": "墨西哥城",
     "summary": "北美唯一的皇家城堡，国家历史博物馆，俯瞰整个墨西哥城",
     "cover": "/assets/play/castillo-chapultepec/hero-01.jpg",
-    "href": "/play-castillo-chapultepec.html"
+    "href": "/play-castillo-chapultepec.html",
+    "lat": 19.4206,
+    "lng": -99.1817
   },
   {
     "slug": "play-torre-latino",
@@ -3288,7 +3357,9 @@
     "city": "墨西哥城",
     "summary": "44层观景台360度俯瞰城市，1985年大地震安然无恙的工程奇迹",
     "cover": "/assets/play/torre-latino/hero-01.jpg",
-    "href": "/play-torre-latino.html"
+    "href": "/play-torre-latino.html",
+    "lat": 19.4339,
+    "lng": -99.1406
   },
   {
     "slug": "play-soumaya",
@@ -3297,7 +3368,9 @@
     "city": "墨西哥城",
     "summary": "银色未来主义建筑，免费参观罗丹、达利、莫奈等大师作品",
     "cover": "/assets/play/soumaya/hero-01.jpg",
-    "href": "/play-soumaya.html"
+    "href": "/play-soumaya.html",
+    "lat": 19.4403,
+    "lng": -99.2056
   },
   {
     "slug": "play-arena-mexico",
@@ -3306,7 +3379,9 @@
     "city": "墨西哥城",
     "summary": "体验正宗 Lucha Libre 摔跤，面具、飞跃、热血对决",
     "cover": "/assets/play/arena-mexico/hero-01.jpg",
-    "href": "/play-arena-mexico.html"
+    "href": "/play-arena-mexico.html",
+    "lat": 19.4261,
+    "lng": -99.1547
   },
   {
     "slug": "play-templo-mayor",
@@ -3315,7 +3390,9 @@
     "city": "墨西哥城",
     "summary": "阿兹特克帝国心脏遗址，1978年意外发现的考古奇迹",
     "cover": "/assets/play/templo-mayor/hero-01.jpg",
-    "href": "/play-templo-mayor.html"
+    "href": "/play-templo-mayor.html",
+    "lat": 19.435,
+    "lng": -99.1317
   },
   {
     "slug": "play-palacio-nacional",
@@ -3324,7 +3401,9 @@
     "city": "墨西哥城",
     "summary": "免费参观里维拉巨幅壁画《墨西哥历史》，500年权力中心",
     "cover": "/assets/play/palacio-nacional/hero-01.jpg",
-    "href": "/play-palacio-nacional.html"
+    "href": "/play-palacio-nacional.html",
+    "lat": 19.4325,
+    "lng": -99.1311
   },
   {
     "slug": "play-roma-condesa",
@@ -3333,7 +3412,9 @@
     "city": "墨西哥城",
     "summary": "墨城最时髦街区，新艺术建筑、潮流咖啡馆、文艺青年天堂",
     "cover": "/assets/play/roma-condesa/hero-01.jpg",
-    "href": "/play-roma-condesa.html"
+    "href": "/play-roma-condesa.html",
+    "lat": 19.4119,
+    "lng": -99.1731
   },
   {
     "slug": "play-polanco",
@@ -3342,7 +3423,9 @@
     "city": "墨西哥城",
     "summary": "墨城最高档街区，奢侈品购物、米其林餐厅、画廊与博物馆",
     "cover": "/assets/play/polanco/hero-01.jpg",
-    "href": "/play-polanco.html"
+    "href": "/play-polanco.html",
+    "lat": 19.4333,
+    "lng": -99.1972
   },
   {
     "slug": "play-san-juan",
@@ -3351,7 +3434,9 @@
     "city": "墨西哥城",
     "summary": "美食家天堂，最新鲜海鲜、进口食材、异域肉类，现场品尝",
     "cover": "/assets/play/san-juan/hero-01.jpg",
-    "href": "/play-san-juan.html"
+    "href": "/play-san-juan.html",
+    "lat": 19.4264,
+    "lng": -99.1422
   },
   {
     "slug": "play-arte-moderno",
@@ -3360,7 +3445,9 @@
     "city": "墨西哥城",
     "summary": "弗里达《两个弗里达》真迹所在地，墨西哥现代艺术殿堂",
     "cover": "/assets/play/arte-moderno/hero-01.jpg",
-    "href": "/play-arte-moderno.html"
+    "href": "/play-arte-moderno.html",
+    "lat": 19.4194,
+    "lng": -99.1797
   },
   {
     "slug": "play-catedral-gdl",
@@ -3369,7 +3456,9 @@
     "city": "瓜达拉哈拉",
     "summary": "瓜达拉哈拉地标，双塔新哥特式建筑，收藏瓜达拉哈拉圣母像",
     "cover": "/assets/play/catedral-gdl/hero-01.jpg",
-    "href": "/play-catedral-gdl.html"
+    "href": "/play-catedral-gdl.html",
+    "lat": 20.6736,
+    "lng": -103.3433
   },
   {
     "slug": "play-tlaquepaque",
@@ -3378,7 +3467,9 @@
     "city": "瓜达拉哈拉",
     "summary": "手工艺品、陶瓷、玻璃制品，殖民建筑与艺术完美融合",
     "cover": "/assets/play/tlaquepaque/hero-01.jpg",
-    "href": "/play-tlaquepaque.html"
+    "href": "/play-tlaquepaque.html",
+    "lat": 20.64,
+    "lng": -103.31
   },
   {
     "slug": "play-tequila",
@@ -3387,7 +3478,9 @@
     "city": "瓜达拉哈拉",
     "summary": "龙舌兰酒故乡，参观酒庄、品尝特奎拉，体验墨西哥国酒文化",
     "cover": "/assets/play/tequila/hero-01.jpg",
-    "href": "/play-tequila.html"
+    "href": "/play-tequila.html",
+    "lat": 20.8819,
+    "lng": -103.8367
   },
   {
     "slug": "play-chapala",
@@ -3396,7 +3489,9 @@
     "city": "瓜达拉哈拉",
     "summary": "墨西哥最大淡水湖，退休社区、湖景餐厅、水上活动",
     "cover": "/assets/play/chapala/hero-01.jpg",
-    "href": "/play-chapala.html"
+    "href": "/play-chapala.html",
+    "lat": 20.2958,
+    "lng": -103.1917
   },
   {
     "slug": "play-cabanas",
@@ -3405,7 +3500,9 @@
     "city": "瓜达拉哈拉",
     "summary": "世界文化遗产，奥罗斯科壁画《火人》所在地，新古典主义建筑",
     "cover": "/assets/play/cabanas/hero-01.jpg",
-    "href": "/play-cabanas.html"
+    "href": "/play-cabanas.html",
+    "lat": 20.6731,
+    "lng": -103.3392
   },
   {
     "slug": "play-degollado",
@@ -3414,7 +3511,9 @@
     "city": "瓜达拉哈拉",
     "summary": "新古典主义歌剧院，瓜达拉哈拉爱乐乐团主场，建筑精美",
     "cover": "/assets/play/degollado/hero-01.jpg",
-    "href": "/play-degollado.html"
+    "href": "/play-degollado.html",
+    "lat": 20.6739,
+    "lng": -103.3447
   },
   {
     "slug": "play-mercado-libertad",
@@ -3423,7 +3522,9 @@
     "city": "瓜达拉哈拉",
     "summary": "拉丁美洲最大室内市场，美食、手工艺品、日用品应有尽有",
     "cover": "/assets/play/mercado-libertad/hero-01.jpg",
-    "href": "/play-mercado-libertad.html"
+    "href": "/play-mercado-libertad.html",
+    "lat": 20.6722,
+    "lng": -103.3333
   },
   {
     "slug": "play-tonala",
@@ -3432,7 +3533,9 @@
     "city": "瓜达拉哈拉",
     "summary": "手工艺品市场，陶瓷、玻璃、木雕，每周四和周日大市集",
     "cover": "/assets/play/tonala/hero-01.jpg",
-    "href": "/play-tonala.html"
+    "href": "/play-tonala.html",
+    "lat": 20.625,
+    "lng": -103.2333
   },
   {
     "slug": "play-zoo-gdl",
@@ -3441,7 +3544,9 @@
     "city": "瓜达拉哈拉",
     "summary": "墨西哥最大动物园之一，大熊猫、长颈鹿、非洲动物",
     "cover": "/assets/play/zoo-gdl/hero-01.jpg",
-    "href": "/play-zoo-gdl.html"
+    "href": "/play-zoo-gdl.html",
+    "lat": 20.7333,
+    "lng": -103.3167
   },
   {
     "slug": "play-chapultepec-gdl",
@@ -3450,7 +3555,9 @@
     "city": "瓜达拉哈拉",
     "summary": "瓜达拉哈拉最时尚的夜生活区，餐厅、酒吧、咖啡馆、街头艺术",
     "cover": "/assets/play/chapultepec-gdl/hero-01.jpg",
-    "href": "/play-chapultepec-gdl.html"
+    "href": "/play-chapultepec-gdl.html",
+    "lat": 20.6833,
+    "lng": -103.3667
   },
   {
     "slug": "play-chichen-itza",
@@ -3459,7 +3566,9 @@
     "city": "坎昆",
     "summary": "世界新七大奇迹之一，玛雅文明最著名的遗址，库库尔坎金字塔",
     "cover": "/assets/play/chichen-itza/hero-01.jpg",
-    "href": "/play-chichen-itza.html"
+    "href": "/play-chichen-itza.html",
+    "lat": 20.6843,
+    "lng": -88.5678
   },
   {
     "slug": "play-tulum",
@@ -3468,7 +3577,9 @@
     "city": "坎昆",
     "summary": "加勒比海边的玛雅遗址，唯一建在海边的玛雅古城",
     "cover": "/assets/play/tulum/hero-01.jpg",
-    "href": "/play-tulum.html"
+    "href": "/play-tulum.html",
+    "lat": 20.2144,
+    "lng": -87.4292
   },
   {
     "slug": "play-xcaret",
@@ -3477,7 +3588,9 @@
     "city": "坎昆",
     "summary": "墨西哥最受欢迎的主题公园，天坑、地下河、玛雅文化表演",
     "cover": "/assets/play/xcaret/hero-01.jpg",
-    "href": "/play-xcaret.html"
+    "href": "/play-xcaret.html",
+    "lat": 20.58,
+    "lng": -87.12
   },
   {
     "slug": "play-isla-mujeres",
@@ -3486,7 +3599,9 @@
     "city": "坎昆",
     "summary": "加勒比海小岛，浮潜、海龟、彩色小镇，一日游天堂",
     "cover": "/assets/play/isla-mujeres/hero-01.jpg",
-    "href": "/play-isla-mujeres.html"
+    "href": "/play-isla-mujeres.html",
+    "lat": 21.2319,
+    "lng": -86.7311
   },
   {
     "slug": "play-coba",
@@ -3495,7 +3610,9 @@
     "city": "坎昆",
     "summary": "可以攀爬的玛雅金字塔，丛林中的古老遗址",
     "cover": "/assets/play/coba/hero-01.jpg",
-    "href": "/play-coba.html"
+    "href": "/play-coba.html",
+    "lat": 20.4944,
+    "lng": -87.7361
   },
   {
     "slug": "play-xel-ha",
@@ -3504,7 +3621,9 @@
     "city": "坎昆",
     "summary": "天然水族馆，浮潜、跳水、天坑，水上乐园",
     "cover": "/assets/play/xel-ha/hero-01.jpg",
-    "href": "/play-xel-ha.html"
+    "href": "/play-xel-ha.html",
+    "lat": 20.3167,
+    "lng": -87.3583
   },
   {
     "slug": "play-playa-carmen",
@@ -3513,7 +3632,9 @@
     "city": "坎昆",
     "summary": "坎昆以南的度假小镇，第五大道购物、海滩、夜生活",
     "cover": "/assets/play/playa-carmen/hero-01.jpg",
-    "href": "/play-playa-carmen.html"
+    "href": "/play-playa-carmen.html",
+    "lat": 20.6296,
+    "lng": -87.0739
   },
   {
     "slug": "play-cozumel",
@@ -3522,7 +3643,9 @@
     "city": "坎昆",
     "summary": "世界顶级潜水胜地，加勒比海第二大岛，珊瑚礁天堂",
     "cover": "/assets/play/cozumel/hero-01.jpg",
-    "href": "/play-cozumel.html"
+    "href": "/play-cozumel.html",
+    "lat": 20.423,
+    "lng": -86.9223
   },
   {
     "slug": "play-cancun-beach",
@@ -3531,7 +3654,9 @@
     "city": "坎昆",
     "summary": "7字形酒店区，加勒比海白沙滩，度假天堂",
     "cover": "/assets/play/cancun-beach/hero-01.jpg",
-    "href": "/play-cancun-beach.html"
+    "href": "/play-cancun-beach.html",
+    "lat": 21.1619,
+    "lng": -86.8515
   },
   {
     "slug": "play-el-rey",
@@ -3540,7 +3665,9 @@
     "city": "坎昆",
     "summary": "坎昆酒店区内的玛雅小遗址，蜥蜴、古迹、免费参观",
     "cover": "/assets/play/el-rey/hero-01.jpg",
-    "href": "/play-el-rey.html"
+    "href": "/play-el-rey.html",
+    "lat": 21.0833,
+    "lng": -86.7833
   },
   {
     "slug": "play-guanajuato-centro",
@@ -3549,7 +3676,9 @@
     "city": "瓜纳华托",
     "summary": "世界文化遗产，彩色殖民建筑、地下隧道、接吻巷",
     "cover": "/assets/play/guanajuato-centro/hero-01.jpg",
-    "href": "/play-guanajuato-centro.html"
+    "href": "/play-guanajuato-centro.html",
+    "lat": 21.019,
+    "lng": -101.2574
   },
   {
     "slug": "play-san-miguel",
@@ -3558,7 +3687,9 @@
     "city": "瓜纳华托",
     "summary": "世界最美小城，粉色大教堂、艺术画廊、外籍社区",
     "cover": "/assets/play/san-miguel/hero-01.jpg",
-    "href": "/play-san-miguel.html"
+    "href": "/play-san-miguel.html",
+    "lat": 20.9144,
+    "lng": -100.7453
   },
   {
     "slug": "play-beso-alley",
@@ -3567,7 +3698,9 @@
     "city": "瓜纳华托",
     "summary": "世界上最窄的街道之一，68厘米宽，情侣必去",
     "cover": "/assets/play/beso-alley/hero-01.jpg",
-    "href": "/play-beso-alley.html"
+    "href": "/play-beso-alley.html",
+    "lat": 21.0181,
+    "lng": -101.2561
   },
   {
     "slug": "play-teatro-juarez",
@@ -3576,7 +3709,9 @@
     "city": "瓜纳华托",
     "summary": "新古典主义歌剧院，瓜纳华托国际艺术节主场",
     "cover": "/assets/play/teatro-juarez/hero-01.jpg",
-    "href": "/play-teatro-juarez.html"
+    "href": "/play-teatro-juarez.html",
+    "lat": 21.0183,
+    "lng": -101.2539
   },
   {
     "slug": "play-momias",
@@ -3585,7 +3720,9 @@
     "city": "瓜纳华托",
     "summary": "世界最著名的木乃伊收藏，自然形成的木乃伊，神秘而震撼",
     "cover": "/assets/play/momias/hero-01.jpg",
-    "href": "/play-momias.html"
+    "href": "/play-momias.html",
+    "lat": 21.0278,
+    "lng": -101.2639
   },
   {
     "slug": "play-pipila",
@@ -3594,7 +3731,9 @@
     "city": "瓜纳华托",
     "summary": "俯瞰瓜纳华托全景的最佳观景点，缆车直达",
     "cover": "/assets/play/pipila/hero-01.jpg",
-    "href": "/play-pipila.html"
+    "href": "/play-pipila.html",
+    "lat": 21.0153,
+    "lng": -101.2519
   },
   {
     "slug": "play-parroquia-san-miguel",
@@ -3603,7 +3742,9 @@
     "city": "瓜纳华托",
     "summary": "粉色新哥特式大教堂，圣米格尔的标志性建筑",
     "cover": "/assets/play/parroquia-san-miguel/hero-01.jpg",
-    "href": "/play-parroquia-san-miguel.html"
+    "href": "/play-parroquia-san-miguel.html",
+    "lat": 20.9147,
+    "lng": -100.745
   },
   {
     "slug": "play-jardin-principal",
@@ -3612,7 +3753,9 @@
     "city": "瓜纳华托",
     "summary": "瓜纳华托和圣米格尔的主广场，城市生活的中心",
     "cover": "/assets/play/jardin-principal/hero-01.jpg",
-    "href": "/play-jardin-principal.html"
+    "href": "/play-jardin-principal.html",
+    "lat": 20.9144,
+    "lng": -100.7456
   },
   {
     "slug": "play-casa-rivera",
@@ -3621,7 +3764,9 @@
     "city": "瓜纳华托",
     "summary": "墨西哥壁画大师迭戈·里维拉的出生地，艺术博物馆",
     "cover": "/assets/play/casa-rivera/hero-01.jpg",
-    "href": "/play-casa-rivera.html"
+    "href": "/play-casa-rivera.html",
+    "lat": 21.0183,
+    "lng": -101.2556
   },
   {
     "slug": "play-valenciana",
@@ -3630,6 +3775,8 @@
     "city": "瓜纳华托",
     "summary": "18世纪世界最大银矿，参观地下矿井，了解采矿历史",
     "cover": "/assets/play/valenciana/hero-01.jpg",
-    "href": "/play-valenciana.html"
+    "href": "/play-valenciana.html",
+    "lat": 21.05,
+    "lng": -101.2667
   }
 ]

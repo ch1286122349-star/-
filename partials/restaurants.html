@@ -234,5 +234,16 @@
         });
       });
     });
+
+    // 页面加载时自动获取位置并显示距离
+    getLocation()
+      .then((location) => {
+        citySections.forEach((section) => {
+          setDistances(section, location);
+        });
+      })
+      .catch((err) => {
+        console.warn('无法自动获取位置信息:', err.message || err);
+      });
   })();
 </script>

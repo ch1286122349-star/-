@@ -97,6 +97,7 @@
       tab: normalizeTab(params.get('tab') || 'restaurants'),
       city: normalizeCity(params.get('city') || 'all'),
       category: 'all',
+      sortByDistance: false,
     };
 
     const updateUrl = () => {
@@ -120,6 +121,36 @@
       return data.filter((item) => item.industry === tab.industry);
     };
 
+    // 距离计算工具函数
+    const toRad = (value) => (value * Math.PI) / 180;
+    const haversineKm = (lat1, lng1, lat2, lng2) => {
+      const dLat = toRad(lat2 - lat1);
+      const dLng = toRad(lng2 - lng1);
+      const a = Math.sin(dLat / 2) ** 2
+        + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLng / 2) ** 2;
+      return 6371 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    };
+
+    const formatDistance = (km) => {
+      if (!Number.isFinite(km)) return '';
+      if (km < 1) return `${Math.round(km * 1000)} m`;
+      if (km < 10) return `${km.toFixed(1)} km`;
+      return `${Math.round(km)} km`;
+    };
+
+    // 从 localStorage 读取缓存的位置
+    const LOCATION_CACHE_KEY = 'mx-user-location';
+    let cachedLocation = null;
+    try {
+      const stored = localStorage.getItem(LOCATION_CACHE_KEY);
+      if (stored) {
+        const parsed = JSON.parse(stored);
+        if (parsed && Number.isFinite(parsed.lat) && Number.isFinite(parsed.lng)) {
+          cachedLocation = parsed;
+        }
+      }
+    } catch (e) {}
+
     const filterItemsByCity = (items) => (
       state.city === 'all'
         ? items
@@ -127,10 +158,23 @@
     );
 
     const filterItems = (items) => {
-      const byCity = filterItemsByCity(items);
+      let result = filterItemsByCity(items);
       const tab = getTabConfig();
-      if (!tab.hasCategory || state.category === 'all') return byCity;
-      return byCity.filter((item) => item.category === state.category);
+      if (tab.hasCategory && state.category !== 'all') {
+        result = result.filter((item) => item.category === state.category);
+      }
+      // 按距离排序
+      if (state.sortByDistance && cachedLocation) {
+        result = result.map((item) => {
+          const lat = Number(item.lat);
+          const lng = Number(item.lng);
+          const distance = Number.isFinite(lat) && Number.isFinite(lng)
+            ? haversineKm(cachedLocation.lat, cachedLocation.lng, lat, lng)
+            : Infinity;
+          return { ...item, _distance: distance };
+        }).sort((a, b) => a._distance - b._distance);
+      }
+      return result;
     };
 
     const buildCityCounts = (items) => {
@@ -219,13 +263,24 @@
       const tab = getTabConfig();
       const label = CITY_LABELS.get(state.city) || state.city;
       const unit = tab.id === 'play' ? '条' : '家';
+      const showSort = !tab.isStatic && items.length > 1;
       metaEl.innerHTML = (
+        `<div class="directory-meta__left">` +
         `<div class="directory-meta__title">${tab.label}</div>` +
+        (showSort ? `<button class="directory-sort-btn${state.sortByDistance ? ' is-active' : ''}" type="button" data-sort-distance>离我最近</button>` : '') +
+        `</div>` +
         `<div class="directory-meta__info">` +
         `<span class="directory-chip">${label}</span>` +
         `<span class="directory-chip">${items.length} ${unit}</span>` +
         `</div>`
       );
+      const sortBtn = metaEl.querySelector('[data-sort-distance]');
+      if (sortBtn) {
+        sortBtn.addEventListener('click', () => {
+          state.sortByDistance = !state.sortByDistance;
+          render();
+        });
+      }
     };
 
     const renderCard = (item) => {
@@ -237,10 +292,16 @@
       const desc = item.summary || '欢迎了解更多详情。';
       const safeSlug = encodeURIComponent(item.slug || '');
       const href = item.href ? String(item.href) : `/company/${safeSlug}`;
+      const lat = Number(item.lat);
+      const lng = Number(item.lng);
+      const coordsAttr = Number.isFinite(lat) && Number.isFinite(lng)
+        ? ` data-lat="${lat}" data-lng="${lng}"`
+        : '';
       return (
-        `<a class="company-card company-link${coverClass}" href="${href}"${coverStyle}>` +
+        `<a class="company-card company-link${coverClass}" href="${href}"${coverStyle}${coordsAttr}>` +
         `<h4>${item.name}</h4>` +
         `<p class="company-desc">${desc}</p>` +
+        `<div class="company-distance" data-distance hidden></div>` +
         `</a>`
       );
     };
@@ -267,6 +328,23 @@
       gridEl.innerHTML = list.map(renderCard).join('');
     };
 
+    // 显示卡片上的距离信息
+    const setDistances = () => {
+      if (!cachedLocation) return;
+      const cards = Array.from(gridEl.querySelectorAll('.company-card[data-lat][data-lng]'));
+      cards.forEach((card) => {
+        const lat = Number.parseFloat(card.dataset.lat);
+        const lng = Number.parseFloat(card.dataset.lng);
+        if (!Number.isFinite(lat) || !Number.isFinite(lng)) return;
+        const km = haversineKm(cachedLocation.lat, cachedLocation.lng, lat, lng);
+        const distanceEl = card.querySelector('[data-distance]');
+        if (distanceEl) {
+          distanceEl.textContent = `距你 ${formatDistance(km)}`;
+          distanceEl.hidden = false;
+        }
+      });
+    };
+
     const render = () => {
       renderTabs();
       renderCityNav();
@@ -280,9 +358,11 @@
         const fallback = filterItems(getTabItems());
         renderMeta(fallback);
         renderGrid(fallback);
+        setTimeout(setDistances, 0);
         return;
       }
       renderGrid(list);
+      setTimeout(setDistances, 0);
     };
 
     render();
@@ -298,6 +378,28 @@
       updateStickyTop();
       window.addEventListener('resize', updateStickyTop);
       window.addEventListener('load', updateStickyTop);
+    }
+
+    // 获取用户位置
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (pos) => {
+          cachedLocation = {
+            lat: pos.coords.latitude,
+            lng: pos.coords.longitude,
+          };
+          // 保存到 localStorage
+          try {
+            localStorage.setItem(LOCATION_CACHE_KEY, JSON.stringify(cachedLocation));
+          } catch (e) {}
+          // 位置获取成功后，重新渲染以显示距离
+          render();
+        },
+        (err) => {
+          console.warn('无法获取位置信息:', err.message || err);
+        },
+        { enableHighAccuracy: true, timeout: 8000, maximumAge: 300000 }
+      );
     }
   })();
 </script>

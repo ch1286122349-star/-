@@ -215,10 +215,16 @@
         const desc = escapeHtml(item.summary || '欢迎了解更多详情。');
         const safeSlug = encodeURIComponent(item.slug);
         const href = item.href ? String(item.href) : `/company/${safeSlug}`;
+        const lat = Number(item.lat);
+        const lng = Number(item.lng);
+        const coordsAttr = Number.isFinite(lat) && Number.isFinite(lng)
+          ? ` data-lat="${lat}" data-lng="${lng}"`
+          : '';
         return (
-          `<a class="company-card company-link home-card${coverClass}" href="${href}"${coverStyle}>` +
+          `<a class="company-card company-link home-card${coverClass}" href="${href}"${coverStyle}${coordsAttr}>` +
           `<h4>${escapeHtml(item.name)}</h4>` +
           `<p class="company-desc">${desc}</p>` +
+          `<div class="company-distance" data-distance hidden></div>` +
           `</a>`
         );
       };
@@ -335,9 +341,83 @@
         if (supplierGrid) {
           supplierGrid.innerHTML = renderSupplierCards() + renderMoreCard(buildDirectoryLink('suppliers'), '查看更多');
         }
+        // 渲染后更新距离
+        if (cachedLocation) {
+          setTimeout(() => setDistances(cachedLocation), 0);
+        }
       };
 
+      // 距离计算和显示功能
+      const toRad = (value) => (value * Math.PI) / 180;
+      const haversineKm = (lat1, lng1, lat2, lng2) => {
+        const dLat = toRad(lat2 - lat1);
+        const dLng = toRad(lng2 - lng1);
+        const a = Math.sin(dLat / 2) ** 2
+          + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLng / 2) ** 2;
+        return 6371 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+      };
+
+      const formatDistance = (km) => {
+        if (!Number.isFinite(km)) return '';
+        if (km < 1) return `${Math.round(km * 1000)} m`;
+        if (km < 10) return `${km.toFixed(1)} km`;
+        return `${Math.round(km)} km`;
+      };
+
+      const setDistances = (location) => {
+        const cards = Array.from(root.querySelectorAll('.company-card[data-lat][data-lng]'));
+        cards.forEach((card) => {
+          const lat = Number.parseFloat(card.dataset.lat);
+          const lng = Number.parseFloat(card.dataset.lng);
+          if (!Number.isFinite(lat) || !Number.isFinite(lng)) return;
+          const km = haversineKm(location.lat, location.lng, lat, lng);
+          const distanceEl = card.querySelector('[data-distance]');
+          if (distanceEl) {
+            distanceEl.textContent = `距你 ${formatDistance(km)}`;
+            distanceEl.hidden = false;
+          }
+        });
+      };
+
+      // 从 localStorage 读取缓存的位置
+      const LOCATION_CACHE_KEY = 'mx-user-location';
+      let cachedLocation = null;
+      try {
+        const stored = localStorage.getItem(LOCATION_CACHE_KEY);
+        if (stored) {
+          const parsed = JSON.parse(stored);
+          if (parsed && Number.isFinite(parsed.lat) && Number.isFinite(parsed.lng)) {
+            cachedLocation = parsed;
+          }
+        }
+      } catch (e) {}
+
+      // 获取用户位置
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          (pos) => {
+            cachedLocation = {
+              lat: pos.coords.latitude,
+              lng: pos.coords.longitude,
+            };
+            // 保存到 localStorage
+            try {
+              localStorage.setItem(LOCATION_CACHE_KEY, JSON.stringify(cachedLocation));
+            } catch (e) {}
+            setDistances(cachedLocation);
+          },
+          (err) => {
+            console.warn('无法获取位置信息:', err.message || err);
+          },
+          { enableHighAccuracy: true, timeout: 8000, maximumAge: 300000 }
+        );
+      }
+
       render();
+      // 如果有缓存的位置，立即显示距离
+      if (cachedLocation) {
+        setTimeout(() => setDistances(cachedLocation), 0);
+      }
     })();
   </script>
 </body>

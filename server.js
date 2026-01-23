@@ -655,6 +655,8 @@ const buildDirectoryDataScript = () => {
     .map((company) => {
       const placeId = String(company.placeId || company.place_id || '').trim();
       const industry = String(company.industry || '').trim() || '其他';
+      const lat = Number(company.lat);
+      const lng = Number(company.lng);
       const item = {
         slug: String(company.slug || '').trim(),
         name: String(company.name || '').trim(),
@@ -666,6 +668,10 @@ const buildDirectoryDataScript = () => {
       };
       if (company.href) {
         item.href = String(company.href).trim();
+      }
+      if (Number.isFinite(lat) && Number.isFinite(lng)) {
+        item.lat = lat;
+        item.lng = lng;
       }
       return item;
     });
