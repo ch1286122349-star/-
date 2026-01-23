@@ -3778,5 +3778,19 @@
     "href": "/play-valenciana.html",
     "lat": 21.05,
     "lng": -101.2667
+  },
+  {
+    "slug": "monex-monterrey",
+    "name": "墨西哥 Monex 银行",
+    "industry": "供应商",
+    "city": "蒙特雷",
+    "summary": "可办理企业公共账户 · 中国客户经理对接",
+    "contact": "邮箱: PJIAO@MONEX.COM.MX",
+    "cover": "/assets/supplier/monex/hero-01.jpg",
+    "href": "/supplier-monex.html",
+    "mapLink": "https://maps.google.com/?q=Monex+Grupo+Financiero+Monterrey",
+    "lat": 25.6511,
+    "lng": -100.3697,
+    "category": "金融服务"
   }
 ]

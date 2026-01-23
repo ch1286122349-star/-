@@ -1940,6 +1940,15 @@ app.get('/play-:slug.html', (req, res) => {
   return res.send(renderPage(fileName));
 });
 
+app.get('/supplier-:slug.html', (req, res) => {
+  const fileName = `supplier-${req.params.slug}.html`;
+  const filePath = path.join(__dirname, fileName);
+  if (!fs.existsSync(filePath)) {
+    return res.status(404).send('页面不存在');
+  }
+  return res.send(renderPage(fileName));
+});
+
 app.get(['/companies', '/companies.html'], (_req, res) => {
   res.send(renderPage('companies.html'));
 });

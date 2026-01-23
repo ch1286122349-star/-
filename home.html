@@ -141,6 +141,7 @@
 
       const normalizeCity = (value) => (CITY_ORDER.includes(value) ? value : 'all');
       let currentCity = normalizeCity(localStorage.getItem(STORAGE_KEY) || 'all');
+      let sortByDistance = true; // 默认按距离排序
 
       const escapeHtml = (value) => String(value || '')
         .replace(/&/g, '&amp;')
@@ -242,31 +243,29 @@
         `</a>`
       );
 
-      const renderSupplierCards = () => (
+      // 距离计算和显示功能
+      const toRad = (value) => (value * Math.PI) / 180;
+      const haversineKm = (lat1, lng1, lat2, lng2) => {
+        const dLat = toRad(lat2 - lat1);
+        const dLng = toRad(lng2 - lng1);
+        const a = Math.sin(dLat / 2) ** 2
+          + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLng / 2) ** 2;
+        return 6371 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+      };
+
+      const SUPPLIER_INDUSTRY = '供应商';
+      const getSupplierItems = () => data.filter((item) => item.industry === SUPPLIER_INDUSTRY);
+      
+      const renderSupplierPlaceholders = () => (
         [
-          {
-            title: '本地供应商征集中',
-            desc: '欢迎推荐靠谱供应商，物流/设备/办公/原料均可。',
-            href: '/contact',
-          },
           {
             title: '成为优质供应商',
             desc: '提交企业信息后，我们将尽快审核并上线展示。',
             href: '/contact',
           },
           {
-            title: '供应商服务一览',
-            desc: '后续将上线本地供应链与服务资源汇总。',
-            href: '/contact',
-          },
-          {
             title: '合作推荐通道',
             desc: '如有供应链合作需求，请提交信息。',
-            href: '/contact',
-          },
-          {
-            title: '供应商专区',
-            desc: '供应商板块正在完善中，敬请期待。',
             href: '/contact',
           },
         ]
@@ -299,7 +298,20 @@
 
         const items = getPlayItems();
         const allItems = filterByCity(items);
-        const previewItems = allItems.slice(-5);
+        
+        // 按距离排序
+        let sortedItems = allItems;
+        if (sortByDistance && cachedLocation) {
+          sortedItems = allItems
+            .filter(item => item.lat && item.lng)
+            .map(item => ({
+              ...item,
+              distance: haversineKm(cachedLocation.lat, cachedLocation.lng, item.lat, item.lng)
+            }))
+            .sort((a, b) => a.distance - b.distance);
+        }
+        
+        const previewItems = sortByDistance && cachedLocation ? sortedItems.slice(0, 5) : allItems.slice(-5);
         const placeholdersNeeded = Math.max(0, 5 - previewItems.length);
         const cityLabel = CITY_LABELS.get(currentCity) || currentCity;
 
@@ -317,7 +329,21 @@
       const renderBlock = (blockEl, items, tabId) => {
         const cityLabel = CITY_LABELS.get(currentCity) || currentCity;
         const allItems = filterByCity(items);
-        const previewItems = allItems.slice(-5);
+        
+        // 按距离排序
+        let sortedItems = allItems;
+        if (sortByDistance && cachedLocation) {
+          sortedItems = allItems
+            .filter(item => item.lat && item.lng)
+            .map(item => ({
+              ...item,
+              distance: haversineKm(cachedLocation.lat, cachedLocation.lng, item.lat, item.lng)
+            }))
+            .sort((a, b) => a.distance - b.distance);
+        }
+        
+        // 排序后取前5个最近的
+        const previewItems = sortByDistance && cachedLocation ? sortedItems.slice(0, 5) : allItems.slice(-5);
         const grid = blockEl.querySelector('[data-block-grid]');
         const cityEl = blockEl.querySelector('[data-block-city]');
         const countEl = blockEl.querySelector('[data-block-count]');
@@ -337,24 +363,23 @@
         renderBlock(blocks.markets, getMarketItems(), 'markets');
         renderPlayBlock();
         renderBlock(blocks.enterprises, getEnterpriseItems(), 'enterprises');
-        const supplierGrid = blocks.suppliers.querySelector('[data-block-grid]');
+        // 渲染供应商板块
+        const supplierBlockEl = blocks.suppliers;
+        const supplierGrid = supplierBlockEl?.querySelector('[data-block-grid]');
+        const supplierCityEl = supplierBlockEl?.querySelector('[data-block-city]');
+        const supplierCountEl = supplierBlockEl?.querySelector('[data-block-count]');
         if (supplierGrid) {
-          supplierGrid.innerHTML = renderSupplierCards() + renderMoreCard(buildDirectoryLink('suppliers'), '查看更多');
+          const supplierItems = filterByCity(getSupplierItems());
+          const supplierCards = supplierItems.slice(0, 5).map(renderPreviewCard).join('');
+          const placeholders = supplierItems.length < 3 ? renderSupplierPlaceholders() : '';
+          supplierGrid.innerHTML = supplierCards + placeholders + renderMoreCard(buildDirectoryLink('suppliers'), '查看更多');
+          if (supplierCityEl) supplierCityEl.textContent = supplierItems.length ? (CITY_LABELS.get(currentCity) || currentCity) : '全部';
+          if (supplierCountEl) supplierCountEl.textContent = supplierItems.length ? `${supplierItems.length} 家` : '即将上线';
         }
         // 渲染后更新距离
         if (cachedLocation) {
           setTimeout(() => setDistances(cachedLocation), 0);
         }
-      };
-
-      // 距离计算和显示功能
-      const toRad = (value) => (value * Math.PI) / 180;
-      const haversineKm = (lat1, lng1, lat2, lng2) => {
-        const dLat = toRad(lat2 - lat1);
-        const dLng = toRad(lng2 - lng1);
-        const a = Math.sin(dLat / 2) ** 2
-          + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLng / 2) ** 2;
-        return 6371 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
       };
 
       const formatDistance = (km) => {

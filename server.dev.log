@@ -1,0 +1,2057 @@
+
+> mx-contact-form@1.0.0 dev
+> npm run sitemap && nodemon --watch server.js --watch partials --watch site.css --watch home.html --watch companies.html --watch company.html --watch index.html --watch data/companies.json --ext js,html,css,json server.js
+
+
+> mx-contact-form@1.0.0 sitemap
+> node scripts/generate_sitemap.js
+
+Sitemap generated at /Users/sheldon/Desktop/新项目/sitemap.xml with 209 URLs.
+[33m[nodemon] 3.1.11[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): server.js partials/**/* site.css home.html companies.html company.html index.html data/companies.json[39m
+[33m[nodemon] watching extensions: js,html,css,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+Server running at http://0.0.0.0:3000
+DB file at /Users/sheldon/Desktop/新项目/data.db
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+Server running at http://0.0.0.0:3000
+DB file at /Users/sheldon/Desktop/新项目/data.db
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 📡 add observability to secrets: https://dotenvx.com/ops
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+Server running at http://0.0.0.0:3000
+DB file at /Users/sheldon/Desktop/新项目/data.db
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 📡 add observability to secrets: https://dotenvx.com/ops
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+Server running at http://0.0.0.0:3000
+DB file at /Users/sheldon/Desktop/新项目/data.db
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: ✅ audit secrets and track compliance: https://dotenvx.com/ops
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+Server running at http://127.0.0.1:3000
+DB file at /Users/sheldon/Desktop/新项目/data.db
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+Server running at http://localhost:3000
+DB file at /Users/sheldon/Desktop/新项目/data.db
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 📡 add observability to secrets: https://dotenvx.com/ops
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2009:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: ✅ audit secrets and track compliance: https://dotenvx.com/ops
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2013:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2013:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: ⚙️  override existing env vars with { override: true }
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2022:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2022:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: ⚙️  override existing env vars with { override: true }
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2022:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 🗂️ backup and recover secrets: https://dotenvx.com/ops
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2022:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2022:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+(node:64533) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 exit listeners added to [Bus]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 🗂️ backup and recover secrets: https://dotenvx.com/ops
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2022:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2022:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2022:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: ⚙️  override existing env vars with { override: true }
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2022:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2022:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2022:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 👥 sync secrets across teammates & machines: https://dotenvx.com/ops
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2022:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2022:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: ✅ audit secrets and track compliance: https://dotenvx.com/ops
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2022:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 🔑 add access controls to secrets: https://dotenvx.com/ops
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2022:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2022:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 🔑 add access controls to secrets: https://dotenvx.com/ops
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2022:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 👥 sync secrets across teammates & machines: https://dotenvx.com/ops
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2022:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2022:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2022:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 🔄 add secrets lifecycle management: https://dotenvx.com/ops
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2022:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2022:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2022:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2022:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 🔑 add access controls to secrets: https://dotenvx.com/ops
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2022:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2022:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+(node:64533) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 exit listeners added to [Bus]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+[dotenv@17.2.3] injecting env (10) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2022:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: ⚙️  override existing env vars with { override: true }
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2028:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+Server running at http://localhost:3000
+DB file at /Users/sheldon/Desktop/新项目/data.db
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2028:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2028:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 📡 add observability to secrets: https://dotenvx.com/ops
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2028:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 🔑 add access controls to secrets: https://dotenvx.com/ops
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2028:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2028:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 🗂️ backup and recover secrets: https://dotenvx.com/ops
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2028:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 🗂️ backup and recover secrets: https://dotenvx.com/ops
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2028:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 🗂️ backup and recover secrets: https://dotenvx.com/ops
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2028:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 🗂️ backup and recover secrets: https://dotenvx.com/ops
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2028:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2028:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 🗂️ backup and recover secrets: https://dotenvx.com/ops
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2028:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2028:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 🔑 add access controls to secrets: https://dotenvx.com/ops
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2028:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: ⚙️  override existing env vars with { override: true }
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2028:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 👥 sync secrets across teammates & machines: https://dotenvx.com/ops
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2028:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 🔄 add secrets lifecycle management: https://dotenvx.com/ops
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2028:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2028:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2028:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 📡 add observability to secrets: https://dotenvx.com/ops
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2028:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+(node:64533) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 exit listeners added to [Bus]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 🗂️ backup and recover secrets: https://dotenvx.com/ops
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2028:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 📡 add observability to secrets: https://dotenvx.com/ops
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 🔑 add access controls to secrets: https://dotenvx.com/ops
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2028:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2028:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[dotenv@17.2.3] injecting env (10) from .env -- tip: 🔑 add access controls to secrets: https://dotenvx.com/ops
+Enterprises template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/enterprises.html'
+Restaurants template not found: ENOENT: no such file or directory, open '/Users/sheldon/Desktop/新项目/restaurants.html'
+Feishu Bitable enabled: {
+  appToken: 'CtlwbtU8aaPqlTs1rqAlEl5igEf',
+  tableId: 'tblyUwHsc7tdwJ16'
+}
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (/Users/sheldon/Desktop/新项目/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/sheldon/Desktop/新项目/server.js:2028:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v22.20.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
