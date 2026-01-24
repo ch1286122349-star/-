@@ -2938,6 +2938,7 @@ textarea {
   }
 
   .home-sticky {
+    position: static; /* 移动端取消吸附 */
     padding: 8px 0;
     border-radius: 14px;
   }
@@ -3061,6 +3062,7 @@ textarea {
     padding: 10px 12px;
     border-radius: 16px;
     gap: 8px;
+    position: static;
   }
 
   .directory-tabs,
