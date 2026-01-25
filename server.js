@@ -665,6 +665,7 @@ const buildDirectoryDataScript = () => {
         city: String(company.city || '未分类城市').trim(),
         industry,
         category: industry === '餐饮与服务' ? classifyFoodCategoryForDirectory(company) : '',
+        date: company.date || '',
       };
       if (company.href) {
         item.href = String(company.href).trim();

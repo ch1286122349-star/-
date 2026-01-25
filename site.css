@@ -3059,10 +3059,10 @@ textarea {
   }
 
   .directory-sticky {
+    position: static;
     padding: 10px 12px;
     border-radius: 16px;
     gap: 8px;
-    position: static;
   }
 
   .directory-tabs,

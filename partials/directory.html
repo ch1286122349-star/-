@@ -30,6 +30,7 @@
     const FOOD_INDUSTRY = '餐饮与服务';
     const ENTERPRISE_INDUSTRY = '中资企业';
     const PLAY_INDUSTRY = '玩乐地点';
+    const EXPO_INDUSTRY = '展会';
     const MARKET_CATEGORY = '超市';
     const TABS = [
       {
@@ -45,6 +46,13 @@
         industry: FOOD_INDUSTRY,
         hasCategory: false,
         filter: (item) => item.industry === FOOD_INDUSTRY && item.category === MARKET_CATEGORY,
+      },
+      {
+        id: 'expos',
+        label: '展会',
+        industry: EXPO_INDUSTRY,
+        hasCategory: false,
+        filter: (item) => item.industry === EXPO_INDUSTRY,
       },
       {
         id: 'enterprises',
@@ -93,6 +101,13 @@
     const normalizeTab = (value) => TABS.find((tab) => tab.id === value)?.id || 'restaurants';
     const normalizeCity = (value) => (CITY_ORDER.includes(value) ? value : 'all');
 
+    const escapeHtml = (value) => String(value || '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+
     const state = {
       tab: normalizeTab(params.get('tab') || 'restaurants'),
       city: normalizeCity(params.get('city') || 'all'),
@@ -112,13 +127,50 @@
     };
 
     const getTabConfig = () => TABS.find((tab) => tab.id === state.tab) || TABS[0];
+    
+    // 解析展会日期，返回结束日期的时间戳（用于过滤过期展会）
+    const parseExpoEndDate = (dateStr) => {
+      if (!dateStr) return null;
+      const match = dateStr.match(/(\d{4})年(\d{1,2})月(?:(\d{1,2})(?:-(\d{1,2}))?日)?/);
+      if (!match) return null;
+      const year = parseInt(match[1], 10);
+      const month = parseInt(match[2], 10) - 1;
+      let day = match[4] ? parseInt(match[4], 10) : (match[3] ? parseInt(match[3], 10) : 28);
+      return new Date(year, month, day, 23, 59, 59).getTime();
+    };
+    
+    // 解析展会日期，返回开始日期的时间戳（用于排序）
+    const parseExpoStartDate = (dateStr) => {
+      if (!dateStr) return Infinity;
+      const match = dateStr.match(/(\d{4})年(\d{1,2})月(?:(\d{1,2}))?/);
+      if (!match) return Infinity;
+      const year = parseInt(match[1], 10);
+      const month = parseInt(match[2], 10) - 1;
+      const day = match[3] ? parseInt(match[3], 10) : 1;
+      return new Date(year, month, day).getTime();
+    };
+    
     const getTabItems = () => {
       const tab = getTabConfig();
       if (tab.isStatic) return [];
+      
+      let items;
       if (typeof tab.filter === 'function') {
-        return data.filter(tab.filter);
+        items = data.filter(tab.filter);
+      } else {
+        items = data.filter((item) => item.industry === tab.industry);
       }
-      return data.filter((item) => item.industry === tab.industry);
+      
+      // 展会特殊处理：过滤过期展会，按距离+时间排序
+      if (tab.id === 'expos') {
+        const now = Date.now();
+        items = items.filter((item) => {
+          const endDate = parseExpoEndDate(item.date);
+          return endDate === null || endDate >= now;
+        });
+      }
+      
+      return items;
     };
 
     // 距离计算工具函数
@@ -163,8 +215,26 @@
       if (tab.hasCategory && state.category !== 'all') {
         result = result.filter((item) => item.category === state.category);
       }
-      // 按距离排序
-      if (state.sortByDistance && cachedLocation) {
+      
+      // 展会特殊排序：先按距离，再按时间
+      if (tab.id === 'expos') {
+        result = result.map((item) => {
+          const lat = Number(item.lat);
+          const lng = Number(item.lng);
+          const distance = (cachedLocation && Number.isFinite(lat) && Number.isFinite(lng))
+            ? haversineKm(cachedLocation.lat, cachedLocation.lng, lat, lng)
+            : Infinity;
+          return { ...item, _distance: distance, _startTime: parseExpoStartDate(item.date) };
+        }).sort((a, b) => {
+          // 如果有用户位置，距离差超过50km才按距离排序
+          if (cachedLocation && Math.abs(a._distance - b._distance) > 50) {
+            return a._distance - b._distance;
+          }
+          // 距离相近或无位置时，按时间排序
+          return a._startTime - b._startTime;
+        });
+      } else if (state.sortByDistance && cachedLocation) {
+        // 其他类型按距离排序
         result = result.map((item) => {
           const lat = Number(item.lat);
           const lng = Number(item.lng);
@@ -297,9 +367,15 @@
       const coordsAttr = Number.isFinite(lat) && Number.isFinite(lng)
         ? ` data-lat="${lat}" data-lng="${lng}"`
         : '';
+      
+      let titleContent = item.name;
+      if (item.date) {
+        titleContent = `<span style="display:block;font-size:11px;opacity:0.95;margin-bottom:4px;font-weight:600;color:${cover ? '#ffd700' : '#d97706'}">${escapeHtml(item.date)}</span>` + titleContent;
+      }
+
       return (
         `<a class="company-card company-link${coverClass}" href="${href}"${coverStyle}${coordsAttr}>` +
-        `<h4>${item.name}</h4>` +
+        `<h4>${titleContent}</h4>` +
         `<p class="company-desc">${desc}</p>` +
         `<div class="company-distance" data-distance hidden></div>` +
         `</a>`

@@ -84,6 +84,17 @@
         <div class="home-block__grid" data-block-grid></div>
       </section>
 
+      <section class="home-block" data-block="expos">
+        <div class="home-block__head">
+          <h2>墨西哥展会</h2>
+          <div class="home-block__meta">
+            <span class="home-chip" data-block-city></span>
+            <span class="home-chip" data-block-count></span>
+          </div>
+        </div>
+        <div class="home-block__grid" data-block-grid></div>
+      </section>
+
       <section class="home-block" data-block="enterprises">
         <div class="home-block__head">
           <h2>中资企业</h2>
@@ -127,6 +138,7 @@
       const FOOD_INDUSTRY = '餐饮与服务';
       const ENTERPRISE_INDUSTRY = '中资企业';
       const PLAY_INDUSTRY = '玩乐地点';
+      const EXPO_INDUSTRY = '展会';
       const MARKET_CATEGORY = '超市';
 
       const root = document.querySelector('.home-directory');
@@ -135,10 +147,11 @@
         restaurants: root?.querySelector('[data-block="restaurants"]'),
         markets: root?.querySelector('[data-block="markets"]'),
         play: root?.querySelector('[data-block="play"]'),
+        expos: root?.querySelector('[data-block="expos"]'),
         enterprises: root?.querySelector('[data-block="enterprises"]'),
         suppliers: root?.querySelector('[data-block="suppliers"]'),
       };
-      if (!root || !cityNav || !blocks.restaurants || !blocks.markets || !blocks.play || !blocks.enterprises || !blocks.suppliers) return;
+      if (!root || !cityNav || !blocks.restaurants || !blocks.markets || !blocks.play || !blocks.expos || !blocks.enterprises || !blocks.suppliers) return;
 
       const normalizeCity = (value) => (CITY_ORDER.includes(value) ? value : 'all');
       let currentCity = normalizeCity(localStorage.getItem(STORAGE_KEY) || 'all');
@@ -162,12 +175,63 @@
       const getMarketItems = () => getFoodItems().filter((item) => item.category === MARKET_CATEGORY);
       const getEnterpriseItems = () => data.filter((item) => item.industry === ENTERPRISE_INDUSTRY);
       const getPlayItems = () => data.filter((item) => item.industry === PLAY_INDUSTRY);
+      
+      // 距离计算函数（需要在 getExpoItems 之前定义）
+      const toRad = (value) => (value * Math.PI) / 180;
+      const haversineKm = (lat1, lng1, lat2, lng2) => {
+        const dLat = toRad(lat2 - lat1);
+        const dLng = toRad(lng2 - lng1);
+        const a = Math.sin(dLat / 2) ** 2
+          + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLng / 2) ** 2;
+        return 6371 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+      };
+      
+      // 解析展会日期，返回结束日期的时间戳（用于过滤过期展会）
+      const parseExpoEndDate = (dateStr) => {
+        if (!dateStr) return null;
+        // 匹配格式: "2026年1月27-29日" 或 "2026年1月" 或 "2026年11月10-13日"
+        const match = dateStr.match(/(\d{4})年(\d{1,2})月(?:(\d{1,2})(?:-(\d{1,2}))?日)?/);
+        if (!match) return null;
+        const year = parseInt(match[1], 10);
+        const month = parseInt(match[2], 10) - 1; // JS月份从0开始
+        let day = match[4] ? parseInt(match[4], 10) : (match[3] ? parseInt(match[3], 10) : 28); // 取结束日期，如果只有月份则取28号
+        return new Date(year, month, day, 23, 59, 59).getTime();
+      };
+      
+      // 解析展会日期，返回开始日期的时间戳（用于排序）
+      const parseExpoStartDate = (dateStr) => {
+        if (!dateStr) return Infinity;
+        const match = dateStr.match(/(\d{4})年(\d{1,2})月(?:(\d{1,2}))?/);
+        if (!match) return Infinity;
+        const year = parseInt(match[1], 10);
+        const month = parseInt(match[2], 10) - 1;
+        const day = match[3] ? parseInt(match[3], 10) : 1;
+        return new Date(year, month, day).getTime();
+      };
+      
+      const getExpoItems = () => {
+        const now = Date.now();
+        return data
+          .filter((item) => item.industry === EXPO_INDUSTRY)
+          .filter((item) => {
+            // 过滤掉已过期的展会
+            const endDate = parseExpoEndDate(item.date);
+            return endDate === null || endDate >= now;
+          })
+          .sort((a, b) => {
+            // 先按时间排序，有用户位置时再按距离微调
+            const aTime = parseExpoStartDate(a.date);
+            const bTime = parseExpoStartDate(b.date);
+            return aTime - bTime;
+          });
+      };
 
       const buildCityCounts = () => {
         const items = data.filter((item) => (
           item.industry === FOOD_INDUSTRY
           || item.industry === ENTERPRISE_INDUSTRY
           || item.industry === PLAY_INDUSTRY
+          || item.industry === EXPO_INDUSTRY
         ));
         const counts = new Map();
         counts.set('all', items.length);
@@ -222,9 +286,15 @@
         const coordsAttr = Number.isFinite(lat) && Number.isFinite(lng)
           ? ` data-lat="${lat}" data-lng="${lng}"`
           : '';
+
+        let titleContent = escapeHtml(item.name);
+        if (item.date) {
+          titleContent = `<span style="display:block;font-size:11px;opacity:0.95;margin-bottom:4px;font-weight:600;color:${cover ? '#ffd700' : '#d97706'}">${escapeHtml(item.date)}</span>` + titleContent;
+        }
+
         return (
           `<a class="company-card company-link home-card${coverClass}" href="${href}"${coverStyle}${coordsAttr}>` +
-          `<h4>${escapeHtml(item.name)}</h4>` +
+          `<h4>${titleContent}</h4>` +
           `<p class="company-desc">${desc}</p>` +
           `<div class="company-distance" data-distance hidden></div>` +
           `</a>`
@@ -243,16 +313,6 @@
         `<em>查看更多</em>` +
         `</a>`
       );
-
-      // 距离计算和显示功能
-      const toRad = (value) => (value * Math.PI) / 180;
-      const haversineKm = (lat1, lng1, lat2, lng2) => {
-        const dLat = toRad(lat2 - lat1);
-        const dLng = toRad(lng2 - lng1);
-        const a = Math.sin(dLat / 2) ** 2
-          + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLng / 2) ** 2;
-        return 6371 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-      };
 
       const SUPPLIER_INDUSTRY = '供应商';
       const getSupplierItems = () => data.filter((item) => item.industry === SUPPLIER_INDUSTRY);
@@ -363,6 +423,7 @@
         renderBlock(blocks.restaurants, getRestaurantItems(), 'restaurants');
         renderBlock(blocks.markets, getMarketItems(), 'markets');
         renderPlayBlock();
+        renderBlock(blocks.expos, getExpoItems(), 'expos');
         renderBlock(blocks.enterprises, getEnterpriseItems(), 'enterprises');
         // 渲染供应商板块
         const supplierBlockEl = blocks.suppliers;
