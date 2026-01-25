@@ -477,12 +477,23 @@ const buildCompanySeo = (company, placeData) => {
   const name = String(company.name || '').trim();
   const city = String(company.city || '').trim();
   const categoryLabel = formatCategoryLabel(company);
-  const title = `墨西哥中文网 - ${name}${city ? `｜${city}` : ''}${categoryLabel ? `｜${categoryLabel}` : ''}`;
+  
+  // 使用自定义 SEO 标题，如果没有则生成默认标题
+  const title = company.seoTitle || `${name} - ${city}${categoryLabel || '中餐'}餐厅 | 墨西哥中文网`;
+  
   const ratingSummary = buildRatingSummary(company, placeData, categoryLabel);
   const address = placeData?.formatted_address || '';
-  let description = `墨西哥中文网收录：${name}${city ? `（${city}）` : ''}`;
-  if (ratingSummary) description += `，${ratingSummary}`;
-  description += address ? `。地址：${address}` : '。';
+  
+  // 使用自定义 SEO 描述，如果没有则生成默认描述
+  let description = company.seoDescription;
+  if (!description) {
+    description = `${name}位于${city || '墨西哥'}`;
+    if (company.features) description += `，${company.features}`;
+    if (ratingSummary) description += `。${ratingSummary}`;
+    if (company.specialties) description += `。招牌菜：${company.specialties}`;
+    if (company.priceRange) description += `。人均消费：${company.priceRange}`;
+    if (address) description += `。地址：${address}`;
+  }
 
   const slug = encodeURIComponent(String(company.slug || ''));
   const canonicalUrl = `${SITE_ORIGIN}/company/${slug}`;
@@ -494,6 +505,7 @@ const buildCompanySeo = (company, placeData) => {
 
   const metaTags = [
     `<meta name="description" content="${escapeHtml(description)}">`,
+    company.seoKeywords ? `<meta name="keywords" content="${escapeHtml(company.seoKeywords)}">` : '',
     `<link rel="canonical" href="${canonicalUrl}">`,
     `<meta property="og:title" content="${escapeHtml(title)}">`,
     `<meta property="og:description" content="${escapeHtml(description)}">`,
@@ -506,7 +518,7 @@ const buildCompanySeo = (company, placeData) => {
     `<meta name="twitter:title" content="${escapeHtml(title)}">`,
     `<meta name="twitter:description" content="${escapeHtml(description)}">`,
     `<meta name="twitter:image" content="${imageUrl}">`,
-  ].join('\n');
+  ].filter(Boolean).join('\n');
 
   const jsonLd = `<script type="application/ld+json">${JSON.stringify(schema)}</script>`;
   return { title, description, headHtml: `${metaTags}\n${jsonLd}` };
@@ -1440,9 +1452,34 @@ const renderCompanyPage = async (company) => {
   const safePlaceUrl = sanitizeUrl(placeData?.url);
   const safeMapLink = sanitizeUrl(company.mapLink || company.mapUrl || company.map) || safePlaceUrl;
   const mapEmbedUrl = buildMapEmbedUrl(company, placeData);
-  const detailEnabled = Boolean(company.detail && company.detailPaid);
+  
+  // 构建详情内容（包含详细介绍、特色服务等）
+  const detailContentParts = [];
+  
+  if (company.description) {
+    detailContentParts.push(`<h3>详细介绍</h3><p>${escapeHtml(company.description)}</p>`);
+  }
+  
+  if (company.features) {
+    detailContentParts.push(`<h3>特色服务</h3><p>${escapeHtml(company.features)}</p>`);
+  }
+  
+  if (company.specialties) {
+    detailContentParts.push(`<h3>招牌推荐</h3><p>${escapeHtml(company.specialties)}</p>`);
+  }
+  
+  if (company.priceRange) {
+    detailContentParts.push(`<h3>价格区间</h3><p>${escapeHtml(company.priceRange)}</p>`);
+  }
+  
+  // 如果有自定义详情内容，也加入
+  if (company.detail && company.detailPaid) {
+    detailContentParts.push(`<h3>其他信息</h3><p>${safeDetail}</p>`);
+  }
+  
+  const detailEnabled = detailContentParts.length > 0;
   const detailHtml = detailEnabled
-    ? `<div class="company-detail-extra"><h2>详情</h2><p>${safeDetail}</p></div>`
+    ? `<div class="company-detail-extra"><h2>详情</h2>${detailContentParts.join('')}</div>`
     : `<div class="company-detail-extra locked"><h2>详情</h2><p>该企业未开通详情展示，如需展示请联系站长。</p></div>`;
   const placeId = String(placeData?.place_id || company.placeId || company.place_id || '').trim();
   const seo = buildCompanySeo(company, placeData);
@@ -1976,6 +2013,10 @@ app.get(['/directory', '/directory.html'], (_req, res) => {
     return res.status(500).send('Directory template missing');
   }
   return res.send(html);
+});
+
+app.get(['/seo-dashboard', '/seo-dashboard.html'], (_req, res) => {
+  res.send(renderPage('seo-dashboard.html'));
 });
 
 app.get('/company/:slug', async (req, res) => {
