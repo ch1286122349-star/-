@@ -4,3 +4,8 @@ data.db
 server.log
 .DS_Store
 .worktrees/
+
+# Google Search Console API 凭据
+gsc-credentials.json
+.gsc-token.json
+data/gsc-data.json

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEO 数据仪表板 | 墨西哥中文网</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f5f5f5;
+      padding: 20px;
+    }
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 30px;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #1a1a1a;
+    }
+    .subtitle {
+      color: #666;
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .stat-card {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .stat-card:nth-child(2) {
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    }
+    .stat-card:nth-child(3) {
+      background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    }
+    .stat-card:nth-child(4) {
+      background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+    }
+    .stat-label {
+      font-size: 12px;
+      opacity: 0.9;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .stat-value {
+      font-size: 32px;
+      font-weight: bold;
+    }
+    .table-container {
+      overflow-x: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    thead {
+      background: #f8f9fa;
+    }
+    th {
+      padding: 12px;
+      text-align: left;
+      font-weight: 600;
+      color: #495057;
+      border-bottom: 2px solid #dee2e6;
+    }
+    td {
+      padding: 12px;
+      border-bottom: 1px solid #e9ecef;
+    }
+    tr:hover {
+      background: #f8f9fa;
+    }
+    .query-cell {
+      font-weight: 500;
+      color: #1a1a1a;
+      max-width: 300px;
+    }
+    .url-cell {
+      color: #666;
+      font-size: 12px;
+      max-width: 400px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .number-cell {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+    .position-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 13px;
+    }
+    .position-good {
+      background: #d4edda;
+      color: #155724;
+    }
+    .position-medium {
+      background: #fff3cd;
+      color: #856404;
+    }
+    .position-bad {
+      background: #f8d7da;
+      color: #721c24;
+    }
+    .ctr-badge {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .ctr-zero {
+      background: #f8d7da;
+      color: #721c24;
+    }
+    .ctr-low {
+      background: #fff3cd;
+      color: #856404;
+    }
+    .ctr-good {
+      background: #d4edda;
+      color: #155724;
+    }
+    .filter-bar {
+      margin-bottom: 20px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .filter-bar input {
+      padding: 8px 12px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 14px;
+      flex: 1;
+      max-width: 300px;
+    }
+    .filter-bar select {
+      padding: 8px 12px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    .highlight {
+      background: #fff3cd;
+      padding: 2px 4px;
+      border-radius: 3px;
+    }
+    .empty-state {
+      text-align: center;
+      padding: 60px 20px;
+      color: #666;
+    }
+    .last-updated {
+      text-align: right;
+      color: #999;
+      font-size: 12px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 SEO 数据仪表板</h1>
+    <p class="subtitle">数据来源：Google Search Console API</p>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-label">总点击次数</div>
+        <div class="stat-value" id="totalClicks">-</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">总展示次数</div>
+        <div class="stat-value" id="totalImpressions">-</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">平均 CTR</div>
+        <div class="stat-value" id="avgCTR">-</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">平均排名</div>
+        <div class="stat-value" id="avgPosition">-</div>
+      </div>
+    </div>
+
+    <div class="filter-bar">
+      <input type="text" id="searchInput" placeholder="🔍 搜索关键词...">
+      <select id="sortSelect">
+        <option value="impressions">按展示次数排序</option>
+        <option value="clicks">按点击次数排序</option>
+        <option value="ctr">按 CTR 排序</option>
+        <option value="position">按排名排序</option>
+      </select>
+    </div>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>搜索关键词</th>
+            <th>页面 URL</th>
+            <th class="number-cell">排名</th>
+            <th class="number-cell">展示次数</th>
+            <th class="number-cell">点击次数</th>
+            <th class="number-cell">CTR</th>
+          </tr>
+        </thead>
+        <tbody id="dataTable">
+          <tr>
+            <td colspan="6" class="empty-state">加载中...</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="last-updated" id="lastUpdated"></div>
+  </div>
+
+  <script>
+    // 加载 GSC 数据
+    async function loadData() {
+      try {
+        const response = await fetch('/data/gsc-data.json');
+        const data = await response.json();
+        
+        // 更新总体统计
+        document.getElementById('totalClicks').textContent = data.summary.clicks.toLocaleString();
+        document.getElementById('totalImpressions').textContent = data.summary.impressions.toLocaleString();
+        document.getElementById('avgCTR').textContent = (data.summary.ctr * 100).toFixed(2) + '%';
+        document.getElementById('avgPosition').textContent = data.summary.position.toFixed(1);
+        
+        // 显示最后更新时间
+        const endDate = new Date(data.dateRange.endDate);
+        document.getElementById('lastUpdated').textContent = 
+          `数据更新时间：${endDate.toLocaleDateString('zh-CN')} (${data.dateRange.startDate} 至 ${data.dateRange.endDate})`;
+        
+        // 渲染表格
+        renderTable(data.queries);
+        
+        // 设置搜索和排序
+        setupFilters(data.queries);
+      } catch (error) {
+        document.getElementById('dataTable').innerHTML = 
+          '<tr><td colspan="6" class="empty-state">❌ 无法加载数据。请确保已运行 <code>node scripts/gsc_fetch_data.js</code></td></tr>';
+      }
+    }
+
+    function renderTable(queries, searchTerm = '') {
+      const tbody = document.getElementById('dataTable');
+      
+      if (!queries || queries.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="6" class="empty-state">暂无数据</td></tr>';
+        return;
+      }
+
+      // 过滤数据
+      let filteredQueries = queries;
+      if (searchTerm) {
+        filteredQueries = queries.filter(q => 
+          q.keys[0].toLowerCase().includes(searchTerm.toLowerCase()) ||
+          q.keys[1].toLowerCase().includes(searchTerm.toLowerCase())
+        );
+      }
+
+      if (filteredQueries.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="6" class="empty-state">未找到匹配的关键词</td></tr>';
+        return;
+      }
+
+      tbody.innerHTML = filteredQueries.map(query => {
+        const keyword = query.keys[0];
+        const url = query.keys[1];
+        const position = query.position;
+        const impressions = query.impressions;
+        const clicks = query.clicks;
+        const ctr = query.ctr;
+
+        // 排名徽章样式
+        let positionClass = 'position-bad';
+        if (position <= 3) positionClass = 'position-good';
+        else if (position <= 10) positionClass = 'position-medium';
+
+        // CTR 徽章样式
+        let ctrClass = 'ctr-zero';
+        let ctrDisplay = (ctr * 100).toFixed(2) + '%';
+        if (ctr === 0) {
+          ctrClass = 'ctr-zero';
+          ctrDisplay = '0%';
+        } else if (ctr < 0.05) {
+          ctrClass = 'ctr-low';
+        } else {
+          ctrClass = 'ctr-good';
+        }
+
+        // 高亮搜索词
+        let displayKeyword = keyword;
+        if (searchTerm) {
+          const regex = new RegExp(`(${searchTerm})`, 'gi');
+          displayKeyword = keyword.replace(regex, '<span class="highlight">$1</span>');
+        }
+
+        return `
+          <tr>
+            <td class="query-cell">${displayKeyword}</td>
+            <td class="url-cell" title="${url}">${url.replace('https://mxchino.com', '')}</td>
+            <td class="number-cell">
+              <span class="position-badge ${positionClass}">#${position.toFixed(1)}</span>
+            </td>
+            <td class="number-cell">${impressions.toLocaleString()}</td>
+            <td class="number-cell">${clicks.toLocaleString()}</td>
+            <td class="number-cell">
+              <span class="ctr-badge ${ctrClass}">${ctrDisplay}</span>
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    function setupFilters(queries) {
+      const searchInput = document.getElementById('searchInput');
+      const sortSelect = document.getElementById('sortSelect');
+
+      let currentQueries = [...queries];
+
+      // 搜索功能
+      searchInput.addEventListener('input', (e) => {
+        renderTable(currentQueries, e.target.value);
+      });
+
+      // 排序功能
+      sortSelect.addEventListener('change', (e) => {
+        const sortBy = e.target.value;
+        currentQueries = [...queries].sort((a, b) => {
+          if (sortBy === 'position') return a.position - b.position;
+          return b[sortBy] - a[sortBy];
+        });
+        renderTable(currentQueries, searchInput.value);
+      });
+
+      // 默认按展示次数排序
+      currentQueries.sort((a, b) => b.impressions - a.impressions);
+    }
+
+    // 页面加载时执行
+    loadData();
+  </script>
+</body>
+</html>

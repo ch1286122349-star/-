@@ -10,6 +10,7 @@
     "push:baidu": "node scripts/push_baidu.js"
   },
   "dependencies": {
+    "@sendgrid/mail": "^8.1.6",
     "canvas": "^3.2.1",
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
@@ -17,6 +18,9 @@
     "express-rate-limit": "^7.1.0",
     "googleapis": "^136.0.0",
     "helmet": "^7.1.0",
+    "imap-simple": "^5.1.0",
+    "mailparser": "^3.9.1",
+    "nodemailer": "^7.0.12",
     "sharp": "^0.34.5",
     "sqlite3": "^5.1.7"
   },

@@ -7,6 +7,10 @@ const cors = require('cors');
 const sqlite3 = require('sqlite3').verbose();
 const { google } = require('googleapis');
 
+// 导入邮件模块
+const { sendEmail, sendTestEmail } = require('./scripts/email-sender');
+const { getInboxEmails, getUnreadEmails, markAsRead, searchEmails } = require('./scripts/email-receiver');
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 const DB_PATH = process.env.DB_PATH || path.join(__dirname, 'data.db');
@@ -1437,6 +1441,49 @@ const renderDirectoryPage = (dataScript = '') => {
     .replace('<!--DATA-->', dataScript || '');
 };
 
+// 计算两点之间的距离（Haversine公式，返回公里）
+const calculateDistance = (lat1, lng1, lat2, lng2) => {
+  if (!Number.isFinite(lat1) || !Number.isFinite(lng1) || !Number.isFinite(lat2) || !Number.isFinite(lng2)) {
+    return Infinity;
+  }
+  const R = 6371; // 地球半径（公里）
+  const dLat = (lat2 - lat1) * Math.PI / 180;
+  const dLng = (lng2 - lng1) * Math.PI / 180;
+  const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+    Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+    Math.sin(dLng / 2) * Math.sin(dLng / 2);
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  return R * c;
+};
+
+// 获取相关推荐（同行业、同城市、最近的4个）
+const getRelatedCompanies = (currentCompany, allCompanies) => {
+  const currentLat = Number(currentCompany.lat);
+  const currentLng = Number(currentCompany.lng);
+  
+  if (!Number.isFinite(currentLat) || !Number.isFinite(currentLng)) {
+    return [];
+  }
+
+  // 筛选：同行业、同城市、有坐标、不是自己
+  const candidates = allCompanies.filter(c => 
+    c.slug !== currentCompany.slug &&
+    c.industry === currentCompany.industry &&
+    c.city === currentCompany.city &&
+    Number.isFinite(Number(c.lat)) &&
+    Number.isFinite(Number(c.lng))
+  );
+
+  // 计算距离并排序
+  const withDistance = candidates.map(c => ({
+    ...c,
+    distance: calculateDistance(currentLat, currentLng, Number(c.lat), Number(c.lng))
+  })).sort((a, b) => a.distance - b.distance);
+
+  // 返回最近的6个
+  return withDistance.slice(0, 6);
+};
+
 const renderCompanyPage = async (company) => {
   if (!companyTemplate) return '';
   const placeData = await getCompanyPlaceData(company);
@@ -1622,6 +1669,42 @@ const renderCompanyPage = async (company) => {
     `<button class="action-pill" type="button" data-favorite>收藏</button>` +
     `</div>`
   );
+  
+  // 生成"你可能感兴趣"推荐模块
+  const allCompanies = loadCompaniesData();
+  const relatedCompanies = getRelatedCompanies(company, allCompanies);
+  let relatedHtml = '';
+  
+  if (relatedCompanies.length > 0) {
+    const relatedCards = relatedCompanies.map(related => {
+      const relatedHref = related.href || `/company/${encodeURIComponent(related.slug)}`;
+      const relatedCover = related.cover ? String(related.cover).replace(/'/g, '%27') : '';
+      const relatedCoverStyle = relatedCover 
+        ? ` style="background-image: linear-gradient(140deg, rgba(15, 23, 42, 0.12), rgba(15, 23, 42, 0.35)), url('${relatedCover}')"`
+        : '';
+      const distanceText = related.distance < 1 
+        ? `${Math.round(related.distance * 1000)}米` 
+        : `${related.distance.toFixed(1)}公里`;
+      
+      return (
+        `<a class="related-card" href="${relatedHref}"${relatedCoverStyle}>` +
+        `<div class="related-card__content">` +
+        `<h4>${escapeHtml(related.name)}</h4>` +
+        `<p class="related-card__summary">${escapeHtml(related.summary || '欢迎了解更多详情')}</p>` +
+        `<span class="related-card__distance">距离当前地点 ${distanceText}</span>` +
+        `</div>` +
+        `</a>`
+      );
+    }).join('');
+    
+    relatedHtml = (
+      `<div class="company-related">` +
+      `<h2>你可能感兴趣</h2>` +
+      `<div class="related-grid">${relatedCards}</div>` +
+      `</div>`
+    );
+  }
+  
   const mergedHeadHtml = `${headHtml || ''}\n${seo.headHtml || ''}`.trim();
   return companyTemplate
     .replace('<!--HEAD-->', mergedHeadHtml)
@@ -1640,6 +1723,7 @@ const renderCompanyPage = async (company) => {
     .replace('<!--COMPANY_HERO_SECTION-->', heroHtml)
     .replace('<!--COMPANY_MAP_SECTION-->', mapHtml)
     .replace('<!--COMPANY_DETAIL_SECTION-->', detailHtml)
+    .replace('<!--COMPANY_RELATED_SECTION-->', relatedHtml)
     .replace('<!--COMPANY_ACTION_BAR-->', actionBarHtml);
 };
 
@@ -2067,6 +2151,126 @@ app.get('/api/place-photo/:placeId/:index?', async (req, res) => {
   res.set('Content-Type', photo.contentType);
   res.set('Cache-Control', 'public, max-age=86400');
   return res.send(photo.buffer);
+});
+
+// 邮件 API 路由
+
+// 发送邮件
+app.post('/api/email/send', async (req, res) => {
+  try {
+    const { to, subject, text, html } = req.body;
+    
+    if (!to || !subject || !text) {
+      return res.status(400).json({ 
+        success: false, 
+        message: '缺少必要参数：to, subject, text' 
+      });
+    }
+    
+    const result = await sendEmail({ to, subject, text, html });
+    res.json(result);
+  } catch (error) {
+    console.error('发送邮件 API 错误:', error);
+    res.status(500).json({ 
+      success: false, 
+      message: '发送邮件失败', 
+      error: error.message 
+    });
+  }
+});
+
+// 获取收件箱邮件
+app.get('/api/email/inbox', async (req, res) => {
+  try {
+    const limit = parseInt(req.query.limit) || 10;
+    const emails = await getInboxEmails(limit);
+    res.json({ success: true, emails });
+  } catch (error) {
+    console.error('获取收件箱 API 错误:', error);
+    res.status(500).json({ 
+      success: false, 
+      message: '获取收件箱失败', 
+      error: error.message 
+    });
+  }
+});
+
+// 获取未读邮件
+app.get('/api/email/unread', async (req, res) => {
+  try {
+    const emails = await getUnreadEmails();
+    res.json({ success: true, emails });
+  } catch (error) {
+    console.error('获取未读邮件 API 错误:', error);
+    res.status(500).json({ 
+      success: false, 
+      message: '获取未读邮件失败', 
+      error: error.message 
+    });
+  }
+});
+
+// 标记邮件为已读
+app.post('/api/email/mark-read', async (req, res) => {
+  try {
+    const { uid } = req.body;
+    
+    if (!uid) {
+      return res.status(400).json({ 
+        success: false, 
+        message: '缺少邮件 UID' 
+      });
+    }
+    
+    const result = await markAsRead(uid);
+    res.json(result);
+  } catch (error) {
+    console.error('标记邮件 API 错误:', error);
+    res.status(500).json({ 
+      success: false, 
+      message: '标记邮件失败', 
+      error: error.message 
+    });
+  }
+});
+
+// 搜索邮件
+app.get('/api/email/search', async (req, res) => {
+  try {
+    const { q, type = 'SUBJECT' } = req.query;
+    
+    if (!q) {
+      return res.status(400).json({ 
+        success: false, 
+        message: '缺少搜索关键词' 
+      });
+    }
+    
+    const emails = await searchEmails(q, type);
+    res.json({ success: true, emails });
+  } catch (error) {
+    console.error('搜索邮件 API 错误:', error);
+    res.status(500).json({ 
+      success: false, 
+      message: '搜索邮件失败', 
+      error: error.message 
+    });
+  }
+});
+
+// 测试邮件发送
+app.post('/api/email/test-send', async (req, res) => {
+  try {
+    const result = await sendTestEmail();
+    res.json(result);
+  } catch (error) {
+    console.error('测试邮件发送 API 错误:', error);
+    res.status(500).json({ 
+      success: false, 
+      message: '测试邮件发送失败', 
+      error: error.message 
+    });
+  }
 });
 
 // Serve the static pages and assets so frontend and backend share the same origin.

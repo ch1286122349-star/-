@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>墨西哥中文网-墨西哥华人商家与中资企业导航-让你的业务被更多华人看见</title>
+  <meta name="description" content="无论您从事工程制造、叉车及设备租赁、办公用品、食品供应、物流仓储，还是其他在墨西哥本地开展的业务，均可联系站长发布信息。只要您在墨西哥，站长将协助您把业务、服务或合作需求展示在墨西哥中文网。">
+  <link rel="canonical" href="https://mxchino.com/">
+  <meta property="og:title" content="墨西哥中文网-墨西哥华人商家与中资企业导航-让你的业务被更多华人看见">
+  <meta property="og:description" content="无论您从事工程制造、叉车及设备租赁、办公用品、食品供应、物流仓储，还是其他在墨西哥本地开展的业务，均可联系站长发布信息。只要您在墨西哥，站长将协助您把业务、服务或合作需求展示在墨西哥中文网。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mxchino.com/">
+  <meta property="og:site_name" content="墨西哥中文网">
+  <meta property="og:image" content="https://mxchino.com/apple-touch-icon.png?v=202601151609">
+  <meta property="og:image:alt" content="墨西哥中文网">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="墨西哥中文网-墨西哥华人商家与中资企业导航-让你的业务被更多华人看见">
+  <meta name="twitter:description" content="无论您从事工程制造、叉车及设备租赁、办公用品、食品供应、物流仓储，还是其他在墨西哥本地开展的业务，均可联系站长发布信息。只要您在墨西哥，站长将协助您把业务、服务或合作需求展示在墨西哥中文网。">
+  <meta name="twitter:image" content="https://mxchino.com/apple-touch-icon.png?v=202601151609">
+  <meta name="baidu-site-verification" content="codeva-X0PYlyy1na" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "墨西哥中文网",
+          "url": "https://mxchino.com/",
+          "logo": "https://mxchino.com/apple-touch-icon.png?v=202601151609"
+        },
+        {
+          "@type": "WebSite",
+          "name": "墨西哥中文网",
+          "url": "https://mxchino.com/"
+        }
+      ]
+    }
+  </script>
+  <!--HEAD-->
+</head>
+<body class="home home-directory">
+  <!--HEADER-->
+  <div class="page">
+    <section class="home-top">
+      <h1>墨西哥华人商家与中资企业导航</h1>
+      <p class="home-top__tagline">寻找离你最近的中国资源</p>
+    </section>
+
+    <section class="home-filters home-sticky" aria-label="城市筛选" data-home-sticky>
+      <div class="city-nav home-city-nav" data-home-city-nav></div>
+    </section>
+
+    <section class="home-grid">
+      <section class="home-block" data-block="restaurants">
+        <div class="home-block__head">
+          <h2>餐饮</h2>
+          <div class="home-block__meta">
+            <span class="home-chip" data-block-city></span>
+            <span class="home-chip" data-block-count></span>
+          </div>
+        </div>
+        <div class="home-block__grid" data-block-grid></div>
+      </section>
+
+      <section class="home-block" data-block="markets">
+        <div class="home-block__head">
+          <h2>超市</h2>
+          <div class="home-block__meta">
+            <span class="home-chip" data-block-city></span>
+            <span class="home-chip" data-block-count></span>
+          </div>
+        </div>
+        <div class="home-block__grid" data-block-grid></div>
+      </section>
+
+      <section class="home-block" data-block="play">
+        <div class="home-block__head">
+          <h2>玩乐地点</h2>
+          <div class="home-block__meta">
+            <span class="home-chip" data-block-city></span>
+            <span class="home-chip" data-block-count></span>
+          </div>
+        </div>
+        <div class="home-block__grid" data-block-grid></div>
+      </section>
+
+      <section class="home-block" data-block="expos">
+        <div class="home-block__head">
+          <h2>墨西哥展会</h2>
+          <div class="home-block__meta">
+            <span class="home-chip" data-block-city></span>
+            <span class="home-chip" data-block-count></span>
+          </div>
+        </div>
+        <div class="home-block__grid" data-block-grid></div>
+      </section>
+
+      <section class="home-block" data-block="enterprises">
+        <div class="home-block__head">
+          <h2>中资企业</h2>
+          <div class="home-block__meta">
+            <span class="home-chip" data-block-city></span>
+            <span class="home-chip" data-block-count></span>
+          </div>
+        </div>
+        <div class="home-block__grid" data-block-grid></div>
+      </section>
+
+      <section class="home-block" data-block="suppliers">
+        <div class="home-block__head">
+          <h2>供应商</h2>
+          <div class="home-block__meta">
+            <span class="home-chip" data-block-city>全部</span>
+            <span class="home-chip" data-block-count>即将上线</span>
+          </div>
+        </div>
+        <div class="home-block__grid" data-block-grid></div>
+      </section>
+    </section>
+  </div>
+  <!--FOOTER-->
+  <!--DATA-->
+  <script>
+    (() => {
+      const data = window.__DIRECTORY_DATA__?.items;
+      if (!Array.isArray(data)) return;
+
+      const CITY_ORDER = ['all', '墨西哥城', '蒙特雷', '瓜达拉哈拉', '坎昆', '瓜纳华托'];
+      const CITY_LABELS = new Map([
+        ['all', '全部'],
+        ['墨西哥城', '墨西哥城'],
+        ['蒙特雷', '蒙特雷'],
+        ['瓜达拉哈拉', '瓜达拉哈拉'],
+        ['坎昆', '坎昆'],
+        ['瓜纳华托', '瓜纳华托'],
+      ]);
+      const STORAGE_KEY = 'mx-home-city';
+      const FOOD_INDUSTRY = '餐饮与服务';
+      const ENTERPRISE_INDUSTRY = '中资企业';
+      const PLAY_INDUSTRY = '玩乐地点';
+      const EXPO_INDUSTRY = '展会';
+      const MARKET_CATEGORY = '超市';
+
+      const root = document.querySelector('.home-directory');
+      const cityNav = root?.querySelector('[data-home-city-nav]');
+      const blocks = {
+        restaurants: root?.querySelector('[data-block="restaurants"]'),
+        markets: root?.querySelector('[data-block="markets"]'),
+        play: root?.querySelector('[data-block="play"]'),
+        expos: root?.querySelector('[data-block="expos"]'),
+        enterprises: root?.querySelector('[data-block="enterprises"]'),
+        suppliers: root?.querySelector('[data-block="suppliers"]'),
+      };
+      if (!root || !cityNav || !blocks.restaurants || !blocks.markets || !blocks.play || !blocks.expos || !blocks.enterprises || !blocks.suppliers) return;
+
+      const normalizeCity = (value) => (CITY_ORDER.includes(value) ? value : 'all');
+      let currentCity = normalizeCity(localStorage.getItem(STORAGE_KEY) || 'all');
+      let sortByDistance = true; // 默认按距离排序
+
+      const escapeHtml = (value) => String(value || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+
+      const filterByCity = (items) => (
+        currentCity === 'all'
+          ? items
+          : items.filter((item) => item.city === currentCity)
+      );
+
+      const getFoodItems = () => data.filter((item) => item.industry === FOOD_INDUSTRY);
+      const getRestaurantItems = () => getFoodItems().filter((item) => item.category !== MARKET_CATEGORY);
+      const getMarketItems = () => getFoodItems().filter((item) => item.category === MARKET_CATEGORY);
+      const getEnterpriseItems = () => data.filter((item) => item.industry === ENTERPRISE_INDUSTRY);
+      const getPlayItems = () => data.filter((item) => item.industry === PLAY_INDUSTRY);
+      
+      // 距离计算函数（需要在 getExpoItems 之前定义）
+      const toRad = (value) => (value * Math.PI) / 180;
+      const haversineKm = (lat1, lng1, lat2, lng2) => {
+        const dLat = toRad(lat2 - lat1);
+        const dLng = toRad(lng2 - lng1);
+        const a = Math.sin(dLat / 2) ** 2
+          + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLng / 2) ** 2;
+        return 6371 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+      };
+      
+      // 解析展会日期，返回结束日期的时间戳（用于过滤过期展会）
+      const parseExpoEndDate = (dateStr) => {
+        if (!dateStr) return null;
+        // 匹配格式: "2026年1月27-29日" 或 "2026年1月" 或 "2026年11月10-13日"
+        const match = dateStr.match(/(\d{4})年(\d{1,2})月(?:(\d{1,2})(?:-(\d{1,2}))?日)?/);
+        if (!match) return null;
+        const year = parseInt(match[1], 10);
+        const month = parseInt(match[2], 10) - 1; // JS月份从0开始
+        let day = match[4] ? parseInt(match[4], 10) : (match[3] ? parseInt(match[3], 10) : 28); // 取结束日期，如果只有月份则取28号
+        return new Date(year, month, day, 23, 59, 59).getTime();
+      };
+      
+      // 解析展会日期，返回开始日期的时间戳（用于排序）
+      const parseExpoStartDate = (dateStr) => {
+        if (!dateStr) return Infinity;
+        const match = dateStr.match(/(\d{4})年(\d{1,2})月(?:(\d{1,2}))?/);
+        if (!match) return Infinity;
+        const year = parseInt(match[1], 10);
+        const month = parseInt(match[2], 10) - 1;
+        const day = match[3] ? parseInt(match[3], 10) : 1;
+        return new Date(year, month, day).getTime();
+      };
+      
+      const getExpoItems = () => {
+        const now = Date.now();
+        return data
+          .filter((item) => item.industry === EXPO_INDUSTRY)
+          .filter((item) => {
+            // 过滤掉已过期的展会
+            const endDate = parseExpoEndDate(item.date);
+            return endDate === null || endDate >= now;
+          })
+          .sort((a, b) => {
+            // 先按时间排序，有用户位置时再按距离微调
+            const aTime = parseExpoStartDate(a.date);
+            const bTime = parseExpoStartDate(b.date);
+            return aTime - bTime;
+          });
+      };
+
+      const buildCityCounts = () => {
+        const items = data.filter((item) => (
+          item.industry === FOOD_INDUSTRY
+          || item.industry === ENTERPRISE_INDUSTRY
+          || item.industry === PLAY_INDUSTRY
+          || item.industry === EXPO_INDUSTRY
+        ));
+        const counts = new Map();
+        counts.set('all', items.length);
+        items.forEach((item) => {
+          const city = item.city || '未分类城市';
+          counts.set(city, (counts.get(city) || 0) + 1);
+        });
+        return counts;
+      };
+
+      const renderCityNav = () => {
+        const counts = buildCityCounts();
+        cityNav.innerHTML = CITY_ORDER.map((city) => {
+          const label = CITY_LABELS.get(city) || city;
+          const count = counts.get(city) || 0;
+          return (
+            `<button class="pill${currentCity === city ? ' is-active' : ''}" type="button" data-city="${city}">${label} <em>${count}</em></button>`
+          );
+        }).join('');
+        cityNav.querySelectorAll('[data-city]').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            currentCity = normalizeCity(btn.dataset.city || 'all');
+            localStorage.setItem(STORAGE_KEY, currentCity);
+            render();
+          });
+        });
+      };
+
+      const stickyEl = root?.querySelector('[data-home-sticky]');
+      const headerEl = document.querySelector('.site-header');
+      if (stickyEl && headerEl) {
+        const updateStickyTop = () => {
+          const headerHeight = headerEl.offsetHeight;
+          stickyEl.style.setProperty('--home-sticky-top', `${headerHeight + 12}px`);
+        };
+        updateStickyTop();
+        window.addEventListener('resize', updateStickyTop);
+        window.addEventListener('load', updateStickyTop);
+      }
+
+      const renderPreviewCard = (item) => {
+        const cover = item.cover ? String(item.cover).replace(/'/g, '%27') : '';
+        const coverStyle = cover
+          ? ` style="background-image: linear-gradient(140deg, rgba(15, 23, 42, 0.12), rgba(15, 23, 42, 0.35)), url('${cover}')"`
+          : '';
+        const coverClass = cover ? ' company-cover' : '';
+        const desc = escapeHtml(item.summary || '欢迎了解更多详情。');
+        const safeSlug = encodeURIComponent(item.slug);
+        const href = item.href ? String(item.href) : `/company/${safeSlug}`;
+        const lat = Number(item.lat);
+        const lng = Number(item.lng);
+        const coordsAttr = Number.isFinite(lat) && Number.isFinite(lng)
+          ? ` data-lat="${lat}" data-lng="${lng}"`
+          : '';
+
+        let titleContent = escapeHtml(item.name);
+        if (item.date) {
+          titleContent = `<span style="display:block;font-size:11px;opacity:0.95;margin-bottom:4px;font-weight:600;color:${cover ? '#ffd700' : '#d97706'}">${escapeHtml(item.date)}</span>` + titleContent;
+        }
+
+        return (
+          `<a class="company-card company-link home-card${coverClass}" href="${href}"${coverStyle}${coordsAttr}>` +
+          `<h4>${titleContent}</h4>` +
+          `<p class="company-desc">${desc}</p>` +
+          `<div class="company-distance" data-distance hidden></div>` +
+          `</a>`
+        );
+      };
+
+      const buildDirectoryLink = (tabId) => {
+        const base = `/directory?tab=${tabId}`;
+        if (currentCity === 'all') return base;
+        return `${base}&city=${encodeURIComponent(currentCity)}`;
+      };
+
+      const renderMoreCard = (href, label) => (
+        `<a class="home-card home-card--more" href="${href}">` +
+        `<span>${label}</span>` +
+        `<em>查看更多</em>` +
+        `</a>`
+      );
+
+      const SUPPLIER_INDUSTRY = '供应商';
+      const getSupplierItems = () => data.filter((item) => item.industry === SUPPLIER_INDUSTRY);
+      
+      const renderSupplierPlaceholders = () => (
+        [
+          {
+            title: '成为优质供应商',
+            desc: '提交企业信息后，我们将尽快审核并上线展示。',
+            href: '/contact',
+          },
+          {
+            title: '合作推荐通道',
+            desc: '如有供应链合作需求，请提交信息。',
+            href: '/contact',
+          },
+        ]
+          .map((card) => (
+            `<a class="home-card home-card--placeholder" href="${card.href}">` +
+            `<h4>${card.title}</h4>` +
+            `<p>${card.desc}</p>` +
+            `</a>`
+          ))
+          .join('')
+      );
+
+      const renderPlayCards = (count) => {
+        if (!count) return '';
+        return Array.from({ length: count }, () => (
+          `<div class="home-card home-card--placeholder">` +
+          `<h4>即将更新</h4>` +
+          `<p>玩乐地点内容整理中。</p>` +
+          `</div>`
+        )).join('');
+      };
+
+      const renderPlayBlock = () => {
+        const blockEl = blocks.play;
+        if (!blockEl) return;
+        const cityEl = blockEl.querySelector('[data-block-city]');
+        const countEl = blockEl.querySelector('[data-block-count]');
+        const grid = blockEl.querySelector('[data-block-grid]');
+        if (!grid) return;
+
+        const items = getPlayItems();
+        const allItems = filterByCity(items);
+        
+        // 按距离排序
+        let sortedItems = allItems;
+        if (sortByDistance && cachedLocation) {
+          sortedItems = allItems
+            .filter(item => item.lat && item.lng)
+            .map(item => ({
+              ...item,
+              distance: haversineKm(cachedLocation.lat, cachedLocation.lng, item.lat, item.lng)
+            }))
+            .sort((a, b) => a.distance - b.distance);
+        }
+        
+        const previewItems = sortByDistance && cachedLocation ? sortedItems.slice(0, 5) : allItems.slice(-5);
+        const placeholdersNeeded = Math.max(0, 5 - previewItems.length);
+        const cityLabel = CITY_LABELS.get(currentCity) || currentCity;
+
+        if (cityEl) cityEl.textContent = allItems.length ? cityLabel : '全部';
+        if (countEl) countEl.textContent = allItems.length ? `${allItems.length} 条` : '即将上线';
+
+        const cards = [
+          ...previewItems.map(renderPreviewCard),
+          renderPlayCards(placeholdersNeeded),
+          renderMoreCard(buildDirectoryLink('play'), '查看更多'),
+        ];
+        grid.innerHTML = cards.join('');
+      };
+
+      const renderBlock = (blockEl, items, tabId) => {
+        const cityLabel = CITY_LABELS.get(currentCity) || currentCity;
+        const allItems = filterByCity(items);
+        
+        // 按距离排序
+        let sortedItems = allItems;
+        if (sortByDistance && cachedLocation) {
+          sortedItems = allItems
+            .filter(item => item.lat && item.lng)
+            .map(item => ({
+              ...item,
+              distance: haversineKm(cachedLocation.lat, cachedLocation.lng, item.lat, item.lng)
+            }))
+            .sort((a, b) => a.distance - b.distance);
+        }
+        
+        // 排序后取前5个最近的
+        const previewItems = sortByDistance && cachedLocation ? sortedItems.slice(0, 5) : allItems.slice(-5);
+        const grid = blockEl.querySelector('[data-block-grid]');
+        const cityEl = blockEl.querySelector('[data-block-city]');
+        const countEl = blockEl.querySelector('[data-block-count]');
+        if (cityEl) cityEl.textContent = cityLabel;
+        if (countEl) countEl.textContent = `${allItems.length} 家`;
+        if (!grid) return;
+        const cards = [
+          ...previewItems.map(renderPreviewCard),
+          renderMoreCard(buildDirectoryLink(tabId), '查看更多'),
+        ];
+        grid.innerHTML = cards.join('');
+      };
+
+      const render = () => {
+        renderCityNav();
+        renderBlock(blocks.restaurants, getRestaurantItems(), 'restaurants');
+        renderBlock(blocks.markets, getMarketItems(), 'markets');
+        renderPlayBlock();
+        renderBlock(blocks.expos, getExpoItems(), 'expos');
+        renderBlock(blocks.enterprises, getEnterpriseItems(), 'enterprises');
+        // 渲染供应商板块
+        const supplierBlockEl = blocks.suppliers;
+        const supplierGrid = supplierBlockEl?.querySelector('[data-block-grid]');
+        const supplierCityEl = supplierBlockEl?.querySelector('[data-block-city]');
+        const supplierCountEl = supplierBlockEl?.querySelector('[data-block-count]');
+        if (supplierGrid) {
+          const supplierItems = filterByCity(getSupplierItems());
+          const supplierCards = supplierItems.slice(0, 5).map(renderPreviewCard).join('');
+          const placeholders = supplierItems.length < 3 ? renderSupplierPlaceholders() : '';
+          supplierGrid.innerHTML = supplierCards + placeholders + renderMoreCard(buildDirectoryLink('suppliers'), '查看更多');
+          if (supplierCityEl) supplierCityEl.textContent = supplierItems.length ? (CITY_LABELS.get(currentCity) || currentCity) : '全部';
+          if (supplierCountEl) supplierCountEl.textContent = supplierItems.length ? `${supplierItems.length} 家` : '即将上线';
+        }
+        // 渲染后更新距离
+        if (cachedLocation) {
+          setTimeout(() => setDistances(cachedLocation), 0);
+        }
+      };
+
+      const formatDistance = (km) => {
+        if (!Number.isFinite(km)) return '';
+        if (km < 1) return `${Math.round(km * 1000)} m`;
+        if (km < 10) return `${km.toFixed(1)} km`;
+        return `${Math.round(km)} km`;
+      };
+
+      const setDistances = (location) => {
+        const cards = Array.from(root.querySelectorAll('.company-card[data-lat][data-lng]'));
+        cards.forEach((card) => {
+          const lat = Number.parseFloat(card.dataset.lat);
+          const lng = Number.parseFloat(card.dataset.lng);
+          if (!Number.isFinite(lat) || !Number.isFinite(lng)) return;
+          const km = haversineKm(location.lat, location.lng, lat, lng);
+          const distanceEl = card.querySelector('[data-distance]');
+          if (distanceEl) {
+            distanceEl.textContent = `距你 ${formatDistance(km)}`;
+            distanceEl.hidden = false;
+          }
+        });
+      };
+
+      // 从 localStorage 读取缓存的位置
+      const LOCATION_CACHE_KEY = 'mx-user-location';
+      let cachedLocation = null;
+      try {
+        const stored = localStorage.getItem(LOCATION_CACHE_KEY);
+        if (stored) {
+          const parsed = JSON.parse(stored);
+          if (parsed && Number.isFinite(parsed.lat) && Number.isFinite(parsed.lng)) {
+            cachedLocation = parsed;
+          }
+        }
+      } catch (e) {}
+
+      // 获取用户位置
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          (pos) => {
+            cachedLocation = {
+              lat: pos.coords.latitude,
+              lng: pos.coords.longitude,
+            };
+            // 保存到 localStorage
+            try {
+              localStorage.setItem(LOCATION_CACHE_KEY, JSON.stringify(cachedLocation));
+            } catch (e) {}
+            setDistances(cachedLocation);
+          },
+          (err) => {
+            console.warn('无法获取位置信息:', err.message || err);
+          },
+          { enableHighAccuracy: true, timeout: 8000, maximumAge: 300000 }
+        );
+      }
+
+      render();
+      // 如果有缓存的位置，立即显示距离
+      if (cachedLocation) {
+        setTimeout(() => setDistances(cachedLocation), 0);
+      }
+    })();
+  </script>
+</body>
+</html>
