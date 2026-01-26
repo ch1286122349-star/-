@@ -2269,25 +2269,6 @@
     "detailPaid": true
   },
   {
-    "slug": "huawei-mexico-city",
-    "name": "华为 (Huawei)",
-    "industry": "中资企业",
-    "city": "墨西哥城",
-    "summary": "通信设备/智能终端",
-    "contact": "暂未提供",
-    "phone": "55 8582 8600",
-    "website": "http://www.huawei.com/mx/",
-    "cover": "/image/place-photos/ChIJ0Xl0EMsA0oURbJ1edKpZ9Qk.jpg",
-    "placeId": "ChIJ0Xl0EMsA0oURbJ1edKpZ9Qk",
-    "mapQuery": "华为 (Huawei) 总部 Santa Fe 墨西哥城",
-    "mapLink": "https://www.google.com/maps/place/?q=place_id:ChIJ0Xl0EMsA0oURbJ1edKpZ9Qk",
-    "detail": "华为在 Santa Fe 布局相关产线。",
-    "detailPaid": true,
-    "lat": 19.360876599999997,
-    "lng": -99.2676496,
-    "buildingPlaceId": "ChIJp4dUTGsD0oURGj7lzyqkQpg"
-  },
-  {
     "slug": "zte-mexico-city",
     "name": "中兴通讯 (ZTE)",
     "industry": "中资企业",
@@ -2649,23 +2630,6 @@
     "buildingPlaceId": "ChIJzxtKGDX_0YURP6ahu_P3vUc"
   },
   {
-    "slug": "china-southern-mexico-city",
-    "name": "中国南方航空 (China Southern)",
-    "industry": "中资企业",
-    "city": "墨西哥城",
-    "summary": "航空客运/货运服务",
-    "contact": "暂未提供",
-    "phone": "",
-    "website": "",
-    "cover": "/image/place-photos/ChIJB3UJ2yYAzoURQeheJnYQBlQ.jpg",
-    "placeId": "ChIJB3UJ2yYAzoURQeheJnYQBlQ",
-    "mapQuery": "中国南方航空 (China Southern) Reforma 墨西哥城",
-    "mapLink": "",
-    "detail": "中国南方航空在 Reforma 布局相关产线。",
-    "detailPaid": true,
-    "buildingPlaceId": "ChIJkWdaDDP_0YURoxGWr55kSv8"
-  },
-  {
     "slug": "omoda-jaecoo-mexico-city",
     "name": "奇瑞/Omoda/Jaecoo",
     "industry": "中资企业",
@@ -2721,23 +2685,6 @@
     "buildingPlaceId": "ChIJ9-Q81MsA0oUR3Olebe7Z5as"
   },
   {
-    "slug": "jac-mexico-city",
-    "name": "江淮汽车 (JAC)",
-    "industry": "中资企业",
-    "city": "墨西哥城",
-    "summary": "商用车/乘用车制造",
-    "contact": "暂未提供",
-    "phone": "",
-    "website": "",
-    "cover": "/image/place-photos/ChIJB3UJ2yYAzoURQeheJnYQBlQ.jpg",
-    "placeId": "ChIJB3UJ2yYAzoURQeheJnYQBlQ",
-    "mapQuery": "江淮汽车 (JAC) Santa Fe 墨西哥城",
-    "mapLink": "",
-    "detail": "江淮汽车在 Santa Fe 布局相关产线。",
-    "detailPaid": true,
-    "buildingPlaceId": "ChIJLS5RDNwA0oUR8woRzo1-Yjs"
-  },
-  {
     "slug": "foton-mexico-city",
     "name": "福田汽车 (Foton)",
     "industry": "中资企业",
@@ -2755,40 +2702,6 @@
     "lat": 19.3641716,
     "lng": -99.2674313,
     "buildingPlaceId": "ChIJo0bbk3IB0oURTKOF2g9IHCU"
-  },
-  {
-    "slug": "faw-elam-mexico-city",
-    "name": "一汽解放 (FAW - ELAM)",
-    "industry": "中资企业",
-    "city": "墨西哥城",
-    "summary": "重型卡车/商用车",
-    "contact": "暂未提供",
-    "phone": "",
-    "website": "",
-    "cover": "/image/place-photos/ChIJpcXRDdaKzYUREpb0wTwAIS0.jpg",
-    "placeId": "ChIJpcXRDdaKzYUREpb0wTwAIS0",
-    "mapQuery": "一汽解放 (FAW - ELAM) Santa Fe 墨西哥城",
-    "mapLink": "",
-    "detail": "一汽解放在 Santa Fe 布局相关产线。",
-    "detailPaid": true,
-    "buildingPlaceId": "IjESLwoUChIJSZjr-dAA0oUR6NmENqBhgJoQngQqFAoSCS_8vB84B9KFEXUH7e_PvXum"
-  },
-  {
-    "slug": "byd-mexico-city-2",
-    "name": "比亚迪 (BYD) 商务中心",
-    "industry": "中资企业",
-    "city": "墨西哥城",
-    "summary": "新能源汽车/电池",
-    "contact": "暂未提供",
-    "phone": "",
-    "website": "",
-    "cover": "/image/place-photos/ChIJA-XUIcUB0oURlGOcrHuGnKY.jpg",
-    "placeId": "ChIJA-XUIcUB0oURlGOcrHuGnKY",
-    "mapQuery": "比亚迪 (BYD) 商务中心 Santa Fe 墨西哥城",
-    "mapLink": "",
-    "detail": "比亚迪在 Santa Fe 布局相关产线。",
-    "detailPaid": true,
-    "buildingPlaceId": "ChIJP2Hqzg8C0oURq8YS22URrGk"
   },
   {
     "slug": "miniso-mexico-city",
@@ -2810,23 +2723,6 @@
     "buildingPlaceId": "ChIJW1FOqR8C0oURgBHoM86xfHQ"
   },
   {
-    "slug": "shacman-mexico-city",
-    "name": "陕汽重卡 (Shacman)",
-    "industry": "中资企业",
-    "city": "墨西哥城",
-    "summary": "重型卡车/专用车",
-    "contact": "暂未提供",
-    "phone": "",
-    "website": "",
-    "cover": "/image/place-photos/ChIJB3UJ2yYAzoURQeheJnYQBlQ.jpg",
-    "placeId": "ChIJB3UJ2yYAzoURQeheJnYQBlQ",
-    "mapQuery": "陕汽重卡 (Shacman) Lomas 墨西哥城",
-    "mapLink": "",
-    "detail": "陕汽重卡在 Lomas 布局相关产线。",
-    "detailPaid": true,
-    "buildingPlaceId": "ChIJ0VKrFh4C0oURyw6yDMBX_U4"
-  },
-  {
     "slug": "liugong-mexico-city",
     "name": "柳工 (LiuGong)",
     "industry": "中资企业",
@@ -2846,23 +2742,6 @@
     "buildingPlaceId": "ChIJIbnUVXMB0oURFB4pblaI8gc"
   },
   {
-    "slug": "trina-solar-mexico-city",
-    "name": "天合光能 (Trina Solar)",
-    "industry": "中资企业",
-    "city": "墨西哥城",
-    "summary": "光伏组件/太阳能解决方案",
-    "contact": "暂未提供",
-    "phone": "",
-    "website": "",
-    "cover": "/image/place-photos/ChIJVVDq_XD_0YURqBXij6GFdPQ.jpg",
-    "placeId": "ChIJVVDq_XD_0YURqBXij6GFdPQ",
-    "mapQuery": "天合光能 (Trina Solar) Nápoles 墨西哥城",
-    "mapLink": "",
-    "detail": "天合光能在 Nápoles 布局相关产线。",
-    "detailPaid": true,
-    "buildingPlaceId": "ChIJVSVlk3b_0YURmmzeEfSsnUg"
-  },
-  {
     "slug": "tcl-electronics-mexico-city",
     "name": "TCL Electronics",
     "industry": "中资企业",
@@ -2880,23 +2759,6 @@
     "lat": 19.3701703,
     "lng": -99.1805419,
     "buildingPlaceId": "ChIJG_htuY__0YUROTqy3yB3x_I"
-  },
-  {
-    "slug": "sungrow-mexico-city",
-    "name": "阳光电源 (Sungrow)",
-    "industry": "中资企业",
-    "city": "墨西哥城",
-    "summary": "光伏逆变器/储能系统",
-    "contact": "暂未提供",
-    "phone": "",
-    "website": "",
-    "cover": "/image/place-photos/ChIJzeSi8jn_0YURMiXDZ-gzmi0.jpg",
-    "placeId": "ChIJzeSi8jn_0YURMiXDZ-gzmi0",
-    "mapQuery": "阳光电源 (Sungrow) Roma Nte 墨西哥城",
-    "mapLink": "",
-    "detail": "阳光电源在 Roma Nte 布局相关产线。",
-    "detailPaid": true,
-    "buildingPlaceId": "ChIJVfS1b0j_0YURIMoCn8t7s2Q"
   },
   {
     "slug": "mindray-mexico-city",
@@ -2935,23 +2797,6 @@
     "lat": 19.5001624,
     "lng": -99.155745,
     "buildingPlaceId": "ChIJswzIq_sY0oURqjg3vHdwNTg"
-  },
-  {
-    "slug": "sany-mexico-city",
-    "name": "三一重工 (SANY)",
-    "industry": "中资企业",
-    "city": "墨西哥城",
-    "summary": "工程机械/混凝土机械",
-    "contact": "暂未提供",
-    "phone": "",
-    "website": "",
-    "cover": "/image/place-photos/ChIJuTk5drv9AEkRJ9XdyZRm0ok.jpg",
-    "placeId": "ChIJuTk5drv9AEkRJ9XdyZRm0ok",
-    "mapQuery": "三一重工 (SANY) Tlalnepantla 墨西哥城",
-    "mapLink": "",
-    "detail": "三一重工在 Tlalnepantla 布局相关产线。",
-    "detailPaid": true,
-    "buildingPlaceId": "ChIJP52vj9730YURBDXqBFP0-x0"
   },
   {
     "slug": "alibaba-mexico-city",
