@@ -2269,6 +2269,25 @@
     "detailPaid": true
   },
   {
+    "slug": "huawei-mexico-city",
+    "name": "华为 (Huawei)",
+    "industry": "中资企业",
+    "city": "墨西哥城",
+    "summary": "通信设备/智能终端",
+    "contact": "暂未提供",
+    "phone": "55 8582 8600",
+    "website": "http://www.huawei.com/mx/",
+    "cover": "/image/place-photos/ChIJ0Xl0EMsA0oURbJ1edKpZ9Qk.jpg",
+    "placeId": "ChIJ0Xl0EMsA0oURbJ1edKpZ9Qk",
+    "mapQuery": "华为 (Huawei) 总部 Santa Fe 墨西哥城",
+    "mapLink": "https://www.google.com/maps/place/?q=place_id:ChIJ0Xl0EMsA0oURbJ1edKpZ9Qk",
+    "detail": "华为在 Santa Fe 布局相关产线。",
+    "detailPaid": true,
+    "lat": 19.360876599999997,
+    "lng": -99.2676496,
+    "buildingPlaceId": "ChIJp4dUTGsD0oURGj7lzyqkQpg"
+  },
+  {
     "slug": "zte-mexico-city",
     "name": "中兴通讯 (ZTE)",
     "industry": "中资企业",
@@ -2419,25 +2438,6 @@
     "lat": 19.4429917,
     "lng": -99.2042268,
     "buildingPlaceId": "ChIJtcQw6hAC0oURAtXt0YAZto8"
-  },
-  {
-    "slug": "byd-mexico-city",
-    "name": "比亚迪 (BYD) 行政总部",
-    "industry": "中资企业",
-    "city": "墨西哥城",
-    "summary": "新能源汽车",
-    "contact": "暂未提供",
-    "phone": "55 5203 7238",
-    "website": "http://byd.com/",
-    "cover": "/image/place-photos/ChIJA-XUIcUB0oURlGOcrHuGnKY.jpg",
-    "placeId": "ChIJA-XUIcUB0oURlGOcrHuGnKY",
-    "mapQuery": "BYD Mexico Corporativo Santa Fe 墨西哥城",
-    "mapLink": "https://www.google.com/maps/place/?q=place_id:ChIJA-XUIcUB0oURlGOcrHuGnKY",
-    "detail": "比亚迪在 Santa Fe 的 Av. Río San Joaquin 436 布局相关产线。地址：Av. Río San Joaquin 436, Amp Granada, Miguel Hidalgo, 11529 Ciudad de México, CDMX。位于 CQVX+QX 墨西哥城 联邦区。",
-    "detailPaid": true,
-    "lat": 19.358985399999998,
-    "lng": -99.2729588,
-    "buildingPlaceId": "ChIJP2Hqzg8C0oURq8YS22URrGk"
   },
   {
     "slug": "tp-link-mexico-city",
@@ -2630,23 +2630,6 @@
     "buildingPlaceId": "ChIJzxtKGDX_0YURP6ahu_P3vUc"
   },
   {
-    "slug": "omoda-jaecoo-mexico-city",
-    "name": "奇瑞/Omoda/Jaecoo",
-    "industry": "中资企业",
-    "city": "墨西哥城",
-    "summary": "汽车制造/销售",
-    "contact": "暂未提供",
-    "phone": "",
-    "website": "",
-    "cover": "/image/place-photos/ChIJYwamPN4A0oUROhcQ7mA6WX4.jpg",
-    "placeId": "ChIJd4s5pBr_zYUR-ghbyKrUqmE",
-    "mapQuery": "奇瑞/Omoda/Jaecoo Reforma 墨西哥城",
-    "mapLink": "",
-    "detail": "奇瑞在 Reforma 布局相关产线。",
-    "detailPaid": true,
-    "buildingPlaceId": "ChIJYwamPN4A0oUROhcQ7mA6WX4"
-  },
-  {
     "slug": "gwm-mexico-city",
     "name": "长城汽车 (GWM)",
     "industry": "中资企业",
@@ -2797,20 +2780,6 @@
     "lat": 19.5001624,
     "lng": -99.155745,
     "buildingPlaceId": "ChIJswzIq_sY0oURqjg3vHdwNTg"
-  },
-  {
-    "slug": "alibaba-mexico-city",
-    "name": "阿里巴巴 (Alibaba)",
-    "industry": "中资企业",
-    "city": "墨西哥城",
-    "summary": "电子商务/云计算",
-    "contact": "暂未提供",
-    "phone": "",
-    "website": "",
-    "cover": "/image/place-photos/ChIJB3UJ2yYAzoURQeheJnYQBlQ.jpg",
-    "placeId": "ChIJB3UJ2yYAzoURQeheJnYQBlQ",
-    "mapQuery": "阿里巴巴 (Alibaba) 多地 墨西哥城",
-    "mapLink": ""
   },
   {
     "slug": "滴滴-didi-mexico",
