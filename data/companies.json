@@ -2334,14 +2334,14 @@
     "contact": "暂未提供",
     "phone": "55 6737 0431",
     "website": "https://www.hihonor.com/mx/shop/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
-    "cover": "/image/place-photos/ChIJU4VJrNYD0oUR1jthHAWb_Bs.jpg",
+    "cover": "/image/place-photos/honor-polanco.jpg",
     "placeId": "ChIJU4VJrNYD0oUR1jthHAWb_Bs",
-    "mapQuery": "荣耀 (HONOR) Polanco 墨西哥城",
+    "mapQuery": "WTW México Polanco 墨西哥城",
     "mapLink": "https://www.google.com/maps/place/?q=place_id:ChIJU4VJrNYD0oUR1jthHAWb_Bs",
     "detail": "荣耀在 Polanco 布局相关产线。",
     "detailPaid": true,
-    "lat": 19.4413898,
-    "lng": -99.1976931,
+    "lat": 19.4411487,
+    "lng": -99.197814,
     "buildingPlaceId": "ChIJRVH-hAUC0oUR4Kee8_Po_wU"
   },
   {
@@ -2391,9 +2391,9 @@
     "contact": "暂未提供",
     "phone": "55 6723 1936",
     "website": "http://www.dahuasecurity.com/la",
-    "cover": "/image/place-photos/ChIJeYst_E3_0YURfhWMnww1hQ0.jpg",
+    "cover": "/image/place-photos/dahua-polanco.jpg",
     "placeId": "ChIJeYst_E3_0YURfhWMnww1hQ0",
-    "mapQuery": "大华股份 (Dahua) Polanco 墨西哥城",
+    "mapQuery": "Dahua Technology Mexico Polanco 墨西哥城",
     "mapLink": "https://www.google.com/maps/place/?q=place_id:ChIJeYst_E3_0YURfhWMnww1hQ0",
     "detail": "大华股份在 Polanco 布局相关产线。",
     "detailPaid": true,
@@ -2510,23 +2510,6 @@
     "lat": 19.4408201,
     "lng": -99.2026458,
     "buildingPlaceId": "ChIJna3pcAAD0oURfegx_JfpFsY"
-  },
-  {
-    "slug": "cnooc-mexico-city",
-    "name": "中国海油 (CNOOC)",
-    "industry": "中资企业",
-    "city": "墨西哥城",
-    "summary": "海上油气开发",
-    "contact": "暂未提供",
-    "phone": "",
-    "website": "",
-    "cover": "/image/place-photos/ChIJ-UNIbQMC0oURdqnTwDJ30-Q.jpg",
-    "placeId": "ChIJ-UNIbQMC0oURdqnTwDJ30-Q",
-    "mapQuery": "中国海油 (CNOOC) Polanco 墨西哥城",
-    "mapLink": "",
-    "detail": "中国海油在 Polanco 布局相关产线。",
-    "detailPaid": true,
-    "buildingPlaceId": "ChIJqaO83RoC0oURPdK9rprvz0o"
   },
   {
     "slug": "solarever-mexico-city",
@@ -2760,23 +2743,6 @@
     "detail": "中国南方航空在 Reforma 布局相关产线。",
     "detailPaid": true,
     "buildingPlaceId": "ChIJkWdaDDP_0YURoxGWr55kSv8"
-  },
-  {
-    "slug": "cccc-mexico-city",
-    "name": "中国交建 (CCCC)",
-    "industry": "中资企业",
-    "city": "墨西哥城",
-    "summary": "基础设施建设/工程承包",
-    "contact": "暂未提供",
-    "phone": "",
-    "website": "",
-    "cover": "/image/place-photos/ChIJIfXKkjT_0YURHWY8s9LvMeI.jpg",
-    "placeId": "ChIJIfXKkjT_0YURHWY8s9LvMeI",
-    "mapQuery": "中国交建 (CCCC) Reforma 墨西哥城",
-    "mapLink": "",
-    "detail": "中国交建在 Reforma 布局相关产线。",
-    "detailPaid": true,
-    "buildingPlaceId": "ChIJ-zcb79X40YURGhtdNrEqR1w"
   },
   {
     "slug": "omoda-jaecoo-mexico-city",
@@ -3237,21 +3203,6 @@
     "cover": "/image/place-photos/ChIJ9Xl0EMsA0oURbJ1edKpZ9Qk.jpg"
   },
   {
-    "slug": "中兴-zte-mexico",
-    "name": "中兴 ZTE Mexico",
-    "industry": "中资企业",
-    "city": "墨西哥城",
-    "summary": "中兴墨西哥总部，从事电信和设备业务",
-    "contact": "暂未提供",
-    "detail": "中兴 ZTE Mexico是一家中资企业总部，位于墨西哥城。",
-    "category": "科技/电信",
-    "mapQuery": "中兴 ZTE Mexico Mexico City",
-    "placeId": "ChIJ0Yl0EMsA0oURbJ1edKpZ9Qk",
-    "lat": 19.452,
-    "lng": -99.185,
-    "cover": "/image/place-photos/ChIJ0Yl0EMsA0oURbJ1edKpZ9Qk.jpg"
-  },
-  {
     "slug": "联想-lenovo-mexico",
     "name": "联想 Lenovo Mexico",
     "industry": "中资企业",
@@ -3267,21 +3218,6 @@
     "cover": "/image/place-photos/ChIJ1Yl0EMsA0oURbJ1edKpZ9Qk.jpg"
   },
   {
-    "slug": "中海油-cnooc-e&p-mexico",
-    "name": "中海油 CNOOC E&P Mexico",
-    "industry": "中资企业",
-    "city": "墨西哥城",
-    "summary": "中国海洋石油墨西哥总部，从事石油和天然气业务",
-    "contact": "暂未提供",
-    "detail": "中海油 CNOOC E&P Mexico是一家中资企业总部，位于墨西哥城。",
-    "category": "能源/石油",
-    "mapQuery": "中海油 CNOOC E&P Mexico Mexico City",
-    "placeId": "ChIJ2Yl0EMsA0oURbJ1edKpZ9Qk",
-    "lat": 19.448,
-    "lng": -99.195,
-    "cover": "/image/place-photos/ChIJ2Yl0EMsA0oURbJ1edKpZ9Qk.jpg"
-  },
-  {
     "slug": "中国港湾-china-harbour-engineering",
     "name": "中国港湾 China Harbour Engineering",
     "industry": "中资企业",
@@ -3295,21 +3231,6 @@
     "lat": 19.415,
     "lng": -99.235,
     "cover": "/image/place-photos/ChIJ3Yl0EMsA0oURbJ1edKpZ9Qk.jpg"
-  },
-  {
-    "slug": "中国交通建设-cccc-mexico",
-    "name": "中国交通建设 CCCC Mexico",
-    "industry": "中资企业",
-    "city": "墨西哥城",
-    "summary": "中国交通建设墨西哥总部，从事基础设施建设",
-    "contact": "暂未提供",
-    "detail": "中国交通建设 CCCC Mexico是一家中资企业总部，位于墨西哥城。",
-    "category": "建筑/基建",
-    "mapQuery": "中国交通建设 CCCC Mexico Mexico City",
-    "placeId": "ChIJ4Yl0EMsA0oURbJ1edKpZ9Qk",
-    "lat": 19.45,
-    "lng": -99.186,
-    "cover": "/image/place-photos/ChIJ4Yl0EMsA0oURbJ1edKpZ9Qk.jpg"
   },
   {
     "slug": "play-nido",
