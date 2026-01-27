@@ -58,6 +58,26 @@ const companies = allCompanies
   .filter(Boolean)
   .sort((a, b) => a.localeCompare(b));
 
+// 获取玩乐地点页面
+const getPlayPages = () => {
+  const playPages = allCompanies
+    .filter(company => company.industry === '玩乐地点' && company.slug)
+    .map(company => company.slug.replace('play-', ''))
+    .filter(Boolean)
+    .sort((a, b) => a.localeCompare(b));
+  return playPages;
+};
+
+// 获取展会页面
+const getExpoPages = () => {
+  const expoPages = allCompanies
+    .filter(company => company.industry === '展会' && company.slug)
+    .map(company => company.slug.replace('expo-', ''))
+    .filter(Boolean)
+    .sort((a, b) => a.localeCompare(b));
+  return expoPages;
+};
+
 const restaurantCounts = new Map(RESTAURANT_CITY_DEFS.map((city) => [city.slug, 0]));
 allCompanies.forEach((company) => {
   if (!company) return;
@@ -71,6 +91,11 @@ const restaurantCitySlugs = Array.from(restaurantCounts.entries())
   .map(([slug]) => slug);
 
 const today = new Date().toISOString().split('T')[0];
+
+// 获取玩乐和展会页面
+const playPages = getPlayPages();
+const expoPages = getExpoPages();
+
 const urls = [
   { loc: `${baseUrl}/`, priority: '1.0', changefreq: 'weekly' },
   { loc: `${baseUrl}/companies`, priority: '0.8', changefreq: 'weekly' },
@@ -82,6 +107,18 @@ const urls = [
     loc: `${baseUrl}/restaurants/${slug}`,
     priority: '0.7',
     changefreq: 'weekly',
+  })),
+  // 添加玩乐地点页面
+  ...playPages.map((slug) => ({
+    loc: `${baseUrl}/play-${slug}.html`,
+    priority: '0.7',
+    changefreq: 'monthly',
+  })),
+  // 添加展会页面
+  ...expoPages.map((slug) => ({
+    loc: `${baseUrl}/expo-${slug}.html`,
+    priority: '0.7',
+    changefreq: 'monthly',
   })),
   ...companies.map((slug) => ({
     loc: buildUrl(slug),

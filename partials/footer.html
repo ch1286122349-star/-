@@ -31,23 +31,6 @@
             <div class="contact-shortcut__text wa-text" id="footer-wa-text"></div>
           </div>
         </div>
-        <form class="footer-contact-form" action="#" method="post">
-          <div class="form-grid form-grid--compact">
-            <div class="field">
-              <label for="footer-contact">联系方式 *</label>
-              <input id="footer-contact" name="contact" type="text" required placeholder="微信号 / WhatsApp">
-            </div>
-            <div class="field field--span-2">
-              <label for="footer-details">主题 *</label>
-              <textarea id="footer-details" name="details" required placeholder="简要说明你的主题或需求"></textarea>
-            </div>
-          </div>
-          <div class="form-actions">
-            <button type="submit" class="btn primary">发送</button>
-            <div class="note muted">提交后我们会在 1-2 个工作日内联系你。</div>
-          </div>
-          <div class="status" id="footer-form-status" aria-live="polite"></div>
-        </form>
       </div>
     </div>
   </div>
@@ -55,76 +38,10 @@
 </footer>
 <script>
   (() => {
-    const form = document.querySelector('.footer-contact-form');
-    if (!form) return;
-    const statusEl = document.getElementById('footer-form-status');
-    const submitBtn = form.querySelector('button[type="submit"]');
     const waLink = document.getElementById('footer-wa-link');
     const waText = document.getElementById('footer-wa-text');
     const whatsappNumber = '528111777774'; // +52 8111777774
     if (waLink) waLink.href = `https://wa.me/${whatsappNumber}`;
-    const apiBase = window.API_BASE
-      || (window.location.protocol === 'file:' ? 'http://localhost:3000' : window.location.origin);
-
-    const showStatus = (msg, type = 'ok') => {
-      statusEl.textContent = msg;
-      statusEl.className = `status ${type}`;
-    };
-
-    const parseJsonSafe = async (res) => {
-      const contentType = res.headers.get('content-type') || '';
-      if (!contentType.includes('application/json')) {
-        return { ok: false, message: '服务未返回 JSON，可能后端未启动' };
-      }
-      try {
-        return await res.json();
-      } catch (err) {
-        return { ok: false, message: '解析响应失败，检查后端服务' };
-      }
-    };
-
-    const buildWhatsAppMessage = (data) => {
-      const parts = [
-        data.contact ? `联系方式：${data.contact}` : '',
-        data.details ? `主题：${data.details}` : '',
-      ].filter(Boolean);
-      return `来自网站表单的新提交：\n${parts.join('\n')}`;
-    };
-
-    const updateWhatsAppLink = (data) => {
-      if (!waLink) return;
-      const message = buildWhatsAppMessage(data);
-      if (waText) waText.textContent = '';
-      waLink.href = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
-    };
-
-    form.addEventListener('submit', async (event) => {
-      event.preventDefault();
-      showStatus('提交中…', 'ok');
-      submitBtn.disabled = true;
-
-      const formData = new FormData(form);
-      const payload = Object.fromEntries(formData.entries());
-
-      try {
-        const res = await fetch(`${apiBase}/api/submit`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload),
-        });
-
-        const data = await parseJsonSafe(res);
-        if (!res.ok || !data.ok) throw new Error(data.message || '提交失败，请确认已运行 npm start');
-
-        showStatus('提交成功！', 'ok');
-        updateWhatsAppLink(payload);
-        form.reset();
-      } catch (err) {
-        showStatus(err.message || '网络异常，稍后再试', 'error');
-      } finally {
-        submitBtn.disabled = false;
-      }
-    });
 
     const copyButtons = document.querySelectorAll('.footer-contact-card [data-copy]');
     copyButtons.forEach((button) => {
@@ -140,6 +57,14 @@
           }, 1600);
         }
       });
+    });
+
+    if (!waLink || !waText) return;
+    waLink.addEventListener('click', (e) => {
+      if (!waLink.href) return;
+      const targetUrl = waLink.href;
+      e.preventDefault();
+      window.open(targetUrl, '_blank', 'noopener');
     });
   })();
 </script>

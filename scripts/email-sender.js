@@ -4,9 +4,9 @@ require('dotenv').config();
 // 邮件发送器配置
 const transporter = nodemailer.createTransport({
   host: process.env.EMAIL_SMTP_HOST,
-  port: parseInt(process.env.EMAIL_SMTP_PORT),
-  secure: false,
-  requireTLS: false,
+  port: parseInt(process.env.EMAIL_SMTP_PORT, 10),
+  secure: process.env.SMTP_SECURE === 'true', // true for 465 SSL
+  requireTLS: process.env.SMTP_SECURE !== 'true',
   tls: {
     rejectUnauthorized: false
   },
