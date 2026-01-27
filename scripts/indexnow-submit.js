@@ -13,9 +13,8 @@ const crypto = require('crypto');
 const SITE_URL = 'https://mxchino.com';
 const SITEMAP_PATH = path.join(__dirname, '../sitemap.xml');
 
-// Generate a simple API key (you can use any random string, but we'll generate one)
-// For production, store this key in a file at your site root: /[key].txt
-const API_KEY = crypto.randomBytes(16).toString('hex');
+// Use the fixed API key that matches the verification file we deployed
+const API_KEY = '3fa9ff18f8f0951a811beed43bef1e13';
 
 async function submitToIndexNow(urls) {
   const endpoint = 'https://api.indexnow.org/indexnow';
@@ -48,9 +47,9 @@ async function submitToIndexNow(urls) {
         timeout: 10000,
       });
 
-      if (response.status === 200) {
+      if (response.status === 200 || response.status === 202) {
         successCount += batch.length;
-        console.log(`✓ 批次 ${i + 1}/${batches.length} 成功提交 ${batch.length} 个 URL`);
+        console.log(`✓ 批次 ${i + 1}/${batches.length} 成功提交 ${batch.length} 个 URL (状态码: ${response.status})`);
       } else {
         failCount += batch.length;
         console.log(`✗ 批次 ${i + 1}/${batches.length} 失败 (状态码: ${response.status})`);

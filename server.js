@@ -2274,7 +2274,14 @@ app.post('/api/email/test-send', async (req, res) => {
 });
 
 // Serve the static pages and assets so frontend and backend share the same origin.
-app.use(express.static(path.join(__dirname)));
+// IMPORTANT: This must come BEFORE the catch-all route to allow .txt files to be served
+app.use(express.static(path.join(__dirname), {
+  setHeaders: (res, filepath) => {
+    if (filepath.endsWith('.txt')) {
+      res.setHeader('Content-Type', 'text/plain; charset=utf-8');
+    }
+  }
+}));
 
 app.get('*', (_req, res) => {
   res.send(renderPage('home.html', { dataScript: buildDirectoryDataScript() }));
