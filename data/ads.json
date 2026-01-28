@@ -1,0 +1,31 @@
+{
+  "banners": [
+    {
+      "id": "micah-dream-2026q1",
+      "title": "办公/劳保/生产耗材 蒙特雷本地供应",
+      "subtitle": "迈卡梦想 MICHA DREAM",
+      "description": "本地囤货 · 圆珠笔/打印纸 · PPE · 包装材料 · 五金工具 · 支持当天/次日配送",
+      "bullets": [
+        "核心耗材中国直采，价格低于蒙特雷本地渠道",
+        "本地仓库现货，距你 23 km",
+        "50+ 中资企业长期合作",
+        "WhatsApp / 当地电话: +52 811 716 1633"
+      ],
+      "ctaText": "了解供应能力",
+      "href": "/supplier-micah-dream.html",
+      "image": "/assets/supplier/micah-dream/hero-01.jpg",
+      "city": "蒙特雷",
+      "priority": 100,
+      "startDate": "2025-12-01",
+      "endDate": "2026-03-31"
+    }
+  ],
+  "fallback": {
+    "title": "广告位招租",
+    "subtitle": "曝光墨西哥全境华人用户",
+    "description": "首页黄金位置 · 支持跳转到你的网站或供应商页面 · 提供曝光和点击数据",
+    "ctaText": "联系投放",
+    "href": "https://wa.me/5218117161633?text=%E5%85%A5%E9%A9%BB%E5%B1%95%E7%A4%BA",
+    "image": "/assets/home/hero-bg.jpg"
+  }
+}

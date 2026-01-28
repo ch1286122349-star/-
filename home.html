@@ -86,6 +86,24 @@
         <div class="home-block__grid" data-block-grid></div>
       </section>
 
+      <section class="home-banner home-banner--supplier" data-home-banner>
+        <div class="home-banner__overlay"></div>
+        <span class="home-banner__ad-tag" data-banner-tag>ADS</span>
+        <a class="home-banner__inner home-banner__link" data-home-banner-link href="/contact">
+          <div class="home-banner__text">
+            <h3 data-banner-title>广告加载中...</h3>
+            <div class="home-banner__sub" data-banner-subtitle>敬请期待</div>
+            <p class="home-banner__desc" data-banner-desc>正在为你匹配最合适的供应商...</p>
+            <ul class="home-banner__list" data-banner-list>
+              <li>广告位招租 · WhatsApp +52 811 716 1633</li>
+            </ul>
+          </div>
+          <div class="home-banner__actions" data-banner-actions>
+            <span class="home-banner__button" data-banner-cta>了解更多</span>
+          </div>
+        </a>
+      </section>
+
       <section class="home-block" data-block="play">
         <div class="home-block__head">
           <h2>玩乐地点</h2>
@@ -137,6 +155,80 @@
     (() => {
       const data = window.__DIRECTORY_DATA__?.items;
       if (!Array.isArray(data)) return;
+
+      const bannerEl = document.querySelector('[data-home-banner]');
+      const bannerLink = bannerEl?.querySelector('[data-home-banner-link]');
+      const bannerTitle = bannerEl?.querySelector('[data-banner-title]');
+      const bannerSubtitle = bannerEl?.querySelector('[data-banner-subtitle]');
+      const bannerDesc = bannerEl?.querySelector('[data-banner-desc]');
+      const bannerList = bannerEl?.querySelector('[data-banner-list]');
+      const bannerCta = bannerEl?.querySelector('[data-banner-cta]');
+      const bannerTag = bannerEl?.querySelector('[data-banner-tag]');
+
+      const loadAds = async () => {
+        try {
+          const res = await fetch('/data/ads.json');
+          if (!res.ok) throw new Error('failed to load ads');
+          const payload = await res.json();
+          const banners = Array.isArray(payload.banners) ? payload.banners : [];
+          const now = Date.now();
+          const activeBanners = banners
+            .map((item) => {
+              const start = item.startDate ? new Date(item.startDate).getTime() : null;
+              const end = item.endDate ? new Date(item.endDate).getTime() : null;
+              const isActive = (!start || now >= start) && (!end || now <= end);
+              return { ...item, isActive };
+            })
+            .filter((item) => item.isActive)
+            .sort((a, b) => Number(b.priority || 0) - Number(a.priority || 0));
+
+          const banner = activeBanners[0] || payload.fallback;
+          if (!banner || !bannerEl) return;
+
+          const setText = (el, value) => {
+            if (el && typeof value === 'string') el.textContent = value;
+          };
+
+          if (banner.image) {
+            bannerEl.style.backgroundImage = `url('${banner.image}')`;
+          }
+          if (bannerLink && banner.href) {
+            bannerLink.href = banner.href;
+          }
+          setText(bannerTitle, banner.title || '广告位招租');
+          setText(bannerSubtitle, banner.subtitle || '曝光墨西哥全境华人用户');
+          setText(bannerDesc, banner.description || '首页黄金广告位，支持预约投放');
+
+          if (bannerList) {
+            const bullets = Array.isArray(banner.bullets) ? banner.bullets : [];
+            bannerList.innerHTML = bullets.length
+              ? bullets.map((line) => `<li>${line}</li>`).join('')
+              : '<li>广告位招租 · WhatsApp +52 811 716 1633</li>';
+          }
+
+          setText(bannerCta, banner.ctaText || '联系投放');
+          setText(bannerTag, banner.tag || 'ADS');
+
+          const emitEvent = (action) => {
+            const label = banner.id || banner.title || 'unknown';
+            if (typeof gtag === 'function') {
+              gtag('event', `home_banner_${action}`, {
+                event_category: 'homepage_banner',
+                event_label: label,
+              });
+            }
+          };
+
+          emitEvent('impression');
+          if (bannerLink) {
+            bannerLink.addEventListener('click', () => emitEvent('click'));
+          }
+        } catch (err) {
+          console.warn('加载广告配置失败:', err);
+        }
+      };
+
+      loadAds();
 
       const CITY_ORDER = ['all', '墨西哥城', '蒙特雷', '瓜达拉哈拉', '坎昆', '瓜纳华托'];
       const CITY_LABELS = new Map([
