@@ -17,51 +17,48 @@ const SITEMAP_PATH = path.join(__dirname, '../sitemap.xml');
 const API_KEY = '3fa9ff18f8f0951a811beed43bef1e13';
 
 async function submitToIndexNow(urls) {
-  const endpoint = 'https://api.indexnow.org/indexnow';
+  // Try Bing's endpoint directly (more reliable than indexnow.org)
+  const endpoint = 'https://www.bing.com/indexnow';
   
-  // IndexNow accepts max 10,000 URLs per request, we'll batch in chunks of 100
-  const batchSize = 100;
-  const batches = [];
-  
-  for (let i = 0; i < urls.length; i += batchSize) {
-    batches.push(urls.slice(i, i + batchSize));
-  }
-
-  console.log(`准备提交 ${urls.length} 个 URL，分为 ${batches.length} 批次\n`);
+  console.log(`准备提交 ${urls.length} 个 URL\n`);
+  console.log(`使用 API Key: ${API_KEY}`);
+  console.log(`验证文件: https://mxchino.com/${API_KEY}.txt\n`);
 
   let successCount = 0;
   let failCount = 0;
 
-  for (let i = 0; i < batches.length; i++) {
-    const batch = batches[i];
+  // Submit all URLs in a single request (Bing supports up to 10,000 URLs)
+  try {
+    const payload = {
+      host: 'mxchino.com',
+      key: API_KEY,
+      keyLocation: `https://mxchino.com/${API_KEY}.txt`,
+      urlList: urls,
+    };
+
+    console.log(`提交中... (${urls.length} 个 URL)`);
     
-    try {
-      const payload = {
-        host: 'mxchino.com',
-        key: API_KEY,
-        urlList: batch,
-      };
+    const response = await axios.post(endpoint, payload, {
+      headers: { 
+        'Content-Type': 'application/json; charset=utf-8',
+      },
+      timeout: 30000,
+    });
 
-      const response = await axios.post(endpoint, payload, {
-        headers: { 'Content-Type': 'application/json' },
-        timeout: 10000,
-      });
-
-      if (response.status === 200 || response.status === 202) {
-        successCount += batch.length;
-        console.log(`✓ 批次 ${i + 1}/${batches.length} 成功提交 ${batch.length} 个 URL (状态码: ${response.status})`);
-      } else {
-        failCount += batch.length;
-        console.log(`✗ 批次 ${i + 1}/${batches.length} 失败 (状态码: ${response.status})`);
-      }
-    } catch (error) {
-      failCount += batch.length;
-      console.log(`✗ 批次 ${i + 1}/${batches.length} 失败: ${error.message}`);
+    if (response.status === 200 || response.status === 202) {
+      successCount = urls.length;
+      console.log(`✓ 成功提交所有 URL (状态码: ${response.status})`);
+    } else {
+      failCount = urls.length;
+      console.log(`✗ 提交失败 (状态码: ${response.status})`);
+      console.log(`响应数据:`, response.data);
     }
-
-    // Add small delay between batches to avoid rate limiting
-    if (i < batches.length - 1) {
-      await new Promise((resolve) => setTimeout(resolve, 500));
+  } catch (error) {
+    failCount = urls.length;
+    console.log(`✗ 提交失败: ${error.message}`);
+    if (error.response) {
+      console.log(`状态码: ${error.response.status}`);
+      console.log(`响应数据:`, error.response.data);
     }
   }
 

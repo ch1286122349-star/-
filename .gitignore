@@ -9,3 +9,5 @@ server.log
 gsc-credentials.json
 .gsc-token.json
 data/gsc-data.json
+gsc-service-key.json
+scripts/able-inn-419703-ee75981fcea2.json
